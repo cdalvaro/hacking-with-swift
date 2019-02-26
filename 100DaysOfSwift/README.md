@@ -8,3 +8,5 @@
 
 Simple beginning: *Variables* and *Constants*, *Strings*, *Integers*, *Doubles* and *Booleans*, *Inference* and *Type Annotations*
 but setting foundations.
+
+[Code](Day001.playground/Contents.swift)
