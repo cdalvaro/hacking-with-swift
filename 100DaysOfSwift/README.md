@@ -5,6 +5,7 @@
 - [Day 1](#day-1)
 - [Day 2](#day-2)
 - [Day 3](#day-3)
+- [Day 4](#day-4)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1)
 
@@ -24,3 +25,9 @@ Complex Types: *Arrays*, *Sets*, *Tuples*, *Dictionaries* and *Enumerations*
 Operators and Conditions: *Arithmetic Operators*, *Operators Overloading*, *Compound Assignment Operators*, *Comparison Operators*, *Conditions*, *Combining Conditions*, *The Ternary Operator*, *Switch Statements* and *Range Operators*
 
 [Code](Day003.playground/Contents.swift)
+
+## [Day 4](https://www.hackingwithswift.com/100/4)
+
+Looping: *For loops*, *While loops*, *Repeat loops*, *Exiting loops*, *Exiting multiple loops*, *Skipping items* and *Infinite loops*
+
+[Code](Day004.playground/Contents.swift)
