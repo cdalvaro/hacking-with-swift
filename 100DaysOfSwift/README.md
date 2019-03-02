@@ -6,6 +6,7 @@
 - [Day 2](#day-2)
 - [Day 3](#day-3)
 - [Day 4](#day-4)
+- [Day 5](#day-5)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1)
 
@@ -31,3 +32,9 @@ Operators and Conditions: *Arithmetic Operators*, *Operators Overloading*, *Comp
 Looping: *For loops*, *While loops*, *Repeat loops*, *Exiting loops*, *Exiting multiple loops*, *Skipping items* and *Infinite loops*
 
 [Code](Day004.playground/Contents.swift)
+
+## [Day 5](https://www.hackingwithswift.com/100/5)
+
+Functions: *Writing functions*, *Accepting parameters*, *Returning values*, *Parameter labels*, *Omitting parameter labels*, *Default parameters*, *Variadic functions*, *Writing throwing functions*, *Running throwing functions* and *inout parameters*
+
+[Code](Day005.playground/Contents.swift)
