@@ -2,39 +2,39 @@
 
 ## Challenges
 
-- [Day 1](#day-1)
-- [Day 2](#day-2)
-- [Day 3](#day-3)
-- [Day 4](#day-4)
-- [Day 5](#day-5)
+- [Day 1 - First Steps in Swift](#day-1---first-steps-in-swift)
+- [Day 2 - Complex Types](#day-2---complex-types)
+- [Day 3 - Operators and Conditions](#day-3---operators-and-conditions)
+- [Day 4 - Looping](#day-4---looping)
+- [Day 5 - Functions](#day-5---functions)
 
-## [Day 1](https://www.hackingwithswift.com/100/1)
+## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
-First Steps in Swift: *Variables* and *Constants*, *Strings*, *Integers*, *Doubles* and *Booleans*, *Inference* and *Type Annotations*
+*Variables* and *Constants*, *Strings*, *Integers*, *Doubles* and *Booleans*, *Inference* and *Type Annotations*
 but setting foundations.
 
 [Code](Day001.playground/Contents.swift)
 
-## [Day 2](https://www.hackingwithswift.com/100/2)
+## [Day 2](https://www.hackingwithswift.com/100/2) - Complex Types
 
-Complex Types: *Arrays*, *Sets*, *Tuples*, *Dictionaries* and *Enumerations*
+*Arrays*, *Sets*, *Tuples*, *Dictionaries* and *Enumerations*
 
 [Code](Day002.playground/Contents.swift)
 
-## [Day 3](https://www.hackingwithswift.com/100/3)
+## [Day 3](https://www.hackingwithswift.com/100/3) - Operators and Conditions
 
-Operators and Conditions: *Arithmetic Operators*, *Operators Overloading*, *Compound Assignment Operators*, *Comparison Operators*, *Conditions*, *Combining Conditions*, *The Ternary Operator*, *Switch Statements* and *Range Operators*
+*Arithmetic Operators*, *Operators Overloading*, *Compound Assignment Operators*, *Comparison Operators*, *Conditions*, *Combining Conditions*, *The Ternary Operator*, *Switch Statements* and *Range Operators*
 
 [Code](Day003.playground/Contents.swift)
 
-## [Day 4](https://www.hackingwithswift.com/100/4)
+## [Day 4](https://www.hackingwithswift.com/100/4) - Looping
 
-Looping: *For loops*, *While loops*, *Repeat loops*, *Exiting loops*, *Exiting multiple loops*, *Skipping items* and *Infinite loops*
+*For loops*, *While loops*, *Repeat loops*, *Exiting loops*, *Exiting multiple loops*, *Skipping items* and *Infinite loops*
 
 [Code](Day004.playground/Contents.swift)
 
-## [Day 5](https://www.hackingwithswift.com/100/5)
+## [Day 5](https://www.hackingwithswift.com/100/5) - Functions
 
-Functions: *Writing functions*, *Accepting parameters*, *Returning values*, *Parameter labels*, *Omitting parameter labels*, *Default parameters*, *Variadic functions*, *Writing throwing functions*, *Running throwing functions* and *inout parameters*
+*Writing functions*, *Accepting parameters*, *Returning values*, *Parameter labels*, *Omitting parameter labels*, *Default parameters*, *Variadic functions*, *Writing throwing functions*, *Running throwing functions* and *inout parameters*
 
 [Code](Day005.playground/Contents.swift)
