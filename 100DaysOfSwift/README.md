@@ -7,6 +7,7 @@
 - [Day 3 - Operators and Conditions](#day-3---operators-and-conditions)
 - [Day 4 - Looping](#day-4---looping)
 - [Day 5 - Functions](#day-5---functions)
+- [Day 6 - Closures, Part One](#day-6---closures-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -38,3 +39,9 @@ but setting foundations.
 *Writing functions*, *Accepting parameters*, *Returning values*, *Parameter labels*, *Omitting parameter labels*, *Default parameters*, *Variadic functions*, *Writing throwing functions*, *Running throwing functions* and *inout parameters*
 
 [Code](Day005.playground/Contents.swift)
+
+## [Day 6](https://www.hackingwithswift.com/100/6) - Closures, Part One
+
+*Creating basic closures*, *Accepting parameters in a closure*, *Returning values from a closure*, *Closures as parameters* and *Trailing closure syntax*
+
+[Code](Day006.playground/Contents.swift)
