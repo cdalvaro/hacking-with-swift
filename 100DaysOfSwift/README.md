@@ -9,6 +9,7 @@
 - [Day 5 - Functions](#day-5-functions)
 - [Day 6 - Closures, Part One](#day-6-closures-part-one)
 - [Day 7 - Closures, Part Two](#day-7-closures-part-two)
+- [Day 8 - Structs, Part One](#day-8-structs-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -52,3 +53,7 @@ but setting foundations.
 *Using closures as parameters when they accept parameters*, *Using closures as parameters when they return values*, *Shorthand parameter names*, *Closures with multiple parameters*, *Returning closures from functions* and *Capturing values*
 
 [Code](Day007.playground/Contents.swift)
+
+## [Day 8](https://www.hackingwithswift.com/100/8) - Structs, Part One
+
+*Creating your own structs*, *Computed properties*, *Property observers*, *Methods*, *Mutating methods*, *Properties and methods of strings* and *Properties and methods of arrays*
