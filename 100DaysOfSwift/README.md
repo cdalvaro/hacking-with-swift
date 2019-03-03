@@ -66,3 +66,9 @@ but setting foundations.
 *Initializers*, *Referring to the current instance*, *Lazy properties*, *Static properties and methods* and *Access control*
 
 [Code](Day009.playground/Contents.swift)
+
+## [Day 10](https://www.hackingwithswift.com/100/10) - Classes
+
+*Creating your own classes*, *Class inheritance*, *Overriding methods*, *Final classes*, *Copying objects*, *Deinitializers* and *Mutability*
+
+[Code](Day010.playground/Contents.swift)
