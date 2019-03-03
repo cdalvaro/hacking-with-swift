@@ -2,14 +2,14 @@
 
 ## Challenges
 
-- [Day 1 - First Steps in Swift](#day-1-first-steps-in-swift)
-- [Day 2 - Complex Types](#day-2-complex-types)
-- [Day 3 - Operators and Conditions](#day-3-operators-and-conditions)
-- [Day 4 - Looping](#day-4-looping)
-- [Day 5 - Functions](#day-5-functions)
-- [Day 6 - Closures, Part One](#day-6-closures-part-one)
-- [Day 7 - Closures, Part Two](#day-7-closures-part-two)
-- [Day 8 - Structs, Part One](#day-8-structs-part-one)
+- [Day 1 - First Steps in Swift](#day-1---first-steps-in-swift)
+- [Day 2 - Complex Types](#day-2---complex-types)
+- [Day 3 - Operators and Conditions](#day-3---operators-and-conditions)
+- [Day 4 - Looping](#day-4---looping)
+- [Day 5 - Functions](#day-5---functions)
+- [Day 6 - Closures, Part One](#day-6---closures-part-one)
+- [Day 7 - Closures, Part Two](#day-7---closures-part-two)
+- [Day 8 - Structs, Part One](#day-8---structs-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
