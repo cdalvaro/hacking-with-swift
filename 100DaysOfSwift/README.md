@@ -10,6 +10,7 @@
 - [Day 6 - Closures, Part One](#day-6---closures-part-one)
 - [Day 7 - Closures, Part Two](#day-7---closures-part-two)
 - [Day 8 - Structs, Part One](#day-8---structs-part-one)
+- [Day 9 - Structs, Part Two](#day-9---structs-part-two)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -57,3 +58,11 @@ but setting foundations.
 ## [Day 8](https://www.hackingwithswift.com/100/8) - Structs, Part One
 
 *Creating your own structs*, *Computed properties*, *Property observers*, *Methods*, *Mutating methods*, *Properties and methods of strings* and *Properties and methods of arrays*
+
+[Code](Day008.playground/Contents.swift)
+
+## [Day 9](https://www.hackingwithswift.com/100/9) - Structs, Part Two
+
+*Initializers*, *Referring to the current instance*, *Lazy properties*, *Static properties and methods* and *Access control*
+
+[Code](Day009.playground/Contents.swift)
