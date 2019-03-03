@@ -1,7 +1,7 @@
 /*:
  # Hacking with Swift
  
- [Day 3](https://www.hackingwithswift.com/100/3)
+ [Day 3 - Operators and Conditions](https://www.hackingwithswift.com/100/3)
  
  ## Arithmetic Operators
  

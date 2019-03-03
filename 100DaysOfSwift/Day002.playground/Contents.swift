@@ -1,7 +1,7 @@
 /*:
  # Hacking with Swift
  
- [Day 2](https://www.hackingwithswift.com/100/2)
+ [Day 2 - Complex Types](https://www.hackingwithswift.com/100/2)
 
  ## Arrays
 

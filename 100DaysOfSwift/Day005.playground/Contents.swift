@@ -1,7 +1,7 @@
 /*:
  # Hacking with Swift
  
- [Day 5](https://www.hackingwithswift.com/100/5)
+ [Day 5 - Functions](https://www.hackingwithswift.com/100/5)
  
  ## Writing functions
  

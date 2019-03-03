@@ -1,7 +1,7 @@
 /*:
  # Hacking with Swift
  
- [Day 9](https://www.hackingwithswift.com/100/9)
+ [Day 9 - Structs, Part Two](https://www.hackingwithswift.com/100/9)
  
  ## Initializers
  

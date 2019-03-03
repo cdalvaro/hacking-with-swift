@@ -1,7 +1,7 @@
 /*:
  # Hacking with Swift
  
- [Day 1](https://www.hackingwithswift.com/100/1)
+ [Day 1 - First Steps in Swift](https://www.hackingwithswift.com/100/1)
  
  ## Variables
  */

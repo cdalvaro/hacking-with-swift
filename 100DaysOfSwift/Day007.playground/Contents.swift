@@ -1,7 +1,7 @@
 /*:
  # Hacking with Swift
  
- [Day 7](https://www.hackingwithswift.com/100/7)
+ [Day 7 - Closures, Part Two](https://www.hackingwithswift.com/100/7)
  
  ## Using closures as parameters when they accept parameters
  

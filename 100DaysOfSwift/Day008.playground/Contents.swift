@@ -1,7 +1,7 @@
 /*:
  # Hacking with Swift
  
- [Day 8](https://www.hackingwithswift.com/100/8)
+ [Day 8 - Structs, Part One](https://www.hackingwithswift.com/100/8)
  
  ## Creating your own structs
  

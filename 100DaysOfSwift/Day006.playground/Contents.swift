@@ -1,7 +1,7 @@
 /*:
  # Hacking with Swift
  
- [Day 6](https://www.hackingwithswift.com/100/6)
+ [Day 6 - Closures, Part One](https://www.hackingwithswift.com/100/6)
  
  ## Creating basic closures
  
