@@ -11,6 +11,8 @@
 - [Day 7 - Closures, Part Two](#day-7---closures-part-two)
 - [Day 8 - Structs, Part One](#day-8---structs-part-one)
 - [Day 9 - Structs, Part Two](#day-9---structs-part-two)
+- [Day 10 - Classes](#day-10---clasess)
+- [Day 11 - Protocols And Extensions](#day11---protocols-and-extensions)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -72,3 +74,9 @@ but setting foundations.
 *Creating your own classes*, *Class inheritance*, *Overriding methods*, *Final classes*, *Copying objects*, *Deinitializers* and *Mutability*
 
 [Code](Day010.playground/Contents.swift)
+
+## [Day 11](https://www.hackingwithswift.com/100/11) - Protocols And Extensions
+
+*Protocols*, *Protocol inheritance*, *Extensions*, *Protocol extensions* and *Protocol-oriented programming*
+
+[Code](Day011.playground/Contents.swift)
