@@ -13,6 +13,7 @@
 - [Day 9 - Structs, Part Two](#day-9---structs-part-two)
 - [Day 10 - Classes](#day-10---clasess)
 - [Day 11 - Protocols And Extensions](#day11---protocols-and-extensions)
+- [Day 12 - Optionals](#day12---optionals)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -29,7 +30,8 @@ but setting foundations.
 
 ## [Day 3](https://www.hackingwithswift.com/100/3) - Operators and Conditions
 
-*Arithmetic Operators*, *Operators Overloading*, *Compound Assignment Operators*, *Comparison Operators*, *Conditions*, *Combining Conditions*, *The Ternary Operator*, *Switch Statements* and *Range Operators*
+*Arithmetic Operators*, *Operators Overloading*, *Compound Assignment Operators*, *Comparison Operators*, *Conditions*,
+*Combining Conditions*, *The Ternary Operator*, *Switch Statements* and *Range Operators*
 
 [Code](Day003.playground/Contents.swift)
 
@@ -41,7 +43,8 @@ but setting foundations.
 
 ## [Day 5](https://www.hackingwithswift.com/100/5) - Functions
 
-*Writing functions*, *Accepting parameters*, *Returning values*, *Parameter labels*, *Omitting parameter labels*, *Default parameters*, *Variadic functions*, *Writing throwing functions*, *Running throwing functions* and *inout parameters*
+*Writing functions*, *Accepting parameters*, *Returning values*, *Parameter labels*, *Omitting parameter labels*, *Default parameters*,
+*Variadic functions*, *Writing throwing functions*, *Running throwing functions* and *inout parameters*
 
 [Code](Day005.playground/Contents.swift)
 
@@ -53,13 +56,15 @@ but setting foundations.
 
 ## [Day 7](https://www.hackingwithswift.com/100/7) - Closures, Part Two
 
-*Using closures as parameters when they accept parameters*, *Using closures as parameters when they return values*, *Shorthand parameter names*, *Closures with multiple parameters*, *Returning closures from functions* and *Capturing values*
+*Using closures as parameters when they accept parameters*, *Using closures as parameters when they return values*, *Shorthand parameter names*,
+*Closures with multiple parameters*, *Returning closures from functions* and *Capturing values*
 
 [Code](Day007.playground/Contents.swift)
 
 ## [Day 8](https://www.hackingwithswift.com/100/8) - Structs, Part One
 
-*Creating your own structs*, *Computed properties*, *Property observers*, *Methods*, *Mutating methods*, *Properties and methods of strings* and *Properties and methods of arrays*
+*Creating your own structs*, *Computed properties*, *Property observers*, *Methods*, *Mutating methods*,
+*Properties and methods of strings* and *Properties and methods of arrays*
 
 [Code](Day008.playground/Contents.swift)
 
@@ -80,3 +85,10 @@ but setting foundations.
 *Protocols*, *Protocol inheritance*, *Extensions*, *Protocol extensions* and *Protocol-oriented programming*
 
 [Code](Day011.playground/Contents.swift)
+
+## [Day 12](https://www.hackingwithswift.com/100/12) - Optionals
+
+*Handling missing data*, *Unwrapping optionals*, *Unwrapping with guard*, *Force unwrapping*, *Implicitly unwrapped optionals*,
+*Nil coalescing*, *Optional chaining*, *Optional try*, *Failable initializers* and *Typecasting*
+
+[Code](Day012.playground/Contents.swift)
