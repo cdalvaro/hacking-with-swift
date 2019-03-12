@@ -1,7 +1,7 @@
 /*:
  # Hacking with Swift
  
- [Day 3 - Swift Review, Day One](https://www.hackingwithswift.com/100/13)
+ [Day 13 - Swift Review, Day One](https://www.hackingwithswift.com/100/13)
  
  ## Variables and Constants
  

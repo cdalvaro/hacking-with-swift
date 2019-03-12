@@ -15,6 +15,7 @@
 - [Day 11 - Protocols And Extensions](#day11---protocols-and-extensions)
 - [Day 12 - Optionals](#day12---optionals)
 - [Day 13 - Swift Review, Day One](#day13---swift-review-day-one)
+- [Day 14 - Swift Review, Day Two](#day14---swift-review-day-two)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -100,3 +101,9 @@ but setting foundations.
 *Conditional Statements*, *Loops* and *Switch Case*
 
 [Code](Day013.playground/Contents.swift)
+
+## [Day 14](https://www.hackingwithswift.com/100/14) - Swift Review, Day Two
+
+*Functions*, *Optionals*, *Optional Chaining*, *Enumerations*, *Structs* and *Classes*
+
+[Code](Day014.playground/Contents.swift)
