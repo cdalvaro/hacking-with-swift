@@ -14,6 +14,7 @@
 - [Day 10 - Classes](#day-10---clasess)
 - [Day 11 - Protocols And Extensions](#day11---protocols-and-extensions)
 - [Day 12 - Optionals](#day12---optionals)
+- [Day 13 - Swift Review, Day One](#day13---swift-review-day-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -92,3 +93,10 @@ but setting foundations.
 *Nil coalescing*, *Optional chaining*, *Optional try*, *Failable initializers* and *Typecasting*
 
 [Code](Day012.playground/Contents.swift)
+
+## [Day 13](https://www.hackingwithswift.com/100/13) - Swift Review, Day One
+
+*Variables and Constants*, *Types of Data*, *Operators*, *String Interpolation*, *Arrays*, *Dictionaries*,
+*Conditional Statements*, *Loops* and *Switch Case*
+
+[Code](Day013.playground/Contents.swift)
