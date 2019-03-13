@@ -16,6 +16,7 @@
 - [Day 12 - Optionals](#day12---optionals)
 - [Day 13 - Swift Review, Day One](#day13---swift-review-day-one)
 - [Day 14 - Swift Review, Day Two](#day14---swift-review-day-two)
+- [Day 15 - Swift Review, Day Three](#day14---swift-review-day-three)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -107,3 +108,9 @@ but setting foundations.
 *Functions*, *Optionals*, *Optional Chaining*, *Enumerations*, *Structs* and *Classes*
 
 [Code](Day014.playground/Contents.swift)
+
+## [Day 15](https://www.hackingwithswift.com/100/15) - Swift Review, Day Three
+
+*Properties*, *Static properties and methods*, *Access control*, *Polymorphism and typecasting* and *Closures*
+
+[Code](Day015.playground/Contents.swift)
