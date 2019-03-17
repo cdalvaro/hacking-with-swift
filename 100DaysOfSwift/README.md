@@ -16,7 +16,8 @@
 - [Day 12 - Optionals](#day12---optionals)
 - [Day 13 - Swift Review, Day One](#day13---swift-review-day-one)
 - [Day 14 - Swift Review, Day Two](#day14---swift-review-day-two)
-- [Day 15 - Swift Review, Day Three](#day14---swift-review-day-three)
+- [Day 15 - Swift Review, Day Three](#day15---swift-review-day-three)
+- [Day 16 - Project 1, Part One](#day16---project-1-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -114,3 +115,9 @@ but setting foundations.
 *Properties*, *Static properties and methods*, *Access control*, *Polymorphism and typecasting* and *Closures*
 
 [Code](Day015.playground/Contents.swift)
+
+## [Day 16](https://www.hackingwithswift.com/100/16) - Project 1, Part One
+
+*Setting Up*, *Listing Images with FileManager* and *Designing Our Interface*
+
+[Code](Project1)
