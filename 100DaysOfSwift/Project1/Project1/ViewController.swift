@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UITableViewController {
     
     private let cellIdentifier = "Picture"
+    private let detailViewIdentifier = "Detail"
     var pictures = [String]()
 
     override func viewDidLoad() {
@@ -37,6 +38,13 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.textLabel?.text = pictures[indexPath.row]
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: detailViewIdentifier) as? DetailViewController {
+            vc.selectedImage = pictures[indexPath.row]
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }
