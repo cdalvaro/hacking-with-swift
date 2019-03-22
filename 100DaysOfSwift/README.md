@@ -18,6 +18,7 @@
 - [Day 14 - Swift Review, Day Two](#day14---swift-review-day-two)
 - [Day 15 - Swift Review, Day Three](#day15---swift-review-day-three)
 - [Day 16 - Project 1, Part One](#day16---project-1-part-one)
+- [Day 17 - Project 1, Part Two](#day17---project-1-part-two)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -119,5 +120,11 @@ but setting foundations.
 ## [Day 16](https://www.hackingwithswift.com/100/16) - Project 1, Part One
 
 *Setting Up*, *Listing Images with FileManager* and *Designing Our Interface*
+
+[Code](Project1)
+
+## [Day 17](https://www.hackingwithswift.com/100/17) - Project 1, Part Two
+
+*Building a detail screen*, *Loading images with UIImage* and *Final tweaks: hidesBarsOnTap, safe area margins*
 
 [Code](Project1)
