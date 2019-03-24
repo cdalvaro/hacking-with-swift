@@ -19,6 +19,7 @@
 - [Day 15 - Swift Review, Day Three](#day15---swift-review-day-three)
 - [Day 16 - Project 1, Part One](#day16---project-1-part-one)
 - [Day 17 - Project 1, Part Two](#day17---project-1-part-two)
+- [Day 18 - Project 1, Part Three](#day18---project-1-part-three)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -126,5 +127,17 @@ but setting foundations.
 ## [Day 17](https://www.hackingwithswift.com/100/17) - Project 1, Part Two
 
 *Building a detail screen*, *Loading images with UIImage* and *Final tweaks: hidesBarsOnTap, safe area margins*
+
+[Code](Project1)
+
+## [Day 18](https://www.hackingwithswift.com/100/18) - Project 1, Part Three
+
+*Challenge*
+
+1. Use Interface Builder to select the text label inside your table view cell and adjust its font size to something larger – experiment and see what looks good.
+1. In your main table view, show the image names in sorted order, so “nssl0033.jpg” comes before “nssl0034.jpg”.
+1. Rather than show image names in the detail title bar, show “Picture X of Y”,
+   where Y is the total number of images and X is the selected picture’s position in the array.
+   Make sure you count from 1 rather than 0.
 
 [Code](Project1)
