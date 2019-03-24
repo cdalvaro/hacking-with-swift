@@ -56,16 +56,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KzT-gt-kYA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KzT-gt-kYA">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="KzT-gt-kYA" firstAttribute="leading" secondItem="w8d-Yc-kvy" secondAttribute="leading" id="8DA-ZY-dlP"/>
-                            <constraint firstAttribute="bottom" secondItem="KzT-gt-kYA" secondAttribute="bottom" id="Ycb-aY-wDI"/>
-                            <constraint firstAttribute="trailing" secondItem="KzT-gt-kYA" secondAttribute="trailing" id="h6X-Nl-4sD"/>
-                            <constraint firstItem="KzT-gt-kYA" firstAttribute="top" secondItem="w8d-Yc-kvy" secondAttribute="top" id="kOs-oM-4sE"/>
+                            <constraint firstAttribute="trailing" secondItem="KzT-gt-kYA" secondAttribute="trailing" id="R5U-5J-sIY"/>
+                            <constraint firstItem="KzT-gt-kYA" firstAttribute="top" secondItem="w8d-Yc-kvy" secondAttribute="top" id="WFU-fs-gfl"/>
+                            <constraint firstItem="KzT-gt-kYA" firstAttribute="leading" secondItem="w8d-Yc-kvy" secondAttribute="leading" id="d4r-2c-W0S"/>
+                            <constraint firstAttribute="bottom" secondItem="KzT-gt-kYA" secondAttribute="bottom" id="mYG-OA-Ara"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VOM-Ma-g4J"/>
                     </view>
