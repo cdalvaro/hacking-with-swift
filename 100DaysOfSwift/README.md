@@ -20,6 +20,7 @@
 - [Day 16 - Project 1, Part One](#day16---project-1-part-one)
 - [Day 17 - Project 1, Part Two](#day17---project-1-part-two)
 - [Day 18 - Project 1, Part Three](#day18---project-1-part-three)
+- [Day 19 - Project 2, Part One](#day19---project-2-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -141,3 +142,9 @@ but setting foundations.
    Make sure you count from 1 rather than 0.
 
 [Code](Project1)
+
+## [Day 19](https://www.hackingwithswift.com/100/19) - Project 2, Part One
+
+*Setting up*, *Designing your layout* and *Making the basic game work: UIButton and CALayer*
+
+[Code](Project2)
