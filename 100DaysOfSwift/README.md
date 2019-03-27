@@ -22,6 +22,7 @@
 - [Day 18 - Project 1, Part Three](#day-18---project-1-part-three)
 - [Day 19 - Project 2, Part One](#day-19---project-2-part-one)
 - [Day 20 - Project 2, Part Two](#day-20---project-2-part-two)
+- [Day 21 - Project 2, Part Three](#day-21---project-2-part-three)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -153,5 +154,15 @@ but setting foundations.
 ## [Day 20](https://www.hackingwithswift.com/100/20) - Project 2, Part Two
 
 *Guess which flag: random numbers* and *From outlets to actions: creating an IBAction*
+
+[Code](Project2)
+
+## [Day 21](https://www.hackingwithswift.com/100/21) - Project 2, Part Three
+
+*Challenge*
+
+1. Try showing the player’s score in the navigation bar, alongside the flag to guess.
+1. Keep track of how many questions have been asked, and show one final alert controller after they have answered 10. This should show their final score.
+1. When someone chooses the wrong flag, tell them their mistake in your alert message – something like “Wrong! That’s the flag of France,” for example.
 
 [Code](Project2)
