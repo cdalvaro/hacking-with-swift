@@ -12,15 +12,16 @@
 - [Day 8 - Structs, Part One](#day-8---structs-part-one)
 - [Day 9 - Structs, Part Two](#day-9---structs-part-two)
 - [Day 10 - Classes](#day-10---clasess)
-- [Day 11 - Protocols And Extensions](#day11---protocols-and-extensions)
-- [Day 12 - Optionals](#day12---optionals)
-- [Day 13 - Swift Review, Day One](#day13---swift-review-day-one)
-- [Day 14 - Swift Review, Day Two](#day14---swift-review-day-two)
-- [Day 15 - Swift Review, Day Three](#day15---swift-review-day-three)
-- [Day 16 - Project 1, Part One](#day16---project-1-part-one)
-- [Day 17 - Project 1, Part Two](#day17---project-1-part-two)
-- [Day 18 - Project 1, Part Three](#day18---project-1-part-three)
-- [Day 19 - Project 2, Part One](#day19---project-2-part-one)
+- [Day 11 - Protocols And Extensions](#day-11---protocols-and-extensions)
+- [Day 12 - Optionals](#day-12---optionals)
+- [Day 13 - Swift Review, Day One](#day-13---swift-review-day-one)
+- [Day 14 - Swift Review, Day Two](#day-14---swift-review-day-two)
+- [Day 15 - Swift Review, Day Three](#day-15---swift-review-day-three)
+- [Day 16 - Project 1, Part One](#day-16---project-1-part-one)
+- [Day 17 - Project 1, Part Two](#day-17---project-1-part-two)
+- [Day 18 - Project 1, Part Three](#day-18---project-1-part-three)
+- [Day 19 - Project 2, Part One](#day-19---project-2-part-one)
+- [Day 20 - Project 2, Part Two](#day-20---project-2-part-two)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -146,5 +147,11 @@ but setting foundations.
 ## [Day 19](https://www.hackingwithswift.com/100/19) - Project 2, Part One
 
 *Setting up*, *Designing your layout* and *Making the basic game work: UIButton and CALayer*
+
+[Code](Project2)
+
+## [Day 20](https://www.hackingwithswift.com/100/20) - Project 2, Part Two
+
+*Guess which flag: random numbers* and *From outlets to actions: creating an IBAction*
 
 [Code](Project2)
