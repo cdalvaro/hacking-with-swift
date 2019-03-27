@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var countries = [String]()
     var score = 0
     var correctAnswer = 0
+    var questionsCounter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,9 @@ class ViewController: UIViewController {
         askQuestion()
     }
     
-    func askQuestion(action: UIAlertAction! = nil) {
+    func askQuestion(_ action: UIAlertAction! = nil) {
+        questionsCounter += 1
+        
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
         
@@ -48,6 +51,12 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
         title = "\(countries[correctAnswer].uppercased()) - Score: \(score)"
+    }
+    
+    func resetGame(_ action: UIAlertAction!) {
+        score = 0
+        questionsCounter = 0
+        askQuestion(action)
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -61,10 +70,17 @@ class ViewController: UIViewController {
             score -= 1
         }
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+        let ac: UIAlertController?
         
-        present(ac, animated: true)
+        if questionsCounter == 10 {
+            ac = UIAlertController(title: "Your final score is \(score)", message: "You have answered \(questionsCounter) questions", preferredStyle: .alert)
+            ac!.addAction(UIAlertAction(title: "Restart Game", style: .default, handler: resetGame))
+        } else {
+            ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
+            ac!.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+        }
+        
+        present(ac!, animated: true)
     }
     
 }
