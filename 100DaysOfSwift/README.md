@@ -23,6 +23,7 @@
 - [Day 19 - Project 2, Part One](#day-19---project-2-part-one)
 - [Day 20 - Project 2, Part Two](#day-20---project-2-part-two)
 - [Day 21 - Project 2, Part Three](#day-21---project-2-part-three)
+- [Day 22 - Project 3](#day-22---project-3)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -123,13 +124,13 @@ but setting foundations.
 
 ## [Day 16](https://www.hackingwithswift.com/100/16) - Project 1, Part One
 
-*Setting Up*, *Listing Images with FileManager* and *Designing Our Interface*
+*Setting Up*, *Listing Images with `FileManager`* and *Designing Our Interface*
 
 [Code](Project1)
 
 ## [Day 17](https://www.hackingwithswift.com/100/17) - Project 1, Part Two
 
-*Building a detail screen*, *Loading images with UIImage* and *Final tweaks: hidesBarsOnTap, safe area margins*
+*Building a detail screen*, *Loading images with `UIImage`* and *Final tweaks: `hidesBarsOnTap`, safe area margins*
 
 [Code](Project1)
 
@@ -147,13 +148,13 @@ but setting foundations.
 
 ## [Day 19](https://www.hackingwithswift.com/100/19) - Project 2, Part One
 
-*Setting up*, *Designing your layout* and *Making the basic game work: UIButton and CALayer*
+*Setting up*, *Designing your layout* and *Making the basic game work: `UIButton` and `CALayer`*
 
 [Code](Project2)
 
 ## [Day 20](https://www.hackingwithswift.com/100/20) - Project 2, Part Two
 
-*Guess which flag: random numbers* and *From outlets to actions: creating an IBAction*
+*Guess which flag: random numbers* and *From outlets to actions: creating an `IBAction`*
 
 [Code](Project2)
 
@@ -166,3 +167,17 @@ but setting foundations.
 1. When someone chooses the wrong flag, tell them their mistake in your alert message – something like “Wrong! That’s the flag of France,” for example.
 
 [Code](Project2)
+
+## [Day 22](https://www.hackingwithswift.com/100/22) - Project 3
+
+*About technique projects* and *`UIActivityViewController` explained*
+
+*Challenge*
+
+1. Try adding the image name to the list of items that are shared.
+   The activityItems parameter is an array, so you can add strings and other things freely.
+   Note: Facebook won’t let you share text, but most other share options will.
+2. Go back to project 1 and add a bar button item to the main view controller that recommends the app to other people.
+3. Go back to project 2 and add a bar button item that shows their score when tapped.
+
+[Code](Project3)
