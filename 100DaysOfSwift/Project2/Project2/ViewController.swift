@@ -61,26 +61,29 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         var title: String
+        var message: String
         
         if sender.tag == correctAnswer {
-            title = "Correct"
+            title = "Correct!"
+            message = "Your score is \(score)"
             score += 1
         } else {
-            title = "Wrong"
+            title = "Wrong!"
+            message = "That's the flag of \(countries[sender.tag].uppercased())"
             score -= 1
         }
         
-        let ac: UIAlertController?
+        let ac: UIAlertController!
         
         if questionsCounter == 10 {
             ac = UIAlertController(title: "Your final score is \(score)", message: "You have answered \(questionsCounter) questions", preferredStyle: .alert)
-            ac!.addAction(UIAlertAction(title: "Restart Game", style: .default, handler: resetGame))
+            ac.addAction(UIAlertAction(title: "Restart Game", style: .default, handler: resetGame))
         } else {
-            ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
-            ac!.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+            ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
         }
         
-        present(ac!, animated: true)
+        present(ac, animated: true)
     }
     
 }
