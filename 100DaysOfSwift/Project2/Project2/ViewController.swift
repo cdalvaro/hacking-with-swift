@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var score = 0
     var correctAnswer = 0
     var questionsCounter = 0
+    let questionsLimit = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +42,6 @@ class ViewController: UIViewController {
     }
     
     func askQuestion(_ action: UIAlertAction! = nil) {
-        questionsCounter += 1
-        
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
         
@@ -63,6 +62,8 @@ class ViewController: UIViewController {
         var title: String
         var message: String
         
+        questionsCounter += 1
+        
         if sender.tag == correctAnswer {
             title = "Correct!"
             message = "Your score is \(score)"
@@ -75,8 +76,10 @@ class ViewController: UIViewController {
         
         let ac: UIAlertController!
         
-        if questionsCounter == 10 {
-            ac = UIAlertController(title: "Your final score is \(score)", message: "You have answered \(questionsCounter) questions", preferredStyle: .alert)
+        if questionsCounter == questionsLimit {
+            ac = UIAlertController(title: "Your final score is \(score)",
+                message: "You have answered \(questionsCounter) questions",
+                preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Restart Game", style: .default, handler: resetGame))
         } else {
             ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -86,5 +89,12 @@ class ViewController: UIViewController {
         present(ac, animated: true)
     }
     
+    @IBAction func showScore(_ sender: UIBarButtonItem) {
+        let ac = UIAlertController(title: "Your score is \(score)!",
+            message: "You have answered \(questionsCounter) of \(questionsLimit) questions",
+            preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
+        present(ac, animated: true)
+    }
 }
 

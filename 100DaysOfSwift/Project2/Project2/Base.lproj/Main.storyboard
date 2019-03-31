@@ -51,7 +51,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="baW-Qi-qUB"/>
+                    <navigationItem key="navigationItem" id="baW-Qi-qUB">
+                        <barButtonItem key="rightBarButtonItem" title="Score" id="Zpy-gZ-u8h">
+                            <connections>
+                                <action selector="showScore:" destination="BYZ-38-t0r" id="08w-et-yHf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="button1" destination="y5B-JE-bgP" id="7vn-AF-2I5"/>
                         <outlet property="button2" destination="D7i-Gn-Xfq" id="A74-CY-Ytc"/>
