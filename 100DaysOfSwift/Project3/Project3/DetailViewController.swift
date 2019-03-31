@@ -49,7 +49,8 @@ class DetailViewController: UIViewController {
             return
         }
         
-        let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        // If there is an image loaded, then the name is available too
+        let vc = UIActivityViewController(activityItems: [image, selectedImage!], applicationActivities: [])
         
         // This line is necessary for iPad -> Shows the controller bellow the right bar button
         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
