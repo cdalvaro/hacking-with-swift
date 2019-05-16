@@ -24,6 +24,7 @@
 - [Day 20 - Project 2, Part Two](#day-20---project-2-part-two)
 - [Day 21 - Project 2, Part Three](#day-21---project-2-part-three)
 - [Day 22 - Project 3](#day-22---project-3)
+- [Day 23 - MILESTONE: Projects 1-3](#day-23---milestone-projects-1---3)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -181,3 +182,13 @@ but setting foundations.
 3. Go back to project 2 and add a bar button item that shows their score when tapped.
 
 [Code](Project3)
+
+## [Day 23](https://www.hackingwithswift.com/100/23) - MILESTONE: Projects 1-3
+
+*Challenge*
+
+The challenge is to create an app that lists various world flags in a table view.
+
+When one of them is tapped, slide in a detail view controller that contains an image view,
+showing the same flag full size. On the detail view controller,
+add an action button that lets the user share the flag picture and country name using `UIActivityViewController`.
