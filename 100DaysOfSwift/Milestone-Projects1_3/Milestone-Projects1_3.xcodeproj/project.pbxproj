@@ -58,11 +58,11 @@
 			children = (
 				07165A16226A272400BFA4D9 /* AppDelegate.swift */,
 				07165A18226A272400BFA4D9 /* ViewController.swift */,
+				07A24501228DCFAF003BE6C0 /* DetailViewController.swift */,
 				07165A1A226A272400BFA4D9 /* Main.storyboard */,
 				07165A1D226A272500BFA4D9 /* Assets.xcassets */,
 				07165A1F226A272500BFA4D9 /* LaunchScreen.storyboard */,
 				07165A22226A272500BFA4D9 /* Info.plist */,
-				07A24501228DCFAF003BE6C0 /* DetailViewController.swift */,
 			);
 			path = "Milestone-Projects1_3";
 			sourceTree = "<group>";

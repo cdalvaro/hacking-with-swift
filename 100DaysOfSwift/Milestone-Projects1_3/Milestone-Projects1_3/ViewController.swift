@@ -18,6 +18,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.title = "Country List"
         navigationController?.navigationBar.prefersLargeTitles = true
         
         flags += [
@@ -34,7 +35,8 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: pictureCellIdentifier, for: indexPath)
-        cell.textLabel?.text = flags[indexPath.row]
+        let countryName = flags[indexPath.row]
+        cell.textLabel?.text = countryName.count > 2 ? countryName.capitalized : countryName.uppercased()
         return cell
     }
     

@@ -17,13 +17,16 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         if let title = imageName {
-            self.title = title
+            self.title = title.count > 2 ? title.capitalized : title.uppercased()
         }
         navigationItem.largeTitleDisplayMode = .never
         
         if let imageToLoad = imageName {
             imageView.image = UIImage(named: imageToLoad)
         }
+        
+        //  Sharing button
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,4 +39,11 @@ class DetailViewController: UIViewController {
         navigationController?.hidesBarsOnTap = false
     }
 
+    @objc func shareTapped() {
+        let message = "This is the flag of \(title!)"
+        
+        let vc = UIActivityViewController(activityItems: [message, imageView.image!], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
+    }
 }
