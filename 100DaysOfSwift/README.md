@@ -27,6 +27,7 @@
 - [Day 23 - MILESTONE: Projects 1-3](#day-23---milestone-projects-1---3)
 - [Day 24 - Project 4, Part One](#day-24---project-4-part-one)
 - [Day 25 - Project 4, Part Two](#day-25---project-4-part-two)
+- [Day 26 - Project 4, Part Three](#day-26---project-4-part-three)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -202,3 +203,14 @@ add an action button that lets the user share the flag picture and country name 
 ## [Day 25](https://www.hackingwithswift.com/100/25) - Project 4, Part Two
 
 *Monitoring page loads: `UIToolBar` and `UIProgressView`* and *Refactoring for the win*
+
+## [Day 26](https://www.hackingwithswift.com/100/26) - Project 4, Part Three
+
+*Challenge*
+
+1. If users try to visit a URL that isn’t allowed, show an alert saying it’s blocked.
+2. Try making two new toolbar items with the titles Back and Forward.
+   You should make them use `webView.goBack` and `webView.goForward`.
+3. For more of a challenge, try changing the initial view controller to a table view like in project 1,
+   where users can choose their website from a list rather than just having the first in the array loaded up front.
+

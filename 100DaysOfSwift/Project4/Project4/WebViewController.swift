@@ -9,11 +9,13 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate {
+class WebViewController: UIViewController, WKNavigationDelegate {
+    
+    static let viewIdentifier = "websiteController"
     
     var webView: WKWebView!
     var progressView: UIProgressView!
-    var websites = ["apple.com", "hackingwithswift.com"]
+    var website: String?
     
     override func loadView() {
         webView = WKWebView()
@@ -25,24 +27,26 @@ class ViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let url = URL(string: "https://" + websites.first!)!
-        webView.load(URLRequest(url: url))
+        if let website = website {
+            let url = URL(string: "https://" + website)!
+            webView.load(URLRequest(url: url))
+        }
+        
         webView.allowsBackForwardNavigationGestures = true
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
         
         progressView = UIProgressView(progressViewStyle: .default)
         progressView.sizeToFit()
         let progressButton = UIBarButtonItem(customView: progressView)
         
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
         
         let goBack = UIBarButtonItem(title: "Back", style: .plain, target: webView, action: #selector(webView.goBack))
         let goForward = UIBarButtonItem(title: "Forward", style: .plain, target: webView, action: #selector(webView.goForward))
         
-        toolbarItems = [progressButton, spacer, goBack, goForward, refresh]
+        toolbarItems = [progressButton, spacer, goBack, goForward]
         navigationController?.isToolbarHidden = false
     }
     
@@ -50,18 +54,6 @@ class ViewController: UIViewController, WKNavigationDelegate {
         super.viewDidDisappear(animated)
         
         webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
-    }
-    
-    @objc func openTapped() {
-        let ac = UIAlertController(title: "Open page...", message: nil, preferredStyle: .actionSheet)
-        
-        for website in websites {
-            ac.addAction(UIAlertAction(title: website, style: .default, handler: openPage))
-        }
-        
-        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        ac.popoverPresentationController?.barButtonItem = self.navigationItem.rightBarButtonItem
-        present(ac, animated: true)
     }
     
     func openPage(action: UIAlertAction) {
@@ -82,7 +74,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         let url = navigationAction.request.url
         if let host = url?.host {
-            if let _ = websites.first(where: { return host.contains($0) }) {
+            if let _ = TableViewController.websites.first(where: { return host.contains($0) }) {
                 decisionHandler(.allow)
                 return
             }
