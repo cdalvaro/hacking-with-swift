@@ -83,8 +83,13 @@ class ViewController: UIViewController, WKNavigationDelegate {
                 decisionHandler(.allow)
                 return
             }
+            
+            let ac = UIAlertController(title: "Restricted website",
+                                       message: "The site located at \(host) is not allowed",
+                preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(ac, animated: true)
         }
         decisionHandler(.cancel)
     }
 }
-
