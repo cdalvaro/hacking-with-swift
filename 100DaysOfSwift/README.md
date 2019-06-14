@@ -28,6 +28,7 @@
 - [Day 24 - Project 4, Part One](#day-24---project-4-part-one)
 - [Day 25 - Project 4, Part Two](#day-25---project-4-part-two)
 - [Day 26 - Project 4, Part Three](#day-26---project-4-part-three)
+- [Day 27 - Project 5, Part One](#day-27---project-5-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -213,4 +214,8 @@ add an action button that lets the user share the flag picture and country name 
    You should make them use `webView.goBack` and `webView.goForward`.
 3. For more of a challenge, try changing the initial view controller to a table view like in project 1,
    where users can choose their website from a list rather than just having the first in the array loaded up front.
+
+## [Day 27](https://www.hackingwithswift.com/100/27) - Project 5, Part One
+
+*Setting up*, *Reading from disk: `contentsOfFile`* and *Pick a word, any word: `UIAllertController`*
 
