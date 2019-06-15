@@ -223,7 +223,7 @@ add an action button that lets the user share the flag picture and country name 
 
 ## [Day 28](https://www.hackingwithswift.com/100/28) - Project 5, Part Two
 
-*Prepare for submission: `lowercased()` and `IndexPath`, *Checking for valid answers* and *Or else what?*
+*Prepare for submission: `lowercased()` and `IndexPath`*, *Checking for valid answers* and *Or else what?*
 
 ## [Day 29](https://www.hackingwithswift.com/100/29) - Project 5, Part Three
 
