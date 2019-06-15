@@ -30,6 +30,7 @@
 - [Day 26 - Project 4, Part Three](#day-26---project-4-part-three)
 - [Day 27 - Project 5, Part One](#day-27---project-5-part-one)
 - [Day 28 - Project 5, Part Two](#day-28---project-5-part-two)
+- [Day 29 - Project 5, Part Three](#day-29---project-5-part-three)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -223,4 +224,14 @@ add an action button that lets the user share the flag picture and country name 
 ## [Day 28](https://www.hackingwithswift.com/100/28) - Project 5, Part Two
 
 *Prepare for submission: `lowercased()` and `IndexPath`, *Checking for valid answers* and *Or else what?*
+
+## [Day 29](https://www.hackingwithswift.com/100/29) - Project 5, Part Three
+
+*Challenge*
+
+1. Disallow answers that are shorter than three letters or are just our start word.
+2. Refactor all the `else` statements we just added so that they call a new method called `showErrorMessage()`.
+3. Add a left bar button item that calls `startGame()`, so users can restart with a new word whenever they want to.
+
+* *Bonus*: Fix a bug that happens when you introduce the same word with and without uppercase letters.
 
