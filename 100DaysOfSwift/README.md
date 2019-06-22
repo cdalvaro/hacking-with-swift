@@ -31,6 +31,7 @@
 - [Day 27 - Project 5, Part One](#day-27---project-5-part-one)
 - [Day 28 - Project 5, Part Two](#day-28---project-5-part-two)
 - [Day 29 - Project 5, Part Three](#day-29---project-5-part-three)
+- [Day 30 - Project 6, Part One](#day-30---project-6-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -234,4 +235,8 @@ add an action button that lets the user share the flag picture and country name 
 3. Add a left bar button item that calls `startGame()`, so users can restart with a new word whenever they want to.
 
 * *Bonus*: Fix a bug that happens when you introduce the same word with and without uppercase letters.
+
+## [Day 30](https://www.hackingwithswift.com/100/30) - Project 6, Part One
+
+*Setting up*, *Advanced Auto Layout* and *Auto Layout in code: `addConstraints()` with Visual Format Language*
 
