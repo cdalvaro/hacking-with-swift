@@ -61,8 +61,7 @@ class ViewController: UIViewController {
         
         // V: means that these constraints are vertical
         // the - symbol means "space". It's 10 points by default, but you can customize it
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[label1]-[label2]-[label3]-[label4]-[label5]", options: [], metrics: nil, views: viewsDictionary))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[label1(==88)]-[label2(==88)]-[label3(==88)]-[label4(==88)]-[label5(==88)]-(>=10)-|", options: [], metrics: nil, views: viewsDictionary))
     }
-
 
 }
