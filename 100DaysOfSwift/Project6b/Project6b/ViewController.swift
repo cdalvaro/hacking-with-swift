@@ -43,29 +43,24 @@ class ViewController: UIViewController {
         label5.text = "LABELS"
         label5.sizeToFit()
         
-        view.addSubview(label1)
-        view.addSubview(label2)
-        view.addSubview(label3)
-        view.addSubview(label4)
-        view.addSubview(label5)
+        var previous: UILabel?
         
-        let viewsDictionary = [ "label1": label1, "label2": label2,
-                                "label3": label3, "label4": label4, "label5": label5]
-        
-        for label in viewsDictionary.keys {
-            // The H: parts means that we're defining a horizontal layout
-            // The pipe symbol, |, means "the edge of the view."
-            // [labelX] is a visual way of saying "put labelX here"
-            view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[\(label)]|", options: [], metrics: nil, views: viewsDictionary))
+        for label in [label1, label2, label3, label4, label5] {
+            view.addSubview(label)
+            
+            label.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+            label.heightAnchor.constraint(equalToConstant: 88).isActive = true
+            
+            if let previous = previous {
+                // we have a previous label - create a height constraint
+                label.topAnchor.constraint(equalTo: previous.bottomAnchor, constant: 10).isActive = true
+            } else {
+                label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
+            }
+            
+            // set the previous label to the current one, for the next loop iteration
+            previous = label
         }
-        
-        // V: means that these constraints are vertical
-        // the - symbol means "space". It's 10 points by default, but you can customize it
-        
-        let metrics = ["labelHeight": 88]
-        
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[label1(labelHeight@999)]-[label2(label1)]-[label3(label1)]-[label4(label1)]-[label5(label1)]-(>=10)-|",
-                                                           options: [], metrics: metrics, views: viewsDictionary))
     }
 
 }
