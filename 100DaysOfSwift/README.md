@@ -33,6 +33,7 @@
 - [Day 29 - Project 5, Part Three](#day-29---project-5-part-three)
 - [Day 30 - Project 6, Part One](#day-30---project-6-part-one)
 - [Day 31 - Project 6, Part Two](#day-31---project-6-part-two)
+- [Day 32 - MILESTONE: Projects 4-6](#day-32---milestone-projects-4---6)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -245,3 +246,8 @@ add an action button that lets the user share the flag picture and country name 
 
 *Auto Layout metrics and priorities: constraints(withVisualFormat:)*, *Auto Layout anchors* and *Wrap up*.
 
+## [Day 32](https://www.hackingwithswift.com/100/32) - MILESTONE: Projects 4-6
+
+*Challenge*
+
+The challenge is to create an app that lets people create a shopping list by adding items to a table view.
