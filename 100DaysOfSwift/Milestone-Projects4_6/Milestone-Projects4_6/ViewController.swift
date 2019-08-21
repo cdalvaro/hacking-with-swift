@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UITableViewController {
     
     private var shoppingList = [String]()
+    private let shoppingListFile = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("ShoppingList.plist")
     private let shoppingCellIdentifier = "ShoppingCell"
 
     override func viewDidLoad() {
@@ -20,11 +21,12 @@ class ViewController: UITableViewController {
                                                             target: self,
                                                             action: #selector(addNewShoppingItem))
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh,
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash,
                                                            target: self,
                                                            action: #selector(eraseList))
         
-        // TODO: Load previous items from preferences
+        // Load previous items from preferences
+        loadShoppingList()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,6 +37,29 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: shoppingCellIdentifier, for: indexPath)
         cell.textLabel?.text = shoppingList[indexPath.row]
         return cell
+    }
+    
+    private func loadShoppingList() {
+        if FileManager.default.fileExists(atPath: shoppingListFile.path) {
+            if let data = try? Data(contentsOf: shoppingListFile) {
+                let decoder = PropertyListDecoder()
+                do {
+                    shoppingList = try decoder.decode([String].self, from: data)
+                } catch {
+                    print("Error decoding shopping list from file. Error: \(error)")
+                }
+            }
+        }
+    }
+    
+    private func saveShoppingList() {
+        let encoder = PropertyListEncoder()
+        do {
+            let data = try encoder.encode(shoppingList)
+            try data.write(to: shoppingListFile)
+        } catch {
+            print("Error encoding shopping list into file. Error: \(error)")
+        }
     }
     
     @objc private func addNewShoppingItem() {
@@ -53,13 +78,13 @@ class ViewController: UITableViewController {
     }
     
     private func addItem(_ item: String) {
+        // Save item into preferences
         shoppingList.insert(item, at: 0)
-        
-        // TODO: Save item into preferences
+        saveShoppingList()
         
         // This is an optimization in order to not reload the whole tableview
         let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
+        tableView.insertRows(at: [indexPath], with: .fade)
     }
     
     @objc private func eraseList() {
@@ -69,8 +94,7 @@ class ViewController: UITableViewController {
         
         let removeAction = UIAlertAction(title: "Yes, remove them", style: .destructive) {
             [weak self] _ in
-            self?.shoppingList.removeAll()
-            self?.tableView.reloadData()
+            self?.deleteAllItems()
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -79,5 +103,11 @@ class ViewController: UITableViewController {
         ac.addAction(cancelAction)
         
         present(ac, animated: true)
+    }
+    
+    private func deleteAllItems() {
+        shoppingList.removeAll()
+        saveShoppingList()
+        tableView.reloadData()
     }
 }
