@@ -27,6 +27,10 @@ class ViewController: UITableViewController {
         
         // Load previous items from preferences
         loadShoppingList()
+        
+        if shoppingList.isEmpty {
+            disableTrashButton()
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,6 +41,16 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: shoppingCellIdentifier, for: indexPath)
         cell.textLabel?.text = shoppingList[indexPath.row]
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            deleteItemAt(indexPath)
+        }
     }
     
     private func loadShoppingList() {
@@ -85,6 +99,10 @@ class ViewController: UITableViewController {
         // This is an optimization in order to not reload the whole tableview
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .fade)
+        
+        if !navigationItem.leftBarButtonItem!.isEnabled {
+            navigationItem.leftBarButtonItem!.isEnabled = true
+        }
     }
     
     @objc private func eraseList() {
@@ -109,5 +127,21 @@ class ViewController: UITableViewController {
         shoppingList.removeAll()
         saveShoppingList()
         tableView.reloadData()
+        
+        disableTrashButton()
+    }
+    
+    private func deleteItemAt(_ indexPath: IndexPath) {
+        shoppingList.remove(at: indexPath.row)
+        saveShoppingList()
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        
+        if shoppingList.isEmpty {
+            disableTrashButton()
+        }
+    }
+    
+    private func disableTrashButton() {
+        navigationItem.leftBarButtonItem?.isEnabled = false
     }
 }
