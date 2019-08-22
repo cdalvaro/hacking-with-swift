@@ -35,6 +35,7 @@
 - [Day 31 - Project 6, Part Two](#day-31---project-6-part-two)
 - [Day 32 - MILESTONE: Projects 4-6](#day-32---milestone-projects-4---6)
 - [Day 33 - Project 7, Part One](#day-33---project-7-part-one)
+- [Day 34 - Project 7, Part Two](#day-34---project-7-part-two)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -256,3 +257,7 @@ The challenge is to create an app that lets people create a shopping list by add
 ## [Day 33](https://www.hackingwithswift.com/100/33) - Project 7, Part One
 
 *Creating the basic UI: `UITabBarController`* and *Parsing JSON using the `Codable` protocol*
+
+## [Day 34](https://www.hackingwithswift.com/100/34) - Project 7, Part Two
+
+*Rendering a petition: `loadHTMLString`* and *Finishing touches: `didFinishLaunchingWithOptions`*
