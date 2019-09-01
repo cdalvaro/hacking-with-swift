@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		071FC7B2230DA1650089C380 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071FC7B1230DA1650089C380 /* Petition.swift */; };
-		071FC7B4230DA1C70089C380 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071FC7B3230DA1C70089C380 /* Petitions.swift */; };
-		0786644F230E937000900932 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786644E230E937000900932 /* DetailViewController.swift */; };
+		074AF79C2313EFF4000FDA5D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AF7992313EFF4000FDA5D /* DetailViewController.swift */; };
+		074AF79D2313EFF4000FDA5D /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AF79A2313EFF4000FDA5D /* Petitions.swift */; };
+		074AF79E2313EFF4000FDA5D /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AF79B2313EFF4000FDA5D /* Petition.swift */; };
 		07D4041F230C4095000A163B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D4041E230C4095000A163B /* AppDelegate.swift */; };
 		07D40421230C4095000A163B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D40420230C4095000A163B /* ViewController.swift */; };
 		07D40424230C4095000A163B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D40422230C4095000A163B /* Main.storyboard */; };
@@ -18,9 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		071FC7B1230DA1650089C380 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
-		071FC7B3230DA1C70089C380 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
-		0786644E230E937000900932 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		074AF7992313EFF4000FDA5D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		074AF79A2313EFF4000FDA5D /* Petitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
+		074AF79B2313EFF4000FDA5D /* Petition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
 		07D4041B230C4095000A163B /* Project7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D4041E230C4095000A163B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07D40420230C4095000A163B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,11 +60,11 @@
 		07D4041D230C4095000A163B /* Project7 */ = {
 			isa = PBXGroup;
 			children = (
+				074AF7992313EFF4000FDA5D /* DetailViewController.swift */,
+				074AF79B2313EFF4000FDA5D /* Petition.swift */,
+				074AF79A2313EFF4000FDA5D /* Petitions.swift */,
 				07D4041E230C4095000A163B /* AppDelegate.swift */,
 				07D40420230C4095000A163B /* ViewController.swift */,
-				071FC7B1230DA1650089C380 /* Petition.swift */,
-				071FC7B3230DA1C70089C380 /* Petitions.swift */,
-				0786644E230E937000900932 /* DetailViewController.swift */,
 				07D40422230C4095000A163B /* Main.storyboard */,
 				07D40425230C409E000A163B /* Assets.xcassets */,
 				07D40427230C409E000A163B /* LaunchScreen.storyboard */,
@@ -144,11 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074AF79E2313EFF4000FDA5D /* Petition.swift in Sources */,
+				074AF79C2313EFF4000FDA5D /* DetailViewController.swift in Sources */,
+				074AF79D2313EFF4000FDA5D /* Petitions.swift in Sources */,
 				07D40421230C4095000A163B /* ViewController.swift in Sources */,
-				071FC7B4230DA1C70089C380 /* Petitions.swift in Sources */,
-				0786644F230E937000900932 /* DetailViewController.swift in Sources */,
 				07D4041F230C4095000A163B /* AppDelegate.swift in Sources */,
-				071FC7B2230DA1650089C380 /* Petition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
