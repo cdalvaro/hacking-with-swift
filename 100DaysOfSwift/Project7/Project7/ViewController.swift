@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
+    var allPetitions = [Petition]()
     var petitions = [Petition]()
     
     override func viewDidLoad() {
@@ -19,6 +20,10 @@ class ViewController: UITableViewController {
                                                             style: .plain,
                                                             target: self,
                                                             action: #selector(showDataSource))
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search,
+                                                           target: self,
+                                                           action: #selector(searchPetitions))
         
         loadPetitions()
     }
@@ -53,7 +58,8 @@ class ViewController: UITableViewController {
     func parse(json: Data) {
         let decoder = JSONDecoder()
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json) {
-            petitions = jsonPetitions.results
+            allPetitions = jsonPetitions.results
+            petitions = allPetitions
             tableView.reloadData()
         }
     }
@@ -84,5 +90,33 @@ class ViewController: UITableViewController {
                                    preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
+    }
+    
+    @objc func searchPetitions() {
+        let ac = UIAlertController(title: "Search petitions", message: nil, preferredStyle: .alert)
+        ac.addTextField()
+        
+        let searchAction = UIAlertAction(title: "Search", style: .default) { [weak self, weak ac] _ in
+            if let item = ac?.textFields?[0].text {
+                self?.filterPetitionsContaining(item)
+            }
+        }
+        
+        ac.addAction(searchAction)
+        ac.addAction(UIAlertAction(title: "Clear current search", style: .default) { [weak self] _ in
+            self?.petitions = self!.allPetitions
+            self?.tableView.reloadData()
+        })
+        
+        ac.preferredAction = searchAction
+        present(ac, animated: true)
+    }
+    
+    func filterPetitionsContaining(_ word: String) {
+        petitions = allPetitions.filter {
+            $0.title.localizedCaseInsensitiveContains(word)
+                || $0.body.localizedCaseInsensitiveContains(word)
+        }
+        tableView.reloadData()
     }
 }
