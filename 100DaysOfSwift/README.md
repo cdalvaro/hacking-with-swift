@@ -36,6 +36,8 @@
 - [Day 32 - MILESTONE: Projects 4-6](#day-32---milestone-projects-4---6)
 - [Day 33 - Project 7, Part One](#day-33---project-7-part-one)
 - [Day 34 - Project 7, Part Two](#day-34---project-7-part-two)
+- [Day 35 - Project 7, Part Three](#day-35---project-7-part-three)
+- [Day 36 - Project 8, Part One](#day-36---project-8-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -261,3 +263,15 @@ The challenge is to create an app that lets people create a shopping list by add
 ## [Day 34](https://www.hackingwithswift.com/100/34) - Project 7, Part Two
 
 *Rendering a petition: `loadHTMLString`* and *Finishing touches: `didFinishLaunchingWithOptions`*
+
+## [Day 35](https://www.hackingwithswift.com/100/35) - Project 7, Part Three
+
+*Challenge*
+
+1. Add a Credits button to the top-right corner using `UIBarButtonItem`. When this is tapped, show an alert telling users the data comes from the We The People API of the Whitehouse.
+2. Let users filter the petitions they see. This involves creating a second array of filtered items that contains only petitions matching a string the user entered. Use a `UIAlertController` with a text field to let them enter that string. This is a tough one, so I’ve included some hints below if you get stuck.
+
+## [Day 36](https://www.hackingwithswift.com/100/36) - Project 8, Part One
+
+*Setting up* and *Building a UIKit user interface programmatically*.
+
