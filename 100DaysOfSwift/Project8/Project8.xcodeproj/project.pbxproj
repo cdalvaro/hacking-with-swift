@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075ED8C9233F6ED90044008C /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 075ED8C8233F6ED90044008C /* level1.txt */; };
+		075ED8CB233F6EED0044008C /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 075ED8CA233F6EED0044008C /* level2.txt */; };
 		07F156D02337C30F00159138 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F156CF2337C30F00159138 /* AppDelegate.swift */; };
 		07F156D22337C30F00159138 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F156D12337C30F00159138 /* SceneDelegate.swift */; };
 		07F156D42337C30F00159138 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F156D32337C30F00159138 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075ED8C8233F6ED90044008C /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		075ED8CA233F6EED0044008C /* level2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 		07F156CC2337C30F00159138 /* Project8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F156CF2337C30F00159138 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F156D12337C30F00159138 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075ED8C7233F6EC10044008C /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				075ED8C8233F6ED90044008C /* level1.txt */,
+				075ED8CA233F6EED0044008C /* level2.txt */,
+			);
+			path = levels;
+			sourceTree = "<group>";
+		};
 		07F156C32337C30F00159138 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 		07F156CE2337C30F00159138 /* Project8 */ = {
 			isa = PBXGroup;
 			children = (
+				075ED8C7233F6EC10044008C /* levels */,
 				07F156CF2337C30F00159138 /* AppDelegate.swift */,
 				07F156D12337C30F00159138 /* SceneDelegate.swift */,
 				07F156D32337C30F00159138 /* ViewController.swift */,
@@ -125,7 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075ED8CB233F6EED0044008C /* level2.txt in Resources */,
 				07F156DC2337C30F00159138 /* LaunchScreen.storyboard in Resources */,
+				075ED8C9233F6ED90044008C /* level1.txt in Resources */,
 				07F156D92337C30F00159138 /* Assets.xcassets in Resources */,
 				07F156D72337C30F00159138 /* Main.storyboard in Resources */,
 			);
@@ -285,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Project8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Project8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
