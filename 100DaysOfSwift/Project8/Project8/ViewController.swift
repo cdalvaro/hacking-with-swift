@@ -18,13 +18,23 @@ class ViewController: UIViewController {
     var activatedButtons = [UIButton]()
     var solutions = [String]()
     
-    var score = 0 {
+    @propertyWrapper
+    struct Score {
+        private var score = 0.0
+        var wrappedValue: Double {
+            get { return score }
+            set { score = max(newValue, 0) }
+        }
+    }
+    
+    @Score var score: Double {
         didSet {
             scoreLabel.text = "Score: \(score)"
         }
     }
     
     var level = 1
+    var right_answers = 0
     
     override func loadView() {
         view = UIView()
@@ -185,14 +195,16 @@ class ViewController: UIViewController {
             answersLabel.text = splitAnswers?.joined(separator: "\n")
             
             currentAnswer.text = ""
-            score += 1
+            score += 1.0
+            right_answers += 1
             
-            if score % 7 == 0 {
+            if right_answers == solutions.count {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: levelUp))
                 present(ac, animated: true)
             }
         } else {
+            score -= 0.5
             let ac = UIAlertController(title: "Wrong answer!", message: "Sure next time you'll get it!", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Try again!", style: .default, handler: clearAnswer))
             present(ac, animated: true)
