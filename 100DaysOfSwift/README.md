@@ -39,6 +39,7 @@
 - [Day 35 - Project 7, Part Three](#day-35---project-7-part-three)
 - [Day 36 - Project 8, Part One](#day-36---project-8-part-one)
 - [Day 37 - Project 8, Part Two](#day-37---project-8-part-two)
+- [Day 38 - Project 8, Part Three](#day-38---project-8-part-three)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -279,3 +280,11 @@ The challenge is to create an app that lets people create a shopping list by add
 ## [Day 37](https://www.hackingwithswift.com/100/37) - Project 8, Part Two
 
 *Loading a level and adding button targets*, *`firstIndex(of:)` and `joined()`* and *Property observers: `didSet`*
+
+## [Day 38](https://www.hackingwithswift.com/100/38) - Project 8, Part Three
+
+*Challenge*
+
+1. Draw a thin gray line around the buttons view, to make it stand out from the rest of the UI.
+2. If the user enters an incorrect guess, show an alert telling them they are wrong.
+3. Try making the game also deduct points if the player makes an incorrect guess.
