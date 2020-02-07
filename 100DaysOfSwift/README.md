@@ -41,6 +41,7 @@
 - [Day 37 - Project 8, Part Two](#day-37---project-8-part-two)
 - [Day 38 - Project 8, Part Three](#day-38---project-8-part-three)
 - [Day 39 - Project 9, Part One](#day-39---project-9-part-one)
+- [Day 40 - Project 9, Part Two](#day-40---project-9-part-two)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -293,3 +294,11 @@ The challenge is to create an app that lets people create a shopping list by add
 ## [Day 39](https://www.hackingwithswift.com/100/39) - Project 9, Part One
 
 Beginning with Grand Central Dispatch
+
+## [Day 40](https://www.hackingwithswift.com/100/40) - Project 9, Part Two
+
+*Challenge*
+
+1. Modify project 1 so that loading the list of NSSL images from our bundle happens in the background.
+2. Modify project 8 so that loading and parsing a level takes place in the background.
+3. Modify project 7 so that your filtering code takes place in the background.
