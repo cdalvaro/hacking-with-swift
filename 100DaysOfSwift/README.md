@@ -42,6 +42,7 @@
 - [Day 38 - Project 8, Part Three](#day-38---project-8-part-three)
 - [Day 39 - Project 9, Part One](#day-39---project-9-part-one)
 - [Day 40 - Project 9, Part Two](#day-40---project-9-part-two)
+- [Day 41 - MILESTONE: Projects 7-9](#day-41---milestone-projects-7---9)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -302,3 +303,9 @@ Beginning with Grand Central Dispatch
 1. Modify project 1 so that loading the list of NSSL images from our bundle happens in the background.
 2. Modify project 8 so that loading and parsing a level takes place in the background.
 3. Modify project 7 so that your filtering code takes place in the background.
+
+## [Day 41](https://www.hackingwithswift.com/100/41) - MILESTONE: Projects 7-9
+
+*Challenge*
+
+The challenge is this: make a hangman game using UIKit.
