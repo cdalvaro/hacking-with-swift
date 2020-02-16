@@ -13,6 +13,7 @@
 		071560CA23F93825003570A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071560C823F93825003570A2 /* Main.storyboard */; };
 		071560CC23F93826003570A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071560CB23F93826003570A2 /* Assets.xcassets */; };
 		071560CF23F93826003570A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071560CD23F93826003570A2 /* LaunchScreen.storyboard */; };
+		071560D923F93B7B003570A2 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071560D823F93B7B003570A2 /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		071560CB23F93826003570A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		071560CE23F93826003570A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		071560D023F93826003570A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071560D823F93B7B003570A2 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				071560C223F93825003570A2 /* AppDelegate.swift */,
 				071560C423F93825003570A2 /* SceneDelegate.swift */,
 				071560C623F93825003570A2 /* ViewController.swift */,
+				071560D823F93B7B003570A2 /* PersonCell.swift */,
 				071560C823F93825003570A2 /* Main.storyboard */,
 				071560CB23F93826003570A2 /* Assets.xcassets */,
 				071560CD23F93826003570A2 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				071560C723F93825003570A2 /* ViewController.swift in Sources */,
 				071560C323F93825003570A2 /* AppDelegate.swift in Sources */,
+				071560D923F93B7B003570A2 /* PersonCell.swift in Sources */,
 				071560C523F93825003570A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
