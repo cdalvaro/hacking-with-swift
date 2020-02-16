@@ -24,7 +24,7 @@
 - [Day 20 - Project 2, Part Two](#day-20---project-2-part-two)
 - [Day 21 - Project 2, Part Three](#day-21---project-2-part-three)
 - [Day 22 - Project 3](#day-22---project-3)
-- [Day 23 - MILESTONE: Projects 1-3](#day-23---milestone-projects-1---3)
+- [Day 23 - MILESTONE: Projects 1-3](#day-23---milestone:-projects-1---3)
 - [Day 24 - Project 4, Part One](#day-24---project-4-part-one)
 - [Day 25 - Project 4, Part Two](#day-25---project-4-part-two)
 - [Day 26 - Project 4, Part Three](#day-26---project-4-part-three)
@@ -33,7 +33,7 @@
 - [Day 29 - Project 5, Part Three](#day-29---project-5-part-three)
 - [Day 30 - Project 6, Part One](#day-30---project-6-part-one)
 - [Day 31 - Project 6, Part Two](#day-31---project-6-part-two)
-- [Day 32 - MILESTONE: Projects 4-6](#day-32---milestone-projects-4---6)
+- [Day 32 - MILESTONE: Projects 4-6](#day-32---milestone:-projects-4---6)
 - [Day 33 - Project 7, Part One](#day-33---project-7-part-one)
 - [Day 34 - Project 7, Part Two](#day-34---project-7-part-two)
 - [Day 35 - Project 7, Part Three](#day-35---project-7-part-three)
@@ -42,7 +42,8 @@
 - [Day 38 - Project 8, Part Three](#day-38---project-8-part-three)
 - [Day 39 - Project 9, Part One](#day-39---project-9-part-one)
 - [Day 40 - Project 9, Part Two](#day-40---project-9-part-two)
-- [Day 41 - MILESTONE: Projects 7-9](#day-41---milestone-projects-7---9)
+- [Day 41 - MILESTONE: Projects 7-9](#day-41---milestone:-projects-7---9)
+- [Day 42 - Project 10, Part One](#day-41---project-10-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -309,3 +310,7 @@ Beginning with Grand Central Dispatch
 *Challenge*
 
 The challenge is this: make a hangman game using UIKit.
+
+## [Day 42](https://www.hackingwithswift.com/100/42) - Project 10, Part One
+
+Designing `UICollectionView` cells and implementing data sources
