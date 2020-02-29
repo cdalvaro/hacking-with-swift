@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0711D314240AA05500A7EBCA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711D313240AA05500A7EBCA /* Person.swift */; };
 		071560C323F93825003570A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071560C223F93825003570A2 /* AppDelegate.swift */; };
 		071560C523F93825003570A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071560C423F93825003570A2 /* SceneDelegate.swift */; };
 		071560C723F93825003570A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071560C623F93825003570A2 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0711D313240AA05500A7EBCA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		071560BF23F93825003570A2 /* Project10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		071560C223F93825003570A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		071560C423F93825003570A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				071560CB23F93826003570A2 /* Assets.xcassets */,
 				071560CD23F93826003570A2 /* LaunchScreen.storyboard */,
 				071560D023F93826003570A2 /* Info.plist */,
+				0711D313240AA05500A7EBCA /* Person.swift */,
 			);
 			path = Project10;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0711D314240AA05500A7EBCA /* Person.swift in Sources */,
 				071560C723F93825003570A2 /* ViewController.swift in Sources */,
 				071560C323F93825003570A2 /* AppDelegate.swift in Sources */,
 				071560D923F93B7B003570A2 /* PersonCell.swift in Sources */,
