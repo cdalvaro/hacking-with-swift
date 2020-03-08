@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/Carlos/Documents/Projects/cdalvaro/hacking-with-swift/100DaysOfSwift/Project3/Project3.xcodeproj">
+      location = "self:Project3.xcodeproj">
    </FileRef>
 </Workspace>

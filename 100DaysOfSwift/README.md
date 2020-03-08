@@ -43,7 +43,9 @@
 - [Day 39 - Project 9, Part One](#day-39---project-9-part-one)
 - [Day 40 - Project 9, Part Two](#day-40---project-9-part-two)
 - [Day 41 - MILESTONE: Projects 7-9](#day-41---milestone:-projects-7---9)
-- [Day 42 - Project 10, Part One](#day-41---project-10-part-one)
+- [Day 42 - Project 10, Part One](#day-42---project-10-part-one)
+- [Day 43 - Project 10, Part Two](#day-43---project-10-part-two)
+- [Day 44 - Project 10, Part Three](#day-44---project-10-part-three)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -314,3 +316,15 @@ The challenge is this: make a hangman game using UIKit.
 ## [Day 42](https://www.hackingwithswift.com/100/42) - Project 10, Part One
 
 Designing `UICollectionView` cells and implementing data sources
+
+## [Day 43](https://www.hackingwithswift.com/100/43) - Project 10, Part Two
+
+Importing photos with UIImagePickerController
+
+## [Day 44](https://www.hackingwithswift.com/100/44) - Project 10, Part Three
+
+*Challenge*
+
+1. Add a second `UIAlertController` that gets shown when the user taps a picture, asking them whether they want to rename the person or delete them.
+2. Use `picker.sourceType = .camera` when creating your image picker.
+3. Modify project 1 so that it uses a collection view controller rather than a table view controller.
