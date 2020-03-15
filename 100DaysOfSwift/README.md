@@ -46,6 +46,7 @@
 - [Day 42 - Project 10, Part One](#day-42---project-10-part-one)
 - [Day 43 - Project 10, Part Two](#day-43---project-10-part-two)
 - [Day 44 - Project 10, Part Three](#day-44---project-10-part-three)
+- [Day 45 - Project 11, Part One](#day-45---project-11-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -328,3 +329,7 @@ Importing photos with UIImagePickerController
 1. Add a second `UIAlertController` that gets shown when the user taps a picture, asking them whether they want to rename the person or delete them.
 2. Use `picker.sourceType = .camera` when creating your image picker.
 3. Modify project 1 so that it uses a collection view controller rather than a table view controller.
+
+## [Day 45](https://www.hackingwithswift.com/100/45) - Project 11, Part One
+
+Falling boxes with `SKSpriteNode`, `UITouch` and `SKPhysicsBody`
