@@ -47,6 +47,7 @@
 - [Day 43 - Project 10, Part Two](#day-43---project-10-part-two)
 - [Day 44 - Project 10, Part Three](#day-44---project-10-part-three)
 - [Day 45 - Project 11, Part One](#day-45---project-11-part-one)
+- [Day 46 - Project 11, Part Two](#day-46---project-11-part-two)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -333,3 +334,7 @@ Importing photos with UIImagePickerController
 ## [Day 45](https://www.hackingwithswift.com/100/45) - Project 11, Part One
 
 Falling boxes with `SKSpriteNode`, `UITouch` and `SKPhysicsBody`
+
+## [Day 46](https://www.hackingwithswift.com/100/46) - Project 11, Part Two
+
+Spinning slots (`SKAction`), Collision detection (`SKPhysicsContactDelegate`) and Scores on the board (`SKLabelNode`)
