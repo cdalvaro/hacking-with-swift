@@ -15,6 +15,7 @@
 		07617C4224150224007560D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07617C4124150224007560D2 /* Assets.xcassets */; };
 		07617C4524150224007560D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07617C4324150224007560D2 /* LaunchScreen.storyboard */; };
 		07FBE8C1243F195900AF64AC /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 07FBE8C0243F195900AF64AC /* FireParticles.sks */; };
+		07FBE8C3243F20B100AF64AC /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBE8C2243F20B100AF64AC /* Ball.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		07617C4424150224007560D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07617C4624150224007560D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FBE8C0243F195900AF64AC /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticles.sks; sourceTree = "<group>"; };
+		07FBE8C2243F20B100AF64AC /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				07617C3624150223007560D2 /* GameScene.sks */,
 				07617C3A24150223007560D2 /* GameScene.swift */,
 				07617C3C24150223007560D2 /* GameViewController.swift */,
+				07FBE8C2243F20B100AF64AC /* Ball.swift */,
 				07617C3E24150223007560D2 /* Main.storyboard */,
 				07617C4124150224007560D2 /* Assets.xcassets */,
 				07617C4324150224007560D2 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FBE8C3243F20B100AF64AC /* Ball.swift in Sources */,
 				07617C3B24150223007560D2 /* GameScene.swift in Sources */,
 				07617C3D24150223007560D2 /* GameViewController.swift in Sources */,
 				07617C3524150223007560D2 /* AppDelegate.swift in Sources */,

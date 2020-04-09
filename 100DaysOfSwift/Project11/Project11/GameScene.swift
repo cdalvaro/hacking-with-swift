@@ -86,12 +86,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 box.physicsBody?.isDynamic = false
                 addChild(box)
             } else {
-                let ball = SKSpriteNode(imageNamed: "ballRed")
+                let ball = SKSpriteNode(imageNamed: Ball().fileName())
                 ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
                 ball.physicsBody?.restitution = 0.4
                 ball.physicsBody?.contactTestBitMask = ball.physicsBody?.collisionBitMask ?? 0
                 ball.position = location
-                ball.name = "ball"
+                ball.name = Ball.name
                 addChild(ball)
             }
         }
@@ -157,9 +157,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         guard let nodeA = contact.bodyA.node else { return }
         guard let nodeB = contact.bodyB.node else { return }
         
-        if nodeA.name == "ball" {
+        if nodeA.name == Ball.name {
             collision(between: nodeA, object: nodeB)
-        } else if nodeB.name == "ball" {
+        } else if nodeB.name == Ball.name {
             collision(between: nodeB, object: nodeA)
         }
     }
