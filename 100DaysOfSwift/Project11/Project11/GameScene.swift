@@ -8,14 +8,44 @@
 
 import SpriteKit
 
+@propertyWrapper
+struct Constrained<Value: Comparable> {
+    private var range: ClosedRange<Value>
+    private var value: Value
+    
+    init(wrappedValue value: Value, _ range: ClosedRange<Value>) {
+        self.value = value
+        self.range = range
+    }
+    
+    var wrappedValue: Value {
+        get {
+            return value
+        }
+        set {
+            value = max(min(newValue, range.upperBound), range.lowerBound)
+        }
+    }
+}
+
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+    let mainFont = "Chalkduster"
+    
     var scoreLabel: SKLabelNode!
+    var ballsLabel: SKLabelNode!
     var clickHeight: CGFloat!
     
     var score = 0 {
         didSet {
             scoreLabel.text = "Score: \(score)"
+        }
+    }
+    
+    @Constrained(0...5)
+    var ballsCounter = 0 {
+        didSet {
+            ballsLabel.text = "Balls: \(ballsCounter)"
         }
     }
     
@@ -45,13 +75,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         clickLine.position = CGPoint(x: frameSize.width * 0.5, y: clickHeight)
         addChild(clickLine)
         
-        scoreLabel = SKLabelNode(fontNamed: "Chalkduster")
+        scoreLabel = SKLabelNode(fontNamed: mainFont)
         scoreLabel.horizontalAlignmentMode = .right
         scoreLabel.position = CGPoint(x: 900, y: 700)
         addChild(scoreLabel)
         score = 0
         
-        editLabel = SKLabelNode(fontNamed: "Chalkduster")
+        ballsLabel = SKLabelNode(fontNamed: mainFont)
+        ballsLabel.horizontalAlignmentMode = .left
+        ballsLabel.position = CGPoint(x: 500, y: 700)
+        addChild(ballsLabel)
+        ballsCounter = 5
+        
+        editLabel = SKLabelNode(fontNamed: mainFont)
         editLabel.text = "Edit"
         editLabel.position = CGPoint(x: 80, y: 700)
         addChild(editLabel)
@@ -92,8 +128,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 
                 box.physicsBody = SKPhysicsBody(rectangleOf: box.size)
                 box.physicsBody?.isDynamic = false
+                box.name = "box"
                 addChild(box)
-            } else if (location.y > clickHeight) {
+            } else if (location.y > clickHeight && ballsCounter > 0) {
+                ballsCounter = ballsCounter - 1
+                
                 let ball = SKSpriteNode(imageNamed: Ball().fileName())
                 ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
                 ball.physicsBody?.restitution = 0.4
@@ -146,9 +185,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if object.name == "good" {
             destroy(ball: ball)
             score += 1
+            ballsCounter = ballsCounter + 1
         } else if object.name == "bad" {
             destroy(ball: ball)
             score -= 1
+        } else if object.name == "box" {
+            object.removeFromParent()
         }
     }
     
