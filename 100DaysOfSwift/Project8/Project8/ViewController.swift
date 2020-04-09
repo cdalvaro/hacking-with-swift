@@ -20,7 +20,12 @@ class ViewController: UIViewController {
     
     @propertyWrapper
     struct Score {
-        private var score = 0.0
+        private var score: Double
+        
+        public init(score: Double = 0.0) {
+            self.score = score
+        }
+        
         var wrappedValue: Double {
             get { return score }
             set { score = max(newValue, 0) }
