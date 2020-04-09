@@ -11,6 +11,7 @@ import SpriteKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var scoreLabel: SKLabelNode!
+    var clickHeight: CGFloat!
     
     var score = 0 {
         didSet {
@@ -36,6 +37,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         background.blendMode = .replace // Ignore any alpha values
         background.zPosition = -1 // Draws the background behind everything else
         addChild(background)
+        
+        let frameSize = frame.size
+        
+        clickHeight = frameSize.height * 0.70
+        let clickLine = SKSpriteNode(color: .cyan, size: CGSize(width: frameSize.width * 0.9, height: 2))
+        clickLine.position = CGPoint(x: frameSize.width * 0.5, y: clickHeight)
+        addChild(clickLine)
         
         scoreLabel = SKLabelNode(fontNamed: "Chalkduster")
         scoreLabel.horizontalAlignmentMode = .right
@@ -85,7 +93,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 box.physicsBody = SKPhysicsBody(rectangleOf: box.size)
                 box.physicsBody?.isDynamic = false
                 addChild(box)
-            } else {
+            } else if (location.y > clickHeight) {
                 let ball = SKSpriteNode(imageNamed: Ball().fileName())
                 ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
                 ball.physicsBody?.restitution = 0.4
