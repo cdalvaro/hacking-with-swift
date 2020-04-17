@@ -49,7 +49,8 @@
 - [Day 45 - Project 11, Part One](#day-45---project-11-part-one)
 - [Day 46 - Project 11, Part Two](#day-46---project-11-part-two)
 - [Day 47 - Project 11, Part Three](#day-47---project-11-part-three)
-- [Day 48 - Project 11, Part One](#day-48---project-12-part-one)
+- [Day 48 - Project 12, Part One](#day-48---project-12-part-one)
+- [Day 49 - Project 12, Part Two](#day-49---project-12-part-two)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -354,3 +355,13 @@ Special effects: `SKEmitterNode`
 ## [Day 48](https://www.hackingwithswift.com/100/48) - Project 12, Part One
 
 Reading and writing basics: `UserDefaults` and Fixing Project 10: `NSCoding`
+
+## [Day 49](https://www.hackingwithswift.com/100/49) - Project 12, Part Two
+
+Fixing Project 10: `Codable`
+
+*Challenge*
+
+1. Modify project 1 so that it remembers how many times each storm image was shown.
+2. Modify project 2 so that it saves the player’s highest score, and shows a special message if their new score beat the previous high score.
+3. Modify project 5 so that it saves the current word and all the player’s entries to UserDefaults, then loads them back when the app launches.
