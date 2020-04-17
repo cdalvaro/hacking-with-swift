@@ -49,6 +49,7 @@
 - [Day 45 - Project 11, Part One](#day-45---project-11-part-one)
 - [Day 46 - Project 11, Part Two](#day-46---project-11-part-two)
 - [Day 47 - Project 11, Part Three](#day-47---project-11-part-three)
+- [Day 48 - Project 11, Part One](#day-48---project-12-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -349,3 +350,7 @@ Special effects: `SKEmitterNode`
 1. Try writing code to use a random ball color each time they tap the screen.
 2. Try to force the Y value of new balls so they are near the top of the screen.
 3. Give players a limit of five balls, then remove obstacle boxes when they are hit.
+
+## [Day 48](https://www.hackingwithswift.com/100/48) - Project 12, Part One
+
+Reading and writing basics: `UserDefaults` and Fixing Project 10: `NSCoding`
