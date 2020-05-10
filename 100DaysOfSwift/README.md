@@ -51,6 +51,7 @@
 - [Day 47 - Project 11, Part Three](#day-47---project-11-part-three)
 - [Day 48 - Project 12, Part One](#day-48---project-12-part-one)
 - [Day 49 - Project 12, Part Two](#day-49---project-12-part-two)
+- [Day 50 - MILESTONE: Projects 10-12](#day-50---milestone-projects-10---12)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -365,3 +366,9 @@ Fixing Project 10: `Codable`
 1. Modify project 1 so that it remembers how many times each storm image was shown.
 2. Modify project 2 so that it saves the player’s highest score, and shows a special message if their new score beat the previous high score.
 3. Modify project 5 so that it saves the current word and all the player’s entries to UserDefaults, then loads them back when the app launches.
+
+## [Day 50](https://www.hackingwithswift.com/100/50) - MILESTONE: Projects 10-12
+
+*Challenge*
+
+The challenge is to put two different projects into one: I’d like you to let users take photos of things that interest them, add captions to them, then show those photos in a table view. Tapping the caption should show the picture in a new view controller, like we did with project 1. So, your finished project needs to use elements from both project 1 and project 12, which should give you ample chance to practice.
