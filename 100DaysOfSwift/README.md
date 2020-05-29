@@ -52,6 +52,7 @@
 - [Day 48 - Project 12, Part One](#day-48---project-12-part-one)
 - [Day 49 - Project 12, Part Two](#day-49---project-12-part-two)
 - [Day 50 - MILESTONE: Projects 10-12](#day-50---milestone-projects-10---12)
+- [Day 51 - Expanding Your Horizons](#day-51---expanding-your-horizons)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -372,3 +373,10 @@ Fixing Project 10: `Codable`
 *Challenge*
 
 The challenge is to put two different projects into one: I’d like you to let users take photos of things that interest them, add captions to them, then show those photos in a table view. Tapping the caption should show the picture in a new view controller, like we did with project 1. So, your finished project needs to use elements from both project 1 and project 12, which should give you ample chance to practice.
+
+## [Day 51](https://www.hackingwithswift.com/100/51) - Expanding Your Horizons
+
+No code today! Instead, two interesting videos about `map()`, `flatMap()` and `filter()`.
+
+- [Elements of Functional Programming](https://www.youtube.com/watch?v=OgU8d_E1K14)
+- [Teaching Swift at Scale](https://vimeo.com/291590798)
