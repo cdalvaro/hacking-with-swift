@@ -53,6 +53,7 @@
 - [Day 49 - Project 12, Part Two](#day-49---project-12-part-two)
 - [Day 50 - MILESTONE: Projects 10-12](#day-50---milestone-projects-10---12)
 - [Day 51 - Expanding Your Horizons](#day-51---expanding-your-horizons)
+- [Day 52 - Project 13, Part One](#day-52---project-13-part-one)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -380,3 +381,7 @@ No code today! Instead, two interesting videos about `map()`, `flatMap()` and `f
 
 - [Elements of Functional Programming](https://www.youtube.com/watch?v=OgU8d_E1K14)
 - [Teaching Swift at Scale](https://vimeo.com/291590798)
+
+## [Day 52](https://www.hackingwithswift.com/100/52) - Project 13, Part One
+
+Designing the interface and importing pictures from photo library.
