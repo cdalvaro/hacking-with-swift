@@ -54,6 +54,7 @@
 - [Day 50 - MILESTONE: Projects 10-12](#day-50---milestone-projects-10---12)
 - [Day 51 - Expanding Your Horizons](#day-51---expanding-your-horizons)
 - [Day 52 - Project 13, Part One](#day-52---project-13-part-one)
+- [Day 53 - Project 13, Part Two](#day-53---project-13-part-two)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -385,3 +386,7 @@ No code today! Instead, two interesting videos about `map()`, `flatMap()` and `f
 ## [Day 52](https://www.hackingwithswift.com/100/52) - Project 13, Part One
 
 Designing the interface and importing pictures from photo library.
+
+## [Day 53](https://www.hackingwithswift.com/100/53) - Project 13, Part Two
+
+Applying filters: `CIContext`, `CIFilter` and saving to the iOS photo library.

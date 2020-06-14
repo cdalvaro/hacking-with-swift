@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AMY-8c-j9C">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +11,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zR-9n-DMF">
-                                <rect key="frame" x="20" y="110" width="374" height="622"/>
+                                <rect key="frame" x="20" y="66" width="560" height="404"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pj0-x5-ZN5">
                                         <rect key="frame" x="10" y="10" width="355" height="450"/>
@@ -31,7 +30,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJr-yH-7Dp">
-                                <rect key="frame" x="20" y="765" width="66" height="21"/>
+                                <rect key="frame" x="20" y="503" width="66" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="dWL-vQ-Sez"/>
                                 </constraints>
@@ -40,13 +39,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VjV-Eg-gcE">
-                                <rect key="frame" x="92" y="761" width="304" height="30"/>
+                                <rect key="frame" x="92" y="499" width="490" height="30"/>
                                 <connections>
                                     <action selector="intensityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nR2-7w-rFQ"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIu-oQ-0u8">
-                                <rect key="frame" x="20" y="798" width="120" height="44"/>
+                                <rect key="frame" x="20" y="536" width="120" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="jsW-XQ-3ds"/>
                                     <constraint firstAttribute="width" constant="120" id="v4Y-pu-oFG"/>
@@ -57,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfg-Hk-yO3">
-                                <rect key="frame" x="334" y="798" width="60" height="44"/>
+                                <rect key="frame" x="520" y="536" width="60" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="4HB-Jw-YlY"/>
                                 </constraints>
@@ -89,8 +88,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="kvu-fq-ZAL"/>
                     <connections>
-                        <outlet property="ImageView" destination="Pj0-x5-ZN5" id="c2e-sY-nrX"/>
-                        <outlet property="Intensity" destination="VjV-Eg-gcE" id="mSY-P0-Z5f"/>
+                        <outlet property="imageView" destination="Pj0-x5-ZN5" id="c2e-sY-nrX"/>
+                        <outlet property="intensity" destination="VjV-Eg-gcE" id="mSY-P0-Z5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
