@@ -453,5 +453,6 @@ Applying filters: `CIContext`, `CIFilter` and saving to the iOS photo library.
 *Challenge*
 
 1. Try making the _Save_ button show an error if there was no image in the image view.
+2. Make the _Change Filter_ button change its title to show the name of the currently selected filter.
 
 [Code](Projects/Project13)
