@@ -55,6 +55,7 @@
 - [Day 51 - Expanding Your Horizons](#day-51---expanding-your-horizons)
 - [Day 52 - Project 13, Part One](#day-52---project-13-part-one)
 - [Day 53 - Project 13, Part Two](#day-53---project-13-part-two)
+- [Day 54 - Project 13, Part Three](#day-54---project-13-part-three)
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -444,5 +445,13 @@ Designing the interface and importing pictures from photo library.
 ## [Day 53](https://www.hackingwithswift.com/100/53) - Project 13, Part Two
 
 Applying filters: `CIContext`, `CIFilter` and saving to the iOS photo library.
+
+[Code](Projects/Project13)
+
+## [Day 54](https://www.hackingwithswift.com/100/54) - Project 13, Part Three
+
+*Challenge*
+
+1. Try making the _Save_ button show an error if there was no image in the image view.
 
 [Code](Projects/Project13)
