@@ -454,5 +454,6 @@ Applying filters: `CIContext`, `CIFilter` and saving to the iOS photo library.
 
 1. Try making the _Save_ button show an error if there was no image in the image view.
 2. Make the _Change Filter_ button change its title to show the name of the currently selected filter.
+3. Experiment with having more than one slider, to control each of the input keys you care about. For example, you might have one for radius and one for intensity.
 
 [Code](Projects/Project13)
