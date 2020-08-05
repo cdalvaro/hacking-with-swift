@@ -2,6 +2,9 @@
 
 ## Challenges
 
+<details>
+  <summary>Click to see Table of Contents</summary>
+
 - [Day 1 - First Steps in Swift](#day-1---first-steps-in-swift)
 - [Day 2 - Complex Types](#day-2---complex-types)
 - [Day 3 - Operators and Conditions](#day-3---operators-and-conditions)
@@ -56,6 +59,9 @@
 - [Day 52 - Project 13, Part One](#day-52---project-13-part-one)
 - [Day 53 - Project 13, Part Two](#day-53---project-13-part-two)
 - [Day 54 - Project 13, Part Three](#day-54---project-13-part-three)
+- [Day 55 - Project 14, Part One](#day-55---project-14-part-one)
+
+</details>
 
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
@@ -457,3 +463,9 @@ Applying filters: `CIContext`, `CIFilter` and saving to the iOS photo library.
 3. Experiment with having more than one slider, to control each of the input keys you care about. For example, you might have one for radius and one for intensity.
 
 [Code](Projects/Project13)
+
+## [Day 55](https://www.hackingwithswift.com/100/55) - Project 14, Part One
+
+Getting up and running: `SKCropNode` and Penguin, show thyself: `SKAction moveBy(x:y:duration:)`.
+
+[Code](Projects/Project14)
