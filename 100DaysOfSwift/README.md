@@ -1,3 +1,7 @@
+[![Swift version][swift_badge]][swift_release_notes]
+[![Xcode version][xcode_badge]][xcode_website]
+[![Progress][progress]][current_day]
+
 # 100 Days of Swift
 
 ## Challenges
@@ -469,3 +473,12 @@ Applying filters: `CIContext`, `CIFilter` and saving to the iOS photo library.
 Getting up and running: `SKCropNode` and Penguin, show thyself: `SKAction moveBy(x:y:duration:)`.
 
 [Code](Projects/Project14)
+
+[swift_release_notes]: https://swift.org/blog/swift-5-2-released/
+[swift_badge]: https://img.shields.io/badge/Swift-5.2-FA7343?logo=swift
+
+[xcode_website]: https://developer.apple.com/xcode/
+[xcode_badge]: https://img.shields.io/badge/Xcode-12.0-1575F9?style=flat&logo=Xcode
+
+[current_day]: https://www.hackingwithswift.com/100/55
+[progress]: https://img.shields.io/badge/Progress-Day%2055-lightgrey
