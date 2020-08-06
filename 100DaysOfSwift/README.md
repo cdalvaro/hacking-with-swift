@@ -479,6 +479,10 @@ Getting up and running: `SKCropNode` and Penguin, show thyself: `SKAction moveBy
 
 Whack to win: `SKAction` sequences
 
+*Challenge*
+
+1. Record your own voice saying _"Game over!"_ and have it play when the game ends.
+
 [Code](Projects/Project14)
 
 [swift_release_notes]: https://swift.org/blog/swift-5-2-released/

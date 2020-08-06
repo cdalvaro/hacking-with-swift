@@ -27,6 +27,7 @@
 		073996C824D098FB003A79B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073996CE24D099E7003A79B4 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
 		073996CF24D099E7003A79B4 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
+		07E476FC24DC1BBA00430151 /* gameOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameOver.m4a; sourceTree = "<group>"; };
 		07E7163A24DAD49E00BDE4D8 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +71,7 @@
 				073996C824D098FB003A79B4 /* Info.plist */,
 				073996CE24D099E7003A79B4 /* whack.caf */,
 				073996CF24D099E7003A79B4 /* whackBad.caf */,
+				07E476FC24DC1BBA00430151 /* gameOver.m4a */,
 			);
 			path = Project14;
 			sourceTree = "<group>";
