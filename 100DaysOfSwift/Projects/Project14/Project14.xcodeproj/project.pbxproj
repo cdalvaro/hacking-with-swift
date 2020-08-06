@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0717146824DC336300B943DE /* smokeParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0717146724DC336300B943DE /* smokeParticles.sks */; };
+		0717146A24DC339100B943DE /* mudParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0717146924DC339100B943DE /* mudParticles.sks */; };
 		073996BA24D098FA003A79B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073996B924D098FA003A79B4 /* AppDelegate.swift */; };
 		073996BC24D098FA003A79B4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 073996BB24D098FA003A79B4 /* GameScene.sks */; };
 		073996C024D098FA003A79B4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073996BF24D098FA003A79B4 /* GameScene.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0717146724DC336300B943DE /* smokeParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smokeParticles.sks; sourceTree = "<group>"; };
+		0717146924DC339100B943DE /* mudParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = mudParticles.sks; sourceTree = "<group>"; };
 		073996B624D098FA003A79B4 /* Project14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		073996B924D098FA003A79B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		073996BB24D098FA003A79B4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				073996CE24D099E7003A79B4 /* whack.caf */,
 				073996CF24D099E7003A79B4 /* whackBad.caf */,
 				07E476FC24DC1BBA00430151 /* gameOver.m4a */,
+				0717146724DC336300B943DE /* smokeParticles.sks */,
+				0717146924DC339100B943DE /* mudParticles.sks */,
 			);
 			path = Project14;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 				073996C524D098FA003A79B4 /* Main.storyboard in Resources */,
 				073996BC24D098FA003A79B4 /* GameScene.sks in Resources */,
 				073996C724D098FB003A79B4 /* Assets.xcassets in Resources */,
+				0717146A24DC339100B943DE /* mudParticles.sks in Resources */,
+				0717146824DC336300B943DE /* smokeParticles.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
