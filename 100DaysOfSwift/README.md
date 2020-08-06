@@ -64,6 +64,7 @@
 - [Day 53 - Project 13, Part Two](#day-53---project-13-part-two)
 - [Day 54 - Project 13, Part Three](#day-54---project-13-part-three)
 - [Day 55 - Project 14, Part One](#day-55---project-14-part-one)
+- [Day 56 - Project 14, Part Two](#day-56---project-14-part-two)
 
 </details>
 
@@ -474,11 +475,17 @@ Getting up and running: `SKCropNode` and Penguin, show thyself: `SKAction moveBy
 
 [Code](Projects/Project14)
 
+## [Day 56](https://www.hackingwithswift.com/100/56) - Project 14, Part Two
+
+Whack to win: `SKAction` sequences
+
+[Code](Projects/Project14)
+
 [swift_release_notes]: https://swift.org/blog/swift-5-2-released/
 [swift_badge]: https://img.shields.io/badge/Swift-5.2-FA7343?logo=swift
 
 [xcode_website]: https://developer.apple.com/xcode/
 [xcode_badge]: https://img.shields.io/badge/Xcode-12.0-1575F9?style=flat&logo=Xcode
 
-[current_day]: https://www.hackingwithswift.com/100/55
-[progress]: https://img.shields.io/badge/Progress-Day%2055-lightgrey
+[current_day]: https://www.hackingwithswift.com/100/56
+[progress]: https://img.shields.io/badge/Progress-Day%2056-lightgrey
