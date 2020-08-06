@@ -70,7 +70,6 @@ class GameScene: SKScene {
             whackSlot.hit()
             
             if node.name == "charFriend" {
-                whackSlot.hit()
                 score -= 5
                 
                 run(SKAction.playSoundFileNamed("whackBad.caf", waitForCompletion: false))
@@ -103,6 +102,14 @@ class GameScene: SKScene {
             gameOver.position = CGPoint(x: 512, y: 384)
             gameOver.zPosition = 1
             addChild(gameOver)
+            
+            let scoreNode = SKLabelNode(fontNamed: "Marker Felt")
+            scoreNode.text = "FINAL SCORE: \(score) POINTS!"
+            scoreNode.position = CGPoint(x: 512, y: 300)
+            scoreNode.zPosition = 1
+            scoreNode.horizontalAlignmentMode = .center
+            scoreNode.fontSize = 48
+            addChild(scoreNode)
             
             run(SKAction.playSoundFileNamed("gameOver.m4a", waitForCompletion: false))
             

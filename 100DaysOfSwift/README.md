@@ -482,6 +482,7 @@ Whack to win: `SKAction` sequences
 *Challenge*
 
 1. Record your own voice saying _"Game over!"_ and have it play when the game ends.
+2. When showing _“Game Over”_ add an `SKLabelNode` showing their final score.
 
 [Code](Projects/Project14)
 
