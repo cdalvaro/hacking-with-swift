@@ -6,7 +6,7 @@
 
 "Go from zero to hero with my comprehensive, real-world Swift tutorial projects." - Paul, Hacking with Swift
 
-Many thanks to [Paul Hudson](https://twitter.com/twostraws) (@twostraws) for these great courses.
+Many thanks to [Paul Hudson](https://twitter.com/twostraws) ([@twostraws](https://github.com/twostraws)) for these great courses.
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ These playgrounds are available inside the [Playgrounds](Playgrounds) folder.
 
 Learning Swift during the [100 Days of Swift](https://www.hackingwithswift.com/100) challenge.
 
-Challenges are available inside [100DaysOfSwift](100DaysOfSwift) directory. (🚧 Still in progress)
+Challenges are available inside [`Classic`](Classic) directory. (🚧 Still in progress)
 
 [swift_release_notes]: https://swift.org/blog/swift-5-2-released/
 [swift_badge]: https://img.shields.io/badge/Swift-5.2-FA7343?logo=swift
