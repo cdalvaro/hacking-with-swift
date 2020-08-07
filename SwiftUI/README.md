@@ -123,6 +123,7 @@ but setting foundations.
 
 ## [Day 16](https://www.hackingwithswift.com/100/swiftui/16) - Project 1, Part One
 
-Creating a form and adding a navigation bar
+- Creating a form and adding a navigation bar
+- Modifying program state: `@State`
 
 [Code](Projects/Project1)
