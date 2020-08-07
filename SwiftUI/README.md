@@ -125,5 +125,6 @@ but setting foundations.
 
 - Creating a form and adding a navigation bar
 - Modifying program state: `@State`
+- Binding state to user interface controls
 
 [Code](Projects/Project1)
