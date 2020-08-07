@@ -1,7 +1,3 @@
-[![Swift version][swift_badge]][swift_release_notes]
-[![Xcode version][xcode_badge]][xcode_website]
-[![Progress][progress]][current_day]
-
 # 100 Days of Swift
 
 ## Challenges
@@ -74,97 +70,97 @@
 *Variables* and *Constants*, *Strings*, *Integers*, *Doubles* and *Booleans*, *Inference* and *Type Annotations*
 but setting foundations.
 
-[Code](Playgrounds/Day001.playground/Contents.swift)
+[Code](../Playgrounds/Day001.playground/Contents.swift)
 
 ## [Day 2](https://www.hackingwithswift.com/100/2) - Complex Types
 
 *Arrays*, *Sets*, *Tuples*, *Dictionaries* and *Enumerations*.
 
-[Code](Playgrounds/Day002.playground/Contents.swift)
+[Code](../Playgrounds/Day002.playground/Contents.swift)
 
 ## [Day 3](https://www.hackingwithswift.com/100/3) - Operators and Conditions
 
 *Arithmetic Operators*, *Operators Overloading*, *Compound Assignment Operators*, *Comparison Operators*, *Conditions*,
 *Combining Conditions*, *The Ternary Operator*, *Switch Statements* and *Range Operators*.
 
-[Code](Playgrounds/Day003.playground/Contents.swift)
+[Code](../Playgrounds/Day003.playground/Contents.swift)
 
 ## [Day 4](https://www.hackingwithswift.com/100/4) - Looping
 
 *For loops*, *While loops*, *Repeat loops*, *Exiting loops*, *Exiting multiple loops*, *Skipping items* and *Infinite loops*.
 
-[Code](Playgrounds/Day004.playground/Contents.swift)
+[Code](../Playgrounds/Day004.playground/Contents.swift)
 
 ## [Day 5](https://www.hackingwithswift.com/100/5) - Functions
 
 *Writing functions*, *Accepting parameters*, *Returning values*, *Parameter labels*, *Omitting parameter labels*, *Default parameters*,
 *Variadic functions*, *Writing throwing functions*, *Running throwing functions* and *inout parameters*.
 
-[Code](Playgrounds/Day005.playground/Contents.swift)
+[Code](../Playgrounds/Day005.playground/Contents.swift)
 
 ## [Day 6](https://www.hackingwithswift.com/100/6) - Closures, Part One
 
 *Creating basic closures*, *Accepting parameters in a closure*, *Returning values from a closure*, *Closures as parameters* and *Trailing closure syntax*.
 
-[Code](Playgrounds/Day006.playground/Contents.swift)
+[Code](../Playgrounds/Day006.playground/Contents.swift)
 
 ## [Day 7](https://www.hackingwithswift.com/100/7) - Closures, Part Two
 
 *Using closures as parameters when they accept parameters*, *Using closures as parameters when they return values*, *Shorthand parameter names*,
 *Closures with multiple parameters*, *Returning closures from functions* and *Capturing values*.
 
-[Code](Playgrounds/Day007.playground/Contents.swift)
+[Code](../Playgrounds/Day007.playground/Contents.swift)
 
 ## [Day 8](https://www.hackingwithswift.com/100/8) - Structs, Part One
 
 *Creating your own structs*, *Computed properties*, *Property observers*, *Methods*, *Mutating methods*,
 *Properties and methods of strings* and *Properties and methods of arrays*.
 
-[Code](Playgrounds/Day008.playground/Contents.swift)
+[Code](../Playgrounds/Day008.playground/Contents.swift)
 
 ## [Day 9](https://www.hackingwithswift.com/100/9) - Structs, Part Two
 
 *Initializers*, *Referring to the current instance*, *Lazy properties*, *Static properties and methods* and *Access control*.
 
-[Code](Playgrounds/Day009.playground/Contents.swift)
+[Code](../Playgrounds/Day009.playground/Contents.swift)
 
 ## [Day 10](https://www.hackingwithswift.com/100/10) - Classes
 
 *Creating your own classes*, *Class inheritance*, *Overriding methods*, *Final classes*, *Copying objects*, *Deinitializers* and *Mutability*.
 
-[Code](Playgrounds/Day010.playground/Contents.swift)
+[Code](../Playgrounds/Day010.playground/Contents.swift)
 
 ## [Day 11](https://www.hackingwithswift.com/100/11) - Protocols And Extensions
 
 *Protocols*, *Protocol inheritance*, *Extensions*, *Protocol extensions* and *Protocol-oriented programming*.
 
-[Code](Playgrounds/Day011.playground/Contents.swift)
+[Code](../Playgrounds/Day011.playground/Contents.swift)
 
 ## [Day 12](https://www.hackingwithswift.com/100/12) - Optionals
 
 *Handling missing data*, *Unwrapping optionals*, *Unwrapping with guard*, *Force unwrapping*, *Implicitly unwrapped optionals*,
 *Nil coalescing*, *Optional chaining*, *Optional try*, *Failable initializers* and *Typecasting*.
 
-[Code](Playgrounds/Day012.playground/Contents.swift)
+[Code](../Playgrounds/Day012.playground/Contents.swift)
 
 ## [Day 13](https://www.hackingwithswift.com/100/13) - Swift Review, Day One
 
 *Variables and Constants*, *Types of Data*, *Operators*, *String Interpolation*, *Arrays*, *Dictionaries*,
 *Conditional Statements*, *Loops* and *Switch Case*.
 
-[Code](Playgrounds/Day013.playground/Contents.swift)
+[Code](../Playgrounds/Day013.playground/Contents.swift)
 
 ## [Day 14](https://www.hackingwithswift.com/100/14) - Swift Review, Day Two
 
 *Functions*, *Optionals*, *Optional Chaining*, *Enumerations*, *Structs* and *Classes*.
 
-[Code](Playgrounds/Day014.playground/Contents.swift)
+[Code](../Playgrounds/Day014.playground/Contents.swift)
 
 ## [Day 15](https://www.hackingwithswift.com/100/15) - Swift Review, Day Three
 
 *Properties*, *Static properties and methods*, *Access control*, *Polymorphism and typecasting* and *Closures*.
 
-[Code](Playgrounds/Day015.playground/Contents.swift)
+[Code](../Playgrounds/Day015.playground/Contents.swift)
 
 ## [Day 16](https://www.hackingwithswift.com/100/16) - Project 1, Part One
 
@@ -493,12 +489,3 @@ Whack to win: `SKAction` sequences
 Switch, case, animate: `animate(withDuration:)` and Transform: `CGAffineTransform`
 
 [Code](Projects/Project15)
-
-[swift_release_notes]: https://swift.org/blog/swift-5-2-released/
-[swift_badge]: https://img.shields.io/badge/Swift-5.2-FA7343?logo=swift
-
-[xcode_website]: https://developer.apple.com/xcode/
-[xcode_badge]: https://img.shields.io/badge/Xcode-12.0-1575F9?style=flat&logo=Xcode
-
-[current_day]: https://www.hackingwithswift.com/100/57
-[progress]: https://img.shields.io/badge/Progress-Day%2057-lightgrey
