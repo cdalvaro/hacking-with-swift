@@ -129,7 +129,7 @@ but setting foundations.
 - Binding state to user interface controls
 - Creating views in a loop
 
-[Code](Projects/Project1)
+[Code](Projects/WeSplit)
 
 ## [Day 17](https://www.hackingwithswift.com/100/swiftui/17) - Project 1, Part Two
 
@@ -138,4 +138,4 @@ but setting foundations.
 - Adding a segmented control for tip percentages
 - Calculating the total per person
 
-[Code](Projects/Project1)
+[Code](Projects/WeSplit)
