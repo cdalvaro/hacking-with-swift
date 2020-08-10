@@ -21,6 +21,7 @@
 - [Day 14 - Swift Review, Day Two](#day-14---swift-review-day-two)
 - [Day 15 - Swift Review, Day Three](#day-15---swift-review-day-three)
 - [Day 16 - Project 1, Part One](#day-16---project-1-part-one)
+- [Day 17 - Project 1, Part Two](#day-17---project-1-part-two)
 
 </details>
 
@@ -127,5 +128,14 @@ but setting foundations.
 - Modifying program state: `@State`
 - Binding state to user interface controls
 - Creating views in a loop
+
+[Code](Projects/Project1)
+
+## [Day 17](https://www.hackingwithswift.com/100/swiftui/17) - Project 1, Part Two
+
+- Reading text from the user with `TextField`
+- Creating pickers in a form
+- Adding a segmented control for tip percentages
+- Calculating the total per person
 
 [Code](Projects/Project1)
