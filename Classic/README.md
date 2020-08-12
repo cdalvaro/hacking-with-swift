@@ -62,6 +62,7 @@
 - [Day 55 - Project 14, Part One](#day-55---project-14-part-one)
 - [Day 56 - Project 14, Part Two](#day-56---project-14-part-two)
 - [Day 57 - Project 15, Part One](#day-57---project-15-part-one)
+- [Day 58 - Project 15, Part Two](#day-58---project-15-part-two)
 
 </details>
 
@@ -489,3 +490,10 @@ Whack to win: `SKAction` sequences
 Switch, case, animate: `animate(withDuration:)` and Transform: `CGAffineTransform`
 
 [Code](Projects/Project15)
+
+## [Day 58](https://www.hackingwithswift.com/100/58) - Project 15, Part Two
+
+*Challenge*
+
+1. Go back to project 8 and make the letter group buttons fade out when they are tapped.
+We were using the `isHidden` property, but you'll need to switch to `alpha` because `isHidden` is either `true` or `false`, it has no animatable values between. [Code](Projects/Project8-CGAffineTransform)
