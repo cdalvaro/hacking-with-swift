@@ -22,6 +22,7 @@
 - [Day 15 - Swift Review, Day Three](#day-15---swift-review-day-three)
 - [Day 16 - Project 1, Part One](#day-16---project-1-part-one)
 - [Day 17 - Project 1, Part Two](#day-17---project-1-part-two)
+- [Day 18 - Project 1, Part Three](#day-18---project-1-part-three)
 
 </details>
 
@@ -137,5 +138,13 @@ but setting foundations.
 - Creating pickers in a form
 - Adding a segmented control for tip percentages
 - Calculating the total per person
+
+[Code](Projects/WeSplit)
+
+## [Day 18](https://www.hackingwithswift.com/100/swiftui/18) - Project 1, Part Three
+
+*Challenge*
+
+1. Add a header to the third section, saying _“Amount per person”_
 
 [Code](Projects/WeSplit)
