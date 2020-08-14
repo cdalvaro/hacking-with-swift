@@ -146,5 +146,6 @@ but setting foundations.
 *Challenge*
 
 1. Add a header to the third section, saying _“Amount per person”_
+2. Add another section showing the total amount for the check – i.e., the original amount plus tip value, without dividing by the number of people.
 
 [Code](Projects/WeSplit)
