@@ -63,6 +63,7 @@
 - [Day 56 - Project 14, Part Two](#day-56---project-14-part-two)
 - [Day 57 - Project 15, Part One](#day-57---project-15-part-one)
 - [Day 58 - Project 15, Part Two](#day-58---project-15-part-two)
+- [Day 59 - MILESTONE: Projects 13-15](#day-59---milestone-projects-13---15)
 
 </details>
 
@@ -500,3 +501,11 @@ We were using the `isHidden` property, but you'll need to switch to `alpha` beca
 2. Go back to project 13 and make the image view fade in when a new picture is chosen.
 To make this work, set the `alpha` to 0 first. [Code](Projects/Project13-CGAffineTransform)
 3. Go back to project 2 and make the flags scale down with a little bounce when pressed. [Code](Projects/Project2-CGAffineTransform)
+
+## [Day 59](https://www.hackingwithswift.com/100/59) - MILESTONE: Projects 13-15
+
+*Challenge*
+
+Your challenge is to make an app that contains facts about countries: show a list of country names in a table view, then when one is tapped bring in a new screen that contains its capital city, size, population, currency, and any other facts that interest you. The type of facts you include is down to you – Wikipedia has a huge selection to choose from.
+
+[Code](Milestones/Milestone-Projects13_15)
