@@ -64,6 +64,7 @@
 - [Day 57 - Project 15, Part One](#day-57---project-15-part-one)
 - [Day 58 - Project 15, Part Two](#day-58---project-15-part-two)
 - [Day 59 - MILESTONE: Projects 13-15](#day-59---milestone-projects-13---15)
+- [Day 60 - Project 16, Part One](#day-60---project-16-part-one)
 
 </details>
 
@@ -509,3 +510,9 @@ To make this work, set the `alpha` to 0 first. [Code](Projects/Project13-CGAffin
 Your challenge is to make an app that contains facts about countries: show a list of country names in a table view, then when one is tapped bring in a new screen that contains its capital city, size, population, currency, and any other facts that interest you. The type of facts you include is down to you – Wikipedia has a huge selection to choose from.
 
 [Code](Milestones/Milestone-Projects13_15)
+
+## [Day 60](https://www.hackingwithswift.com/100/60) - Project 16, Part One
+
+*Setting up*, *Up and running with `MapKit`* and *Annotations and accessory views: `MKPinAnnotationView`*
+
+[Code](Projects/Project16)
