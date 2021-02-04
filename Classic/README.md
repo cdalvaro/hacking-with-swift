@@ -524,5 +524,8 @@ Your challenge is to make an app that contains facts about countries: show a lis
 
 1. Try typecasting the return value from `dequeueReusableAnnotationView()` so that it's an `MKPinAnnotationView`.
 Once that’s done, change the `pinTintColor` property to your favorite `UIColor`.
+2. Add a `UIAlertController` that lets users specify how they want to view the map.
+There's a `mapType` property that draws the maps in different ways.
+For example, `.satellite` gives a satellite view of the terrain.
 
 [Code](Projects/Project16)

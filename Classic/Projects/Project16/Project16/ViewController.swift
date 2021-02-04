@@ -15,6 +15,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "map"),
+                                                            style: .plain,
+                                                            target: self,
+                                                            action: #selector(changeMapType))
 
         let london = Capital(title: "London",
                              coordinate: CLLocationCoordinate2D(latitude: 51.50722, longitude: -0.1275),
@@ -65,6 +69,22 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
         let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+    }
+
+    @objc func changeMapType() {
+        let ac = UIAlertController(title: "Select map type", message: nil, preferredStyle: .actionSheet)
+        ac.addAction(UIAlertAction(title: "Standard", style: .default) { [weak self] _ in
+            self?.mapView.mapType = .standard
+        })
+        ac.addAction(UIAlertAction(title: "Satelite", style: .default) { [weak self] _ in
+            self?.mapView.mapType = .satellite
+        })
+        ac.addAction(UIAlertAction(title: "Hybrid", style: .default) { [weak self] _ in
+            self?.mapView.mapType = .hybrid
+        })
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+
         present(ac, animated: true)
     }
 }
