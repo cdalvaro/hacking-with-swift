@@ -51,6 +51,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
             annotationView?.annotation = annotation
         }
 
+        if let pinAnnotation = annotationView as? MKPinAnnotationView {
+            pinAnnotation.pinTintColor = .green
+        }
+
         return annotationView
     }
 

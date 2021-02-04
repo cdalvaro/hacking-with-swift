@@ -65,6 +65,7 @@
 - [Day 58 - Project 15, Part Two](#day-58---project-15-part-two)
 - [Day 59 - MILESTONE: Projects 13-15](#day-59---milestone-projects-13---15)
 - [Day 60 - Project 16, Part One](#day-60---project-16-part-one)
+- [Day 61 - Project 16, Part Two](#day-61---project-16-part-two)
 
 </details>
 
@@ -513,6 +514,15 @@ Your challenge is to make an app that contains facts about countries: show a lis
 
 ## [Day 60](https://www.hackingwithswift.com/100/60) - Project 16, Part One
 
-*Setting up*, *Up and running with `MapKit`* and *Annotations and accessory views: `MKPinAnnotationView`*
+*Setting up*, *Up and running with* `MapKit` and *Annotations and accessory views:* `MKPinAnnotationView`
+
+[Code](Projects/Project16)
+
+## [Day 61](https://www.hackingwithswift.com/100/61) - Project 16, Part Two
+
+*Challenge*
+
+1. Try typecasting the return value from `dequeueReusableAnnotationView()` so that it's an `MKPinAnnotationView`.
+Once that’s done, change the `pinTintColor` property to your favorite `UIColor`.
 
 [Code](Projects/Project16)
