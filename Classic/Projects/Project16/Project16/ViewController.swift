@@ -5,11 +5,10 @@
 //  Created by Carlos David on 1/2/21.
 //
 
-import UIKit
 import MapKit
+import UIKit
 
 class ViewController: UIViewController, MKMapViewDelegate {
-
     @IBOutlet var mapView: MKMapView!
 
     override func viewDidLoad() {
@@ -20,6 +19,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
                                                             target: self,
                                                             action: #selector(changeMapType))
 
+        let cuenca = Capital(title: "Cuenca",
+                             coordinate: CLLocationCoordinate2D(latitude: 40.077933, longitude: -2.130099),
+                             info: "My hometown",
+                             wikiName: "Cuenca,_Spain")
         let london = Capital(title: "London",
                              coordinate: CLLocationCoordinate2D(latitude: 51.50722, longitude: -0.1275),
                              info: "Home to the 2012 Summer Olympics")
@@ -34,9 +37,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
                            info: "Has a whole country inside it")
         let washington = Capital(title: "Washington DC",
                                  coordinate: CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667),
-                                 info: "Named after George himself")
+                                 info: "Named after George himself",
+                                 wikiName: "Washington,_D.C.")
 
-        mapView.addAnnotations([london, oslo, paris, rome, washington])
+        mapView.addAnnotations([cuenca, london, oslo, paris, rome, washington])
     }
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -44,7 +48,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
         let identifier = "Capital"
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-        if (annotationView == nil) {
+        if annotationView == nil {
             annotationView = MKPinAnnotationView(annotation: annotation,
                                                  reuseIdentifier: identifier)
             annotationView?.canShowCallout = true
@@ -66,10 +70,16 @@ class ViewController: UIViewController, MKMapViewDelegate {
         guard let capital = view.annotation as? Capital else { return }
         let placeName = capital.title
         let placeInfo = capital.info
+        let placeWikiName = capital.wikiName
 
-        let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
-        present(ac, animated: true)
+        if let vc = storyboard?.instantiateViewController(identifier: WebViewController.viewIdentifier) as? WebViewController {
+            vc.cityName = placeWikiName
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
     }
 
     @objc func changeMapType() {
