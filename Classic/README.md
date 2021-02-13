@@ -66,6 +66,7 @@
 - [Day 59 - MILESTONE: Projects 13-15](#day-59---milestone-projects-13---15)
 - [Day 60 - Project 16, Part One](#day-60---project-16-part-one)
 - [Day 61 - Project 16, Part Two](#day-61---project-16-part-two)
+- [Day 62 - Project 17, Part One](#day-62---project-17-part-one)
 
 </details>
 
@@ -531,3 +532,9 @@ For example, `.satellite` gives a satellite view of the terrain.
 taking users to the Wikipedia entry for that city.
 
 [Code](Projects/Project16)
+
+## [Day 62](https://www.hackingwithswift.com/100/62) - Project 17, Part One
+
+*Setting up*, *Space: the final frontier*, *Bring on the enemies:* `linearDamping`, `angularDamping` and *Making contact:* `didBegin()`
+
+[Code](Projects/Project17)

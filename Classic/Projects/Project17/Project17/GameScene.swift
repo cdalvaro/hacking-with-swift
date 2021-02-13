@@ -58,7 +58,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         guard let enemy = possibleEnemies.randomElement() else { return }
 
         let sprite = SKSpriteNode(imageNamed: enemy)
-        sprite.position = CGPoint(x: 1200, y: Int.random(in: 50...736))
+        sprite.position = CGPoint(x: 1200, y: Int.random(in: 50 ... 736))
         addChild(sprite)
 
         sprite.physicsBody = SKPhysicsBody(texture: sprite.texture!, size: sprite.size)
@@ -80,5 +80,28 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if !isGameOver {
             score += 1
         }
+    }
+
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else { return }
+        var location = touch.location(in: self)
+
+        if location.y < 100 {
+            location.y = 100
+        } else if location.y > 668 {
+            location.y = 668
+        }
+
+        player.position = location
+    }
+
+    func didBegin(_ contact: SKPhysicsContact) {
+        let explosion = SKEmitterNode(fileNamed: "explosion")!
+        explosion.position = player.position
+        addChild(explosion)
+
+        player.removeFromParent()
+
+        isGameOver = true
     }
 }
