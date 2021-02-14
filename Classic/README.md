@@ -27,7 +27,7 @@
 - [Day 20 - Project 2, Part Two](#day-20---project-2-part-two)
 - [Day 21 - Project 2, Part Three](#day-21---project-2-part-three)
 - [Day 22 - Project 3](#day-22---project-3)
-- [Day 23 - MILESTONE: Projects 1-3](#day-23---milestone-projects-1---3)
+- [Day 23 - MILESTONE: Projects 1-3](#day-23---milestone-projects-1-3)
 - [Day 24 - Project 4, Part One](#day-24---project-4-part-one)
 - [Day 25 - Project 4, Part Two](#day-25---project-4-part-two)
 - [Day 26 - Project 4, Part Three](#day-26---project-4-part-three)
@@ -36,7 +36,7 @@
 - [Day 29 - Project 5, Part Three](#day-29---project-5-part-three)
 - [Day 30 - Project 6, Part One](#day-30---project-6-part-one)
 - [Day 31 - Project 6, Part Two](#day-31---project-6-part-two)
-- [Day 32 - MILESTONE: Projects 4-6](#day-32---milestone-projects-4---6)
+- [Day 32 - MILESTONE: Projects 4-6](#day-32---milestone-projects-4-6)
 - [Day 33 - Project 7, Part One](#day-33---project-7-part-one)
 - [Day 34 - Project 7, Part Two](#day-34---project-7-part-two)
 - [Day 35 - Project 7, Part Three](#day-35---project-7-part-three)
@@ -45,7 +45,7 @@
 - [Day 38 - Project 8, Part Three](#day-38---project-8-part-three)
 - [Day 39 - Project 9, Part One](#day-39---project-9-part-one)
 - [Day 40 - Project 9, Part Two](#day-40---project-9-part-two)
-- [Day 41 - MILESTONE: Projects 7-9](#day-41---milestone-projects-7---9)
+- [Day 41 - MILESTONE: Projects 7-9](#day-41---milestone-projects-7-9)
 - [Day 42 - Project 10, Part One](#day-42---project-10-part-one)
 - [Day 43 - Project 10, Part Two](#day-43---project-10-part-two)
 - [Day 44 - Project 10, Part Three](#day-44---project-10-part-three)
@@ -54,7 +54,7 @@
 - [Day 47 - Project 11, Part Three](#day-47---project-11-part-three)
 - [Day 48 - Project 12, Part One](#day-48---project-12-part-one)
 - [Day 49 - Project 12, Part Two](#day-49---project-12-part-two)
-- [Day 50 - MILESTONE: Projects 10-12](#day-50---milestone-projects-10---12)
+- [Day 50 - MILESTONE: Projects 10-12](#day-50---milestone-projects-10-12)
 - [Day 51 - Expanding Your Horizons](#day-51---expanding-your-horizons)
 - [Day 52 - Project 13, Part One](#day-52---project-13-part-one)
 - [Day 53 - Project 13, Part Two](#day-53---project-13-part-two)
@@ -63,10 +63,11 @@
 - [Day 56 - Project 14, Part Two](#day-56---project-14-part-two)
 - [Day 57 - Project 15, Part One](#day-57---project-15-part-one)
 - [Day 58 - Project 15, Part Two](#day-58---project-15-part-two)
-- [Day 59 - MILESTONE: Projects 13-15](#day-59---milestone-projects-13---15)
+- [Day 59 - MILESTONE: Projects 13-15](#day-59---milestone-projects-13-15)
 - [Day 60 - Project 16, Part One](#day-60---project-16-part-one)
 - [Day 61 - Project 16, Part Two](#day-61---project-16-part-two)
 - [Day 62 - Project 17, Part One](#day-62---project-17-part-one)
+- [Day 63 - Project 17, Part Two](#day-63---project-17-part-two)
 
 </details>
 
@@ -536,5 +537,14 @@ taking users to the Wikipedia entry for that city.
 ## [Day 62](https://www.hackingwithswift.com/100/62) - Project 17, Part One
 
 *Setting up*, *Space: the final frontier*, *Bring on the enemies:* `linearDamping`, `angularDamping` and *Making contact:* `didBegin()`
+
+[Code](Projects/Project17)
+
+## [Day 63](https://www.hackingwithswift.com/100/63) - Project 17, Part Two
+
+*Challenge*
+
+1. Stop the player from cheating by lifting their finger and tapping elsewhere
+– try implementing `touchesEnded()` to make it work.
 
 [Code](Projects/Project17)

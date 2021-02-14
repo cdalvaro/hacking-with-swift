@@ -12,6 +12,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var player: SKSpriteNode!
     var scoreLabel: SKLabelNode!
 
+    var gameOverLabel: SKLabelNode!
+    var finalScoreLabel: SKLabelNode!
+
     let possibleEnemies = ["ball", "hammer", "tv"]
     var gameTimer: Timer?
     var isGameOver = false
@@ -96,12 +99,43 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
 
     func didBegin(_ contact: SKPhysicsContact) {
+        destroyPlayer()
+    }
+
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        if !isGameOver {
+            destroyPlayer()
+        }
+    }
+
+    func destroyPlayer() {
         let explosion = SKEmitterNode(fileNamed: "explosion")!
         explosion.position = player.position
         addChild(explosion)
 
         player.removeFromParent()
 
+        gameOver()
+    }
+
+    func gameOver() {
         isGameOver = true
+
+        scoreLabel.isHidden = true
+
+        gameOverLabel = SKLabelNode(fontNamed: "Marker Felt")
+        gameOverLabel.fontSize = 96
+        gameOverLabel.position = CGPoint(x: 512, y: 400)
+        gameOverLabel.text = "GAME OVER"
+        gameOverLabel.zPosition = 1
+        addChild(gameOverLabel)
+
+        finalScoreLabel = SKLabelNode(fontNamed: "Marker Felt")
+        finalScoreLabel.fontSize = 64
+        finalScoreLabel.position = CGPoint(x: 512, y: 300)
+        finalScoreLabel.text = "Final Score: \(score)"
+        finalScoreLabel.zPosition = 1
+        addChild(finalScoreLabel)
     }
 }
