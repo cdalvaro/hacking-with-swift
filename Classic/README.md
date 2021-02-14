@@ -550,5 +550,6 @@ taking users to the Wikipedia entry for that city.
 subtract 0.1 seconds from it so it’s triggered every 0.9 seconds. After making 20 more,
 subtract another 0.1, and so on. *Note*: you should call `invalidate()` on `gameTimer`
 before giving it a new value, otherwise you end up with multiple timers.
+3. Stop creating space debris after the player has died.
 
 [Code](Projects/Project17)

@@ -144,6 +144,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     func gameOver() {
         isGameOver = true
+        gameTimer?.invalidate()
 
         scoreLabel.isHidden = true
 
