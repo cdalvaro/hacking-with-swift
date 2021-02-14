@@ -7,6 +7,26 @@
 
 import SpriteKit
 
+@propertyWrapper
+struct MinValue<Value: Comparable> {
+    private var minValue: Value
+    private var value: Value
+
+    init(wrappedValue value: Value, _ minValue: Value) {
+        self.value = value
+        self.minValue = minValue
+    }
+
+    var wrappedValue: Value {
+        get {
+            return value
+        }
+        set {
+            value = max(newValue, minValue)
+        }
+    }
+}
+
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var starfield: SKEmitterNode!
     var player: SKSpriteNode!
@@ -18,6 +38,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let possibleEnemies = ["ball", "hammer", "tv"]
     var gameTimer: Timer?
     var isGameOver = false
+
+    @MinValue(0.1)
+    var createEnemyRate = 1.0
 
     var score = 0 {
         didSet {
@@ -50,11 +73,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         physicsWorld.gravity = .zero
         physicsWorld.contactDelegate = self
 
-        gameTimer = Timer.scheduledTimer(timeInterval: 0.35,
-                                         target: self,
-                                         selector: #selector(createEnemy),
-                                         userInfo: nil,
-                                         repeats: true)
+        setDifficulty(timeInterval: createEnemyRate)
     }
 
     @objc func createEnemy() {
@@ -77,11 +96,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         for node in children {
             if node.position.x < -300 {
                 node.removeFromParent()
-            }
-        }
 
-        if !isGameOver {
-            score += 1
+                if !isGameOver {
+                    score += 1
+                    if score.isMultiple(of: 20) {
+                        createEnemyRate -= 0.1
+                        setDifficulty(timeInterval: createEnemyRate)
+                    }
+                }
+            }
         }
     }
 
@@ -137,5 +160,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         finalScoreLabel.text = "Final Score: \(score)"
         finalScoreLabel.zPosition = 1
         addChild(finalScoreLabel)
+    }
+
+    func setDifficulty(timeInterval: TimeInterval) {
+        gameTimer?.invalidate()
+        gameTimer = Timer.scheduledTimer(timeInterval: timeInterval,
+                                         target: self,
+                                         selector: #selector(createEnemy),
+                                         userInfo: nil,
+                                         repeats: true)
     }
 }
