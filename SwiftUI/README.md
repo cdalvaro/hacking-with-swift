@@ -23,6 +23,7 @@
 - [Day 16 - Project 1, Part One](#day-16---project-1-part-one)
 - [Day 17 - Project 1, Part Two](#day-17---project-1-part-two)
 - [Day 18 - Project 1, Part Three](#day-18---project-1-part-three)
+- [Day 19 - Unit Conversions Challenge](#day-19---unit-conversions-challenge)
 
 </details>
 
@@ -150,3 +151,10 @@ but setting foundations.
 3. Change the “Number of people” picker to be a text field, making sure to use the correct keyboard type.
 
 [Code](Projects/WeSplit)
+
+## [Day 19](https://www.hackingwithswift.com/100/swiftui/19) - Unit Conversions Challenge
+
+You need to build an app that handles unit conversions: users will select an input unit
+and an output unit, then enter a value, and see the output of the conversion.
+
+[Code](Challenges/UnitConversions)
