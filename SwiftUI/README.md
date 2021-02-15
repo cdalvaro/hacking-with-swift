@@ -165,5 +165,6 @@ and an output unit, then enter a value, and see the output of the conversion.
 - Using stacks to arrange views
 - Colors and frames
 - Gradients
+- Buttons and images
 
 [Code](Projects/GuessTheFlag)

@@ -9,15 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color.white, Color.black]),
-                       startPoint: .top, endPoint: .bottom)
-
-        RadialGradient(gradient: Gradient(colors: [.blue, .black]),
-                       center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 50, endRadius: 200)
-
-        AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green,
-                                                    .blue, .purple, .red]),
-                        center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            print("Button was tapped")
+        }) {
+            HStack(spacing: 10) {
+                Image(systemName: "pencil")
+                Text("Edit")
+            }
+        }
     }
 }
 
