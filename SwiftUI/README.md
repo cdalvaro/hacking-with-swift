@@ -166,5 +166,6 @@ and an output unit, then enter a value, and see the output of the conversion.
 - Colors and frames
 - Gradients
 - Buttons and images
+- Showing alert messages
 
 [Code](Projects/GuessTheFlag)
