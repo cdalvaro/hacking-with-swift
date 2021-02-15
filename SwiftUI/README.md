@@ -163,5 +163,6 @@ and an output unit, then enter a value, and see the output of the conversion.
 ## [Day 20](https://www.hackingwithswift.com/100/swiftui/20) - Project 2, Part One
 
 - Using stacks to arrange views
+- Colors and frames
 
 [Code](Projects/GuessTheFlag)

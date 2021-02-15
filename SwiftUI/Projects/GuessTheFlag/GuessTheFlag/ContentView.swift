@@ -9,14 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            ForEach(0..<3) { row in
-                HStack(spacing: 20) {
-                    ForEach(1..<4) { column in
-                        Text("Cell \(row * 3 + column)").padding()
-                    }
-                }
-            }
+        ZStack {
+            Color.red.edgesIgnoringSafeArea(.all)
+            Text("Your content")
         }
     }
 }
