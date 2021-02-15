@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         print(1, 2, 3, 4, 5, separator: "-")
 
         assert(1 == 1, "Maths Failure! 1")
-        assert(1 == 2, "Maths Failure! 2")
+//        assert(1 == 2, "Maths Failure! 2")
+
+        for i in 1...100 {
+            print("Got number \(i).")
+        }
     }
 }
