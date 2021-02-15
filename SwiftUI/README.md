@@ -24,6 +24,7 @@
 - [Day 17 - Project 1, Part Two](#day-17---project-1-part-two)
 - [Day 18 - Project 1, Part Three](#day-18---project-1-part-three)
 - [Day 19 - Unit Conversions Challenge](#day-19---unit-conversions-challenge)
+- [Day 20 - Project 2, Part One](#day-20---project-2-part-one)
 
 </details>
 
@@ -158,3 +159,9 @@ You need to build an app that handles unit conversions: users will select an inp
 and an output unit, then enter a value, and see the output of the conversion.
 
 [Code](Challenges/UnitConversions)
+
+## [Day 20](https://www.hackingwithswift.com/100/swiftui/20) - Project 2, Part One
+
+- Using stacks to arrange views
+
+[Code](Projects/GuessTheFlag)
