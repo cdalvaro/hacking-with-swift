@@ -68,6 +68,7 @@
 - [Day 61 - Project 16, Part Two](#day-61---project-16-part-two)
 - [Day 62 - Project 17, Part One](#day-62---project-17-part-one)
 - [Day 63 - Project 17, Part Two](#day-63---project-17-part-two)
+- [Day 64 - Project 18, Part One](#day-64---project-18-part-one)
 
 </details>
 
@@ -553,3 +554,9 @@ before giving it a new value, otherwise you end up with multiple timers.
 3. Stop creating space debris after the player has died.
 
 [Code](Projects/Project17)
+
+## [Day 64](https://www.hackingwithswift.com/100/64) - Project 18, Part One
+
+*Setting up*, *Basic Swift debugging using* `print()`, *Debugging with* `assert()`, *Debugging with breakpoints* and *View debugging*
+
+[Code](Projects/Project18)
