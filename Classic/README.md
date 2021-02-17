@@ -569,3 +569,6 @@ before giving it a new value, otherwise you end up with multiple timers.
 then changing the call to `instantiateViewController()` so that it uses
 the storyboard identifier “Bad” – this will fail, but your exception
 breakpoint should catch it. [Code](Projects/Project1-Breakpoint)
+2. In project 1, add a call to `assert()` in the `viewDidLoad()` method
+of DetailViewController.swift, checking that selectedImage always has
+a value. [Code](Projects/Project1-Breakpoint)

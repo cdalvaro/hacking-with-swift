@@ -17,6 +17,8 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        assert(selectedImage != nil, "selectedImage has value")
         
         if let index = selectedImageIndex, let total = totalImageNumber {
             title = "Picture \(index) of \(total)"
