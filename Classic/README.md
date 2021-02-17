@@ -560,3 +560,12 @@ before giving it a new value, otherwise you end up with multiple timers.
 *Setting up*, *Basic Swift debugging using* `print()`, *Debugging with* `assert()`, *Debugging with breakpoints* and *View debugging*
 
 [Code](Projects/Project18)
+
+## [Day 65](https://www.hackingwithswift.com/100/65) - Project 18, Part Two
+
+*Challenge*
+
+1. Temporarily try adding an exception breakpoint to project 1,
+then changing the call to `instantiateViewController()` so that it uses
+the storyboard identifier “Bad” – this will fail, but your exception
+breakpoint should catch it. [Code](Projects/Project1-Breakpoint)
