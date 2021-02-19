@@ -174,5 +174,6 @@ and an output unit, then enter a value, and see the output of the conversion.
 ## [Day 21](https://www.hackingwithswift.com/100/swiftui/21) - Project 2, Part Two
 
 - Stacking up buttons
+- Showing the player's score with an alert
 
 [Code](Projects/GuessTheFlag)
