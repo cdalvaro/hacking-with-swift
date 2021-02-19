@@ -175,5 +175,6 @@ and an output unit, then enter a value, and see the output of the conversion.
 
 - Stacking up buttons
 - Showing the player's score with an alert
+- Styling our flags
 
 [Code](Projects/GuessTheFlag)
