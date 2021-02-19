@@ -25,6 +25,7 @@
 - [Day 18 - Project 1, Part Three](#day-18---project-1-part-three)
 - [Day 19 - Unit Conversions Challenge](#day-19---unit-conversions-challenge)
 - [Day 20 - Project 2, Part One](#day-20---project-2-part-one)
+- [Day 21 - Project 2, Part Two](#day-21---project-2-part-two)
 
 </details>
 
@@ -167,5 +168,11 @@ and an output unit, then enter a value, and see the output of the conversion.
 - Gradients
 - Buttons and images
 - Showing alert messages
+
+[Code](Projects/GuessTheFlag)
+
+## [Day 21](https://www.hackingwithswift.com/100/swiftui/21) - Project 2, Part Two
+
+- Stacking up buttons
 
 [Code](Projects/GuessTheFlag)
