@@ -26,6 +26,7 @@
 - [Day 19 - Unit Conversions Challenge](#day-19---unit-conversions-challenge)
 - [Day 20 - Project 2, Part One](#day-20---project-2-part-one)
 - [Day 21 - Project 2, Part Two](#day-21---project-2-part-two)
+- [Day 22 - Project 2, Part Three](#day-22---project-2-part-three)
 
 </details>
 
@@ -176,5 +177,15 @@ and an output unit, then enter a value, and see the output of the conversion.
 - Stacking up buttons
 - Showing the player's score with an alert
 - Styling our flags
+
+[Code](Projects/GuessTheFlag)
+
+## [Day 22](https://www.hackingwithswift.com/100/swiftui/22) - Project 2, Part Three
+
+*Challenge*
+
+1. Add an `@State` property to store the user’s score, modify it when they get an answer right or wrong, then display it in the alert.
+2. Show the player’s current score in a label directly below the flags.
+3. When someone chooses the wrong flag, tell them their mistake in your alert message.
 
 [Code](Projects/GuessTheFlag)
