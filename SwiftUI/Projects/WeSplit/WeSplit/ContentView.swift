@@ -55,7 +55,14 @@ struct ContentView: View {
                 }
                 
                 Section(header: Text("Total amount")) {
-                    Text("$\(Double(checkAmount) ?? 0, specifier: "%.2f") + $\(tipValue, specifier: "%.2f") = $\(grandTotal, specifier: "%.2f")")
+                    HStack {
+                        Text("$\(Double(checkAmount) ?? 0, specifier: "%.2f")")
+                        Text("+")
+                        Text("$\(tipValue, specifier: "%.2f")")
+                            .foregroundColor(tipPercentages[tipPercentage] > 0 ? .black : .red)
+                        Text("=")
+                        Text("$\(grandTotal, specifier: "%.2f")")
+                    }
                 }
             }
             .navigationBarTitle("WeSplit")
