@@ -27,6 +27,7 @@
 - [Day 20 - Project 2, Part One](#day-20---project-2-part-one)
 - [Day 21 - Project 2, Part Two](#day-21---project-2-part-two)
 - [Day 22 - Project 2, Part Three](#day-22---project-2-part-three)
+- [Days 23 and 24 - Project 3](#days-23-and-24---project-3)
 
 </details>
 
@@ -189,3 +190,11 @@ and an output unit, then enter a value, and see the output of the conversion.
 3. When someone chooses the wrong flag, tell them their mistake in your alert message.
 
 [Code](Projects/GuessTheFlag)
+
+## [Days 23](https://www.hackingwithswift.com/100/swiftui/23) and [24](https://www.hackingwithswift.com/100/swiftui/24) - Project 3
+
+*Challenge*
+
+1. Create a custom `ViewModifier` (and accompanying `View` extension) that makes a view have a large, blue font suitable for prominent titles in a view. [Code](Projects/ViewsAndModifiers)
+2. Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip. [Code](Projects/WeSplit)
+3. Go back to project 2 and create a `FlagImage()` view that renders one flag image using the specific set of modifiers we had. [Code](Projects/GuessTheFlag)
