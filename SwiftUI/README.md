@@ -28,6 +28,7 @@
 - [Day 21 - Project 2, Part Two](#day-21---project-2-part-two)
 - [Day 22 - Project 2, Part Three](#day-22---project-2-part-three)
 - [Days 23 and 24 - Project 3](#days-23-and-24---project-3)
+- [Day 25 - MILESTONE: Projects 1-3](#day-25---milestone-projects-1-3)
 
 </details>
 
@@ -198,3 +199,19 @@ and an output unit, then enter a value, and see the output of the conversion.
 1. Create a custom `ViewModifier` (and accompanying `View` extension) that makes a view have a large, blue font suitable for prominent titles in a view. [Code](Projects/ViewsAndModifiers)
 2. Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip. [Code](Projects/WeSplit)
 3. Go back to project 2 and create a `FlagImage()` view that renders one flag image using the specific set of modifiers we had. [Code](Projects/GuessTheFlag)
+
+## [Day 25](https://www.hackingwithswift.com/100/swiftui/25) - MILESTONE: Projects 1-3
+
+Your challenge is to make a brain training game that challenges players to win or lose at _rock, paper, scissors_.
+
+So, very roughly:
+
+- Each turn of the game the app will randomly pick either rock, paper, or scissors.
+- Each turn the app will alternate between prompting the player to win or lose.
+- The player must then tap the correct move to win or lose the game.
+- If they are correct they score a point; otherwise they lose a point.
+- The game ends after 10 questions, at which point their score is shown.
+
+So, if the app chose _“Rock”_ and _“Win”_ the player would need to choose _“Paper”_, but if the app chose _“Rock”_ and _“Lose”_ the player would need to choose _“Scissors”_.
+
+[Code](Milestones/Milestone-Projects1_3)
