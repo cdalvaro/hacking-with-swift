@@ -222,5 +222,6 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 - Entering numbers with `Stepper`.
 - Selecting dates and times with `DatePicker`.
 - Working with dates.
+- Training a model with [Create ML](https://developer.apple.com/machine-learning/create-ml).
 
 [Code](Projects/BetterRest)
