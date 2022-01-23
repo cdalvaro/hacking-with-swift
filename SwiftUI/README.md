@@ -220,5 +220,6 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 ## [Day 26](https://www.hackingwithswift.com/100/swiftui/26) - Project 4, Part One
 
 - Entering numbers with `Stepper`.
+- Selecting dates and times with `DatePicker`.
 
 [Code](Projects/BetterRest)
