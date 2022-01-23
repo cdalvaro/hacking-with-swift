@@ -29,6 +29,7 @@
 - [Day 22 - Project 2, Part Three](#day-22---project-2-part-three)
 - [Days 23 and 24 - Project 3](#days-23-and-24---project-3)
 - [Day 25 - MILESTONE: Projects 1-3](#day-25---milestone-projects-1-3)
+- [Day 26 - Project 4, Part One](#day-26---project-4-part-one)
 
 </details>
 
@@ -215,3 +216,9 @@ So, very roughly:
 So, if the app chose _“Rock”_ and _“Win”_ the player would need to choose _“Paper”_, but if the app chose _“Rock”_ and _“Lose”_ the player would need to choose _“Scissors”_.
 
 [Code](Milestones/Milestone-Projects1_3)
+
+## [Day 26](https://www.hackingwithswift.com/100/swiftui/26) - Project 4, Part One
+
+- Entering numbers with `Stepper`.
+
+[Code](Projects/BetterRest)
