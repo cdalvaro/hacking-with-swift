@@ -30,11 +30,34 @@ class GameScene: SKScene {
             scoreLabel.text = "Score: \(score)"
         }
     }
+
+    private var bulletsSprite: SKSpriteNode!
+
+    private var bulletTextures = [
+        SKTexture(imageNamed: "shots0"),
+        SKTexture(imageNamed: "shots1"),
+        SKTexture(imageNamed: "shots2"),
+        SKTexture(imageNamed: "shots3")
+    ]
+
+    private var bulletsInClip = 3 {
+        didSet {
+            bulletsSprite.texture = bulletTextures[bulletsInClip]
+        }
+    }
+
+    private var targetDelay = 0.8
+    private var targetSpeed = 4.0
+    private var targetCreated = 0
+
+    private var isGameOver = false
     
     override func didMove(to view: SKView) {
         createBackground()
         createOverlay()
         createWater()
+
+        levelUp()
     }
 
     func createBackground() {
@@ -62,6 +85,11 @@ class GameScene: SKScene {
         scoreLabel.zPosition = 500
         scoreLabel.text = "Score: 0"
         addChild(scoreLabel)
+
+        bulletsSprite = SKSpriteNode(imageNamed: "shots3")
+        bulletsSprite.position = CGPoint(x: 170, y: 70)
+        bulletsSprite.zPosition = 500
+        addChild(bulletsSprite)
     }
 
     func createWater() {
@@ -85,6 +113,38 @@ class GameScene: SKScene {
 
         animate(waterBackground, distance: 8, duration: 1.3)
         animate(waterForeground, distance: 12, duration: 1)
+    }
+
+    func levelUp() {
+        targetSpeed *= 0.99
+        targetDelay *= 0.99
+        targetCreated += 1
+
+        if targetCreated < 100 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + targetDelay) { [unowned self] in
+                // Create Target
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [unowned self] in
+                self.gameOver()
+            }
+        }
+    }
+
+    func gameOver() {
+        isGameOver = true
+
+        let gameOverTitle = SKSpriteNode(imageNamed: "game-over")
+        gameOverTitle.alpha = 0
+        gameOverTitle.setScale(2)
+
+        let fadeIn = SKAction.fadeIn(withDuration: 0.3)
+        let scaleDown = SKAction.scale(to: 1, duration: 0.3)
+        let group = SKAction.group([fadeIn, scaleDown])
+
+        gameOverTitle.run(group)
+        gameOverTitle.zPosition = 900
+        addChild(gameOverTitle)
     }
     
     func touchDown(atPoint pos : CGPoint) {
