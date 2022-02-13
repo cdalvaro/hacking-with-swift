@@ -34,6 +34,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         createBackground()
         createOverlay()
+        createWater()
     }
 
     func createBackground() {
@@ -61,6 +62,29 @@ class GameScene: SKScene {
         scoreLabel.zPosition = 500
         scoreLabel.text = "Score: 0"
         addChild(scoreLabel)
+    }
+
+    func createWater() {
+        func animate(_ node: SKNode, distance: CGFloat, duration: TimeInterval) {
+            let movementUp = SKAction.moveBy(x: 0, y: distance, duration: duration)
+            let movementDown = movementUp.reversed()
+            let sequence = SKAction.sequence([movementUp, movementDown])
+            let repeatForever = SKAction.repeatForever(sequence)
+            node.run(repeatForever)
+        }
+
+        let waterBackground = SKSpriteNode(imageNamed: "water-bg")
+        waterBackground.position = CGPoint(x: 400, y: 180)
+        waterBackground.zPosition = 200
+        addChild(waterBackground)
+
+        let waterForeground = SKSpriteNode(imageNamed: "water-fg")
+        waterForeground.position = CGPoint(x: 400, y: 120)
+        waterForeground.zPosition = 300
+        addChild(waterForeground)
+
+        animate(waterBackground, distance: 8, duration: 1.3)
+        animate(waterForeground, distance: 12, duration: 1)
     }
     
     func touchDown(atPoint pos : CGPoint) {
