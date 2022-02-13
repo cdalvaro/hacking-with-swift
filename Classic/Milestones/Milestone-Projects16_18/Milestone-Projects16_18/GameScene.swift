@@ -8,10 +8,32 @@
 import SpriteKit
 import GameplayKit
 
+@propertyWrapper
+struct Score {
+    private var score: Int
+
+    public init(_ score: Int = 0) {
+        self.score = score
+    }
+
+    var wrappedValue: Int {
+        get { return score }
+        set { score = max(newValue, 0) }
+    }
+}
+
 class GameScene: SKScene {
+    
+    private var scoreLabel : SKLabelNode!
+    @Score private var score {
+        didSet {
+            scoreLabel.text = "Score: \(score)"
+        }
+    }
     
     override func didMove(to view: SKView) {
         createBackground()
+        createOverlay()
     }
 
     func createBackground() {
@@ -25,6 +47,20 @@ class GameScene: SKScene {
         grass.position = CGPoint(x: 400, y: 300)
         grass.zPosition = 100
         addChild(grass)
+    }
+
+    func createOverlay() {
+        let curtains = SKSpriteNode(imageNamed: "curtains")
+        curtains.position = CGPoint(x: 400, y: 300)
+        curtains.zPosition = 400
+        addChild(curtains)
+
+        scoreLabel = SKLabelNode(fontNamed: "Chalkduster")
+        scoreLabel.horizontalAlignmentMode = .right
+        scoreLabel.position = CGPoint(x: 680, y: 50)
+        scoreLabel.zPosition = 500
+        scoreLabel.text = "Score: 0"
+        addChild(scoreLabel)
     }
     
     func touchDown(atPoint pos : CGPoint) {
