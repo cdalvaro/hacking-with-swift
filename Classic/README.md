@@ -69,6 +69,8 @@
 - [Day 62 - Project 17, Part One](#day-62---project-17-part-one)
 - [Day 63 - Project 17, Part Two](#day-63---project-17-part-two)
 - [Day 64 - Project 18, Part One](#day-64---project-18-part-one)
+- [Day 65 - Project 18, Part Two](#day-65---project-18-part-two)
+- [Day 66 - MILESTONE: Projects 16-18](#day-66---milestone-projects-16-18)
 
 </details>
 
@@ -575,3 +577,22 @@ a value. [Code](Projects/Project1-Breakpoint)
 3. Go back to project 5, and try adding a conditional breakpoint to the
 start of the `submit()` method that pauses only if the user submits a
 word with six or more letters. [Code](Projects/Project5)
+
+Review: [Debug like a Pro](https://appdevcon.nl/session/how-to-debug-like-a-pro)
+
+## [Day 66](https://www.hackingwithswift.com/100/66) - MILESTONE: Projects 16-18
+
+*Challenge*
+
+Make a shooting gallery game using SpriteKit: create three rows on the screen, then have targets slide across from one side to the other. If the user taps a target, make it fade out and award them points.
+
+Some key points:
+
+* Make some targets big and slow, and others small and fast. The small targets should be worth more points.
+* Add _“bad”_ targets – things that cost the user points if they get shot accidentally.
+* Make the top and bottom rows move left to right, but the middle row move right to left.
+* Add a timer that ticks down from 60 seconds. When it hits zero, show a Game Over message.
+* Try going to https://openclipart.org/ to see what free artwork you can find.
+* Give the user six bullets per clip. Make them tap a different part of the screen to reload.
+
+[Code](Milestones/Milestone-Projects16_18)
