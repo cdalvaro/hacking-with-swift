@@ -156,7 +156,8 @@ class GameScene: SKScene {
     }
 
     func createTarget() {
-        let target = Target()
+        let scale = Double.random(in: 0.8 ... 1.2)
+        let target = Target(scale: CGFloat(scale))
 
         let level = Int.random(in: 0 ... 2)
         var movingRight = true
@@ -180,13 +181,14 @@ class GameScene: SKScene {
         }
 
         let move: SKAction
+        let duration = targetSpeed * scale
         if movingRight {
             target.position.x = 0
-            move = SKAction.moveTo(x: 800, duration: targetSpeed)
+            move = SKAction.moveTo(x: 800, duration: duration)
         } else {
             target.position.x = 800
             target.xScale = -target.xScale
-            move = SKAction.moveTo(x: 0, duration: targetSpeed)
+            move = SKAction.moveTo(x: 0, duration: duration)
         }
 
         let sequence = SKAction.sequence([move, SKAction.removeFromParent()])
