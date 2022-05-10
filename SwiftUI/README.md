@@ -30,6 +30,7 @@
 - [Days 23 and 24 - Project 3](#days-23-and-24---project-3)
 - [Day 25 - MILESTONE: Projects 1-3](#day-25---milestone-projects-1-3)
 - [Day 26 - Project 4, Part One](#day-26---project-4-part-one)
+- [Day 27 - Project 4, Part Two](#day-27---project-4-part-two)
 
 </details>
 
@@ -223,5 +224,13 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 - Selecting dates and times with `DatePicker`.
 - Working with dates.
 - Training a model with [Create ML](https://developer.apple.com/machine-learning/create-ml).
+
+[Code](Projects/BetterRest)
+
+## [Day 27](https://www.hackingwithswift.com/100/swiftui/27) - Project 4, Part Two
+
+- Building a basic layout.
+- Connecting SwiftUI to [Create ML](https://developer.apple.com/machine-learning/create-ml).
+- Cleaning up the user interface.
 
 [Code](Projects/BetterRest)
