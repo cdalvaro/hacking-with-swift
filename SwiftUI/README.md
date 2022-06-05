@@ -31,6 +31,7 @@
 - [Day 25 - MILESTONE: Projects 1-3](#day-25---milestone-projects-1-3)
 - [Day 26 - Project 4, Part One](#day-26---project-4-part-one)
 - [Day 27 - Project 4, Part Two](#day-27---project-4-part-two)
+- [Day 28 - Project 4, Part Three](#day-28---project-4-part-three)
 
 </details>
 
@@ -232,5 +233,13 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 - Building a basic layout.
 - Connecting SwiftUI to [Create ML](https://developer.apple.com/machine-learning/create-ml).
 - Cleaning up the user interface.
+
+[Code](Projects/BetterRest)
+
+## [Day 28](https://www.hackingwithswift.com/100/swiftui/28) - Project 4, Part Three
+
+- Replace each `VStack` in our form with a `Section`, where the text view is the title of the section. Do you prefer this layout or the `VStack` layout? It’s your app – you choose!
+- Replace the _“Number of cups”_ stepper with a `Picker` showing the same range of values.
+- Change the user interface so that it always shows their recommended bedtime using a nice and large font. You should be able to remove the _“Calculate”_ button entirely.
 
 [Code](Projects/BetterRest)
