@@ -29,9 +29,10 @@ class Target: SKNode {
         target = SKSpriteNode(imageNamed: "target\(targetType)")
 
         target.name = "target"
-        target.position.y += 116
-        target.xScale *= scale
-        target.yScale *= scale
+        let targetHeight = target.size.height
+        target.setScale(scale)
+        let heightDiff = targetHeight - target.size.height
+        target.position.y += stick.size.height - heightDiff
 
         addChild(stick)
         addChild(target)
