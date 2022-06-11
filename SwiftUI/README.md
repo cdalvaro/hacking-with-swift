@@ -33,6 +33,7 @@
 - [Day 27 - Project 4, Part Two](#day-27---project-4-part-two)
 - [Day 28 - Project 4, Part Three](#day-28---project-4-part-three)
 - [Day 29 - Project 5, Part One](#day-29---project-5-part-one)
+- [Day 30 - Project 5, Part Two](#day-30---project-5-part-two)
 
 </details>
 
@@ -250,5 +251,13 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 - Introducing `List`, your best friend
 - Loading resources from your app bundle
 - Working with strings
+
+[Code](Projects/WordScramble)
+
+## [Day 30](https://www.hackingwithswift.com/100/swiftui/30) - Project 5, Part Two
+
+- Adding to a list of words
+- Running code when our app launches
+- Validating words with `UITextChecker`
 
 [Code](Projects/WordScramble)
