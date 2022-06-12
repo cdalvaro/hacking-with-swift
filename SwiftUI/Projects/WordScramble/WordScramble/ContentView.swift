@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+    @State private var totalScore = 0
 
     @State private var errorTitle = ""
     @State private var errorMessage = ""
@@ -24,7 +25,10 @@ struct ContentView: View {
                         .autocapitalization(.none)
                 }
 
-                Section {
+                Section(header: HStack {
+                    Text("Score")
+                    Image(systemName: "\(totalScore).circle")
+                }) {
                     ForEach(usedWords, id: \.self) { word in
                         HStack {
                             Image(systemName: "\(word.count).circle")
@@ -32,6 +36,7 @@ struct ContentView: View {
                         }
                     }
                 }
+                .font(.title3)
             }
             .navigationTitle(rootWord)
             .toolbar {
@@ -75,6 +80,7 @@ struct ContentView: View {
             usedWords.insert(answer, at: 0)
         }
 
+        totalScore += answer.count + 1
         newWord = ""
     }
 
@@ -89,6 +95,7 @@ struct ContentView: View {
 
         let allWords = startWords.components(separatedBy: .newlines)
         rootWord = allWords.randomElement() ?? "silkworm"
+        totalScore = 0
     }
 
     func isOriginal(word: String) -> Bool {

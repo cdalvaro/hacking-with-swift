@@ -34,6 +34,7 @@
 - [Day 28 - Project 4, Part Three](#day-28---project-4-part-three)
 - [Day 29 - Project 5, Part One](#day-29---project-5-part-one)
 - [Day 30 - Project 5, Part Two](#day-30---project-5-part-two)
+- [Day 31 - Project 5, Part Three](#day-31---project-5-part-three)
 
 </details>
 
@@ -259,5 +260,13 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 - Adding to a list of words
 - Running code when our app launches
 - Validating words with `UITextChecker`
+
+[Code](Projects/WordScramble)
+
+## [Day 31](https://www.hackingwithswift.com/100/swiftui/31) - Project 5, Part Three
+
+- Disallow answers that are shorter than three letters or are just our start word.
+- Add a toolbar button that calls `startGame()`, so users can restart with a new word whenever they want to.
+- Put a text view somewhere so you can track and show the player's score for a given root word. How you calculate score is down to you, but something involving number of words and their letter count would be reasonable.
 
 [Code](Projects/WordScramble)
