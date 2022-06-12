@@ -46,7 +46,10 @@ struct ContentView: View {
 
     func addNewWord() {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
-        guard answer.count > 0 else { return }
+        guard answer.count >= 3, answer != rootWord else {
+            wordError(title: "Word is not allowed", message: "It must be longer than three letters and different from the given word")
+            return
+        }
 
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original")
