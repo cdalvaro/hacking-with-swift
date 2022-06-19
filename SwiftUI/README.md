@@ -275,5 +275,6 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 ## [Day 32](https://www.hackingwithswift.com/100/swiftui/32) - Project 6, Part One
 
 - Creating implicit animations
+- Customizing animations in SwiftUI
 
 [Code](Projects/Animations)
