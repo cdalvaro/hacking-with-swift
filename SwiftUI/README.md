@@ -35,6 +35,7 @@
 - [Day 29 - Project 5, Part One](#day-29---project-5-part-one)
 - [Day 30 - Project 5, Part Two](#day-30---project-5-part-two)
 - [Day 31 - Project 5, Part Three](#day-31---project-5-part-three)
+- [Day 32 - Project 6, Part One](#day-32---project-6-part-one)
 
 </details>
 
@@ -270,3 +271,9 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 - Put a text view somewhere so you can track and show the player's score for a given root word. How you calculate score is down to you, but something involving number of words and their letter count would be reasonable.
 
 [Code](Projects/WordScramble)
+
+## [Day 32](https://www.hackingwithswift.com/100/swiftui/32) - Project 6, Part One
+
+- Creating implicit animations
+
+[Code](Projects/Animations)
