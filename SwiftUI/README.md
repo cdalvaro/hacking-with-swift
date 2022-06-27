@@ -36,6 +36,7 @@
 - [Day 30 - Project 5, Part Two](#day-30---project-5-part-two)
 - [Day 31 - Project 5, Part Three](#day-31---project-5-part-three)
 - [Day 32 - Project 6, Part One](#day-32---project-6-part-one)
+- [Day 33 - Project 6, Part Two](#day-33---project-6-part-two)
 
 </details>
 
@@ -278,5 +279,14 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 - Customizing animations in SwiftUI
 - Animating bindings
 - Creating explicit animations
+
+[Code](Projects/Animations)
+
+## [Day 33](https://www.hackingwithswift.com/100/swiftui/33) - Project 6, Part Two
+
+- Controlling the animation stack
+- Animating gestures
+- Showing and hiding views with transitions
+- Building custom transitions using ViewModifier
 
 [Code](Projects/Animations)
