@@ -33,8 +33,9 @@ struct ContentView: View {
     @State private var alertMessage = ""
     @State private var score = 0
 
-    @State private var animationAmount = [Double](repeating: 0.0, count: numberOfFlags)
+    @State private var rotationAmount = [Double](repeating: 0.0, count: numberOfFlags)
     @State private var opacityAmount = [Double](repeating: 1.0, count: numberOfFlags)
+    @State private var scaleAmount = [Double](repeating: 1.0, count: numberOfFlags)
 
     var body: some View {
         ZStack {
@@ -58,17 +59,19 @@ struct ContentView: View {
                     Button(action: {
                         self.flagTapped(number)
                         withAnimation {
-                            animationAmount[number] += 360
+                            rotationAmount[number] += 360
                             for _number in 0 ..< ContentView.numberOfFlags where _number != number {
                                 opacityAmount[_number] = 0.75
+                                scaleAmount[_number] *= 0.75
                             }
                         }
                     }) {
                         FlagImage(imageName: self.countries[number])
                     }
                     .opacity(opacityAmount[number])
-                    .rotation3DEffect(.degrees(animationAmount[number]), axis: (x: 0.0, y: 1.0, z: 0.0))
-                    .onAnimationCompleted(for: animationAmount[number]) {
+                    .scaleEffect(scaleAmount[number])
+                    .rotation3DEffect(.degrees(rotationAmount[number]), axis: (x: 0.0, y: 1.0, z: 0.0))
+                    .onAnimationCompleted(for: rotationAmount[number]) {
                         showingScore = true
                     }
                 }
@@ -106,8 +109,11 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0 ..< ContentView.numberOfFlags)
-        animationAmount = [Double](repeating: 0.0, count: ContentView.numberOfFlags)
-        opacityAmount = [Double](repeating: 1.0, count: ContentView.numberOfFlags)
+        rotationAmount = [Double](repeating: 0.0, count: ContentView.numberOfFlags)
+        withAnimation {
+            opacityAmount = [Double](repeating: 1.0, count: ContentView.numberOfFlags)
+            scaleAmount = [Double](repeating: 1.0, count: ContentView.numberOfFlags)
+        }
     }
 }
 
