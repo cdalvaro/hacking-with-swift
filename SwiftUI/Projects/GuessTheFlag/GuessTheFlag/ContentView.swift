@@ -34,6 +34,7 @@ struct ContentView: View {
     @State private var score = 0
 
     @State private var animationAmount = [Double](repeating: 0.0, count: numberOfFlags)
+    @State private var opacityAmount = [Double](repeating: 1.0, count: numberOfFlags)
 
     var body: some View {
         ZStack {
@@ -58,10 +59,14 @@ struct ContentView: View {
                         self.flagTapped(number)
                         withAnimation {
                             animationAmount[number] += 360
+                            for _number in 0 ..< ContentView.numberOfFlags where _number != number {
+                                opacityAmount[_number] = 0.75
+                            }
                         }
                     }) {
                         FlagImage(imageName: self.countries[number])
                     }
+                    .opacity(opacityAmount[number])
                     .rotation3DEffect(.degrees(animationAmount[number]), axis: (x: 0.0, y: 1.0, z: 0.0))
                     .onAnimationCompleted(for: animationAmount[number]) {
                         showingScore = true
@@ -102,6 +107,7 @@ struct ContentView: View {
         countries.shuffle()
         correctAnswer = Int.random(in: 0 ..< ContentView.numberOfFlags)
         animationAmount = [Double](repeating: 0.0, count: ContentView.numberOfFlags)
+        opacityAmount = [Double](repeating: 1.0, count: ContentView.numberOfFlags)
     }
 }
 
