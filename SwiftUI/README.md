@@ -37,6 +37,7 @@
 - [Day 31 - Project 5, Part Three](#day-31---project-5-part-three)
 - [Day 32 - Project 6, Part One](#day-32---project-6-part-one)
 - [Day 33 - Project 6, Part Two](#day-33---project-6-part-two)
+- [Day 34 - Project 6, Part Three](#day-34---project-6-part-three)
 
 </details>
 
@@ -290,3 +291,11 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 - Building custom transitions using ViewModifier
 
 [Code](Projects/Animations)
+
+## [Day 34](https://www.hackingwithswift.com/100/swiftui/34) - Project 6, Part Three
+
+- When you tap a flag, make it spin around 360 degrees on the Y axis.
+- Make the other two buttons fade out to 25% opacity.
+- Add a third effect of your choosing to the two flags the user didn't choose.
+
+[Code](Projects/GuessTheFlag)

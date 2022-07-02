@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0105C8B22870A9110008984C /* AnimationCompletionObserverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105C8B12870A9110008984C /* AnimationCompletionObserverModifier.swift */; };
 		07F7E7C925DADC9800394D94 /* GuessTheFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7E7C825DADC9800394D94 /* GuessTheFlagApp.swift */; };
 		07F7E7CB25DADC9800394D94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7E7CA25DADC9800394D94 /* ContentView.swift */; };
 		07F7E7CD25DADC9A00394D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F7E7CC25DADC9A00394D94 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0105C8B12870A9110008984C /* AnimationCompletionObserverModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationCompletionObserverModifier.swift; sourceTree = "<group>"; };
 		07F7E7C525DADC9800394D94 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F7E7C825DADC9800394D94 /* GuessTheFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagApp.swift; sourceTree = "<group>"; };
 		07F7E7CA25DADC9800394D94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		07F7E7C725DADC9800394D94 /* GuessTheFlag */ = {
 			isa = PBXGroup;
 			children = (
+				0105C8B12870A9110008984C /* AnimationCompletionObserverModifier.swift */,
 				07F7E7C825DADC9800394D94 /* GuessTheFlagApp.swift */,
 				07F7E7CA25DADC9800394D94 /* ContentView.swift */,
 				07F7E7CC25DADC9A00394D94 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F7E7CB25DADC9800394D94 /* ContentView.swift in Sources */,
+				0105C8B22870A9110008984C /* AnimationCompletionObserverModifier.swift in Sources */,
 				07F7E7C925DADC9800394D94 /* GuessTheFlagApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

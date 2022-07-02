@@ -20,16 +20,20 @@ struct FlagImage: View {
 }
 
 struct ContentView: View {
+    private static let numberOfFlags = 3
+
     @State private var countries = [
         "Estonia", "France", "Germany", "Ireland", "Italy",
         "Nigeria", "Poland", "Russia", "Spain", "UK", "US"
     ].shuffled()
-    @State private var correctAnswer = Int.random(in: 0 ... 2)
+    @State private var correctAnswer = Int.random(in: 0 ..< numberOfFlags)
 
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var alertMessage = ""
     @State private var score = 0
+
+    @State private var animationAmount = [Double](repeating: 0.0, count: numberOfFlags)
 
     var body: some View {
         ZStack {
@@ -49,11 +53,18 @@ struct ContentView: View {
                         .fontWeight(.black)
                 }
 
-                ForEach(0 ..< 3) { number in
+                ForEach(0 ..< ContentView.numberOfFlags, id: \.self) { number in
                     Button(action: {
                         self.flagTapped(number)
+                        withAnimation {
+                            animationAmount[number] += 360
+                        }
                     }) {
                         FlagImage(imageName: self.countries[number])
+                    }
+                    .rotation3DEffect(.degrees(animationAmount[number]), axis: (x: 0.0, y: 1.0, z: 0.0))
+                    .onAnimationCompleted(for: animationAmount[number]) {
+                        showingScore = true
                     }
                 }
 
@@ -85,12 +96,12 @@ struct ContentView: View {
             scoreTitle = "Wrong"
             alertMessage = "That's the flag of \(countries[number])"
         }
-        showingScore = true
     }
 
     func askQuestion() {
         countries.shuffle()
-        correctAnswer = Int.random(in: 0 ..< 3)
+        correctAnswer = Int.random(in: 0 ..< ContentView.numberOfFlags)
+        animationAmount = [Double](repeating: 0.0, count: ContentView.numberOfFlags)
     }
 }
 
