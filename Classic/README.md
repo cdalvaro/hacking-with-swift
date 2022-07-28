@@ -71,6 +71,7 @@
 - [Day 64 - Project 18, Part One](#day-64---project-18-part-one)
 - [Day 65 - Project 18, Part Two](#day-65---project-18-part-two)
 - [Day 66 - MILESTONE: Projects 16-18](#day-66---milestone-projects-16-18)
+- [Day 67 - Project 19, Part One](#day-67---project-19-part-one)
 
 </details>
 
@@ -596,3 +597,9 @@ Some key points:
 * Give the user six bullets per clip. Make them tap a different part of the screen to reload.
 
 [Code](Milestones/Milestone-Projects16_18)
+
+## [Day 67](https://www.hackingwithswift.com/100/67) - Project 19, Part One
+
+*Setting up*, *Making a shell app*, *Adding an extension:* `NSExtensionItem` and *What do you want to get?*
+
+[Code](Projects/Project19)
