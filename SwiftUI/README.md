@@ -38,6 +38,8 @@
 - [Day 32 - Project 6, Part One](#day-32---project-6-part-one)
 - [Day 33 - Project 6, Part Two](#day-33---project-6-part-two)
 - [Day 34 - Project 6, Part Three](#day-34---project-6-part-three)
+- [Day 35 - MILESTONE: Projects 4-6](#day-35---milestone-projects-4-6)
+- [Day 36 - Project 7, Part One](#day-36---project-7-part-one)
 
 </details>
 
@@ -299,3 +301,22 @@ So, if the app chose _“Rock”_ and _“Win”_ the player would need to choos
 - Add a third effect of your choosing to the two flags the user didn't choose.
 
 [Code](Projects/GuessTheFlag)
+
+## [Day 35](https://www.hackingwithswift.com/100/swiftui/35) - MILESTONE: Projects 4-6
+
+Your goal is to build an _“edutainment”_ app for kids to help them practice multiplication tables – _“what is 7 x 8?”_ and so on. Edutainment apps are educational at their code, but ideally have enough playfulness about them to make kids want to play.
+
+Breaking it down:
+
+- The player needs to select which multiplication tables they want to practice. This could be pressing buttons, or it could be an _“Up to…”_ stepper, going from 2 to 12.
+- The player should be able to select how many questions they want to be asked: 5, 10, or 20.
+- You should randomly generate as many questions as they asked for, within the difficulty range they asked for.
+
+🚧
+
+## [Day 36](https://www.hackingwithswift.com/100/swiftui/36) - Project 7, Part One
+
+- Why `@State` only works with structs
+- Sharing SwiftUI state with `@StateObject`
+
+[Code](Projects/iExpense)

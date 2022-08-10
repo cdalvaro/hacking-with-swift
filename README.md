@@ -38,5 +38,5 @@ Challenges are available inside [`SwiftUI`](SwiftUI) directory. (🚧 Still in p
 [swift_current_day]: https://www.hackingwithswift.com/100/67
 [swift_progress]: https://img.shields.io/badge/100%20Days%20of%20Swift-67-D64D42
 
-[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/34
-[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-34-3463DA
+[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/36
+[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-36-3463DA
