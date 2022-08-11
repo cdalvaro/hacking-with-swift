@@ -320,5 +320,6 @@ Breaking it down:
 - Sharing SwiftUI state with `@StateObject`
 - Showing and hiding views
 - Deleting items using `onDelete()`
+- Storing user settings with `UserDefaults`
 
 [Code](Projects/iExpense)
