@@ -321,5 +321,6 @@ Breaking it down:
 - Showing and hiding views
 - Deleting items using `onDelete()`
 - Storing user settings with `UserDefaults`
+- Archiving Swift objects with Codable
 
 [Code](Projects/iExpense)
