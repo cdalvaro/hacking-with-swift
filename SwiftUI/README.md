@@ -318,5 +318,6 @@ Breaking it down:
 
 - Why `@State` only works with structs
 - Sharing SwiftUI state with `@StateObject`
+- Showing and hiding views
 
 [Code](Projects/iExpense)
