@@ -40,6 +40,7 @@
 - [Day 34 - Project 6, Part Three](#day-34---project-6-part-three)
 - [Day 35 - MILESTONE: Projects 4-6](#day-35---milestone-projects-4-6)
 - [Day 36 - Project 7, Part One](#day-36---project-7-part-one)
+- [Day 37 - Project 7, Part Two](#day-37---project-7-part-two)
 
 </details>
 
@@ -322,5 +323,15 @@ Breaking it down:
 - Deleting items using `onDelete()`
 - Storing user settings with `UserDefaults`
 - Archiving Swift objects with Codable
+
+[Code](Projects/iExpense)
+
+## [Day 37](https://www.hackingwithswift.com/100/swiftui/37) - Project 7, Part Two
+
+- Building a list we can delete from
+- Working with `Identifiable` items in SwiftUI
+- Sharing an observed object with a new view
+- Making changes permanent with `UserDefaults`
+- Final polish
 
 [Code](Projects/iExpense)
