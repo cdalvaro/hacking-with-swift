@@ -340,5 +340,6 @@ Breaking it down:
 ## [Day 38](https://www.hackingwithswift.com/100/swiftui/38) - Project 7, Part Three
 
 1. Use the user’s preferred currency, rather than always using US dollars.
+2. Modify the expense amounts in `ContentView` to contain some styling depending on their value – expenses under $10 should have one style, expenses under $100 another, and expenses over $100 a third style. What those styles are depend on you.
 
 [Code](Projects/iExpense)
