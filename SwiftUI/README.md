@@ -41,6 +41,7 @@
 - [Day 35 - MILESTONE: Projects 4-6](#day-35---milestone-projects-4-6)
 - [Day 36 - Project 7, Part One](#day-36---project-7-part-one)
 - [Day 37 - Project 7, Part Two](#day-37---project-7-part-two)
+- [Day 38 - Project 7, Part Three](#day-38---project-7-part-three)
 
 </details>
 
@@ -333,5 +334,11 @@ Breaking it down:
 - Sharing an observed object with a new view
 - Making changes permanent with `UserDefaults`
 - Final polish
+
+[Code](Projects/iExpense)
+
+## [Day 38](https://www.hackingwithswift.com/100/swiftui/38) - Project 7, Part Three
+
+1. Use the user’s preferred currency, rather than always using US dollars.
 
 [Code](Projects/iExpense)

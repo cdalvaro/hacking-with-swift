@@ -11,6 +11,8 @@ struct ContentView: View {
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
 
+    private let locale = Locale.current
+
     var body: some View {
         NavigationView {
             List {
@@ -23,7 +25,7 @@ struct ContentView: View {
 
                         Spacer()
 
-                        Text(item.amount, format: .currency(code: "USD"))
+                        Text(item.amount, format: .currency(code: locale.currencyCode!))
                     }
                 }
                 .onDelete(perform: removeItems)
