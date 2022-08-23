@@ -11,26 +11,17 @@ struct ContentView: View {
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
 
-    private let locale = Locale.current
-
     var body: some View {
         NavigationView {
             List {
-                ForEach(expenses.items, id: \.id) { item in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(item.name).font(.headline)
-                            Text(item.type)
+                ForEach(ExpenseType.allCases, id: \.self) { type in
+                    let sectionItems = expenses.expensesFor(type: type)
+                    if !sectionItems.isEmpty {
+                        ExpensesSection(title: type.description, expenses: sectionItems) { offsets in
+                            removeItems(at: offsets, in: sectionItems)
                         }
-
-                        Spacer()
-
-                        Text(item.amount, format: .currency(code: locale.currencyCode!))
-                            .foregroundColor(colorFor(expense: item))
-                            .fontWeight(item.amount < 100.0 ? .regular : .bold)
                     }
                 }
-                .onDelete(perform: removeItems)
             }
             .navigationTitle("iExpense")
             .toolbar {
@@ -46,19 +37,17 @@ struct ContentView: View {
         }
     }
 
-    func removeItems(at offsets: IndexSet) {
-        expenses.items.remove(atOffsets: offsets)
-    }
+    func removeItems(at offsets: IndexSet, in inputArray: [ExpenseItem]) {
+        var objectsToDelete = IndexSet()
 
-    func colorFor(expense: ExpenseItem) -> Color {
-        switch expense.amount {
-        case 0..<10:
-            return .green
-        case 10..<100:
-            return .orange
-        default:
-            return .red
+        for offset in offsets {
+            let item = inputArray[offset]
+            if let index = expenses.items.firstIndex(of: item) {
+                objectsToDelete.insert(index)
+            }
         }
+
+        expenses.items.remove(atOffsets: objectsToDelete)
     }
 }
 
