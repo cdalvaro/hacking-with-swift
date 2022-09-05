@@ -17,11 +17,15 @@ struct ContentView: View {
             disabledDownButton = multiplicationTable <= 2
         }
     }
+    
+    private var numberOfQuestions = [5, 10, 20]
+    @State private var selectedNumberOfQuestions = 5
 
     var body: some View {
         NavigationView {
             VStack(spacing: 50) {
-                Text("Choose a multiplication table")
+                Text("Multiplication table")
+                    .font(.title)
 
                 HStack(spacing: 10) {
                     Text("\(multiplicationTable)×").multiplicationTableStyle()
@@ -41,8 +45,17 @@ struct ContentView: View {
                         .disabled(disabledDownButton)
                     }
                 }
+                
+                HStack(spacing: 5) {
+                    Text("Number of questions:")
+                    Picker("Select the number of questiones", selection: $selectedNumberOfQuestions) {
+                        ForEach(numberOfQuestions, id: \.self) {
+                            Text("\($0)")
+                        }
+                    }
+                }
 
-                NavigationLink(destination: QuizView(multiplicationTable: Int(multiplicationTable))) {
+                NavigationLink(destination: QuizView(multiplicationTable: multiplicationTable, numberOfQuestions: selectedNumberOfQuestions)) {
                     Text("Let's Go")
                 }
             }.padding()

@@ -9,8 +9,10 @@ import SwiftUI
 
 struct QuizView: View {
     var multiplicationTable: Int
+    var numberOfQuestions: Int
 
     var body: some View {
-        Text("You chose \(multiplicationTable)")
+        Text("Multiplication table: \(multiplicationTable)")
+        Text("Number of questions: \(numberOfQuestions)")
     }
 }
