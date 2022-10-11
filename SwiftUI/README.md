@@ -349,5 +349,6 @@ Breaking it down:
 ## [Day 39](https://www.hackingwithswift.com/100/swiftui/39) - Project 8, Part One
 
 - Resizing images to fit the screen using `GeometryReader`
+- How `ScrollView` lets us work with scrolling data
 
 [Code](Projects/Moonshot)
