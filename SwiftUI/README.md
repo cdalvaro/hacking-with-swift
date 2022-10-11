@@ -351,5 +351,6 @@ Breaking it down:
 - Resizing images to fit the screen using `GeometryReader`
 - How `ScrollView` lets us work with scrolling data
 - Pushing new views onto the stack using `NavigationLink`
+- Working with hierarchical `Codable` data
 
 [Code](Projects/Moonshot)
