@@ -42,6 +42,7 @@
 - [Day 36 - Project 7, Part One](#day-36---project-7-part-one)
 - [Day 37 - Project 7, Part Two](#day-37---project-7-part-two)
 - [Day 38 - Project 7, Part Three](#day-38---project-7-part-three)
+- [Day 39 - Project 8, Part One](#day-39---project-8-part-one)
 
 </details>
 
@@ -344,3 +345,9 @@ Breaking it down:
 3. For a bigger challenge, try splitting the expenses list into two sections: one for personal expenses, and one for business expenses. This is tricky for a few reasons, not least because it means being careful about how items are deleted!
 
 [Code](Projects/iExpense)
+
+## [Day 39](https://www.hackingwithswift.com/100/swiftui/39) - Project 8, Part One
+
+- Resizing images to fit the screen using `GeometryReader`
+
+[Code](Projects/Moonshot)
