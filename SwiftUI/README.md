@@ -361,5 +361,6 @@ Breaking it down:
 
 - Loading a specific kind of `Codable` data
 - Using generics to load any kind of `Codable` data
+- Formatting our mission view
 
 [Code](Projects/Moonshot)
