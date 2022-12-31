@@ -360,5 +360,6 @@ Breaking it down:
 ## [Day 40](https://www.hackingwithswift.com/100/swiftui/40) - Project 8, Part Two
 
 - Loading a specific kind of `Codable` data
+- Using generics to load any kind of `Codable` data
 
 [Code](Projects/Moonshot)
