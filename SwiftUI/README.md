@@ -43,6 +43,7 @@
 - [Day 37 - Project 7, Part Two](#day-37---project-7-part-two)
 - [Day 38 - Project 7, Part Three](#day-38---project-7-part-three)
 - [Day 39 - Project 8, Part One](#day-39---project-8-part-one)
+- [Day 40 - Project 8, Part Two](#day-40---project-8-part-two)
 
 </details>
 
@@ -353,5 +354,11 @@ Breaking it down:
 - Pushing new views onto the stack using `NavigationLink`
 - Working with hierarchical `Codable` data
 - How to lay out views in a scrolling grid
+
+[Code](Projects/Moonshot)
+
+## [Day 40](https://www.hackingwithswift.com/100/swiftui/40) - Project 8, Part Two
+
+- Loading a specific kind of `Codable` data
 
 [Code](Projects/Moonshot)
