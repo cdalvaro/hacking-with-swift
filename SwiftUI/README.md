@@ -44,6 +44,7 @@
 - [Day 38 - Project 7, Part Three](#day-38---project-7-part-three)
 - [Day 39 - Project 8, Part One](#day-39---project-8-part-one)
 - [Day 40 - Project 8, Part Two](#day-40---project-8-part-two)
+- [Day 41 - Project 8, Part Three](#day-41---project-8-part-three)
 
 </details>
 
@@ -362,5 +363,11 @@ Breaking it down:
 - Loading a specific kind of `Codable` data
 - Using generics to load any kind of `Codable` data
 - Formatting our mission view
+
+[Code](Projects/Moonshot)
+
+## [Day 41](https://www.hackingwithswift.com/100/swiftui/41) - Project 8, Part Three
+
+- Showing mission details with [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview) and [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader)
 
 [Code](Projects/Moonshot)
