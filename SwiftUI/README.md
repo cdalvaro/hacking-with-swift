@@ -369,5 +369,6 @@ Breaking it down:
 ## [Day 41](https://www.hackingwithswift.com/100/swiftui/41) - Project 8, Part Three
 
 - Showing mission details with [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview) and [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader)
+- Merging [`Codable`](https://developer.apple.com/documentation/swift/codable) structs
 
 [Code](Projects/Moonshot)
