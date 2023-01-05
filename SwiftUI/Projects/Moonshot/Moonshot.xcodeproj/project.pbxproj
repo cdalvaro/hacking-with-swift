@@ -18,6 +18,7 @@
 		07D55650296027BE005A4444 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D5564F296027BE005A4444 /* Astronaut.swift */; };
 		07D5565229602833005A4444 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D5565129602833005A4444 /* Bundle-Decodable.swift */; };
 		07D6B11A2966D520003D51EA /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6B1192966D520003D51EA /* MissionView.swift */; };
+		07D6B11C2966E297003D51EA /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6B11B2966E297003D51EA /* AstronautView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		07D5564F296027BE005A4444 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
 		07D5565129602833005A4444 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		07D6B1192966D520003D51EA /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		07D6B11B2966E297003D51EA /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				01E1DEA728EB270900C086F9 /* MoonshotApp.swift */,
 				01E1DEA928EB270900C086F9 /* ContentView.swift */,
 				07D5564F296027BE005A4444 /* Astronaut.swift */,
+				07D6B11B2966E297003D51EA /* AstronautView.swift */,
 				07D5564C29602712005A4444 /* astronauts.json */,
 				07D5565129602833005A4444 /* Bundle-Decodable.swift */,
 				079889062960887000B2C74E /* Color-Theme.swift */,
@@ -162,6 +165,7 @@
 			files = (
 				07D6B11A2966D520003D51EA /* MissionView.swift in Sources */,
 				07D55650296027BE005A4444 /* Astronaut.swift in Sources */,
+				07D6B11C2966E297003D51EA /* AstronautView.swift in Sources */,
 				079889072960887000B2C74E /* Color-Theme.swift in Sources */,
 				01E1DEAA28EB270900C086F9 /* ContentView.swift in Sources */,
 				01E1DEA828EB270900C086F9 /* MoonshotApp.swift in Sources */,

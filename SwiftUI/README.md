@@ -370,5 +370,6 @@ Breaking it down:
 
 - Showing mission details with [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview) and [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader)
 - Merging [`Codable`](https://developer.apple.com/documentation/swift/codable) structs
+- Finishing up with one last view
 
 [Code](Projects/Moonshot)
