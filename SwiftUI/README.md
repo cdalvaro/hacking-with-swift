@@ -45,103 +45,104 @@
 - [Day 39 - Project 8, Part One](#day-39---project-8-part-one)
 - [Day 40 - Project 8, Part Two](#day-40---project-8-part-two)
 - [Day 41 - Project 8, Part Three](#day-41---project-8-part-three)
+- [Day 42 - Project 8, Part Four](#day-42---project-8-part-four)
 
 </details>
 
 ## [Day 1](https://www.hackingwithswift.com/100/swiftui/1) - First Steps in Swift
 
-*Variables* and *Constants*, *Strings*, *Integers*, *Doubles* and *Booleans*, *Inference* and *Type Annotations*
+_Variables_ and _Constants_, _Strings_, _Integers_, _Doubles_ and _Booleans_, _Inference_ and _Type Annotations_
 but setting foundations.
 
 [Code](../Playgrounds/Day001.playground/Contents.swift)
 
 ## [Day 2](https://www.hackingwithswift.com/100/swiftui/2) - Complex Types
 
-*Arrays*, *Sets*, *Tuples*, *Dictionaries* and *Enumerations*.
+_Arrays_, _Sets_, _Tuples_, _Dictionaries_ and _Enumerations_.
 
 [Code](../Playgrounds/Day002.playground/Contents.swift)
 
 ## [Day 3](https://www.hackingwithswift.com/100/swiftui/3) - Operators and Conditions
 
-*Arithmetic Operators*, *Operators Overloading*, *Compound Assignment Operators*, *Comparison Operators*, *Conditions*,
-*Combining Conditions*, *The Ternary Operator*, *Switch Statements* and *Range Operators*.
+_Arithmetic Operators_, _Operators Overloading_, _Compound Assignment Operators_, _Comparison Operators_, _Conditions_,
+_Combining Conditions_, _The Ternary Operator_, _Switch Statements_ and _Range Operators_.
 
 [Code](../Playgrounds/Day003.playground/Contents.swift)
 
 ## [Day 4](https://www.hackingwithswift.com/100/swiftui/4) - Looping
 
-*For loops*, *While loops*, *Repeat loops*, *Exiting loops*, *Exiting multiple loops*, *Skipping items* and *Infinite loops*.
+_For loops_, _While loops_, _Repeat loops_, _Exiting loops_, _Exiting multiple loops_, _Skipping items_ and _Infinite loops_.
 
 [Code](../Playgrounds/Day004.playground/Contents.swift)
 
 ## [Day 5](https://www.hackingwithswift.com/100/swiftui/5) - Functions
 
-*Writing functions*, *Accepting parameters*, *Returning values*, *Parameter labels*, *Omitting parameter labels*, *Default parameters*,
-*Variadic functions*, *Writing throwing functions*, *Running throwing functions* and *inout parameters*.
+_Writing functions_, _Accepting parameters_, _Returning values_, _Parameter labels_, _Omitting parameter labels_, _Default parameters_,
+_Variadic functions_, _Writing throwing functions_, _Running throwing functions_ and _inout parameters_.
 
 [Code](../Playgrounds/Day005.playground/Contents.swift)
 
 ## [Day 6](https://www.hackingwithswift.com/100/swiftui/6) - Closures, Part One
 
-*Creating basic closures*, *Accepting parameters in a closure*, *Returning values from a closure*, *Closures as parameters* and *Trailing closure syntax*.
+_Creating basic closures_, _Accepting parameters in a closure_, _Returning values from a closure_, _Closures as parameters_ and _Trailing closure syntax_.
 
 [Code](../Playgrounds/Day006.playground/Contents.swift)
 
 ## [Day 7](https://www.hackingwithswift.com/100/swiftui/7) - Closures, Part Two
 
-*Using closures as parameters when they accept parameters*, *Using closures as parameters when they return values*, *Shorthand parameter names*,
-*Closures with multiple parameters*, *Returning closures from functions* and *Capturing values*.
+_Using closures as parameters when they accept parameters_, _Using closures as parameters when they return values_, _Shorthand parameter names_,
+_Closures with multiple parameters_, _Returning closures from functions_ and _Capturing values_.
 
 [Code](../Playgrounds/Day007.playground/Contents.swift)
 
 ## [Day 8](https://www.hackingwithswift.com/100/swiftui/8) - Structs, Part One
 
-*Creating your own structs*, *Computed properties*, *Property observers*, *Methods*, *Mutating methods*,
-*Properties and methods of strings* and *Properties and methods of arrays*.
+_Creating your own structs_, _Computed properties_, _Property observers_, _Methods_, _Mutating methods_,
+_Properties and methods of strings_ and _Properties and methods of arrays_.
 
 [Code](../Playgrounds/Day008.playground/Contents.swift)
 
 ## [Day 9](https://www.hackingwithswift.com/100/swiftui/9) - Structs, Part Two
 
-*Initializers*, *Referring to the current instance*, *Lazy properties*, *Static properties and methods* and *Access control*.
+_Initializers_, _Referring to the current instance_, _Lazy properties_, _Static properties and methods_ and _Access control_.
 
 [Code](../Playgrounds/Day009.playground/Contents.swift)
 
 ## [Day 10](https://www.hackingwithswift.com/100/swiftui/10) - Classes
 
-*Creating your own classes*, *Class inheritance*, *Overriding methods*, *Final classes*, *Copying objects*, *Deinitializers* and *Mutability*.
+_Creating your own classes_, _Class inheritance_, _Overriding methods_, _Final classes_, _Copying objects_, _Deinitializers_ and _Mutability_.
 
 [Code](../Playgrounds/Day010.playground/Contents.swift)
 
 ## [Day 11](https://www.hackingwithswift.com/100/swiftui/11) - Protocols And Extensions
 
-*Protocols*, *Protocol inheritance*, *Extensions*, *Protocol extensions* and *Protocol-oriented programming*.
+_Protocols_, _Protocol inheritance_, _Extensions_, _Protocol extensions_ and _Protocol-oriented programming_.
 
 [Code](../Playgrounds/Day011.playground/Contents.swift)
 
 ## [Day 12](https://www.hackingwithswift.com/100/swiftui/12) - Optionals
 
-*Handling missing data*, *Unwrapping optionals*, *Unwrapping with guard*, *Force unwrapping*, *Implicitly unwrapped optionals*,
-*Nil coalescing*, *Optional chaining*, *Optional try*, *Failable initializers* and *Typecasting*.
+_Handling missing data_, _Unwrapping optionals_, _Unwrapping with guard_, _Force unwrapping_, _Implicitly unwrapped optionals_,
+_Nil coalescing_, _Optional chaining_, _Optional try_, _Failable initializers_ and _Typecasting_.
 
 [Code](../Playgrounds/Day012.playground/Contents.swift)
 
 ## [Day 13](https://www.hackingwithswift.com/100/swiftui/13) - Swift Review, Day One
 
-*Variables and Constants*, *Types of Data*, *Operators*, *String Interpolation*, *Arrays*, *Dictionaries*,
-*Conditional Statements*, *Loops* and *Switch Case*.
+_Variables and Constants_, _Types of Data_, _Operators_, _String Interpolation_, _Arrays_, _Dictionaries_,
+_Conditional Statements_, _Loops_ and _Switch Case_.
 
 [Code](../Playgrounds/Day013.playground/Contents.swift)
 
 ## [Day 14](https://www.hackingwithswift.com/100/swiftui/14) - Swift Review, Day Two
 
-*Functions*, *Optionals*, *Optional Chaining*, *Enumerations*, *Structs* and *Classes*.
+_Functions_, _Optionals_, _Optional Chaining_, _Enumerations_, _Structs_ and _Classes_.
 
 [Code](../Playgrounds/Day014.playground/Contents.swift)
 
 ## [Day 15](https://www.hackingwithswift.com/100/swiftui/15) - Swift Review, Day Three
 
-*Properties*, *Static properties and methods*, *Access control*, *Polymorphism and typecasting* and *Closures*.
+_Properties_, _Static properties and methods_, _Access control_, _Polymorphism and typecasting_ and _Closures_.
 
 [Code](../Playgrounds/Day015.playground/Contents.swift)
 
@@ -165,7 +166,7 @@ but setting foundations.
 
 ## [Day 18](https://www.hackingwithswift.com/100/swiftui/18) - Project 1, Part Three
 
-*Challenge*
+_Challenge_
 
 1. Add a header to the third section, saying _“Amount per person”_
 2. Add another section showing the total amount for the check – i.e., the original amount plus tip value, without dividing by the number of people.
@@ -200,7 +201,7 @@ and an output unit, then enter a value, and see the output of the conversion.
 
 ## [Day 22](https://www.hackingwithswift.com/100/swiftui/22) - Project 2, Part Three
 
-*Challenge*
+_Challenge_
 
 1. Add an `@State` property to store the user’s score, modify it when they get an answer right or wrong, then display it in the alert.
 2. Show the player’s current score in a label directly below the flags.
@@ -210,7 +211,7 @@ and an output unit, then enter a value, and see the output of the conversion.
 
 ## [Days 23](https://www.hackingwithswift.com/100/swiftui/23) and [24](https://www.hackingwithswift.com/100/swiftui/24) - Project 3
 
-*Challenge*
+_Challenge_
 
 1. Create a custom `ViewModifier` (and accompanying `View` extension) that makes a view have a large, blue font suitable for prominent titles in a view. [Code](Projects/ViewsAndModifiers)
 2. Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip. [Code](Projects/WeSplit)
@@ -371,5 +372,11 @@ Breaking it down:
 - Showing mission details with [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview) and [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader)
 - Merging [`Codable`](https://developer.apple.com/documentation/swift/codable) structs
 - Finishing up with one last view
+
+[Code](Projects/Moonshot)
+
+## [Day 42](https://www.hackingwithswift.com/100/swiftui/42) - Project 8, Part Four
+
+1. Add the launch date to `MissionView`, below the mission badge. You might choose to format this differently given that more space is available, but it’s down to you.
 
 [Code](Projects/Moonshot)

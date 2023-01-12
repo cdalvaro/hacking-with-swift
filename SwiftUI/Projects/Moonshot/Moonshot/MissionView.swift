@@ -27,6 +27,10 @@ struct MissionView: View {
                         .padding(.top)
 
                     VStack(alignment: .leading) {
+                        Text(mission.launchDate?.formatted(date: .complete, time: .omitted) ?? "Unknown launch date")
+                            .frame(maxWidth: geometry.size.width, alignment: .center)
+                            .padding(.top)
+
                         Rectangle()
                             .frame(height: 2)
                             .foregroundColor(.lightBackground)
