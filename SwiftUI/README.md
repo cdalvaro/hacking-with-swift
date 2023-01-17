@@ -46,6 +46,7 @@
 - [Day 40 - Project 8, Part Two](#day-40---project-8-part-two)
 - [Day 41 - Project 8, Part Three](#day-41---project-8-part-three)
 - [Day 42 - Project 8, Part Four](#day-42---project-8-part-four)
+- [Day 43 - Project 9, Part One](#day-43---project-9-part-one)
 
 </details>
 
@@ -382,3 +383,9 @@ Breaking it down:
 3. For a tough challenge, add a toolbar item to `ContentView` that toggles between showing missions as a grid and as a list.
 
 [Code](Projects/Moonshot)
+
+## [Day 43](https://www.hackingwithswift.com/100/swiftui/43) - Project 9, Part One
+
+- Creating custom paths with SwiftUI
+
+[Code](Projects/Drawing)
