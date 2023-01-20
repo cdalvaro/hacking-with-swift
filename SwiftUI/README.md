@@ -388,5 +388,6 @@ Breaking it down:
 
 - Creating custom paths with SwiftUI
 - Paths vs shapes in SwiftUI
+- Adding `strokeBorder()` support with `InsettableShape`
 
 [Code](Projects/Drawing)
