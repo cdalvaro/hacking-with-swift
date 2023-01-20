@@ -387,5 +387,6 @@ Breaking it down:
 ## [Day 43](https://www.hackingwithswift.com/100/swiftui/43) - Project 9, Part One
 
 - Creating custom paths with SwiftUI
+- Paths vs shapes in SwiftUI
 
 [Code](Projects/Drawing)
