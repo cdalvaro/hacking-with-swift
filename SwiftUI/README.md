@@ -397,5 +397,6 @@ Breaking it down:
 
 - Transforming shapes using `CGAffineTransform` and even-odd fills
 - Creative borders and fills using `ImagePaint`
+- Enabling high-performance Metal rendering with `drawingGroup()`
 
 [Code](Projects/Drawing)
