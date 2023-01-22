@@ -34,6 +34,10 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
+            Capsule()
+                .strokeBorder(ImagePaint(image: Image("swiftui"), scale: 0.1), lineWidth: 20)
+                .frame(width: 300, height: 200)
+
             Flower(petalOffset: petalOffset, petalWidth: petalWidth)
                 .fill(.red, style: FillStyle(eoFill: true))
 

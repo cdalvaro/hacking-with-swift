@@ -396,5 +396,6 @@ Breaking it down:
 ## [Day 44](https://www.hackingwithswift.com/100/swiftui/44) - Project 9, Part Two
 
 - Transforming shapes using `CGAffineTransform` and even-odd fills
+- Creative borders and fills using `ImagePaint`
 
 [Code](Projects/Drawing)
