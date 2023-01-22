@@ -47,6 +47,7 @@
 - [Day 41 - Project 8, Part Three](#day-41---project-8-part-three)
 - [Day 42 - Project 8, Part Four](#day-42---project-8-part-four)
 - [Day 43 - Project 9, Part One](#day-43---project-9-part-one)
+- [Day 44 - Project 9, Part Two](#day-44---project-9-part-two)
 
 </details>
 
@@ -389,5 +390,11 @@ Breaking it down:
 - Creating custom paths with SwiftUI
 - Paths vs shapes in SwiftUI
 - Adding `strokeBorder()` support with `InsettableShape`
+
+[Code](Projects/Drawing)
+
+## [Day 44](https://www.hackingwithswift.com/100/swiftui/44) - Project 9, Part Two
+
+- Transforming shapes using `CGAffineTransform` and even-odd fills
 
 [Code](Projects/Drawing)
