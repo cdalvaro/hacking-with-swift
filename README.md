@@ -29,14 +29,14 @@ Learning SwiftUI during the [100 Days of SwiftUI](https://www.hackingwithswift.c
 
 Challenges are available inside [`SwiftUI`](SwiftUI) directory. (🚧 Still in progress)
 
-[swift_release_notes]: https://swift.org/blog/swift-5-5-released/
-[swift_badge]: https://img.shields.io/badge/Swift-5.5-FA7343?logo=swift
+[swift_release_notes]: https://www.swift.org/blog/swift-5.7-released/
+[swift_badge]: https://img.shields.io/badge/Swift-5.7-F05138?logo=swift
 
 [xcode_website]: https://developer.apple.com/xcode/
-[xcode_badge]: https://img.shields.io/badge/Xcode-13.2-1575F9?style=flat&logo=Xcode
+[xcode_badge]: https://img.shields.io/badge/Xcode-14-1575F9?style=flat&logo=Xcode
 
 [swift_current_day]: https://www.hackingwithswift.com/100/67
 [swift_progress]: https://img.shields.io/badge/100%20Days%20of%20Swift-67-D64D42
 
-[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/44
-[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-44-3463DA
+[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/45
+[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-45-3463DA
