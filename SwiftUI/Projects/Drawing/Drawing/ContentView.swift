@@ -7,55 +7,38 @@
 
 import SwiftUI
 
+struct Trapezoid: Shape {
+    var insetAmount: Double
+
+    var animatableData: Double {
+        get { insetAmount }
+        set { insetAmount = newValue }
+    }
+
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+
+        path.move(to: CGPoint(x: 0, y: rect.maxY))
+        path.addLine(to: CGPoint(x: insetAmount, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX - insetAmount, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: 0, y: rect.maxY))
+
+        return path
+    }
+}
+
 struct ContentView: View {
-    @State private var amount = 0.0
+    @State private var insetAmount = 50.0
 
     var body: some View {
-        VStack {
-            ZStack {
-                Circle()
-//                    .fill(.red)
-                    .fill(Color(red: 1, green: 0, blue: 0))
-                    .frame(width: 200 * amount)
-                    .offset(x: -50, y: -80)
-                    .blendMode(.screen)
-
-                Circle()
-//                    .fill(.green)
-                    .fill(Color(red: 0, green: 1, blue: 0))
-                    .frame(width: 200 * amount)
-                    .offset(x: 50, y: -80)
-                    .blendMode(.screen)
-
-                Circle()
-//                    .fill(.blue)
-                    .fill(Color(red: 0, green: 0, blue: 1))
-                    .frame(width: 200 * amount)
-                    .blendMode(.screen)
-
-                /**
-                 If you’re particularly observant, you might notice that the fully blended color in the center isn’t quite white – it’s a very pale lilac color.
-
-                 The reason for this is that `Color.red`, `Color.green`, and `Color.blue` aren’t fully those colors; you’re not seeing pure red when you use `Color.red`.
-
-                 Instead, you’re seeing SwiftUI’s adaptive colors that are designed to look good in both dark mode and light mode, so they are a custom blend of red, green, and blue rather than pure shades.
-                 */
+        Trapezoid(insetAmount: insetAmount)
+            .frame(width: 200, height: 100)
+            .onTapGesture {
+                withAnimation {
+                    insetAmount = Double.random(in: 10...90)
+                }
             }
-            .frame(width: 300, height: 300)
-
-            Image("swiftui")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
-                .saturation(amount)
-                .blur(radius: (1 - amount) * 20)
-
-            Slider(value: $amount)
-                .padding()
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.black)
-        .ignoresSafeArea()
     }
 }
 
