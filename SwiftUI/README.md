@@ -405,6 +405,7 @@ Breaking it down:
 ## [Day 45](https://www.hackingwithswift.com/100/swiftui/45) - Project 9, Part Three
 
 - Special effects in SwiftUI: blurs, blending, and more (cf26aebf)
-- Animating simple shapes with `animatableData`
+- Animating simple shapes with `animatableData` (618b146d)
+- Animating complex shapes with `AnimatablePair`
 
 [Code](Projects/Drawing)
