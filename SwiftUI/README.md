@@ -49,6 +49,7 @@
 - [Day 43 - Project 9, Part One](#day-43---project-9-part-one)
 - [Day 44 - Project 9, Part Two](#day-44---project-9-part-two)
 - [Day 45 - Project 9, Part Three](#day-45---project-9-part-three)
+- [Day 46 - Project 9, Part Four](#day-46---project-9-part-four)
 
 </details>
 
@@ -404,8 +405,14 @@ Breaking it down:
 
 ## [Day 45](https://www.hackingwithswift.com/100/swiftui/45) - Project 9, Part Three
 
-- Special effects in SwiftUI: blurs, blending, and more (cf26aebf)
-- Animating simple shapes with `animatableData` (618b146d)
-- Animating complex shapes with `AnimatablePair`
+- Special effects in SwiftUI: blurs, blending, and more (commit [`cf26aebf`](https://github.com/cdalvaro/hacking-with-swift/commit/cf26aebfe0e654ab613e2f87e83595d820c887c8))
+- Animating simple shapes with `animatableData` (commit [`618b146d`](https://github.com/cdalvaro/hacking-with-swift/commit/618b146d4a389dc05b560136f42d8eb187c9c97a))
+- Animating complex shapes with `AnimatablePair` (commit [`507b626b`](https://github.com/cdalvaro/hacking-with-swift/commit/507b626b37cba7ec2b00209058f581004d654712))
+
+[Code](Projects/Drawing)
+
+## [Day 46](https://www.hackingwithswift.com/100/swiftui/46) - Project 9, Part Four
+
+1. Create an `Arrow` shape – having it point straight up is fine. This could be a rectangle/triangle-style arrow, or perhaps three lines, or maybe something else depending on what kind of arrow you want to draw.
 
 [Code](Projects/Drawing)

@@ -7,55 +7,45 @@
 
 import SwiftUI
 
-struct Checkboard: Shape {
-    var rows: Int
-    var columns: Int
-
-    var animatableData: AnimatablePair<Double, Double> {
-        get {
-            AnimatablePair(Double(rows), Double(columns))
+struct Arrow: Shape {
+    var strokeWidthWeight: Double {
+        didSet {
+            strokeWidthWeight = max(min(strokeWidthWeight, 1.0), 0.0)
         }
+    }
 
-        set {
-            rows = Int(newValue.first)
-            columns = Int(newValue.second)
+    var strokeHeightWeight: Double {
+        didSet {
+            strokeHeightWeight = max(min(strokeHeightWeight, 1.0), 0.0)
         }
     }
 
     func path(in rect: CGRect) -> Path {
         var path = Path()
 
-        let rowSize = rect.height / Double(rows)
-        let columnSize = rect.width / Double(columns)
+        let arrowWeight = 1.0 - strokeHeightWeight
+        let strokeWidth = rect.width * strokeWidthWeight
 
-        for row in 0..<rows {
-            for column in 0..<columns {
-                if (row + column).isMultiple(of: 2) {
-                    let startX = columnSize * Double(column)
-                    let startY = rowSize * Double(row)
-
-                    let rect = CGRect(x: startX, y: startY, width: columnSize, height: rowSize)
-                    path.addRect(rect)
-                }
-            }
-        }
+        path.move(to: CGPoint(x: rect.minX, y: rect.minY + rect.height * (strokeHeightWeight + arrowWeight / 2.0)))
+        path.addLine(to: CGPoint(x: rect.minX + strokeWidth, y: rect.minY + rect.height * (strokeHeightWeight + arrowWeight / 2.0)))
+        path.addLine(to: CGPoint(x: rect.minX + strokeWidth, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.midY))
+        path.addLine(to: CGPoint(x: rect.minX + strokeWidth, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.minX + strokeWidth, y: rect.minY + rect.height * arrowWeight / 2.0))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.minY + rect.height * arrowWeight / 2.0))
 
         return path
     }
 }
 
 struct ContentView: View {
-    @State private var rows = 4
-    @State private var columns = 4
+    @State private var strokeWidthWeight = 0.7
+    @State private var strokeHeightWeight = 0.4
 
     var body: some View {
-        Checkboard(rows: rows, columns: columns)
-            .onTapGesture {
-                withAnimation(.linear(duration: 3)) {
-                    rows = 8
-                    columns = 16
-                }
-            }
+        Arrow(strokeWidthWeight: strokeWidthWeight, strokeHeightWeight: strokeHeightWeight)
+            .frame(width: 200, height: 100)
+            .foregroundColor(.yellow)
     }
 }
 
