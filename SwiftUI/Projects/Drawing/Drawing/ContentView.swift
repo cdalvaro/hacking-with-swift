@@ -20,6 +20,14 @@ struct Arrow: Shape {
         }
     }
 
+    var animatableData: AnimatablePair<Double, Double> {
+        get { AnimatablePair(strokeWidthWeight, strokeHeightWeight) }
+        set {
+            strokeWidthWeight = newValue.first
+            strokeHeightWeight = newValue.second
+        }
+    }
+
     func path(in rect: CGRect) -> Path {
         var path = Path()
 
@@ -45,6 +53,12 @@ struct ContentView: View {
     var body: some View {
         Arrow(strokeWidthWeight: strokeWidthWeight, strokeHeightWeight: strokeHeightWeight)
             .frame(width: 200, height: 100)
+            .onTapGesture {
+                withAnimation {
+                    strokeWidthWeight = Double.random(in: 0.1...0.9)
+                    strokeHeightWeight = Double.random(in: 0.1...0.9)
+                }
+            }
             .foregroundColor(.yellow)
     }
 }

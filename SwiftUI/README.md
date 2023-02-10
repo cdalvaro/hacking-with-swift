@@ -413,6 +413,7 @@ Breaking it down:
 
 ## [Day 46](https://www.hackingwithswift.com/100/swiftui/46) - Project 9, Part Four
 
-1. Create an `Arrow` shape – having it point straight up is fine. This could be a rectangle/triangle-style arrow, or perhaps three lines, or maybe something else depending on what kind of arrow you want to draw.
+1. Create an `Arrow` shape – having it point straight up is fine. This could be a rectangle/triangle-style arrow, or perhaps three lines, or maybe something else depending on what kind of arrow you want to draw. (commit [`5326dfd2`](https://github.com/cdalvaro/hacking-with-swift/commit/5326dfd23390c434242e505c2f6ea7fd9f4e8e37))
+2. Make the line thickness of your `Arrow` shape animatable.
 
 [Code](Projects/Drawing)
