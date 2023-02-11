@@ -326,94 +326,94 @@ Breaking it down:
 
 ## [Day 36](https://www.hackingwithswift.com/100/swiftui/36) - Project 7, Part One
 
-- Why `@State` only works with structs
-- Sharing SwiftUI state with `@StateObject`
-- Showing and hiding views
-- Deleting items using `onDelete()`
-- Storing user settings with `UserDefaults`
-- Archiving Swift objects with Codable
+- Why [`@State`](https://developer.apple.com/documentation/swiftui/state) only works with structs
+- Sharing SwiftUI state with [`@StateObject`](https://developer.apple.com/documentation/swiftui/stateobject) ([`baee648`](https://github.com/cdalvaro/hacking-with-swift/commit/baee648aecafd58e645907b8ada0c31fd5106d31))
+- Showing and hiding views ([`2f08039`](https://github.com/cdalvaro/hacking-with-swift/commit/2f08039dce6a699410d71a9ca2458685143445fb))
+- Deleting items using [`onDelete()`](https://developer.apple.com/documentation/swiftui/foreach/ondelete(perform:)) ([`d394d13`](https://github.com/cdalvaro/hacking-with-swift/commit/d394d13fdee94f9f4a0417c7916c6fd6a0cbb529))
+- Storing user settings with [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) ([`01b7a86`](https://github.com/cdalvaro/hacking-with-swift/commit/01b7a8685fc160ba094c6b3c89557c8c1ac04a46))
+- Archiving Swift objects with [`Codable`](https://developer.apple.com/documentation/swift/codable) ([`6dc754f`](https://github.com/cdalvaro/hacking-with-swift/commit/6dc754fce5f7329d0cb1aa4449e9b9937d631a5d))
 
 [Code](Projects/iExpense)
 
 ## [Day 37](https://www.hackingwithswift.com/100/swiftui/37) - Project 7, Part Two
 
 - Building a list we can delete from
-- Working with `Identifiable` items in SwiftUI
+- Working with [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) items in SwiftUI
 - Sharing an observed object with a new view
-- Making changes permanent with `UserDefaults`
-- Final polish
+- Making changes permanent with [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults)
+- Final polish ([`6578f09`](https://github.com/cdalvaro/hacking-with-swift/commit/6578f096dc1abc6ed44d7105a1a682347404797a))
 
 [Code](Projects/iExpense)
 
 ## [Day 38](https://www.hackingwithswift.com/100/swiftui/38) - Project 7, Part Three
 
-1. Use the user’s preferred currency, rather than always using US dollars.
-2. Modify the expense amounts in `ContentView` to contain some styling depending on their value – expenses under $10 should have one style, expenses under $100 another, and expenses over $100 a third style. What those styles are depend on you.
-3. For a bigger challenge, try splitting the expenses list into two sections: one for personal expenses, and one for business expenses. This is tricky for a few reasons, not least because it means being careful about how items are deleted!
+1. Use the user’s preferred currency, rather than always using US dollars. ([`659659b`](https://github.com/cdalvaro/hacking-with-swift/commit/659659b96b170311e739daf3cd7a5efc438b4e08))
+2. Modify the expense amounts in `ContentView` to contain some styling depending on their value – expenses under $10 should have one style, expenses under $100 another, and expenses over $100 a third style. What those styles are depend on you. ([`e4f8c49`](https://github.com/cdalvaro/hacking-with-swift/commit/e4f8c4920911436331edefd856596718a03f58f8))
+3. For a bigger challenge, try splitting the expenses list into two sections: one for personal expenses, and one for business expenses. This is tricky for a few reasons, not least because it means being careful about how items are deleted! ([`d8cd46d`](https://github.com/cdalvaro/hacking-with-swift/commit/d8cd46d7553ac1bdb8fe46c0db927c5efebeae7c))
 
 [Code](Projects/iExpense)
 
 ## [Day 39](https://www.hackingwithswift.com/100/swiftui/39) - Project 8, Part One
 
-- Resizing images to fit the screen using `GeometryReader`
-- How `ScrollView` lets us work with scrolling data
-- Pushing new views onto the stack using `NavigationLink`
-- Working with hierarchical `Codable` data
-- How to lay out views in a scrolling grid
+- Resizing images to fit the screen using [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader/) ([`6182090`](https://github.com/cdalvaro/hacking-with-swift/commit/6182090acaf21e2ca3a30114d55e50714c212d70))
+- How [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview) lets us work with scrolling data ([`1771dea`](https://github.com/cdalvaro/hacking-with-swift/commit/1771deac3f9235d0f48d82109a7719970ba0daca))
+- Pushing new views onto the stack using [`NavigationLink`](https://developer.apple.com/documentation/swiftui/navigationlink/) ([`9daf1a2`](https://github.com/cdalvaro/hacking-with-swift/commit/9daf1a26ec0a02786baa99e50fe007e274563057))
+- Working with hierarchical [`Codable`](https://developer.apple.com/documentation/swift/codable) data ([`0781680`](https://github.com/cdalvaro/hacking-with-swift/commit/07816806a3af83130fb1fe7c1add17dfac22877d))
+- How to lay out views in a scrolling grid ([`7af78aa`](https://github.com/cdalvaro/hacking-with-swift/commit/7af78aa0bd1550d595ea83f8a4f331d7e7800614))
 
 [Code](Projects/Moonshot)
 
 ## [Day 40](https://www.hackingwithswift.com/100/swiftui/40) - Project 8, Part Two
 
-- Loading a specific kind of `Codable` data
-- Using generics to load any kind of `Codable` data
-- Formatting our mission view
+- Loading a specific kind of [`Codable`](https://developer.apple.com/documentation/swift/codable) data ([`6717b54`](https://github.com/cdalvaro/hacking-with-swift/commit/6717b54bc01e8f366d26fdd4ee7ca59d3ce9f6cc))
+- Using generics to load any kind of [`Codable`](https://developer.apple.com/documentation/swift/codable) data ([`b38e78e`](https://github.com/cdalvaro/hacking-with-swift/commit/b38e78ecac1d55ae8aac0e012509a0b345916168))
+- Formatting our mission view ([`6619ae8`](https://github.com/cdalvaro/hacking-with-swift/commit/6619ae84b90bcf43e8b53db8332a53542b05957f))
 
 [Code](Projects/Moonshot)
 
 ## [Day 41](https://www.hackingwithswift.com/100/swiftui/41) - Project 8, Part Three
 
-- Showing mission details with [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview) and [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader)
-- Merging [`Codable`](https://developer.apple.com/documentation/swift/codable) structs
-- Finishing up with one last view
+- Showing mission details with [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview) and [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader) ([`a345c25`](https://github.com/cdalvaro/hacking-with-swift/commit/a345c25da6409124b18acdc82259d991eee170b3))
+- Merging [`Codable`](https://developer.apple.com/documentation/swift/codable) structs ([`3d16d9d`](https://github.com/cdalvaro/hacking-with-swift/commit/3d16d9d2ee767f3f5be59114a8b9b73bf496eaf7))
+- Finishing up with one last view ([`1963dc5`](https://github.com/cdalvaro/hacking-with-swift/commit/1963dc513af0cf1de44659fae99c8cdd7009af74))
 
 [Code](Projects/Moonshot)
 
 ## [Day 42](https://www.hackingwithswift.com/100/swiftui/42) - Project 8, Part Four
 
-1. Add the launch date to `MissionView`, below the mission badge. You might choose to format this differently given that more space is available, but it’s down to you.
-2. Extract one or two pieces of view code into their own new SwiftUI views – the horizontal scroll view in `MissionView` is a great candidate, but if you followed my styling then you could also move the `Rectangle` dividers out too.
-3. For a tough challenge, add a toolbar item to `ContentView` that toggles between showing missions as a grid and as a list.
+1. Add the launch date to `MissionView`, below the mission badge. You might choose to format this differently given that more space is available, but it’s down to you. ([`6195c6e`](https://github.com/cdalvaro/hacking-with-swift/commit/6195c6e2c3543fec2ae1def13c17cf5688d491be))
+2. Extract one or two pieces of view code into their own new SwiftUI views – the horizontal scroll view in `MissionView` is a great candidate, but if you followed my styling then you could also move the `Rectangle` dividers out too. ([`6a4d7bc`](https://github.com/cdalvaro/hacking-with-swift/commit/6a4d7bcbffd6fd22764a6d250ff51f9087c228d5))
+3. For a tough challenge, add a toolbar item to `ContentView` that toggles between showing missions as a grid and as a list. ([`c065692`](https://github.com/cdalvaro/hacking-with-swift/commit/c065692b5f3b84517d24f468fe5d84d8480a43af))
 
 [Code](Projects/Moonshot)
 
 ## [Day 43](https://www.hackingwithswift.com/100/swiftui/43) - Project 9, Part One
 
-- Creating custom paths with SwiftUI
-- Paths vs shapes in SwiftUI
-- Adding `strokeBorder()` support with `InsettableShape`
+- Creating custom paths with SwiftUI ([`364ccc2`](https://github.com/cdalvaro/hacking-with-swift/commit/364ccc28621b9dd00a5216d5def3ed4c0ae10173))
+- Paths vs shapes in SwiftUI ([`e496e0c`](https://github.com/cdalvaro/hacking-with-swift/commit/e496e0c1a1b00bb8702699eb59378652a2d1e3c6))
+- Adding [`strokeBorder()`](https://developer.apple.com/documentation/swiftui/circle/strokeborder(style:)) support with [`InsettableShape`](https://developer.apple.com/documentation/swiftui/insettableshape) ([`8c571e4`](https://github.com/cdalvaro/hacking-with-swift/commit/8c571e437d78aa808ee15a9fea45319592738597))
 
 [Code](Projects/Drawing)
 
 ## [Day 44](https://www.hackingwithswift.com/100/swiftui/44) - Project 9, Part Two
 
-- Transforming shapes using `CGAffineTransform` and even-odd fills
-- Creative borders and fills using `ImagePaint`
-- Enabling high-performance Metal rendering with `drawingGroup()`
+- Transforming shapes using [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform/) and even-odd fills ([`b901b77`](https://github.com/cdalvaro/hacking-with-swift/commit/b901b772cedf63a3a97300d79e5840da82bc564e))
+- Creative borders and fills using [`ImagePaint`](https://developer.apple.com/documentation/swiftui/imagepaint/) ([`730e153`](https://github.com/cdalvaro/hacking-with-swift/commit/730e1531a6b48f26f914945981e3c2a4f9c2c479))
+- Enabling high-performance Metal rendering with [`drawingGroup()`](https://developer.apple.com/documentation/swiftui/view/drawinggroup(opaque:colormode:)) ([`3a185ae`](https://github.com/cdalvaro/hacking-with-swift/commit/3a185aec40484edfd0344a81af336e62040e5bf5))
 
 [Code](Projects/Drawing)
 
 ## [Day 45](https://www.hackingwithswift.com/100/swiftui/45) - Project 9, Part Three
 
-- Special effects in SwiftUI: blurs, blending, and more (commit [`cf26aebf`](https://github.com/cdalvaro/hacking-with-swift/commit/cf26aebfe0e654ab613e2f87e83595d820c887c8))
-- Animating simple shapes with `animatableData` (commit [`618b146d`](https://github.com/cdalvaro/hacking-with-swift/commit/618b146d4a389dc05b560136f42d8eb187c9c97a))
-- Animating complex shapes with `AnimatablePair` (commit [`507b626b`](https://github.com/cdalvaro/hacking-with-swift/commit/507b626b37cba7ec2b00209058f581004d654712))
+- Special effects in SwiftUI: blurs, blending, and more ([`cf26aeb`](https://github.com/cdalvaro/hacking-with-swift/commit/cf26aebfe0e654ab613e2f87e83595d820c887c8))
+- Animating simple shapes with [`animatableData`](https://developer.apple.com/documentation/swiftui/animatable/animatabledata-swift.property-6nydg) ([`618b146`](https://github.com/cdalvaro/hacking-with-swift/commit/618b146d4a389dc05b560136f42d8eb187c9c97a))
+- Animating complex shapes with [`AnimatablePair`](https://developer.apple.com/documentation/swiftui/animatablepair) ([`507b626`](https://github.com/cdalvaro/hacking-with-swift/commit/507b626b37cba7ec2b00209058f581004d654712))
 
 [Code](Projects/Drawing)
 
 ## [Day 46](https://www.hackingwithswift.com/100/swiftui/46) - Project 9, Part Four
 
-1. Create an `Arrow` shape – having it point straight up is fine. This could be a rectangle/triangle-style arrow, or perhaps three lines, or maybe something else depending on what kind of arrow you want to draw. (commit [`5326dfd2`](https://github.com/cdalvaro/hacking-with-swift/commit/5326dfd23390c434242e505c2f6ea7fd9f4e8e37))
-2. Make the line thickness of your `Arrow` shape animatable.
+1. Create an `Arrow` shape – having it point straight up is fine. This could be a rectangle/triangle-style arrow, or perhaps three lines, or maybe something else depending on what kind of arrow you want to draw. ([`5326dfd`](https://github.com/cdalvaro/hacking-with-swift/commit/5326dfd23390c434242e505c2f6ea7fd9f4e8e37))
+2. Make the line thickness of your `Arrow` shape animatable. ([`18997eb`](https://github.com/cdalvaro/hacking-with-swift/commit/18997eb837bcc4b65f409428e27d82f9632bf286))
 
 [Code](Projects/Drawing)
