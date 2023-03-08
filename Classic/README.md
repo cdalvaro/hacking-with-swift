@@ -72,6 +72,7 @@
 - [Day 65 - Project 18, Part Two](#day-65---project-18-part-two)
 - [Day 66 - MILESTONE: Projects 16-18](#day-66---milestone-projects-16-18)
 - [Day 67 - Project 19, Part One](#day-67---project-19-part-one)
+- [Day 68 - Project 19, Part Two](#day-68---project-19-part-two)
 
 </details>
 
@@ -601,5 +602,13 @@ Some key points:
 ## [Day 67](https://www.hackingwithswift.com/100/67) - Project 19, Part One
 
 *Setting up*, *Making a shell app*, *Adding an extension:* `NSExtensionItem` and *What do you want to get?*
+
+[Code](Projects/Project19)
+
+## [Day 68](https://www.hackingwithswift.com/100/68) - Project 19, Part Two
+
+- Establishing communication.
+- Editing multiline text with `UITextView`.
+- Fixing the keyboard: `NotificationCenter`
 
 [Code](Projects/Project19)
