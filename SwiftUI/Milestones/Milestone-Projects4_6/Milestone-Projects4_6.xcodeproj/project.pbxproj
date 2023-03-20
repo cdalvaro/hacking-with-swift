@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015C3EC528772DE200975F78 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C3EC428772DE200975F78 /* QuizView.swift */; };
 		018F7DB62871FC1E0038FE4B /* Milestone_Projects4_6App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018F7DB52871FC1E0038FE4B /* Milestone_Projects4_6App.swift */; };
 		018F7DB82871FC1E0038FE4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018F7DB72871FC1E0038FE4B /* ContentView.swift */; };
 		018F7DBA2871FC1E0038FE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018F7DB92871FC1E0038FE4B /* Assets.xcassets */; };
 		018F7DBD2871FC1E0038FE4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018F7DBC2871FC1E0038FE4B /* Preview Assets.xcassets */; };
+		01CBC40C29C4FB0400259489 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CBC40B29C4FB0400259489 /* QuizView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		015C3EC428772DE200975F78 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		018F7DB22871FC1E0038FE4B /* Milestone-Projects4_6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone-Projects4_6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		018F7DB52871FC1E0038FE4B /* Milestone_Projects4_6App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone_Projects4_6App.swift; sourceTree = "<group>"; };
 		018F7DB72871FC1E0038FE4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		018F7DB92871FC1E0038FE4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		018F7DBC2871FC1E0038FE4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01CBC40B29C4FB0400259489 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			children = (
 				018F7DB52871FC1E0038FE4B /* Milestone_Projects4_6App.swift */,
 				018F7DB72871FC1E0038FE4B /* ContentView.swift */,
-				015C3EC428772DE200975F78 /* QuizView.swift */,
+				01CBC40B29C4FB0400259489 /* QuizView.swift */,
 				018F7DB92871FC1E0038FE4B /* Assets.xcassets */,
 				018F7DBB2871FC1E0038FE4B /* Preview Content */,
 			);
@@ -142,7 +142,7 @@
 			files = (
 				018F7DB82871FC1E0038FE4B /* ContentView.swift in Sources */,
 				018F7DB62871FC1E0038FE4B /* Milestone_Projects4_6App.swift in Sources */,
-				015C3EC528772DE200975F78 /* QuizView.swift in Sources */,
+				01CBC40C29C4FB0400259489 /* QuizView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

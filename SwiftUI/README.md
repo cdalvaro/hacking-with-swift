@@ -322,8 +322,6 @@ Breaking it down:
 - The player should be able to select how many questions they want to be asked: 5, 10, or 20.
 - You should randomly generate as many questions as they asked for, within the difficulty range they asked for.
 
-🚧
-
 ## [Day 36](https://www.hackingwithswift.com/100/swiftui/36) - Project 7, Part One
 
 - Why [`@State`](https://developer.apple.com/documentation/swiftui/state) only works with structs
