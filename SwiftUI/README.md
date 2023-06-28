@@ -14,7 +14,7 @@
 - [Day 7 - Closures, Part Two](#day-7---closures-part-two)
 - [Day 8 - Structs, Part One](#day-8---structs-part-one)
 - [Day 9 - Structs, Part Two](#day-9---structs-part-two)
-- [Day 10 - Classes](#day-10---clasess)
+- [Day 10 - Classes](#day-10---classes)
 - [Day 11 - Protocols And Extensions](#day-11---protocols-and-extensions)
 - [Day 12 - Optionals](#day-12---optionals)
 - [Day 13 - Swift Review, Day One](#day-13---swift-review-day-one)
@@ -50,6 +50,9 @@
 - [Day 44 - Project 9, Part Two](#day-44---project-9-part-two)
 - [Day 45 - Project 9, Part Three](#day-45---project-9-part-three)
 - [Day 46 - Project 9, Part Four](#day-46---project-9-part-four)
+- [Day 47 - MILESTONE: Projects 7-9](#day-47---milestone-projects-7-9)
+- [Day 48 - Expanding your horizons](#day-48---expanding-your-horizons)
+- [Day 49 - Project 10, part 1](#day-49---project-10-part-one)
 
 </details>
 
@@ -322,6 +325,8 @@ Breaking it down:
 - The player should be able to select how many questions they want to be asked: 5, 10, or 20.
 - You should randomly generate as many questions as they asked for, within the difficulty range they asked for.
 
+[Code](Milestones/Milestone-Projects4_6)
+
 ## [Day 36](https://www.hackingwithswift.com/100/swiftui/36) - Project 7, Part One
 
 - Why [`@State`](https://developer.apple.com/documentation/swiftui/state) only works with structs
@@ -416,3 +421,22 @@ Breaking it down:
 3. Create a `ColorCyclingRectangle` shape that is the rectangular cousin of `ColorCyclingCircle`, allowing us to control the position of the gradient using one or more properties.
 
 [Code](Projects/Drawing)
+
+## [Day 47](https://www.hackingwithswift.com/100/swiftui/47) - MILESTONE: Projects 7-9
+
+🚧 Currently under development...
+
+You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Day 47](https://github.com/cdalvaro/hacking-with-swift/pull/4)
+
+[Code](Milestones/Milestone-Projects7_9/)
+
+## [Day 48](https://www.hackingwithswift.com/100/swiftui/48) - Expanding Your Horizons
+
+[Video](https://youtu.be/U1gP4EcT_wQ) - What Star Wars Can Teach Us About Swift
+
+## [Day 49](https://www.hackingwithswift.com/100/swiftui/49) - Project 10, Part One
+
+- Adding [`Codable`](https://developer.apple.com/documentation/swift/codable/) conformance for [`@Published`](https://developer.apple.com/documentation/combine/published) properties. (:octocat: [`f4d0fbe`](https://github.com/cdalvaro/hacking-with-swift/commit/f4d0fbe25f5c6562b866cee03dfd6059d98dfe19))
+- Sending and receiving [`Codable`](https://developer.apple.com/documentation/swift/codable/) data with [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) and SwiftUI. (:octocat: [`0ba3ba1`](https://github.com/cdalvaro/hacking-with-swift/commit/0ba3ba157be5ea3505d74eecbcba0f1b70053d8a))
+- Loading an image from a remote server (:octocat: [`8658089`](https://github.com/cdalvaro/hacking-with-swift/commit/86580899caacf948278a2076352243a25fb5cf9b))
+- Validating and disabling forms (:octocat: [`6b3aec8`](https://github.com/cdalvaro/hacking-with-swift/commit/6b3aec89b725669526c8548231107209ef031ab7))
