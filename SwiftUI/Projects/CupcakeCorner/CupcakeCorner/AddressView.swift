@@ -23,7 +23,7 @@ struct AddressView: View {
                 NavigationLink {
                     CheckoutView(order: order)
                 } label: {
-                    Text("Checkout")
+                    Text("Check out")
                 }
             }
             .disabled(!order.hasValidAddress)
