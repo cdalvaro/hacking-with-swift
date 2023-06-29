@@ -54,6 +54,7 @@
 - [Day 48 - Expanding your horizons](#day-48---expanding-your-horizons)
 - [Day 49 - Project 10, Part One](#day-49---project-10-part-one)
 - [Day 50 - Project 10, Part Two](#day-50---project-10-part-two)
+- [Day 51 - Project 10, Part Three](#day-51---project-10-part-three)
 
 </details>
 
@@ -442,8 +443,20 @@ You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Da
 - Loading an image from a remote server (:octocat: [`8658089`](https://github.com/cdalvaro/hacking-with-swift/commit/86580899caacf948278a2076352243a25fb5cf9b))
 - Validating and disabling forms (:octocat: [`6b3aec8`](https://github.com/cdalvaro/hacking-with-swift/commit/6b3aec89b725669526c8548231107209ef031ab7))
 
+[Code](Projects/CupcakeCorner)
+
 ## [Day 50](https://www.hackingwithswift.com/100/swiftui/50) - Project 10, Part Two
 
 - Taking basic order details. (:octocat: [`c6d3399`](https://github.com/cdalvaro/hacking-with-swift/commit/c6d3399608231738fae44f2e142f170b92d7d2ac))
 - Checking for a valid address. (:octocat: [`39c8e34`](https://github.com/cdalvaro/hacking-with-swift/commit/39c8e3415cf10a09147f4047b6bf237e629fb15d))
 - Preparing for checkout. (:octocat: [`09f4c96`](https://github.com/cdalvaro/hacking-with-swift/commit/09f4c96d618540195e2917bd46b25a7f9436206d))
+
+[Code](Projects/CupcakeCorner)
+
+## [Day 51](https://www.hackingwithswift.com/100/swiftui/51) - Project 10, Part Three
+
+- Encoding an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) class. (:octocat: [`69c4a88`](https://github.com/cdalvaro/hacking-with-swift/commit/69c4a88b45e8cf6670306c5eb35d8b85cce379b0))
+- Sending and receiving orders over the internet. (:octocat: [`69c4a88`](https://github.com/cdalvaro/hacking-with-swift/commit/69c4a88b45e8cf6670306c5eb35d8b85cce379b0))
+- Sending and receiving orders over the internet. (:octocat: [`4e8e83d`](https://github.com/cdalvaro/hacking-with-swift/commit/4e8e83d746d99cd8b82eee3abeb341406ae12940))
+
+[Code](Projects/CupcakeCorner)
