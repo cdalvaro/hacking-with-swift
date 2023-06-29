@@ -52,7 +52,8 @@
 - [Day 46 - Project 9, Part Four](#day-46---project-9-part-four)
 - [Day 47 - MILESTONE: Projects 7-9](#day-47---milestone-projects-7-9)
 - [Day 48 - Expanding your horizons](#day-48---expanding-your-horizons)
-- [Day 49 - Project 10, part 1](#day-49---project-10-part-one)
+- [Day 49 - Project 10, Part One](#day-49---project-10-part-one)
+- [Day 50 - Project 10, Part Two](#day-50---project-10-part-two)
 
 </details>
 
@@ -440,3 +441,9 @@ You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Da
 - Sending and receiving [`Codable`](https://developer.apple.com/documentation/swift/codable/) data with [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) and SwiftUI. (:octocat: [`0ba3ba1`](https://github.com/cdalvaro/hacking-with-swift/commit/0ba3ba157be5ea3505d74eecbcba0f1b70053d8a))
 - Loading an image from a remote server (:octocat: [`8658089`](https://github.com/cdalvaro/hacking-with-swift/commit/86580899caacf948278a2076352243a25fb5cf9b))
 - Validating and disabling forms (:octocat: [`6b3aec8`](https://github.com/cdalvaro/hacking-with-swift/commit/6b3aec89b725669526c8548231107209ef031ab7))
+
+## [Day 50](https://www.hackingwithswift.com/100/swiftui/50) - Project 10, Part Two
+
+- Taking basic order details. (:octocat: [`c6d3399`](https://github.com/cdalvaro/hacking-with-swift/commit/c6d3399608231738fae44f2e142f170b92d7d2ac))
+- Checking for a valid address. (:octocat: [`39c8e34`](https://github.com/cdalvaro/hacking-with-swift/commit/39c8e3415cf10a09147f4047b6bf237e629fb15d))
+- Preparing for checkout. (:octocat: [`09f4c96`](https://github.com/cdalvaro/hacking-with-swift/commit/09f4c96d618540195e2917bd46b25a7f9436206d))
