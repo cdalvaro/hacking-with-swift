@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddressView: View {
-    @ObservedObject var order: Order
+    @ObservedObject var orderWrapper: OrderWrapper
     
     @FocusState private var nameTextFieldIsFocus: Bool
     @FocusState private var streetAddressTextFieldIsFocus: Bool
@@ -18,56 +18,56 @@ struct AddressView: View {
     var body: some View {
         Form {
             Section {
-                TextField("Name", text: $order.name)
+                TextField("Name", text: $orderWrapper.order.name)
                     .focused($nameTextFieldIsFocus)
                     .onChange(of: nameTextFieldIsFocus) { _, isFocused in
                         if !isFocused {
-                            order.name = trimWhitespaces(order.name)
+                            trimWhitespaces(&orderWrapper.order.name)
                         }
                     }
-                TextField("Street address", text: $order.streetAddress)
+                TextField("Street address", text: $orderWrapper.order.streetAddress)
                     .focused($streetAddressTextFieldIsFocus)
                     .onChange(of: streetAddressTextFieldIsFocus) { _, isFocused in
                         if !isFocused {
-                            order.streetAddress = trimWhitespaces(order.streetAddress)
+                            trimWhitespaces(&orderWrapper.order.streetAddress)
                         }
                     }
-                TextField("City", text: $order.city)
+                TextField("City", text: $orderWrapper.order.city)
                     .focused($cityTextFieldIsFocus)
                     .onChange(of: cityTextFieldIsFocus) { _, isFocused in
                         if !isFocused {
-                            order.city = trimWhitespaces(order.city)
+                            trimWhitespaces(&orderWrapper.order.city)
                         }
                     }
-                TextField("Zip", text: $order.zip)
+                TextField("Zip", text: $orderWrapper.order.zip)
                     .focused($zipTextFieldIsFocus)
                     .onChange(of: zipTextFieldIsFocus) { _, isFocused in
                         if !isFocused {
-                            order.zip = trimWhitespaces(order.zip)
+                            trimWhitespaces(&orderWrapper.order.zip)
                         }
                     }
             }
             
             Section {
                 NavigationLink {
-                    CheckoutView(order: order)
+                    CheckoutView(orderWrapper: orderWrapper)
                 } label: {
                     Text("Check out")
                 }
             }
-            .disabled(!order.hasValidAddress)
+            .disabled(!orderWrapper.order.hasValidAddress)
         }
         .navigationTitle("Delivery details")
         .navigationBarTitleDisplayMode(.inline)
     }
     
-    func trimWhitespaces(_ string: String) -> String {
-        string.trimmingCharacters(in: .whitespacesAndNewlines)
+    func trimWhitespaces(_ string: inout String) {
+        string = string.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }
 
 #Preview {
     NavigationView {
-        AddressView(order: Order())
+        AddressView(orderWrapper: OrderWrapper())
     }
 }

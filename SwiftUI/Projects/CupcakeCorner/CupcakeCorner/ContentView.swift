@@ -8,38 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var order = Order()
+    @StateObject var orderWrapper = OrderWrapper()
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    Picker("Select your cake type", selection: $order.type) {
+                    Picker("Select your cake type", selection: $orderWrapper.order.type) {
                         ForEach(Order.types.indices, id: \.self) {
                             Text(Order.types[$0])
                         }
                     }
                     
-                    Stepper("Number of cakes: \(order.quantity)",
-                            value: $order.quantity,
+                    Stepper("Number of cakes: \(orderWrapper.order.quantity)",
+                            value: $orderWrapper.order.quantity,
                             in: 3...20)
                 }
                 
                 Section {
                     Toggle("Any special requests?",
-                           isOn: $order.specialRequstEnabled.animation())
+                           isOn: $orderWrapper.order.specialRequstEnabled.animation())
                     
-                    if order.specialRequstEnabled {
+                    if orderWrapper.order.specialRequstEnabled {
                         Toggle("Add extra frosting",
-                               isOn: $order.extraFrosting)
+                               isOn: $orderWrapper.order.extraFrosting)
                         Toggle("Add extra sprinkles",
-                               isOn: $order.addSprinkles)
+                               isOn: $orderWrapper.order.addSprinkles)
                     }
                 }
                 
                 Section {
                     NavigationLink {
-                        AddressView(order: order)
+                        AddressView(orderWrapper: orderWrapper)
                     } label: {
                         Text("Delivery details")
                     }
