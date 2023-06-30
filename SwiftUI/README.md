@@ -55,6 +55,7 @@
 - [Day 49 - Project 10, Part One](#day-49---project-10-part-one)
 - [Day 50 - Project 10, Part Two](#day-50---project-10-part-two)
 - [Day 51 - Project 10, Part Three](#day-51---project-10-part-three)
+- [Day 52 - Project 10, Part Four](#day-52---project-10-part-four)
 
 </details>
 
@@ -456,7 +457,14 @@ You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Da
 ## [Day 51](https://www.hackingwithswift.com/100/swiftui/51) - Project 10, Part Three
 
 - Encoding an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) class. (:octocat: [`69c4a88`](https://github.com/cdalvaro/hacking-with-swift/commit/69c4a88b45e8cf6670306c5eb35d8b85cce379b0))
-- Sending and receiving orders over the internet. (:octocat: [`69c4a88`](https://github.com/cdalvaro/hacking-with-swift/commit/69c4a88b45e8cf6670306c5eb35d8b85cce379b0))
 - Sending and receiving orders over the internet. (:octocat: [`4e8e83d`](https://github.com/cdalvaro/hacking-with-swift/commit/4e8e83d746d99cd8b82eee3abeb341406ae12940))
+
+[Code](Projects/CupcakeCorner)
+
+## [Day 52](https://www.hackingwithswift.com/100/swiftui/52) - Project 10, Part Four
+
+1. Our address fields are currently considered valid if they contain anything, even if it’s just only whitespace. Improve the validation to make sure a string of pure whitespace is invalid. (:octocat: [`bf20e2c`](https://github.com/cdalvaro/hacking-with-swift/commit/bf20e2c3d148b1418c8f5dbcd7a7337fb7ce880a))
+2. If our call to `placeOrder()` fails – for example if there is no internet connection – show an informative alert for the user. To test this, try commenting out the `request.httpMethod = "POST"` line in your code, which should force the request to fail. (:octocat: [`5c46e59`](https://github.com/cdalvaro/hacking-with-swift/commit/5c46e59e11a4603b33abf9098ddc82404af9566b))
+3. For a more challenging task, see if you can convert our data model from a class to a struct, then create an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) class wrapper around it that gets passed around. This will result in your class having one [`@Published`](https://developer.apple.com/documentation/combine/published) property, which is the data struct inside it, and should make supporting [`Codable`](https://developer.apple.com/documentation/swift/codable/) on the struct much easier. (:octocat: [`7053dc9`](https://github.com/cdalvaro/hacking-with-swift/commit/7053dc91940c73e74171c23aaaca8c65101b3259))
 
 [Code](Projects/CupcakeCorner)
