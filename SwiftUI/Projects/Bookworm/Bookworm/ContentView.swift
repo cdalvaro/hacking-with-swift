@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("notes") private var notes = ""
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
     
     var body: some View {
-        NavigationView {
-            TextEditor(text: $notes)
-                .navigationTitle("Notes")
-                .padding()
+        VStack {
+            List(students) { student in
+                Text(student.name ?? "Unknown")
+            }
+            
+            Button("Add") {
+                let firstNames = ["Ginny", "Harry", "Hermione", "Luna", "Ron"]
+                let lastNames = ["Granger", "Lovegood", "Poter", "Weasley"]
+                
+                let choosenFirstName = firstNames.randomElement()!
+                let choosenLastName = lastNames.randomElement()!
+                
+                let student = Student(context: moc)
+                student.id = UUID()
+                student.name = "\(choosenFirstName) \(choosenLastName)"
+                
+                try? moc.save()
+            }
         }
     }
 }
