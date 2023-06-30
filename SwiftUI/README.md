@@ -56,6 +56,7 @@
 - [Day 50 - Project 10, Part Two](#day-50---project-10-part-two)
 - [Day 51 - Project 10, Part Three](#day-51---project-10-part-three)
 - [Day 52 - Project 10, Part Four](#day-52---project-10-part-four)
+- [Day 53 - Project 11, Part One](#day-53---project-11-part-one)
 
 </details>
 
@@ -468,3 +469,11 @@ You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Da
 3. For a more challenging task, see if you can convert our data model from a class to a struct, then create an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) class wrapper around it that gets passed around. This will result in your class having one [`@Published`](https://developer.apple.com/documentation/combine/published) property, which is the data struct inside it, and should make supporting [`Codable`](https://developer.apple.com/documentation/swift/codable/) on the struct much easier. (:octocat: [`7053dc9`](https://github.com/cdalvaro/hacking-with-swift/commit/7053dc91940c73e74171c23aaaca8c65101b3259))
 
 [Code](Projects/CupcakeCorner)
+
+## [Day 53](https://www.hackingwithswift.com/100/swiftui/53) - Project 11, Part One
+
+- Creating a custom component with [`@Binding`](https://developer.apple.com/documentation/swiftui/binding). (:octocat: [`d86e4f8`](https://github.com/cdalvaro/hacking-with-swift/commit/d86e4f8dea50413cce1a7167d5a0c4f7d0c91659))
+- Accepting multi-line text input with [`TextEditor`](https://developer.apple.com/documentation/swiftui/texteditor). (:octocat: [`a11ce3c`](https://github.com/cdalvaro/hacking-with-swift/commit/a11ce3c43a6d6d7e7085395dae28e0dbca0bc0be))
+- How to combine Core Data and SwiftUI. (:octocat: [`bc03571`](https://github.com/cdalvaro/hacking-with-swift/commit/bc03571bf40ddd3eb25c7e9ad67aa177153ce286))
+
+[Code](Projects/Bookworm)
