@@ -57,6 +57,7 @@
 - [Day 51 - Project 10, Part Three](#day-51---project-10-part-three)
 - [Day 52 - Project 10, Part Four](#day-52---project-10-part-four)
 - [Day 53 - Project 11, Part One](#day-53---project-11-part-one)
+- [Day 54 - Project 11, Part Two](#day-54---project-11-part-two)
 
 </details>
 
@@ -475,5 +476,13 @@ You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Da
 - Creating a custom component with [`@Binding`](https://developer.apple.com/documentation/swiftui/binding). (:octocat: [`d86e4f8`](https://github.com/cdalvaro/hacking-with-swift/commit/d86e4f8dea50413cce1a7167d5a0c4f7d0c91659))
 - Accepting multi-line text input with [`TextEditor`](https://developer.apple.com/documentation/swiftui/texteditor). (:octocat: [`a11ce3c`](https://github.com/cdalvaro/hacking-with-swift/commit/a11ce3c43a6d6d7e7085395dae28e0dbca0bc0be))
 - How to combine Core Data and SwiftUI. (:octocat: [`bc03571`](https://github.com/cdalvaro/hacking-with-swift/commit/bc03571bf40ddd3eb25c7e9ad67aa177153ce286))
+
+[Code](Projects/Bookworm)
+
+## [Day 54](https://www.hackingwithswift.com/100/swiftui/54) - Project 11, Part Two
+
+- Creating books with Core Data. (:octocat: [`858dbd0`](https://github.com/cdalvaro/hacking-with-swift/commit/858dbd090d2ee3bcb4ab7d86e45aae0f8b625fb0))
+- Adding a custom star rating component. (:octocat: [`0067c0d`](https://github.com/cdalvaro/hacking-with-swift/commit/0067c0d34bb0f834a0bbe54dd36110d3607b3324))
+- Building a list with [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest). (:octocat: [`38fd6ae`](https://github.com/cdalvaro/hacking-with-swift/commit/38fd6aee50154a3de9289f575c5ce6791afdbd86))
 
 [Code](Projects/Bookworm)
