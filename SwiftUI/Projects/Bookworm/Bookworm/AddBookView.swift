@@ -13,7 +13,7 @@ struct AddBookView: View {
     
     @State private var title = ""
     @State private var author = ""
-    @State private var raiting = 3
+    @State private var rating = 3
     @State private var genre = ""
     @State private var review = ""
     
@@ -35,7 +35,7 @@ struct AddBookView: View {
                 
                 Section {
                     TextEditor(text: $review)
-                    RaitingView(raiting: $raiting)
+                    RatingView(rating: $rating)
                 } header: {
                     Text("Write a review")
                 }
@@ -46,7 +46,7 @@ struct AddBookView: View {
                         newBook.id = UUID()
                         newBook.title = title
                         newBook.author = author
-                        newBook.raiting = Int16(raiting)
+                        newBook.rating = Int16(rating)
                         newBook.genre = genre
                         newBook.review = review
                         

@@ -1,5 +1,5 @@
 //
-//  RaitingView.swift
+//  RatingView.swift
 //  Bookworm
 //
 //  Created by Carlos Álvaro on 5/7/23.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct RaitingView: View {
-    @Binding var raiting: Int
+struct RatingView: View {
+    @Binding var rating: Int
     
     var label = ""
-    var maximumRaiting = 5
+    var maximumRating = 5
     
     var offImage: Image?
     var onImage = Image(systemName: "star.fill")
@@ -25,18 +25,18 @@ struct RaitingView: View {
                 Text(label)
             }
             
-            ForEach(1...maximumRaiting, id: \.self) { number in
+            ForEach(1...maximumRating, id: \.self) { number in
                 image(for: number)
-                    .foregroundColor(number > raiting ? offColor : onColor)
+                    .foregroundColor(number > rating ? offColor : onColor)
                     .onTapGesture {
-                        raiting = number
+                        rating = number
                     }
             }
         }
     }
     
     func image(for number: Int) -> Image {
-        if number > raiting {
+        if number > rating {
             return offImage ?? onImage
         }
         
@@ -45,5 +45,5 @@ struct RaitingView: View {
 }
 
 #Preview {
-    RaitingView(raiting: .constant(4))
+    RatingView(rating: .constant(4))
 }
