@@ -64,7 +64,8 @@ struct ContentView: View {
             moc.delete(book)
         }
         
-        try? moc.save()
+        // NOTE: uncomment this line if you want to make the deletion permanent
+        // try? moc.save()
     }
 }
 
