@@ -58,6 +58,7 @@
 - [Day 52 - Project 10, Part Four](#day-52---project-10-part-four)
 - [Day 53 - Project 11, Part One](#day-53---project-11-part-one)
 - [Day 54 - Project 11, Part Two](#day-54---project-11-part-two)
+- [Day 55 - Project 11, Part Three](#day-55---project-11-part-three)
 
 </details>
 
@@ -484,5 +485,14 @@ You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Da
 - Creating books with Core Data. (:octocat: [`858dbd0`](https://github.com/cdalvaro/hacking-with-swift/commit/858dbd090d2ee3bcb4ab7d86e45aae0f8b625fb0))
 - Adding a custom star rating component. (:octocat: [`0067c0d`](https://github.com/cdalvaro/hacking-with-swift/commit/0067c0d34bb0f834a0bbe54dd36110d3607b3324))
 - Building a list with [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest). (:octocat: [`38fd6ae`](https://github.com/cdalvaro/hacking-with-swift/commit/38fd6aee50154a3de9289f575c5ce6791afdbd86))
+
+[Code](Projects/Bookworm)
+
+## [Day 55](https://www.hackingwithswift.com/100/swiftui/55) - Project 11, Part Three
+
+- Showing book details. (:octocat: [`c5182b7`](https://github.com/cdalvaro/hacking-with-swift/commit/c5182b71bd034f3c332d72f06a98443eed181ff1))
+- Sorting fetch requests with [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor/). (:octocat: [`b428f86`](https://github.com/cdalvaro/hacking-with-swift/commit/b428f869873b475757e1bf2b33cbd5adc9b30fe0))
+- Deleting from a Core Data fetch request. (:octocat: [`098397c`](https://github.com/cdalvaro/hacking-with-swift/commit/098397ced9d2682fa3900247158540c5a53545d1))
+- Using an alert to pop a [`NavigationLink`](https://developer.apple.com/documentation/swiftui/navigationlink/) programmatically. (:octocat: [`f36e441`](https://github.com/cdalvaro/hacking-with-swift/commit/f36e4417eef6e71b0ff941341b7e12966ed1537c))
 
 [Code](Projects/Bookworm)

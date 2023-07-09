@@ -9,6 +9,8 @@ _"Go from zero to hero with my comprehensive, real-world Swift tutorial projects
 
 Many thanks to [Paul Hudson](https://twitter.com/twostraws) ([@twostraws](https://github.com/twostraws)) for these great courses.
 
+Courses's material available at [:octocat: twostraws/HackingWithSwift](https://github.com/twostraws/HackingWithSwift).
+
 ## Playgrounds
 
 This section is common for _100 Days of Swift_ and _100 Days of SwiftUI_ courses.
@@ -38,5 +40,5 @@ Challenges are available inside [`SwiftUI`](SwiftUI) directory. (🚧 Still in p
 [swift_current_day]: https://www.hackingwithswift.com/100/68
 [swift_progress]: https://img.shields.io/badge/100%20Days%20of%20Swift-68-D64D42
 
-[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/54
-[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-54-3463DA
+[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/55
+[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-55-3463DA
