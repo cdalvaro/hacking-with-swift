@@ -59,6 +59,7 @@
 - [Day 53 - Project 11, Part One](#day-53---project-11-part-one)
 - [Day 54 - Project 11, Part Two](#day-54---project-11-part-two)
 - [Day 55 - Project 11, Part Three](#day-55---project-11-part-three)
+- [Day 56 - Project 11, Part Four](#day-56---project-11-part-four)
 
 </details>
 
@@ -494,5 +495,20 @@ You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Da
 - Sorting fetch requests with [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor/). (:octocat: [`b428f86`](https://github.com/cdalvaro/hacking-with-swift/commit/b428f869873b475757e1bf2b33cbd5adc9b30fe0))
 - Deleting from a Core Data fetch request. (:octocat: [`098397c`](https://github.com/cdalvaro/hacking-with-swift/commit/098397ced9d2682fa3900247158540c5a53545d1))
 - Using an alert to pop a [`NavigationLink`](https://developer.apple.com/documentation/swiftui/navigationlink/) programmatically. (:octocat: [`f36e441`](https://github.com/cdalvaro/hacking-with-swift/commit/f36e4417eef6e71b0ff941341b7e12966ed1537c))
+
+[Code](Projects/Bookworm)
+
+## [Day 56](https://www.hackingwithswift.com/100/swiftui/56) - Project 11, Part Four
+
+_Challenge_
+
+1. Right now it’s possible to select no title, author, or genre for books, which causes a problem for the detail view.
+  Please fix this, either by forcing defaults, validating the form, or showing a default picture for unknown genres – you can choose.
+  (:octocat: [`f3cb6e3`](https://github.com/cdalvaro/hacking-with-swift/commit/f3cb6e3a91d3c390ea3cc6d5ec702e91bff52ca5))
+1. Modify `ContentView` so that books rated as 1 star are highlighted somehow, such as having their name shown in red.
+  (:octocat: [`d3bcc42`](https://github.com/cdalvaro/hacking-with-swift/commit/d3bcc42cef82b9ae843ab2384b9f84b48108b845))
+1. Add a new _“date”_ attribute to the Book entity, assigning `Date.now` to it so it gets the current date and time,
+  then format that nicely somewhere in DetailView.
+  (:octocat: [`18f0ee2`](https://github.com/cdalvaro/hacking-with-swift/commit/18f0ee233e2a7cc9db240e35c255bad9cbdbac5a))
 
 [Code](Projects/Bookworm)
