@@ -40,6 +40,16 @@ struct DetailView: View {
 
             RatingView(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
+                .padding()
+            
+            HStack {
+                let date = book.date?.formatted(date: .complete, time: .omitted) ?? "Unknown"
+                Text("Added on: \(date)")
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .font(.caption)
+            .foregroundStyle(Color.secondary)
+            .padding()
         }
         .navigationTitle(book.title ?? "Unknown Book")
         .navigationBarTitleDisplayMode(.inline)
