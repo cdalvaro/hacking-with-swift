@@ -60,6 +60,7 @@
 - [Day 54 - Project 11, Part Two](#day-54---project-11-part-two)
 - [Day 55 - Project 11, Part Three](#day-55---project-11-part-three)
 - [Day 56 - Project 11, Part Four](#day-56---project-11-part-four)
+- [Day 57 - Project 12, Part One](#day-57---project-12-part-one)
 
 </details>
 
@@ -512,3 +513,13 @@ _Challenge_
   (:octocat: [`18f0ee2`](https://github.com/cdalvaro/hacking-with-swift/commit/18f0ee233e2a7cc9db240e35c255bad9cbdbac5a))
 
 [Code](Projects/Bookworm)
+
+## [Day 57](https://www.hackingwithswift.com/100/swiftui/57) - Project 12, Part One
+
+- Core Data: Introduction. (:octocat: [`c2922d4`](https://github.com/cdalvaro/hacking-with-swift/commit/c2922d4397358f60814e27e1a4401e98d4c6b6d0))
+- Why does `\.self` work for `ForEach`? (:octocat: [`b6be702`](https://github.com/cdalvaro/hacking-with-swift/commit/b6be7020100931e1cd647ce72cfdcdc5fdfc99a3))
+- Creating `NSManagedObject` subclasses. (:octocat: [`bf5f11c`](https://github.com/cdalvaro/hacking-with-swift/commit/bf5f11c7b45eecdcfa6ac00cfb2edfc4bd3e7fc3))
+- Conditional saving of `NSManagedObjectContext`. (:octocat: [`5e3efc1`](https://github.com/cdalvaro/hacking-with-swift/commit/5e3efc1e3a19357f63192873d0cb17b1fe24b0af))
+- Ensuring Core Data objects are unique using constraints. (:octocat: [`63740f3`](https://github.com/cdalvaro/hacking-with-swift/commit/63740f3f98e16a501dfe090cce60ce3d5db0bf8e))
+
+[Code](Projects/CoreDataProject)
