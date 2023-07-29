@@ -426,7 +426,7 @@ Breaking it down:
 
 1. Create an `Arrow` shape – having it point straight up is fine. This could be a rectangle/triangle-style arrow, or perhaps three lines, or maybe something else depending on what kind of arrow you want to draw. (:octocat: [`5326dfd`](https://github.com/cdalvaro/hacking-with-swift/commit/5326dfd23390c434242e505c2f6ea7fd9f4e8e37))
 2. Make the line thickness of your `Arrow` shape animatable. (:octocat: [`18997eb`](https://github.com/cdalvaro/hacking-with-swift/commit/18997eb837bcc4b65f409428e27d82f9632bf286))
-3. Create a `ColorCyclingRectangle` shape that is the rectangular cousin of `ColorCyclingCircle`, allowing us to control the position of the gradient using one or more properties.
+3. Create a `ColorCyclingRectangle` shape that is the rectangular cousin of `ColorCyclingCircle`, allowing us to control the position of the gradient using one or more properties. (:octocat: [`e43d275`](https://github.com/cdalvaro/hacking-with-swift/commit/e43d2756bc72d6daa889fbcaba211bc798130358))
 
 [Code](Projects/Drawing)
 

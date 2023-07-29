@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GridActivitiesView: View {
-    let activities: Activities
+    @ObservedObject var activities: Activities
 
     init(activities: Activities) {
         self.activities = activities

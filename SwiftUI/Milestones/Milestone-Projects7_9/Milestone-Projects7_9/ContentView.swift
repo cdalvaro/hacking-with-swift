@@ -10,22 +10,46 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var activities = Activities()
 
+    @State private var isShowingDetailView = false
+
     var body: some View {
-        NavigationView {
+        NavigationStack {
             GridActivitiesView(activities: activities)
                 .navigationTitle("Activities")
                 .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
+                    ToolbarItem(placement: .primaryAction) {
                         Menu {
-                            Text("Add activity")
-                            Text("Track activity")
-                            Text("Delete")
+                            NavigationLink(value: "AddActivity") {
+                                Label("Add Activity", systemImage: "plus")
+                            }
+                            Button(action: trackExistingActivity) {
+                                Label("Track Activity", systemImage: "timer")
+                            }
+                            Button(action: selectActivities) {
+                                Label("Select Activities", systemImage: "checkmark.circle")
+                            }
                         } label: {
                             Image(systemName: "ellipsis.circle")
                         }
                     }
                 }
+                .navigationDestination(for: String.self) {value in
+                    switch value {
+                    case "AddActivity":
+                        ActivityView(activities: activities)
+                    default:
+                        EmptyView()
+                    }
+                }
         }
+    }
+
+    func trackExistingActivity() {
+        // TODO: Implement method
+    }
+
+    func selectActivities() {
+        // TODO: Implement method
     }
 }
 
