@@ -14,7 +14,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            FilteredList(filter: lastNameFilter)
+            FilteredList(filterKey: "lastName", filterValue: lastNameFilter) { (singer: Singer) in
+                Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
+            }
             
             Button("Add examples") {
                 let taylor = Singer(context: moc)
@@ -29,7 +31,7 @@ struct ContentView: View {
                 adele.firstName = "Adele"
                 adele.lastName = "Adkins"
                 
-                if (moc.hasChanges) {
+                if moc.hasChanges {
                     try? moc.save()
                 }
             }
