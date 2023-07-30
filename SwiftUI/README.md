@@ -61,6 +61,7 @@
 - [Day 55 - Project 11, Part Three](#day-55---project-11-part-three)
 - [Day 56 - Project 11, Part Four](#day-56---project-11-part-four)
 - [Day 57 - Project 12, Part One](#day-57---project-12-part-one)
+- [Day 58 - Project 12, Part Two](#day-58---project-12-part-two)
 
 </details>
 
@@ -521,5 +522,14 @@ _Challenge_
 - Creating `NSManagedObject` subclasses. (:octocat: [`bf5f11c`](https://github.com/cdalvaro/hacking-with-swift/commit/bf5f11c7b45eecdcfa6ac00cfb2edfc4bd3e7fc3))
 - Conditional saving of `NSManagedObjectContext`. (:octocat: [`5e3efc1`](https://github.com/cdalvaro/hacking-with-swift/commit/5e3efc1e3a19357f63192873d0cb17b1fe24b0af))
 - Ensuring Core Data objects are unique using constraints. (:octocat: [`63740f3`](https://github.com/cdalvaro/hacking-with-swift/commit/63740f3f98e16a501dfe090cce60ce3d5db0bf8e))
+
+[Code](Projects/CoreDataProject)
+
+## [Day 58](https://www.hackingwithswift.com/100/swiftui/58) - Project 12, Part Two
+
+- Filtering [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/) using [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate/). (:octocat: [`36dd6ae`](https://github.com/cdalvaro/hacking-with-swift/commit/36dd6ae094565137aad3f4f189a2086a000398e8))
+- Dynamically filtering [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/) with SwiftUI (Basic). (:octocat: [`d4050f8`](https://github.com/cdalvaro/hacking-with-swift/commit/d4050f8feba9a07ab35e94ed35352b5e3908f54d))
+- Dynamically filtering [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/) with SwiftUI (Advanced). (:octocat: [`484e794`](https://github.com/cdalvaro/hacking-with-swift/commit/484e794c29542ac89bf2b71807332426202e7ee4))
+- One-to-many relationships with Core Data, SwiftUI, and [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/). (:octocat: [`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/0eac1db413fcaa55e60ecd3efda58be718846163))
 
 [Code](Projects/CoreDataProject)
