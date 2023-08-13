@@ -15,7 +15,14 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            FilteredList(filterKey: "lastName", filterValue: lastNameFilter, predicate: slectedPredicate) { (singer: Singer) in
+            FilteredList(filterKey: "lastName",
+                         filterValue: lastNameFilter,
+                         predicate: slectedPredicate,
+                         sortDescriptors: [
+                            NSSortDescriptor(keyPath: \Singer.lastName, ascending: false),
+                            NSSortDescriptor(keyPath: \Singer.firstName, ascending: false)
+                         ])
+            { (singer: Singer) in
                 Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
             }
             
