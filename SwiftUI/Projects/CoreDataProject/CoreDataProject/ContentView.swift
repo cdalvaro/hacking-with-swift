@@ -11,11 +11,18 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @State private var lastNameFilter = "A"
+    @State private var slectedPredicate = CoreDataPredicates.beginsWith
     
     var body: some View {
         VStack {
-            FilteredList(filterKey: "lastName", filterValue: lastNameFilter) { (singer: Singer) in
+            FilteredList(filterKey: "lastName", filterValue: lastNameFilter, predicate: slectedPredicate) { (singer: Singer) in
                 Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
+            }
+            
+            Picker("Filter", selection: $slectedPredicate) {
+                ForEach(CoreDataPredicates.allCases, id: \.self) {
+                    Text(String(describing: $0))
+                }
             }
             
             Button("Add examples") {
@@ -37,11 +44,15 @@ struct ContentView: View {
             }
             
             Button("Show A") {
-                lastNameFilter = "A"
+                lastNameFilter = "a"
             }
             
             Button("Show S") {
-                lastNameFilter = "S"
+                lastNameFilter = "s"
+            }
+            
+            Button("Show W") {
+                lastNameFilter = "w"
             }
         }
     }

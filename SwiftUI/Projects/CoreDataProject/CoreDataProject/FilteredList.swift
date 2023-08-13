@@ -8,6 +8,21 @@
 import CoreData
 import SwiftUI
 
+enum CoreDataPredicates: String, CaseIterable, CustomStringConvertible {
+    case beginsWith
+    case contains
+    case endswith
+    case like
+    case matches
+    case uit_conforms_to
+    case uti_equals
+    
+    var description: String {
+        let debug = rawValue.uppercased().replacingOccurrences(of: "_", with: "-")
+        return debug
+    }
+}
+
 struct FilteredList<T: NSManagedObject, Content: View>: View {
     @FetchRequest var fetchRequest: FetchedResults<T>
     let content: (T) -> Content
@@ -18,8 +33,10 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
 
-    init(filterKey: String, filterValue: String, predicate: String = "BEGINSWITH", content: @escaping (T) -> Content) {
-        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K \(predicate) %@", filterKey, filterValue))
+    init(filterKey: String, filterValue: String, predicate: CoreDataPredicates = .beginsWith, content: @escaping (T) -> Content) {
+        // [c] makes the predicate case insensitive
+        // More info at: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/Articles/pSyntax.html
+        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K \(predicate)[c] %@", filterKey, filterValue))
         self.content = content
     }
 }
