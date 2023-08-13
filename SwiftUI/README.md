@@ -62,6 +62,7 @@
 - [Day 56 - Project 11, Part Four](#day-56---project-11-part-four)
 - [Day 57 - Project 12, Part One](#day-57---project-12-part-one)
 - [Day 58 - Project 12, Part Two](#day-58---project-12-part-two)
+- [Day 59 - Project 12, Part Three](#day-59---project-12-part-three)
 
 </details>
 
@@ -531,5 +532,22 @@ _Challenge_
 - Dynamically filtering [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/) with SwiftUI (Basic). (:octocat: [`d4050f8`](https://github.com/cdalvaro/hacking-with-swift/commit/d4050f8feba9a07ab35e94ed35352b5e3908f54d))
 - Dynamically filtering [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/) with SwiftUI (Advanced). (:octocat: [`484e794`](https://github.com/cdalvaro/hacking-with-swift/commit/484e794c29542ac89bf2b71807332426202e7ee4))
 - One-to-many relationships with Core Data, SwiftUI, and [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/). (:octocat: [`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/0eac1db413fcaa55e60ecd3efda58be718846163))
+
+[Code](Projects/CoreDataProject)
+
+## [Day 59](https://www.hackingwithswift.com/100/swiftui/59) - Project 12, Part Three
+
+_Challenge_
+
+Here are three ways to extend this app by modifying the `FilteredList` view:
+
+1. Make it accept a string parameter that controls which predicate is applied.
+   You can use Swift’s string interpolation to place this in the predicate.
+  (:octocat: [`08c19cc`](https://github.com/cdalvaro/hacking-with-swift/commit/08c19cc0b9646eda2177a01748acdb1a8080b057))
+1. Modify the predicate string parameter to be an enum such as `.beginsWith`,
+   then make that enum get resolved to a string inside the initializer.
+  (:octocat: [`2f50b48`](https://github.com/cdalvaro/hacking-with-swift/commit/2f50b48d0d06066a8cc7039a17d9f9492291dc06))
+1. Make `FilteredList` accept an array of `SortDescriptor` objects to get used in its fetch request.
+  (:octocat: [`09f6397`](https://github.com/cdalvaro/hacking-with-swift/commit/09f6397de237642e4ab094c21116aecae1bf606e))
 
 [Code](Projects/CoreDataProject)
