@@ -63,6 +63,7 @@
 - [Day 57 - Project 12, Part One](#day-57---project-12-part-one)
 - [Day 58 - Project 12, Part Two](#day-58---project-12-part-two)
 - [Day 59 - Project 12, Part Three](#day-59---project-12-part-three)
+- [Day 60 - MILESTONE: Projects 10-12](#day-60---milestone-projects-10-12)
 
 </details>
 
@@ -551,3 +552,13 @@ Here are three ways to extend this app by modifying the `FilteredList` view:
   (:octocat: [`09f6397`](https://github.com/cdalvaro/hacking-with-swift/commit/09f6397de237642e4ab094c21116aecae1bf606e))
 
 [Code](Projects/CoreDataProject)
+
+## [Day 60](https://www.hackingwithswift.com/100/swiftui/60) - MILESTONE: Projects 10-12
+
+Your job is to use `URLSession` to download some JSON from the internet, use `Codable` to convert it to Swift types, then use `NavigationStack`, `List`, and more to display it to the user.
+
+Your first step should be to examine the JSON. The URL you want to use is this: https://www.hackingwithswift.com/samples/friendface.json – that’s a massive collection of randomly generated data for example users.
+
+As you can see, there is an array of people, and each person has an _ID_, _name_, _age_, _email address_, and more. They also have an array of _tag_ strings, and an array of _friends_, where each friend has a name and ID.
+
+[Code](Milestones/Milestone-Projects10_12)
