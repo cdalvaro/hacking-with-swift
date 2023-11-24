@@ -8,31 +8,32 @@
 import SwiftUI
 
 struct UserView: View {
-    var user: User
+    let user: CachedUser
     
-    @EnvironmentObject var usersModel: UsersModel
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.name)]) var users: FetchedResults<CachedUser>
     
     var body: some View {
         GeometryReader { geometry in
             List {
                 Section("Email") {
-                    Text(user.email)
+                    Text(user.wrappedEmail)
                 }
                 .listRowBackground(Color(UIColor.systemGroupedBackground))
                 
                 Section("Address") {
-                    Text(user.address)
+                    Text(user.wrappedAddress)
                 }
                 .listRowBackground(Color(UIColor.systemGroupedBackground))
                 
                 Section("About") {
-                    Text(user.about)
+                    Text(user.wrappedAddress)
                 }
                 .listRowBackground(Color(UIColor.systemGroupedBackground))
                     
                 Section("Tags") {
                     FlexibleContainerView(availableWidth: geometry.size.width - 20,
-                                          data: user.tags,
+                                          data: user.tagsArray,
                                           spacing: 10,
                                           aligment: .leading)
                     { tag in
@@ -42,51 +43,21 @@ struct UserView: View {
                 }
                     
                 Section("Friends") {
-                    ForEach(user.friends.sorted(by: { $0.name < $1.name }), id: \.self) { friend in
-                        if let friendUser = usersModel.findUserBy(uuid: friend.id) {
+                    ForEach(user.friendsArray.sorted(by: { $0.wrappedName < $1.wrappedName })) { friend in
+                        if let friendUser = users.first(where: { $0.id == friend.id }) {
                             NavigationLink {
                                 UserView(user: friendUser)
                             } label: {
                                 UserRowView(user: friendUser)
                             }
                         } else {
-                            Text(friend.name)
+                            Text(friend.wrappedName)
                         }
                     }
                 }
             }
             .listSectionSpacing(.compact)
         }
-        .navigationTitle("\(user.name)")
+        .navigationTitle("\(user.wrappedName)")
     }
-}
-
-#Preview {
-    struct AsyncUserView: View {
-        @State var user = User(id: UUID(),
-                               isActive: true,
-                               name: "Taylor Swift",
-                               age: 34,
-                               company: "Apple Inc.",
-                               email: "taylor@apple.com",
-                               address: "1 Apple Park Way, Cupertino, California, U.S.",
-                               about: "Singer",
-                               registered: Date.now,
-                               tags: ["pop", "country"],
-                               friends: Set<Friend>())
-        
-        let usersModel = UsersModel()
-        
-        var body: some View {
-            UserView(user: user)
-                .task {
-                    await usersModel.fetchUsers()
-                    if let user = usersModel.users.first {
-                        self.user = user
-                    }
-                }
-        }
-    }
-    
-    return AsyncUserView()
 }

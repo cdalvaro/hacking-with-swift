@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct UsersView: View {
-    var users: [User]
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.name)]) var users: FetchedResults<CachedUser>
 
     var body: some View {
         List {
-            ForEach(users, id: \.self) { user in
+            ForEach(users) { user in
                 NavigationLink {
                     UserView(user: user)
                 } label: {
@@ -24,5 +25,5 @@ struct UsersView: View {
 }
 
 #Preview {
-    UsersView(users: [User]())
+    UsersView()
 }

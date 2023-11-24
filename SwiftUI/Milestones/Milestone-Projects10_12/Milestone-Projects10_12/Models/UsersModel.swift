@@ -7,36 +7,34 @@
 
 import Foundation
 
-class UsersModel: ObservableObject {
-    @Published var users = [User]()
-    
-    func fetchUsers() async {
+enum UsersModel {
+    static func fetchUsersFromURL(completion: @escaping ([User]?, Error?) -> Void) {
         guard let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json") else {
             return
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            if let httpResponse = response as? HTTPURLResponse {
-                print("Response code: \(httpResponse.statusCode)")
-            }
-            
             if let error {
-                print("Error: \(error.localizedDescription)")
+                completion(nil, error)
                 return
             }
             
-            if let data {
-                DispatchQueue.main.async {
-                    self.users = Self.parse(json: data)
-                }
+            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode != 200 {
+                let statusCodeError = NSError(domain: "HTTPError", code: httpResponse.statusCode)
+                completion(nil, statusCodeError)
+                return
             }
+            
+            guard let data, !data.isEmpty else {
+                let dataError = NSError(domain: "NoDataError", code: 0)
+                completion(nil, dataError)
+                return
+            }
+            
+            completion(Self.parse(json: data), nil)
         }
         
         task.resume()
-    }
-    
-    func findUserBy(uuid: UUID) -> User? {
-        users.first { $0.id == uuid }
     }
     
     private static func parse(json: Data) -> [User] {
