@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TagView: View {
-    @State var tag: String = ""
+    let tag: String
 
     var body: some View {
         HStack(alignment: .bottom) {

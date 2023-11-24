@@ -1,6 +1,6 @@
 # 100 Days of SwiftUI
 
-## Challenges
+## Table of Contents
 
 <details>
   <summary>Click to see Table of Contents</summary>
@@ -64,6 +64,7 @@
 - [Day 58 - Project 12, Part Two](#day-58---project-12-part-two)
 - [Day 59 - Project 12, Part Three](#day-59---project-12-part-three)
 - [Day 60 - MILESTONE: Projects 10-12](#day-60---milestone-projects-10-12)
+- [Day 61 - Time for Core Data](#day-61---time-for-core-data)
 
 </details>
 
@@ -559,6 +560,12 @@ Your job is to use `URLSession` to download some JSON from the internet, use `Co
 
 Your first step should be to examine the JSON. The URL you want to use is this: https://www.hackingwithswift.com/samples/friendface.json – that’s a massive collection of randomly generated data for example users.
 
-As you can see, there is an array of people, and each person has an _ID_, _name_, _age_, _email address_, and more. They also have an array of _tag_ strings, and an array of _friends_, where each friend has a name and ID.
+As you can see, there is an array of people, and each person has an _ID_, _name_, _age_, _email address_, and more. They also have an array of _tag_ strings, and an array of _friends_, where each friend has a name and ID. (:octocat: [`ae83062`](https://github.com/cdalvaro/hacking-with-swift/commit/ae830624e0b691324af11c5091773d09dd0ecff4))
 
 [Code](Milestones/Milestone-Projects10_12)
+
+## [Day 61](https://www.hackingwithswift.com/100/swiftui/61) - Time for Core Data
+
+_Challenge_
+
+Your job today is to expand your app so that it uses Core Data. Your boss just emailed you to say the app is great, but once the JSON has been fetched they really want it to work offline. This means you need to use Core Data to store the information you download, then use your Core Data entities to display the views you designed – you should only need to fetch the data once. You still need to try to fetch the data every time your app loads, just in case it has changed somehow, but if that fetch fails it’s okay because you still have your Core Data back up.
