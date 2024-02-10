@@ -552,6 +552,7 @@ _Challenge_
 ### Day 58 - SwiftData
 
 - Dynamically sorting and filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) with SwiftUI.
+- Relationships with SwiftData, SwiftUI, and [`@Query`](https://developer.apple.com/documentation/swiftdata/query/).
 
 [Code](Projects/SwiftDataProject)
 
