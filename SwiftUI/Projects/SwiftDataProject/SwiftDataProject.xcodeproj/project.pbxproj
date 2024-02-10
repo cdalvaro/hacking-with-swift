@@ -12,6 +12,7 @@
 		014BEF0B2B7778D900F025A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014BEF0A2B7778D900F025A3 /* Assets.xcassets */; };
 		014BEF0E2B7778D900F025A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014BEF0D2B7778D900F025A3 /* Preview Assets.xcassets */; };
 		014BEF152B77792200F025A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014BEF142B77792200F025A3 /* User.swift */; };
+		014BEF192B77A40B00F025A3 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014BEF182B77A40B00F025A3 /* UsersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		014BEF0A2B7778D900F025A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		014BEF0D2B7778D900F025A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		014BEF142B77792200F025A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		014BEF182B77A40B00F025A3 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				014BEF062B7778D800F025A3 /* SwiftDataProjectApp.swift */,
 				014BEF082B7778D800F025A3 /* ContentView.swift */,
+				014BEF182B77A40B00F025A3 /* UsersView.swift */,
 				014BEF142B77792200F025A3 /* User.swift */,
 				014BEF0A2B7778D900F025A3 /* Assets.xcassets */,
 				014BEF0C2B7778D900F025A3 /* Preview Content */,
@@ -143,6 +146,7 @@
 				014BEF092B7778D800F025A3 /* ContentView.swift in Sources */,
 				014BEF072B7778D800F025A3 /* SwiftDataProjectApp.swift in Sources */,
 				014BEF152B77792200F025A3 /* User.swift in Sources */,
+				014BEF192B77A40B00F025A3 /* UsersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
