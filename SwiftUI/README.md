@@ -553,6 +553,7 @@ _Challenge_
 
 - Dynamically sorting and filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) with SwiftUI.
 - Relationships with SwiftData, SwiftUI, and [`@Query`](https://developer.apple.com/documentation/swiftdata/query/).
+- Syncing SwiftData with CloudKit.
 
 [Code](Projects/SwiftDataProject)
 
