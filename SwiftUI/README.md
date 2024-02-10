@@ -533,8 +533,8 @@ _Challenge_
 ### SwiftData
 
 - [SwiftData](https://developer.apple.com/documentation/swiftdata/): Introduction.
-- Editing SwiftData model objects.
-- Filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) using [`#Predicate`](https://developer.apple.com/documentation/foundation/predicate).
+- Editing SwiftData model objects. (:octocat: [`c2922d4`](https://github.com/cdalvaro/hacking-with-swift/commit/5ae741556124b58587053ef136116fe38a212fc4))
+- Filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) using [`#Predicate`](https://developer.apple.com/documentation/foundation/predicate). (:octocat: [`c2922d4`](https://github.com/cdalvaro/hacking-with-swift/commit/ffcce854be3ffd0fa3d19e3b62ef489c52825cfa))
 
 [Code](Projects/SwiftDataProject)
 
