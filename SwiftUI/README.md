@@ -551,9 +551,9 @@ _Challenge_
 
 ### Day 58 - SwiftData
 
-- Dynamically sorting and filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) with SwiftUI.
-- Relationships with SwiftData, SwiftUI, and [`@Query`](https://developer.apple.com/documentation/swiftdata/query/).
-- Syncing SwiftData with CloudKit.
+- Dynamically sorting and filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) with SwiftUI. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/c22f12644ea8a250127cf5c2390652a0019a2ae2))
+- Relationships with SwiftData, SwiftUI, and [`@Query`](https://developer.apple.com/documentation/swiftdata/query/). ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/1c408b82f70524a8bebf7882850dff386f513395))
+- Syncing SwiftData with CloudKit. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/56b3db0f6db76d3576966501e4c2955c87f9de79))
 
 [Code](Projects/SwiftDataProject)
 
