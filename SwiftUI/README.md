@@ -532,8 +532,11 @@ _Challenge_
 
 ### SwiftData
 
-- SwiftData: Introduction.
+- [SwiftData](https://developer.apple.com/documentation/swiftdata/): Introduction.
 - Editing SwiftData model objects.
+- Filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) using [`#Predicate`](https://developer.apple.com/documentation/foundation/predicate).
+
+[Code](Projects/SwiftDataProject)
 
 ## [Day 58](https://www.hackingwithswift.com/100/swiftui/58) - Project 12, Part Two
 
