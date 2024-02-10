@@ -520,6 +520,8 @@ _Challenge_
 
 ## [Day 57](https://www.hackingwithswift.com/100/swiftui/57) - Project 12, Part One
 
+### CoreData
+
 - Core Data: Introduction. (:octocat: [`c2922d4`](https://github.com/cdalvaro/hacking-with-swift/commit/c2922d4397358f60814e27e1a4401e98d4c6b6d0))
 - Why does `\.self` work for `ForEach`? (:octocat: [`b6be702`](https://github.com/cdalvaro/hacking-with-swift/commit/b6be7020100931e1cd647ce72cfdcdc5fdfc99a3))
 - Creating `NSManagedObject` subclasses. (:octocat: [`bf5f11c`](https://github.com/cdalvaro/hacking-with-swift/commit/bf5f11c7b45eecdcfa6ac00cfb2edfc4bd3e7fc3))
@@ -527,6 +529,11 @@ _Challenge_
 - Ensuring Core Data objects are unique using constraints. (:octocat: [`63740f3`](https://github.com/cdalvaro/hacking-with-swift/commit/63740f3f98e16a501dfe090cce60ce3d5db0bf8e))
 
 [Code](Projects/CoreDataProject)
+
+### SwiftData
+
+- SwiftData: Introduction.
+- Editing SwiftData model objects.
 
 ## [Day 58](https://www.hackingwithswift.com/100/swiftui/58) - Project 12, Part Two
 
