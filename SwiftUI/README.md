@@ -520,7 +520,7 @@ _Challenge_
 
 ## [Day 57](https://www.hackingwithswift.com/100/swiftui/57) - Project 12, Part One
 
-### CoreData
+### Day 57 - Core Data
 
 - Core Data: Introduction. ([`c2922d4`](https://github.com/cdalvaro/hacking-with-swift/commit/c2922d4397358f60814e27e1a4401e98d4c6b6d0))
 - Why does `\.self` work for `ForEach`? ([`b6be702`](https://github.com/cdalvaro/hacking-with-swift/commit/b6be7020100931e1cd647ce72cfdcdc5fdfc99a3))
@@ -530,7 +530,7 @@ _Challenge_
 
 [Code](Projects/CoreDataProject)
 
-### SwiftData
+### Day 57 - SwiftData
 
 - [SwiftData](https://developer.apple.com/documentation/swiftdata/): Introduction.
 - Editing SwiftData model objects. ([`c2922d4`](https://github.com/cdalvaro/hacking-with-swift/commit/5ae741556124b58587053ef136116fe38a212fc4))
@@ -540,12 +540,20 @@ _Challenge_
 
 ## [Day 58](https://www.hackingwithswift.com/100/swiftui/58) - Project 12, Part Two
 
+### Day 58 - Core Data
+
 - Filtering [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/) using [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate/). ([`36dd6ae`](https://github.com/cdalvaro/hacking-with-swift/commit/36dd6ae094565137aad3f4f189a2086a000398e8))
 - Dynamically filtering [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/) with SwiftUI (Basic). ([`d4050f8`](https://github.com/cdalvaro/hacking-with-swift/commit/d4050f8feba9a07ab35e94ed35352b5e3908f54d))
 - Dynamically filtering [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/) with SwiftUI (Advanced). ([`484e794`](https://github.com/cdalvaro/hacking-with-swift/commit/484e794c29542ac89bf2b71807332426202e7ee4))
 - One-to-many relationships with Core Data, SwiftUI, and [`@FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest/). ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/0eac1db413fcaa55e60ecd3efda58be718846163))
 
 [Code](Projects/CoreDataProject)
+
+### Day 58 - SwiftData
+
+- Dynamically sorting and filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) with SwiftUI.
+
+[Code](Projects/SwiftDataProject)
 
 ## [Day 59](https://www.hackingwithswift.com/100/swiftui/59) - Project 12, Part Three
 
