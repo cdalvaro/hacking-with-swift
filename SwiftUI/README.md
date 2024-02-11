@@ -533,8 +533,8 @@ _Challenge_
 ### Day 57 - SwiftData
 
 - [SwiftData](https://developer.apple.com/documentation/swiftdata/): Introduction.
-- Editing SwiftData model objects. ([`c2922d4`](https://github.com/cdalvaro/hacking-with-swift/commit/5ae741556124b58587053ef136116fe38a212fc4))
-- Filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) using [`#Predicate`](https://developer.apple.com/documentation/foundation/predicate). ([`c2922d4`](https://github.com/cdalvaro/hacking-with-swift/commit/ffcce854be3ffd0fa3d19e3b62ef489c52825cfa))
+- Editing SwiftData model objects. ([`5ae7415`](https://github.com/cdalvaro/hacking-with-swift/commit/5ae741556124b58587053ef136116fe38a212fc4))
+- Filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) using [`#Predicate`](https://developer.apple.com/documentation/foundation/predicate). ([`ffcce85`](https://github.com/cdalvaro/hacking-with-swift/commit/ffcce854be3ffd0fa3d19e3b62ef489c52825cfa))
 
 [Code](Projects/SwiftDataProject)
 
@@ -551,9 +551,9 @@ _Challenge_
 
 ### Day 58 - SwiftData
 
-- Dynamically sorting and filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) with SwiftUI. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/c22f12644ea8a250127cf5c2390652a0019a2ae2))
-- Relationships with SwiftData, SwiftUI, and [`@Query`](https://developer.apple.com/documentation/swiftdata/query/). ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/1c408b82f70524a8bebf7882850dff386f513395))
-- Syncing SwiftData with CloudKit. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/56b3db0f6db76d3576966501e4c2955c87f9de79))
+- Dynamically sorting and filtering [`@Query`](https://developer.apple.com/documentation/swiftdata/query/) with SwiftUI. ([`c22f126`](https://github.com/cdalvaro/hacking-with-swift/commit/c22f12644ea8a250127cf5c2390652a0019a2ae2))
+- Relationships with SwiftData, SwiftUI, and [`@Query`](https://developer.apple.com/documentation/swiftdata/query/). ([`1c408b8`](https://github.com/cdalvaro/hacking-with-swift/commit/1c408b82f70524a8bebf7882850dff386f513395))
+- Syncing SwiftData with CloudKit. ([`56b3db0`](https://github.com/cdalvaro/hacking-with-swift/commit/56b3db0f6db76d3576966501e4c2955c87f9de79))
 
 [Code](Projects/SwiftDataProject)
 
@@ -578,9 +578,9 @@ Here are three ways to extend this app by modifying the `FilteredList` view:
 
 ### Day 59 - SwiftData
 
-1. Start by upgrading it to use SwiftData. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/3e03af9268b67ecb7b78c5a184c3787f244c22b1))
-2. Add a customizable sort order option: by name or by amount. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/1149730a272613b62ba434f5f3d93c5ab231f8c5))
-3. Add a filter option to show all expenses, just personal expenses, or just business expenses. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/8a85ff8f5044e009510906462f9f7a4bcd354c20))
+1. Start by upgrading it to use SwiftData. ([`3e03af9`](https://github.com/cdalvaro/hacking-with-swift/commit/3e03af9268b67ecb7b78c5a184c3787f244c22b1))
+2. Add a customizable sort order option: by name or by amount. ([`1149730`](https://github.com/cdalvaro/hacking-with-swift/commit/1149730a272613b62ba434f5f3d93c5ab231f8c5))
+3. Add a filter option to show all expenses, just personal expenses, or just business expenses. ([`8a85ff8`](https://github.com/cdalvaro/hacking-with-swift/commit/8a85ff8f5044e009510906462f9f7a4bcd354c20))
 
 [Code](Projects/iExpense)
 
