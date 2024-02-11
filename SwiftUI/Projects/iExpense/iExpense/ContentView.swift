@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showingAddExpense = false
+    @State private var filterType: ExpenseType?
     @State private var sortOrder = [
         SortDescriptor(\Expense.name),
         SortDescriptor(\Expense.amount)
@@ -17,24 +18,12 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            ExpensesListView(sortOrder: sortOrder)
+            ExpensesListView(sortOrder: sortOrder, filterBy: filterType)
                 .navigationTitle("iExpense")
                 .toolbar {
-                    Menu("Sort", systemImage: "arrow.up.arrow.down") {
-                        Picker("Sort", selection: $sortOrder) {
-                            Text("Sort by Name")
-                                .tag([
-                                    SortDescriptor(\Expense.name),
-                                    SortDescriptor(\Expense.amount)
-                                ])
+                    PickerFilterView(filterType: $filterType)
 
-                            Text("Sort by Amount")
-                                .tag([
-                                    SortDescriptor(\Expense.amount),
-                                    SortDescriptor(\Expense.name)
-                                ])
-                        }
-                    }
+                    SortPickerView(sortOrder: $sortOrder)
 
                     Button("Add Expense", systemImage: "plus") {
                         showingAddExpense = true

@@ -12,17 +12,30 @@ struct ExpensesListView: View {
     @Environment(\.modelContext) var modelContext
     @Query private var expenses: [Expense]
 
-    init(sortOrder: [SortDescriptor<Expense>]) {
+    private var filterBy: ExpenseType?
+
+    init(sortOrder: [SortDescriptor<Expense>], filterBy: ExpenseType?) {
+        // This should work, but SwiftData does not play well
+        // with enums
+//        _expenses = if let filterBy = filterBy {
+//            Query(filter: #Predicate<Expense> { $0.type == filterBy },
+//                                sort: sortOrder)
+//        } else {
+//            Query(sort: sortOrder)
+//        }
         _expenses = Query(sort: sortOrder)
+        self.filterBy = filterBy
     }
 
     var body: some View {
         List {
             ForEach(ExpenseType.allCases, id: \.self) { type in
-                let sectionItems = expenses.filter { $0.type == type }
-                if !sectionItems.isEmpty {
-                    ExpensesSection(title: type.description, expenses: sectionItems) { offsets in
-                        removeItems(at: offsets, in: sectionItems)
+                if filterBy == nil || type == filterBy! {
+                    let sectionItems = expenses.filter { $0.type == type }
+                    if !sectionItems.isEmpty {
+                        ExpensesSection(title: type.description, expenses: sectionItems) { offsets in
+                            removeItems(at: offsets, in: sectionItems)
+                        }
                     }
                 }
             }
@@ -43,5 +56,5 @@ struct ExpensesListView: View {
     ExpensesListView(sortOrder: [
         SortDescriptor(\Expense.name),
         SortDescriptor(\Expense.amount)
-    ])
+    ], filterBy: nil)
 }
