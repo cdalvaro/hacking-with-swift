@@ -579,6 +579,7 @@ Here are three ways to extend this app by modifying the `FilteredList` view:
 ### Day 59 - SwiftData
 
 1. Start by upgrading it to use SwiftData.
+2. Add a customizable sort order option: by name or by amount.
 
 [Code](Projects/iExpense)
 
