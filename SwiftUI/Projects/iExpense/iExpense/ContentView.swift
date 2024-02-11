@@ -5,17 +5,19 @@
 //  Created by Carlos Álvaro on 7/8/22.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var expenses = Expenses()
+    @Environment(\.modelContext) var modelContext
+    @Query var expenses: [Expense]
     @State private var showingAddExpense = false
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(ExpenseType.allCases, id: \.self) { type in
-                    let sectionItems = expenses.expensesFor(type: type)
+                    let sectionItems = expenses.filter { $0.type == type }
                     if !sectionItems.isEmpty {
                         ExpensesSection(title: type.description, expenses: sectionItems) { offsets in
                             removeItems(at: offsets, in: sectionItems)
@@ -32,27 +34,21 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showingAddExpense) {
-                AddView(expenses: expenses)
+                AddExpenseView()
             }
         }
     }
 
-    func removeItems(at offsets: IndexSet, in inputArray: [ExpenseItem]) {
-        var objectsToDelete = IndexSet()
-
+    func removeItems(at offsets: IndexSet, in inputArray: [Expense]) {
         for offset in offsets {
             let item = inputArray[offset]
-            if let index = expenses.items.firstIndex(of: item) {
-                objectsToDelete.insert(index)
+            if let index = expenses.firstIndex(of: item) {
+                modelContext.delete(expenses[index])
             }
         }
-
-        expenses.items.remove(atOffsets: objectsToDelete)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

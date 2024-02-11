@@ -561,6 +561,8 @@ _Challenge_
 
 _Challenge_
 
+### Day 59 - Core Data
+
 Here are three ways to extend this app by modifying the `FilteredList` view:
 
 1. Make it accept a string parameter that controls which predicate is applied.
@@ -573,6 +575,12 @@ Here are three ways to extend this app by modifying the `FilteredList` view:
   ([`09f6397`](https://github.com/cdalvaro/hacking-with-swift/commit/09f6397de237642e4ab094c21116aecae1bf606e))
 
 [Code](Projects/CoreDataProject)
+
+### Day 59 - SwiftData
+
+1. Start by upgrading it to use SwiftData.
+
+[Code](Projects/iExpense)
 
 ## [Day 60](https://www.hackingwithswift.com/100/swiftui/60) - MILESTONE: Projects 10-12
 

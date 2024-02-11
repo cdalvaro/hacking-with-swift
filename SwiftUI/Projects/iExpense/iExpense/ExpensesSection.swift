@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ExpensesSection: View {
     let title: String
-    let expenses: [ExpenseItem]
+    let expenses: [Expense]
     let deleteItems: (IndexSet) -> Void
 
     var body: some View {
-        Section(title) {
-            ForEach(expenses) { item in
+        Section(self.title) {
+            ForEach(self.expenses) { item in
                 HStack {
                     Text(item.name)
 
@@ -24,13 +24,13 @@ struct ExpensesSection: View {
                         .style(for: item)
                 }
             }
-            .onDelete(perform: deleteItems)
+            .onDelete(perform: self.deleteItems)
         }
     }
 }
 
 extension View {
-    func style(for item: ExpenseItem) -> some View {
+    func style(for item: Expense) -> some View {
         switch item.amount {
         case 0..<10:
             return self.foregroundColor(.green)
@@ -44,12 +44,10 @@ extension View {
 
 extension FormatStyle where Self == FloatingPointFormatStyle<Double>.Currency {
     static var localCurrency: Self {
-        .currency(code: Locale.current.currencyCode ?? "USD")
+        .currency(code: Locale.current.currency?.identifier ?? "USD")
     }
 }
 
-struct ExpensesSection_Previews: PreviewProvider {
-    static var previews: some View {
-        ExpensesSection(title: "Section", expenses: []) { _ in }
-    }
+#Preview {
+    ExpensesSection(title: "Section", expenses: []) { _ in }
 }

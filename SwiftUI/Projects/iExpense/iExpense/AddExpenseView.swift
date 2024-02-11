@@ -1,14 +1,15 @@
 //
-//  AddView.swift
+//  AddExpenseView.swift
 //  iExpense
 //
 //  Created by Carlos Álvaro on 21/8/22.
 //
 
+import SwiftData
 import SwiftUI
 
-struct AddView: View {
-    @ObservedObject var expenses: Expenses
+struct AddExpenseView: View {
+    @Environment(\.modelContext) var modelContext
     @Environment(\.dismiss) var dismiss
 
     @State private var name = ""
@@ -32,8 +33,8 @@ struct AddView: View {
             .navigationTitle("Add new expense")
             .toolbar {
                 Button("Save") {
-                    let item = ExpenseItem(name: name, type: type, amount: amount)
-                    expenses.items.append(item)
+                    let item = Expense(name: name, type: type, amount: amount)
+                    modelContext.insert(item)
                     dismiss()
                 }
             }
@@ -41,8 +42,6 @@ struct AddView: View {
     }
 }
 
-struct AddView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddView(expenses: Expenses())
-    }
+#Preview {
+    AddExpenseView()
 }
