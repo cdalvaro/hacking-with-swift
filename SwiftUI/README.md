@@ -578,9 +578,9 @@ Here are three ways to extend this app by modifying the `FilteredList` view:
 
 ### Day 59 - SwiftData
 
-1. Start by upgrading it to use SwiftData.
-2. Add a customizable sort order option: by name or by amount.
-3. Add a filter option to show all expenses, just personal expenses, or just business expenses.
+1. Start by upgrading it to use SwiftData. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/3e03af9268b67ecb7b78c5a184c3787f244c22b1))
+2. Add a customizable sort order option: by name or by amount. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/1149730a272613b62ba434f5f3d93c5ab231f8c5))
+3. Add a filter option to show all expenses, just personal expenses, or just business expenses. ([`0eac1db`](https://github.com/cdalvaro/hacking-with-swift/commit/8a85ff8f5044e009510906462f9f7a4bcd354c20))
 
 [Code](Projects/iExpense)
 
