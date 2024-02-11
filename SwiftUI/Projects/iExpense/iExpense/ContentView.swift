@@ -9,42 +9,40 @@ import SwiftData
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.modelContext) var modelContext
-    @Query var expenses: [Expense]
     @State private var showingAddExpense = false
+    @State private var sortOrder = [
+        SortDescriptor(\Expense.name),
+        SortDescriptor(\Expense.amount)
+    ]
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(ExpenseType.allCases, id: \.self) { type in
-                    let sectionItems = expenses.filter { $0.type == type }
-                    if !sectionItems.isEmpty {
-                        ExpensesSection(title: type.description, expenses: sectionItems) { offsets in
-                            removeItems(at: offsets, in: sectionItems)
+            ExpensesListView(sortOrder: sortOrder)
+                .navigationTitle("iExpense")
+                .toolbar {
+                    Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                        Picker("Sort", selection: $sortOrder) {
+                            Text("Sort by Name")
+                                .tag([
+                                    SortDescriptor(\Expense.name),
+                                    SortDescriptor(\Expense.amount)
+                                ])
+
+                            Text("Sort by Amount")
+                                .tag([
+                                    SortDescriptor(\Expense.amount),
+                                    SortDescriptor(\Expense.name)
+                                ])
                         }
                     }
-                }
-            }
-            .navigationTitle("iExpense")
-            .toolbar {
-                Button {
-                    showingAddExpense = true
-                } label: {
-                    Image(systemName: "plus")
-                }
-            }
-            .sheet(isPresented: $showingAddExpense) {
-                AddExpenseView()
-            }
-        }
-    }
 
-    func removeItems(at offsets: IndexSet, in inputArray: [Expense]) {
-        for offset in offsets {
-            let item = inputArray[offset]
-            if let index = expenses.firstIndex(of: item) {
-                modelContext.delete(expenses[index])
-            }
+                    Button("Add Expense", systemImage: "plus") {
+                        showingAddExpense = true
+                    }
+                }
+                .sheet(isPresented: $showingAddExpense) {
+                    AddExpenseView()
+                }
         }
     }
 }
