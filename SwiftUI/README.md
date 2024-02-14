@@ -65,6 +65,7 @@
 - [Day 59 - Project 12, Part Three](#day-59---project-12-part-three)
 - [Day 60 - MILESTONE: Projects 10-12](#day-60---milestone-projects-10-12)
 - [Day 61 - Time for Core Data](#day-61---time-for-core-data)
+- [Day 62 - Project 13, Part One](#day-62---project-13-part-one)
 
 </details>
 
@@ -599,3 +600,10 @@ As you can see, there is an array of people, and each person has an _ID_, _name_
 _Challenge_
 
 Your job today is to expand your app so that it uses Core Data. Your boss just emailed you to say the app is great, but once the JSON has been fetched they really want it to work offline. This means you need to use Core Data to store the information you download, then use your Core Data entities to display the views you designed – you should only need to fetch the data once. You still need to try to fetch the data every time your app loads, just in case it has changed somehow, but if that fetch fails it’s okay because you still have your Core Data back up.
+
+## [Day 62](https://www.hackingwithswift.com/100/swiftui/62) - Project 13, Part One
+
+- How property wrappers become structs.
+- Responding to state changes using `onChange()`.
+
+[Code](Projects/Instafilter)
