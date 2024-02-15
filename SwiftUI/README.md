@@ -605,5 +605,6 @@ Your job today is to expand your app so that it uses Core Data. Your boss just e
 
 - How property wrappers become structs.
 - Responding to state changes using `onChange()`.
+- Showing multiple options with `confirmationDialog()`.
 
 [Code](Projects/Instafilter)
