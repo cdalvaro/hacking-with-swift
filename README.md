@@ -17,19 +17,25 @@ This section is common for _100 Days of Swift_ and _100 Days of SwiftUI_ courses
 
 Here are covered the first 15 days with the basics of the Swift language.
 
-These playgrounds are available inside the [`Playgrounds`](Playgrounds) folder.
+These playgrounds are available inside the [_Playgrounds_](Playgrounds) folder.
 
 ## 100 Days of Swift
 
 Learning Swift during the [100 Days of Swift](https://www.hackingwithswift.com/100) challenge.
 
-Challenges are available inside [`Classic`](Classic) directory. (🚧 Still in progress)
+Challenges are available inside [_Classic_](Classic) directory. (🚧 Still in progress)
 
 ## 100 Days of SwiftUI
 
 Learning SwiftUI during the [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) challenge.
 
-Challenges are available inside [`SwiftUI`](SwiftUI) directory. (🚧 Still in progress)
+Challenges are available inside [_SwiftUI_](SwiftUI) directory. (🚧 Still in progress)
+
+## Extra Projects
+
+These projects are not part of the main 100 Days of Swift/SwiftUI series, but are part of Hacking with Swift series.
+
+Projects are available inside [_Extra Projects_](Extra%20Projects) directory.
 
 [swift_release_notes]: https://www.swift.org/blog/swift-5.7-released/
 [swift_badge]: https://img.shields.io/badge/Swift-5.7-F05138?logo=swift
