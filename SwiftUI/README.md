@@ -67,6 +67,7 @@
 - [Day 61 - Time for Core Data](#day-61---time-for-core-data)
 - [Day 62 - Project 13, Part One](#day-62---project-13-part-one)
 - [Day 63 - Project 13, Part Two](#day-63---project-13-part-two)
+- [Day 64 - Project 13, Part Three](#day-64---project-13-part-three)
 
 </details>
 
@@ -614,5 +615,13 @@ Your job today is to expand your app so that it uses Core Data. Your boss just e
 
 - Integrating [Core Image](https://developer.apple.com/documentation/coreimage) with SwiftUI. ([`12d869d`](https://github.com/cdalvaro/hacking-with-swift/commit/12d869dfd5a6dd67bd784349c6cbe6aa5b0d40df))
 - Showing empty states with [`ContentUnavailableView`](https://developer.apple.com/documentation/swiftui/contentunavailableview). ([`00a4cda`](https://github.com/cdalvaro/hacking-with-swift/commit/00a4cda326f4efb64c577cf9cb16e9ce2151714b))
+
+[Code](Projects/Instafilter)
+
+## [Day 64](https://www.hackingwithswift.com/100/swiftui/64) - Project 13, Part Three
+
+- Loading photos from the user's photo library. ([`6eec33b`](https://github.com/cdalvaro/hacking-with-swift/commit/6eec33b7e8e726d4fce5f9b7be60739223b69941))
+- How to let the user share content with [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink). ([`1c5f097`](https://github.com/cdalvaro/hacking-with-swift/commit/1c5f0971fced4e3ec91c35281da25754323d6947))
+- How to ask the user to leave an App Store review. ([`a8526c3`](https://github.com/cdalvaro/hacking-with-swift/commit/a8526c3f475e8321f36df10f279bbca6d5daaa6b))
 
 [Code](Projects/Instafilter)

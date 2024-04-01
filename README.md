@@ -46,5 +46,5 @@ Projects are available inside [_Extra Projects_](Extra%20Projects) directory.
 [swift_current_day]: https://www.hackingwithswift.com/100/68
 [swift_progress]: https://img.shields.io/badge/100%20Days%20of%20Swift-68-D64D42
 
-[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/63
-[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-63-3463DA
+[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/64
+[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-64-3463DA
