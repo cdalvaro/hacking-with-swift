@@ -5,19 +5,39 @@
 //  Created by Carlos Álvaro on 14/2/24.
 //
 
+import PhotosUI
 import SwiftUI
 
 struct ContentView: View {
+    @State private var pickerItems = [PhotosPickerItem]()
+    @State private var selectedImages = [Image]()
+    
     var body: some View {
-        ContentUnavailableView {
-            Label("No snippets", systemImage: "swift")
-        } description: {
-            Text("You don't have any saved snippets yet")
-        } actions: {
-            Button("Create snippet") {
-                // create a snippet
+        VStack {
+            PhotosPicker(selection: $pickerItems,
+                         maxSelectionCount: 3,
+                         matching: .any(of: [.images, .not(.screenshots)])) {
+                Label("Select a picture", systemImage: "photo")
             }
-            .buttonStyle(.borderedProminent)
+            
+            ScrollView {
+                ForEach(0..<selectedImages.count, id: \.self) { i in
+                    selectedImages[i]
+                        .resizable()
+                        .scaledToFit()
+                }
+            }
+        }
+        .onChange(of: pickerItems) {
+            Task {
+                selectedImages.removeAll()
+                
+                for item in pickerItems {
+                    if let loadedImage = try await item.loadTransferable(type: Image.self) {
+                        selectedImages.append(loadedImage)
+                    }
+                }
+            }
         }
     }
 }
