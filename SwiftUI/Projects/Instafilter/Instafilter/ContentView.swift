@@ -5,40 +5,30 @@
 //  Created by Carlos Álvaro on 14/2/24.
 //
 
-import PhotosUI
 import SwiftUI
 
 struct ContentView: View {
-    @State private var pickerItems = [PhotosPickerItem]()
-    @State private var selectedImages = [Image]()
-    
     var body: some View {
-        VStack {
-            PhotosPicker(selection: $pickerItems,
-                         maxSelectionCount: 3,
-                         matching: .any(of: [.images, .not(.screenshots)])) {
-                Label("Select a picture", systemImage: "photo")
-            }
-            
-            ScrollView {
-                ForEach(0..<selectedImages.count, id: \.self) { i in
-                    selectedImages[i]
-                        .resizable()
-                        .scaledToFit()
-                }
-            }
+        Spacer()
+        
+        ShareLink(item: URL(string: "https://cdalvaro.io")!,
+                  subject: Text("I'm Carlos!"),
+                  message: Text("Checkout my profile"))
+        
+        Spacer()
+        
+        ShareLink(item: URL(string: "https://www.hackwingwithswift.com")!) {
+            Label("Spread the word about Swift", systemImage: "swift")
         }
-        .onChange(of: pickerItems) {
-            Task {
-                selectedImages.removeAll()
-                
-                for item in pickerItems {
-                    if let loadedImage = try await item.loadTransferable(type: Image.self) {
-                        selectedImages.append(loadedImage)
-                    }
-                }
-            }
+        
+        Spacer()
+        
+        let example = Image(.example)
+        ShareLink(item: example, preview: SharePreview("Basic Apple Guy Picture", image: example)) {
+            Label("Click to share", systemImage: "mug")
         }
+        
+        Spacer()
     }
 }
 
