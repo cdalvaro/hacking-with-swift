@@ -68,6 +68,7 @@
 - [Day 62 - Project 13, Part One](#day-62---project-13-part-one)
 - [Day 63 - Project 13, Part Two](#day-63---project-13-part-two)
 - [Day 64 - Project 13, Part Three](#day-64---project-13-part-three)
+- [Day 65 - Project 13, Part Four](#day-65---project-13-part-four)
 
 </details>
 
@@ -625,3 +626,9 @@ Your job today is to expand your app so that it uses Core Data. Your boss just e
 - How to ask the user to leave an App Store review. ([`a8526c3`](https://github.com/cdalvaro/hacking-with-swift/commit/a8526c3f475e8321f36df10f279bbca6d5daaa6b))
 
 [Code](Projects/Instafilter)
+
+## [Day 65](https://www.hackingwithswift.com/100/swiftui/65) - Project 13, Part Four
+
+- Building our basic UI. ([`e3631e7`](https://github.com/cdalvaro/hacking-with-swift/commit/e3631e723ed6f671db6f376814c4ca2ca9aa11a4))
+- Importing an image into SwiftUI using [`PhotosPicker`](https://developer.apple.com/documentation/photokit/photospicker/). ([`642f773`](https://github.com/cdalvaro/hacking-with-swift/commit/642f773eb11627dd1f41992adcaba12972f86988))
+- Basic image filtering using [Core Image](https://developer.apple.com/documentation/coreimage). ([`fee4949`](https://github.com/cdalvaro/hacking-with-swift/commit/fee4949feeea5b09c4def969efe3e0371c13db71))
