@@ -69,6 +69,7 @@
 - [Day 63 - Project 13, Part Two](#day-63---project-13-part-two)
 - [Day 64 - Project 13, Part Three](#day-64---project-13-part-three)
 - [Day 65 - Project 13, Part Four](#day-65---project-13-part-four)
+- [Day 66 - Project 13, Part Five](#day-66---project-13-part-five)
 
 </details>
 
@@ -632,3 +633,12 @@ Your job today is to expand your app so that it uses Core Data. Your boss just e
 - Building our basic UI. ([`e3631e7`](https://github.com/cdalvaro/hacking-with-swift/commit/e3631e723ed6f671db6f376814c4ca2ca9aa11a4))
 - Importing an image into SwiftUI using [`PhotosPicker`](https://developer.apple.com/documentation/photokit/photospicker/). ([`642f773`](https://github.com/cdalvaro/hacking-with-swift/commit/642f773eb11627dd1f41992adcaba12972f86988))
 - Basic image filtering using [Core Image](https://developer.apple.com/documentation/coreimage). ([`fee4949`](https://github.com/cdalvaro/hacking-with-swift/commit/fee4949feeea5b09c4def969efe3e0371c13db71))
+
+[Code](Projects/Instafilter)
+
+## [Day 66](https://www.hackingwithswift.com/100/swiftui/66) - Project 13, Part Five
+
+- Customizing our filter using [`confirmationDialog()`](https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:)-46zbb/). ([`a4b0ca9`](https://github.com/cdalvaro/hacking-with-swift/commit/a4b0ca9c8e5d2ecc2a9252781ccdd8df737f91fa))
+- Sharing an image using [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink). ([`d5271b3`](https://github.com/cdalvaro/hacking-with-swift/commit/d5271b35d238f25438e76cd310624b877b4ffd84))
+
+[Code](Projects/Instafilter)
