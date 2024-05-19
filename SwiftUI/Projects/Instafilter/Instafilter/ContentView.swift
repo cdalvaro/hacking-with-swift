@@ -12,7 +12,12 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var processedImage: Image?
+
     @State private var filterIntensity = 0.5
+    @State private var hasIntensityProperty = false
+    @State private var filterRadius = 10.0
+    @State private var hasRadiusProperty = false
+
     @State private var selectedItem: PhotosPickerItem?
     @State private var showingFilters = false
 
@@ -44,11 +49,26 @@ struct ContentView: View {
                 Spacer()
 
                 if selectedItem != nil {
-                    HStack {
-                        Text("Intensity")
-                        Slider(value: $filterIntensity)
-                            .onChange(of: filterIntensity, applyProcessing)
+                    VStack {
+                        HStack {
+                            Text("Intensity")
+                                .frame(width: 70, alignment: .trailing)
+                                .padding(.trailing)
+                            Slider(value: $filterIntensity)
+                                .onChange(of: filterIntensity, applyProcessing)
+                        }
+                        .disabled(!hasIntensityProperty)
+
+                        HStack {
+                            Text("Radius")
+                                .frame(width: 70, alignment: .trailing)
+                                .padding(.trailing)
+                            Slider(value: $filterRadius, in: 0 ... 200)
+                                .onChange(of: filterRadius, applyProcessing)
+                        }
+                        .disabled(!hasRadiusProperty)
                     }
+                    .padding(.bottom)
 
                     HStack {
                         Button("Change Filter", action: changeFilter)
@@ -95,15 +115,22 @@ struct ContentView: View {
     }
 
     func applyProcessing() {
+        hasIntensityProperty = false
+        hasRadiusProperty = false
+
         let inputKeys = currentFilter.inputKeys
         if inputKeys.contains(kCIInputIntensityKey) {
             currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)
+            hasIntensityProperty = true
         }
         if inputKeys.contains(kCIInputRadiusKey) {
-            currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey)
+            currentFilter.setValue(filterRadius, forKey: kCIInputRadiusKey)
+            hasRadiusProperty = true
         }
+
         if inputKeys.contains(kCIInputScaleKey) {
             currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey)
+            hasIntensityProperty = true
         }
 
         guard let outputImage = currentFilter.outputImage else { return }
