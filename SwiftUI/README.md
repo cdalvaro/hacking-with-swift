@@ -70,6 +70,7 @@
 - [Day 64 - Project 13, Part Three](#day-64---project-13-part-three)
 - [Day 65 - Project 13, Part Four](#day-65---project-13-part-four)
 - [Day 66 - Project 13, Part Five](#day-66---project-13-part-five)
+- [Day 67 - Project 13, Part Six](#day-67---project-13-part-six)
 
 </details>
 
@@ -349,7 +350,7 @@ Breaking it down:
 - Why [`@State`](https://developer.apple.com/documentation/swiftui/state) only works with structs
 - Sharing SwiftUI state with [`@StateObject`](https://developer.apple.com/documentation/swiftui/stateobject) ([`baee648`](https://github.com/cdalvaro/hacking-with-swift/commit/baee648aecafd58e645907b8ada0c31fd5106d31))
 - Showing and hiding views ([`2f08039`](https://github.com/cdalvaro/hacking-with-swift/commit/2f08039dce6a699410d71a9ca2458685143445fb))
-- Deleting items using [`onDelete()`](https://developer.apple.com/documentation/swiftui/foreach/ondelete(perform:)) ([`d394d13`](https://github.com/cdalvaro/hacking-with-swift/commit/d394d13fdee94f9f4a0417c7916c6fd6a0cbb529))
+- Deleting items using [`onDelete()`](<https://developer.apple.com/documentation/swiftui/foreach/ondelete(perform:)>) ([`d394d13`](https://github.com/cdalvaro/hacking-with-swift/commit/d394d13fdee94f9f4a0417c7916c6fd6a0cbb529))
 - Storing user settings with [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) ([`01b7a86`](https://github.com/cdalvaro/hacking-with-swift/commit/01b7a8685fc160ba094c6b3c89557c8c1ac04a46))
 - Archiving Swift objects with [`Codable`](https://developer.apple.com/documentation/swift/codable) ([`6dc754f`](https://github.com/cdalvaro/hacking-with-swift/commit/6dc754fce5f7329d0cb1aa4449e9b9937d631a5d))
 
@@ -411,7 +412,7 @@ Breaking it down:
 
 - Creating custom paths with SwiftUI ([`364ccc2`](https://github.com/cdalvaro/hacking-with-swift/commit/364ccc28621b9dd00a5216d5def3ed4c0ae10173))
 - Paths vs shapes in SwiftUI ([`e496e0c`](https://github.com/cdalvaro/hacking-with-swift/commit/e496e0c1a1b00bb8702699eb59378652a2d1e3c6))
-- Adding [`strokeBorder()`](https://developer.apple.com/documentation/swiftui/circle/strokeborder(style:)) support with [`InsettableShape`](https://developer.apple.com/documentation/swiftui/insettableshape) ([`8c571e4`](https://github.com/cdalvaro/hacking-with-swift/commit/8c571e437d78aa808ee15a9fea45319592738597))
+- Adding [`strokeBorder()`](<https://developer.apple.com/documentation/swiftui/circle/strokeborder(style:)>) support with [`InsettableShape`](https://developer.apple.com/documentation/swiftui/insettableshape) ([`8c571e4`](https://github.com/cdalvaro/hacking-with-swift/commit/8c571e437d78aa808ee15a9fea45319592738597))
 
 [Code](Projects/Drawing)
 
@@ -419,7 +420,7 @@ Breaking it down:
 
 - Transforming shapes using [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform/) and even-odd fills ([`b901b77`](https://github.com/cdalvaro/hacking-with-swift/commit/b901b772cedf63a3a97300d79e5840da82bc564e))
 - Creative borders and fills using [`ImagePaint`](https://developer.apple.com/documentation/swiftui/imagepaint/) ([`730e153`](https://github.com/cdalvaro/hacking-with-swift/commit/730e1531a6b48f26f914945981e3c2a4f9c2c479))
-- Enabling high-performance Metal rendering with [`drawingGroup()`](https://developer.apple.com/documentation/swiftui/view/drawinggroup(opaque:colormode:)) ([`3a185ae`](https://github.com/cdalvaro/hacking-with-swift/commit/3a185aec40484edfd0344a81af336e62040e5bf5))
+- Enabling high-performance Metal rendering with [`drawingGroup()`](<https://developer.apple.com/documentation/swiftui/view/drawinggroup(opaque:colormode:)>) ([`3a185ae`](https://github.com/cdalvaro/hacking-with-swift/commit/3a185aec40484edfd0344a81af336e62040e5bf5))
 
 [Code](Projects/Drawing)
 
@@ -513,13 +514,13 @@ You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Da
 _Challenge_
 
 1. Right now it’s possible to select no title, author, or genre for books, which causes a problem for the detail view.
-  Please fix this, either by forcing defaults, validating the form, or showing a default picture for unknown genres – you can choose.
-  ([`f3cb6e3`](https://github.com/cdalvaro/hacking-with-swift/commit/f3cb6e3a91d3c390ea3cc6d5ec702e91bff52ca5))
+   Please fix this, either by forcing defaults, validating the form, or showing a default picture for unknown genres – you can choose.
+   ([`f3cb6e3`](https://github.com/cdalvaro/hacking-with-swift/commit/f3cb6e3a91d3c390ea3cc6d5ec702e91bff52ca5))
 1. Modify `ContentView` so that books rated as 1 star are highlighted somehow, such as having their name shown in red.
-  ([`d3bcc42`](https://github.com/cdalvaro/hacking-with-swift/commit/d3bcc42cef82b9ae843ab2384b9f84b48108b845))
+   ([`d3bcc42`](https://github.com/cdalvaro/hacking-with-swift/commit/d3bcc42cef82b9ae843ab2384b9f84b48108b845))
 1. Add a new _“date”_ attribute to the Book entity, assigning `Date.now` to it so it gets the current date and time,
-  then format that nicely somewhere in DetailView.
-  ([`18f0ee2`](https://github.com/cdalvaro/hacking-with-swift/commit/18f0ee233e2a7cc9db240e35c255bad9cbdbac5a))
+   then format that nicely somewhere in DetailView.
+   ([`18f0ee2`](https://github.com/cdalvaro/hacking-with-swift/commit/18f0ee233e2a7cc9db240e35c255bad9cbdbac5a))
 
 [Code](Projects/Bookworm)
 
@@ -572,12 +573,12 @@ Here are three ways to extend this app by modifying the `FilteredList` view:
 
 1. Make it accept a string parameter that controls which predicate is applied.
    You can use Swift’s string interpolation to place this in the predicate.
-  ([`08c19cc`](https://github.com/cdalvaro/hacking-with-swift/commit/08c19cc0b9646eda2177a01748acdb1a8080b057))
+   ([`08c19cc`](https://github.com/cdalvaro/hacking-with-swift/commit/08c19cc0b9646eda2177a01748acdb1a8080b057))
 1. Modify the predicate string parameter to be an enum such as `.beginsWith`,
    then make that enum get resolved to a string inside the initializer.
-  ([`2f50b48`](https://github.com/cdalvaro/hacking-with-swift/commit/2f50b48d0d06066a8cc7039a17d9f9492291dc06))
+   ([`2f50b48`](https://github.com/cdalvaro/hacking-with-swift/commit/2f50b48d0d06066a8cc7039a17d9f9492291dc06))
 1. Make `FilteredList` accept an array of `SortDescriptor` objects to get used in its fetch request.
-  ([`09f6397`](https://github.com/cdalvaro/hacking-with-swift/commit/09f6397de237642e4ab094c21116aecae1bf606e))
+   ([`09f6397`](https://github.com/cdalvaro/hacking-with-swift/commit/09f6397de237642e4ab094c21116aecae1bf606e))
 
 [Code](Projects/CoreDataProject)
 
@@ -638,7 +639,16 @@ Your job today is to expand your app so that it uses Core Data. Your boss just e
 
 ## [Day 66](https://www.hackingwithswift.com/100/swiftui/66) - Project 13, Part Five
 
-- Customizing our filter using [`confirmationDialog()`](https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:)-46zbb/). ([`a4b0ca9`](https://github.com/cdalvaro/hacking-with-swift/commit/a4b0ca9c8e5d2ecc2a9252781ccdd8df737f91fa))
+- Customizing our filter using [`confirmationDialog()`](<https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:)-46zbb/>). ([`a4b0ca9`](https://github.com/cdalvaro/hacking-with-swift/commit/a4b0ca9c8e5d2ecc2a9252781ccdd8df737f91fa))
 - Sharing an image using [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink). ([`d5271b3`](https://github.com/cdalvaro/hacking-with-swift/commit/d5271b35d238f25438e76cd310624b877b4ffd84))
+
+[Code](Projects/Instafilter)
+
+## [Day 67](https://www.hackingwithswift.com/100/swiftui/67) - Project 13, Part Six
+
+_Challenge_
+
+1. Try making the Slider and Change Filter buttons disabled if there is no image selected.
+2. Experiment with having more than one slider, to control each of the input keys you care about. For example, you might have one for radius and one for intensity.
 
 [Code](Projects/Instafilter)
