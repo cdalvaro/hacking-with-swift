@@ -39,12 +39,9 @@ Projects are available inside [_Extra Projects_](Extra%20Projects) directory.
 
 [swift_release_notes]: https://www.swift.org/blog/swift-5.7-released/
 [swift_badge]: https://img.shields.io/badge/Swift-5.7-F05138?logo=swift
-
 [xcode_website]: https://developer.apple.com/xcode/
 [xcode_badge]: https://img.shields.io/badge/Xcode-15-1575F9?style=flat&logo=Xcode
-
 [swift_current_day]: https://www.hackingwithswift.com/100/68
 [swift_progress]: https://img.shields.io/badge/100%20Days%20of%20Swift-68-D64D42
-
-[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/66
-[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-66-3463DA
+[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/67
+[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-67-3463DA
