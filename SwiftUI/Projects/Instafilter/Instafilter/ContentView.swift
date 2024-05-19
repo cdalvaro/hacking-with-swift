@@ -5,7 +5,6 @@
 //  Created by Carlos Álvaro on 14/2/24.
 //
 
-import CoreImage
 import CoreImage.CIFilterBuiltins
 import PhotosUI
 import StoreKit
@@ -44,22 +43,24 @@ struct ContentView: View {
 
                 Spacer()
 
-                HStack {
-                    Text("Intensity")
-                    Slider(value: $filterIntensity)
-                        .onChange(of: filterIntensity, applyProcessing)
-                }
+                if selectedItem != nil {
+                    HStack {
+                        Text("Intensity")
+                        Slider(value: $filterIntensity)
+                            .onChange(of: filterIntensity, applyProcessing)
+                    }
 
-                HStack {
-                    Button("Change Filter", action: changeFilter)
+                    HStack {
+                        Button("Change Filter", action: changeFilter)
 
-                    Spacer()
+                        Spacer()
 
-                    if let processedImage {
-                        ShareLink(
-                            item: processedImage,
-                            preview: SharePreview("Instafilter image", image: processedImage)
-                        )
+                        if let processedImage {
+                            ShareLink(
+                                item: processedImage,
+                                preview: SharePreview("Instafilter image", image: processedImage)
+                            )
+                        }
                     }
                 }
             }
