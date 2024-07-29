@@ -72,6 +72,7 @@
 - [Day 66 - Project 13, Part Five](#day-66---project-13-part-five)
 - [Day 67 - Project 13, Part Six](#day-67---project-13-part-six)
 - [Day 68 - Project 14, Part One](#day-68---project-14-part-one)
+- [Day 69 - Project 14, Part Two](#day-69---project-14-part-two)
 
 </details>
 
@@ -660,5 +661,12 @@ _Challenge_
 - Adding conformance to [`Comparable`](https://developer.apple.com/documentation/swift/comparable/) for custom types ([`d550513`](https://github.com/cdalvaro/hacking-with-swift/commit/d550513f35aff01c3b057ff3e5006e23690f6710))
 - Writing data to the documents directory ([`5b6ccb6`](https://github.com/cdalvaro/hacking-with-swift/commit/5b6ccb66962f771b3f7364bd899e03558eedaaa7))
 - Switching view states with enums ([`52867f4`](https://github.com/cdalvaro/hacking-with-swift/commit/52867f4b8008fa74678eb1c8a06d900d813924b4))
+
+[Code](Projects/BucketList)
+
+## [Day 69](https://www.hackingwithswift.com/100/swiftui/69) - Project 14, Part Two
+
+- Integrating [`MapKit`](https://developer.apple.com/documentation/mapkit/) with SwiftUI ([`392bcb4`](https://github.com/cdalvaro/hacking-with-swift/commit/392bcb417d16b0f1744736427eb759396efff98e))
+- Using Touch ID and Face ID with SwiftUI ([`1bf4de3`](https://github.com/cdalvaro/hacking-with-swift/commit/1bf4de3568318840d51b864000c2bd07036cf7a8))
 
 [Code](Projects/BucketList)
