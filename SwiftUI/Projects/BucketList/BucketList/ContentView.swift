@@ -5,44 +5,43 @@
 //  Created by Carlos Álvaro on 29/7/24.
 //
 
-import MapKit
+import LocalAuthentication
 import SwiftUI
 
-struct Location: Identifiable {
-    let id = UUID()
-    var name: String
-    var coordinate: CLLocationCoordinate2D
-}
-
 struct ContentView: View {
-    let locations = [
-        Location(name: "Buckingham Palace", coordinate: CLLocationCoordinate2D(latitude: 51.501, longitude: -0.141)),
-        Location(name: "Tower of London", coordinate: CLLocationCoordinate2D(latitude: 51.508, longitude: -0.076))
-    ]
+    @State private var isUnlocked = false
 
     var body: some View {
         VStack {
-            MapReader { proxy in
-                Map {
-                    ForEach(locations) { location in
-                        Annotation(location.name, coordinate: location.coordinate) {
-                            Text(location.name)
-                                .font(.headline)
-                                .padding()
-                                .background(.blue.gradient)
-                                .foregroundStyle(.white)
-                                .clipShape(.capsule)
-                        }
-                        .annotationTitles(.hidden)
-                    }
-                }
-                .onTapGesture { position in
-                    if let coordinate = proxy.convert(position, from: .local) {
-                        print(coordinate)
-                    }
-                }
+            if isUnlocked {
+                Text("Unlocked")
+            } else {
+                Text("Locked")
             }
         }
+        .onAppear(perform: authenticate)
+    }
+
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "We need to update your data"
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, _ in
+                if success {
+                    isUnlocked = true
+                } else {
+                    print("There was an error: \(String(describing: error?.localizedDescription))")
+                }
+            }
+        } else {
+            print("no biometrics")
+        }
+
+        // Apple does not provide an alternative mechanism for authentication
+        // so if biometrics authentication fails, the developer must implement
+        // its own one
     }
 }
 
