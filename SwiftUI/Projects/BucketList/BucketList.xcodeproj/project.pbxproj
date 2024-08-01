@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		010278092C5BF7A200DCA6AB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Location.swift; path = BucketList/Location.swift; sourceTree = "<group>"; };
+		010278092C5BF7A200DCA6AB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		01D68B6E2C57979200E473CC /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D68B712C57979200E473CC /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		01D68B732C57979200E473CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,7 +37,6 @@
 		01D68B652C57979200E473CC = {
 			isa = PBXGroup;
 			children = (
-				010278092C5BF7A200DCA6AB /* Location.swift */,
 				01D68B702C57979200E473CC /* BucketList */,
 				01D68B6F2C57979200E473CC /* Products */,
 			);
@@ -56,6 +55,7 @@
 			children = (
 				01D68B712C57979200E473CC /* BucketListApp.swift */,
 				01D68B732C57979200E473CC /* ContentView.swift */,
+				010278092C5BF7A200DCA6AB /* Location.swift */,
 				01D68B752C57979400E473CC /* Assets.xcassets */,
 				01D68B772C57979400E473CC /* Preview Content */,
 			);
