@@ -73,6 +73,7 @@
 - [Day 67 - Project 13, Part Six](#day-67---project-13-part-six)
 - [Day 68 - Project 14, Part One](#day-68---project-14-part-one)
 - [Day 69 - Project 14, Part Two](#day-69---project-14-part-two)
+- [Day 70 - Project 14, Part Three](#day-70---project-14-part-three)
 
 </details>
 
@@ -668,5 +669,13 @@ _Challenge_
 
 - Integrating [`MapKit`](https://developer.apple.com/documentation/mapkit/) with SwiftUI ([`392bcb4`](https://github.com/cdalvaro/hacking-with-swift/commit/392bcb417d16b0f1744736427eb759396efff98e))
 - Using Touch ID and Face ID with SwiftUI ([`1bf4de3`](https://github.com/cdalvaro/hacking-with-swift/commit/1bf4de3568318840d51b864000c2bd07036cf7a8))
+
+[Code](Projects/BucketList)
+
+## [Day 70](https://www.hackingwithswift.com/100/swiftui/70) - Project 14, Part Three
+
+- Adding user locations to a map ([`a0fec09`](https://github.com/cdalvaro/hacking-with-swift/commit/a0fec0986fa9d06573a0ac65d18e80ad87e10468))
+- Improving our map annotations ([`22572bc`](https://github.com/cdalvaro/hacking-with-swift/commit/22572bc87cce247f3d68f79c55ec91d6f7fc5013))
+- Selecting and editing map annotations ([`509c41a`](https://github.com/cdalvaro/hacking-with-swift/commit/509c41aee9aa6907f5b40c833a1aa1c70c70354d))
 
 [Code](Projects/BucketList)
