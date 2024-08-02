@@ -9,7 +9,7 @@ import Foundation
 import MapKit
 
 struct Location: Codable, Equatable, Identifiable {
-    let id: UUID
+    var id: UUID
     var name: String
     var description: String
     var latitud: Double
