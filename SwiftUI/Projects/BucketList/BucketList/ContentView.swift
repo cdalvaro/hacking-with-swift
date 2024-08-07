@@ -42,7 +42,7 @@ struct ContentView: View {
                         id: UUID(),
                         name: "New Location",
                         description: "",
-                        latitud: coordinate.latitude,
+                        latitude: coordinate.latitude,
                         longitude: coordinate.longitude
                     )
                     locations.append(newLocation)
