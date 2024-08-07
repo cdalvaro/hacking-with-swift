@@ -74,6 +74,7 @@
 - [Day 68 - Project 14, Part One](#day-68---project-14-part-one)
 - [Day 69 - Project 14, Part Two](#day-69---project-14-part-two)
 - [Day 70 - Project 14, Part Three](#day-70---project-14-part-three)
+- [Day 71 - Project 14, Part Four](#day-71---project-14-part-four)
 
 </details>
 
@@ -677,5 +678,12 @@ _Challenge_
 - Adding user locations to a map ([`a0fec09`](https://github.com/cdalvaro/hacking-with-swift/commit/a0fec0986fa9d06573a0ac65d18e80ad87e10468))
 - Improving our map annotations ([`22572bc`](https://github.com/cdalvaro/hacking-with-swift/commit/22572bc87cce247f3d68f79c55ec91d6f7fc5013))
 - Selecting and editing map annotations ([`509c41a`](https://github.com/cdalvaro/hacking-with-swift/commit/509c41aee9aa6907f5b40c833a1aa1c70c70354d))
+
+[Code](Projects/BucketList)
+
+## [Day 71](https://www.hackingwithswift.com/100/swiftui/71) - Project 14, Part Four
+
+- Downloading data from Wikipedia ([`84c4826`](https://github.com/cdalvaro/hacking-with-swift/commit/84c4826f8e47b986b33a128e1967a9abb1983a04))
+- Sorting Wikipedia results ([`83b7bcb`](https://github.com/cdalvaro/hacking-with-swift/commit/83b7bcbb1c5820b30fa32a400b24afedeaf34916))
 
 [Code](Projects/BucketList)
