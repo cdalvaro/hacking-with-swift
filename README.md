@@ -5,7 +5,6 @@
 [![Swift Progress][swift_progress]][swift_current_day]
 [![SwiftUI Progress][swiftui_progress]][swiftui_current_day]
 
-> [!ABSTRACT]
 > _"Go from zero to hero with my comprehensive, real-world Swift tutorial projects."_ - Paul, Hacking with Swift
 
 Many thanks to [Paul Hudson](https://twitter.com/twostraws) ([@twostraws](https://github.com/twostraws)) for these great courses.
