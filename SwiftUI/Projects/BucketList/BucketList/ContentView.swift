@@ -16,13 +16,12 @@ struct ContentView: View {
         )
     )
 
-    @State private var locations = [Location]()
-    @State private var selectedPlace: Location?
+    @State private var viewModel = ViewModel()
 
     var body: some View {
         MapReader { proxy in
             Map(initialPosition: startPosition) {
-                ForEach(locations) { location in
+                ForEach(viewModel.locations) { location in
                     Annotation(location.name, coordinate: location.coordinate) {
                         Image(systemName: "star.circle")
                             .resizable()
@@ -31,29 +30,20 @@ struct ContentView: View {
                             .background(.white)
                             .clipShape(.circle)
                             .onLongPressGesture {
-                                selectedPlace = location
+                                viewModel.selectedPlace = location
                             }
                     }
                 }
             }
             .onTapGesture { position in
                 if let coordinate = proxy.convert(position, from: .local) {
-                    let newLocation = Location(
-                        id: UUID(),
-                        name: "New Location",
-                        description: "",
-                        latitude: coordinate.latitude,
-                        longitude: coordinate.longitude
-                    )
-                    locations.append(newLocation)
+                    viewModel.addLocation(at: coordinate)
                 }
             }
-            .sheet(item: $selectedPlace) { place in
+            .sheet(item: $viewModel.selectedPlace) { place in
                 // place has been unwrapped (the optional has value)
-                EditView(location: place) { newLocation in
-                    if let index = locations.firstIndex(of: place) {
-                        locations[index] = newLocation
-                    }
+                EditView(location: place) {
+                    viewModel.updateLocation(location: $0)
                 }
             }
         }
