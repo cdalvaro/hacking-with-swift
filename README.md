@@ -1,11 +1,12 @@
+# Hacking with Swift
+
 [![Swift version][swift_badge]][swift_release_notes]
 [![Xcode version][xcode_badge]][xcode_website]
 [![Swift Progress][swift_progress]][swift_current_day]
 [![SwiftUI Progress][swiftui_progress]][swiftui_current_day]
 
-# Hacking with Swift
-
-_"Go from zero to hero with my comprehensive, real-world Swift tutorial projects."_ - Paul, Hacking with Swift
+> [!ABSTRACT]
+> _"Go from zero to hero with my comprehensive, real-world Swift tutorial projects."_ - Paul, Hacking with Swift
 
 Many thanks to [Paul Hudson](https://twitter.com/twostraws) ([@twostraws](https://github.com/twostraws)) for these great courses.
 
@@ -43,5 +44,5 @@ Projects are available inside [`Extra Projects/`](Extra%20Projects) directory.
 [xcode_badge]: https://img.shields.io/badge/Xcode-15-1575F9?style=flat&logo=Xcode
 [swift_current_day]: https://www.hackingwithswift.com/100/68
 [swift_progress]: https://img.shields.io/badge/100%20Days%20of%20Swift-68-D64D42
-[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/71
-[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-71-3463DA
+[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/72
+[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-72-3463DA
