@@ -75,6 +75,7 @@
 - [Day 69 - Project 14, Part Two](#day-69---project-14-part-two)
 - [Day 70 - Project 14, Part Three](#day-70---project-14-part-three)
 - [Day 71 - Project 14, Part Four](#day-71---project-14-part-four)
+- [Day 72 - Project 14, Part Five](#day-72---project-14-part-five)
 
 </details>
 
@@ -685,5 +686,12 @@ _Challenge_
 
 - Downloading data from Wikipedia ([`84c4826`](https://github.com/cdalvaro/hacking-with-swift/commit/84c4826f8e47b986b33a128e1967a9abb1983a04))
 - Sorting Wikipedia results ([`83b7bcb`](https://github.com/cdalvaro/hacking-with-swift/commit/83b7bcbb1c5820b30fa32a400b24afedeaf34916))
+
+[Code](Projects/BucketList)
+
+## [Day 72](https://www.hackingwithswift.com/100/swiftui/72) - Project 14, Part Five
+
+- Introducing MVVM into your SwiftUI project ([`8328660`](https://github.com/cdalvaro/hacking-with-swift/commit/83286609e9bdd2e95831680b7df07359dfa6077f))
+- Locking our UI behind Face ID ([`10a44ce`](https://github.com/cdalvaro/hacking-with-swift/commit/10a44ceb552289c80b33a9d17b46cdfa2a809263))
 
 [Code](Projects/BucketList)
