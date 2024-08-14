@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0102780A2C5BF7A200DCA6AB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010278092C5BF7A200DCA6AB /* Location.swift */; };
 		0102780C2C5C989C00DCA6AB /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0102780B2C5C989C00DCA6AB /* EditView.swift */; };
+		013DCDE62C6A91A000C61006 /* View-errorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DCDE52C6A91A000C61006 /* View-errorAlert.swift */; };
 		01D68B722C57979200E473CC /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D68B712C57979200E473CC /* BucketListApp.swift */; };
 		01D68B742C57979200E473CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D68B732C57979200E473CC /* ContentView.swift */; };
 		01D68B762C57979400E473CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D68B752C57979400E473CC /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		010278092C5BF7A200DCA6AB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		0102780B2C5C989C00DCA6AB /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		013DCDE52C6A91A000C61006 /* View-errorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View-errorAlert.swift"; sourceTree = "<group>"; };
 		01D68B6E2C57979200E473CC /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D68B712C57979200E473CC /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		01D68B732C57979200E473CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				01D68B712C57979200E473CC /* BucketListApp.swift */,
 				01D68B732C57979200E473CC /* ContentView.swift */,
+				013DCDE52C6A91A000C61006 /* View-errorAlert.swift */,
 				82C8B5D42C6672E60026AB7D /* ContentView-ViewModel.swift */,
 				0102780B2C5C989C00DCA6AB /* EditView.swift */,
 				82F059312C63E8BC0032977B /* Result.swift */,
@@ -155,6 +158,7 @@
 				0102780A2C5BF7A200DCA6AB /* Location.swift in Sources */,
 				0102780C2C5C989C00DCA6AB /* EditView.swift in Sources */,
 				01D68B722C57979200E473CC /* BucketListApp.swift in Sources */,
+				013DCDE62C6A91A000C61006 /* View-errorAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
