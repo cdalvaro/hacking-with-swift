@@ -135,6 +135,7 @@ struct ContentView: View {
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(.capsule)
+                .errorAlert(error: $viewModel.biometricsError)
         }
     }
 }
