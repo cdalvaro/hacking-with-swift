@@ -116,7 +116,7 @@ struct ContentView: View {
                             CloseButton()
                         }
                     }
-                    .padding()
+                    .padding(.horizontal)
 
                     Picker("", selection: $mapType) {
                         Text("Default").tag(0)
@@ -124,9 +124,9 @@ struct ContentView: View {
                         Text("Satellite").tag(2)
                     }
                     .pickerStyle(SegmentedPickerStyle())
-                    .padding()
+                    .padding(.horizontal)
                 }
-                .presentationDetents([.fraction(0.20)])
+                .presentationDetents([.fraction(0.15)])
                 .presentationDragIndicator(.hidden)
             }
         } else {
