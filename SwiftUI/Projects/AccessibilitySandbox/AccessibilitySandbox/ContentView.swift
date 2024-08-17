@@ -8,45 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    let pictures = [
-        "ales-krivec-15949",
-        "galina-n-189483",
-        "kevin-horstmann-141705",
-        "nicolas-tissot-335096"
-    ]
-
-    let labels = [
-        "Tulips",
-        "Frozen tree buds",
-        "Sunflowers",
-        "Fireworks"
-    ]
-
-    @State private var selectedPicture = Int.random(in: 0 ... 3)
-
     var body: some View {
-//        Image(pictures[selectedPicture])
-//            .resizable()
-//            .scaledToFit()
-//            .padding()
-//            .onTapGesture {
-//                selectedPicture = Int.random(in: 0...3)
-//            }
-//            .accessibilityLabel(labels[selectedPicture])
-//            // Traits are only needed because we are using an Image as a button
-//            .accessibilityAddTraits(.isButton)
-//            .accessibilityRemoveTraits(.isImage)
-
-        // Simpler alternative
-        Button {
-            selectedPicture = Int.random(in: 0 ... pictures.count)
-        } label: {
-            Image(pictures[selectedPicture])
+        VStack {
+            Image(decorative: "character")
                 .resizable()
                 .scaledToFit()
+                .padding()
+
+            // Image(decorative:) does the same as
+            // instantiating a regular Image and adding
+            // .accessibilityHidden(true)
+            //
+            // It removes the element from VoiceOver
+//            Image(.character)
+//                .accessibilityHidden(true)
+
+            VStack {
+                Text("Your score is")
+
+                Text("1000")
+                    .font(.title)
+            }
+            .padding()
+            .accessibilityElement()
+            // children: .ignore is the default value
+            //   .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Your score is 1000")
         }
-        .padding()
-        .accessibilityLabel(labels[selectedPicture])
     }
 }
 
