@@ -8,32 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var value = 10
+
     var body: some View {
         VStack {
-            Image(decorative: "character")
-                .resizable()
-                .scaledToFit()
-                .padding()
+            Text("Value: \(value)")
 
-            // Image(decorative:) does the same as
-            // instantiating a regular Image and adding
-            // .accessibilityHidden(true)
-            //
-            // It removes the element from VoiceOver
-//            Image(.character)
-//                .accessibilityHidden(true)
-
-            VStack {
-                Text("Your score is")
-
-                Text("1000")
-                    .font(.title)
+            Button("Increment") {
+                value += 1
             }
-            .padding()
-            .accessibilityElement()
-            // children: .ignore is the default value
-            //   .accessibilityElement(children: .ignore)
-            .accessibilityLabel("Your score is 1000")
+
+            Button("Decrement") {
+                value -= 1
+            }
+        }
+        .accessibilityElement()
+        .accessibilityLabel("Value")
+        .accessibilityValue(String(value))
+        .accessibilityAdjustableAction { direction in
+            // That lets users select the whole VStack to have “Value: 10” read out,
+            // but then they can swipe up or down to manipulate the value and have
+            // just the numbers read out.
+            switch direction {
+            case .increment:
+                value += 1
+            case .decrement:
+                value -= 1
+            default:
+                print("Not handled")
+            }
         }
     }
 }
