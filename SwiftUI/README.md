@@ -77,6 +77,7 @@
 - [Day 71 - Project 14, Part Four](#day-71---project-14-part-four)
 - [Day 72 - Project 14, Part Five](#day-72---project-14-part-five)
 - [Day 73 - Project 14, Part Six](#day-73---project-14-part-six)
+- [Day 74 - Project 15, Part One](#day-74---project-15-part-one)
 
 </details>
 
@@ -709,3 +710,11 @@ _Challenge_
    by the vie, and the latter doesn't really add anything when moved into de model. ([`dbb0659`](https://github.com/cdalvaro/hacking-with-swift/commit/dbb0659de5be47483ce756aa9f959c2bec5efe44))
 
 [Code](Projects/BucketList)
+
+## [Day 74](https://www.hackingwithswift.com/100/swiftui/74) - Project 15, Part One
+
+- Identifying views with useful labels ([`e2cc5f4`](https://github.com/cdalvaro/hacking-with-swift/commit/e2cc5f44e56a73f3d68a9fdfe521196c4e39ba18))
+- Hiding and grouping accessibility data ([`8b3e4d2`](https://github.com/cdalvaro/hacking-with-swift/commit/8b3e4d28295e11ea9239f7a79092c136916450f2))
+- Reading the value of controls ([`0f645bd`](https://github.com/cdalvaro/hacking-with-swift/commit/0f645bde16e15239d5be35bdb0be993bdebb996a))
+
+[Code](Projects/AccessibilitySandbox)
