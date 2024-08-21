@@ -34,6 +34,11 @@ struct ContentView: View {
                             Image(systemName: "\(word.count).circle")
                             Text(word)
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("\(word), \(word.count) letters")
+                        // This is the same as:
+//                        .accessibilityLabel(word)
+//                        .accessibilityHint("\(word.count) letters")
                     }
                 }
                 .font(.title3)
@@ -57,7 +62,10 @@ struct ContentView: View {
     func addNewWord() {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         guard answer.count >= 3, answer != rootWord else {
-            wordError(title: "Word is not allowed", message: "It must be longer than three letters and different from the given word")
+            wordError(
+                title: "Word is not allowed",
+                message: "It must be longer than three letters and different from the given word"
+            )
             return
         }
 
@@ -117,7 +125,13 @@ struct ContentView: View {
     func isReal(word: String) -> Bool {
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
-        let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
+        let misspelledRange = checker.rangeOfMisspelledWord(
+            in: word,
+            range: range,
+            startingAt: 0,
+            wrap: false,
+            language: "en"
+        )
 
         return misspelledRange.location == NSNotFound
     }
