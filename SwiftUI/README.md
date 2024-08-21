@@ -718,3 +718,9 @@ _Challenge_
 - Reading the value of controls ([`0f645bd`](https://github.com/cdalvaro/hacking-with-swift/commit/0f645bde16e15239d5be35bdb0be993bdebb996a))
 
 [Code](Projects/AccessibilitySandbox)
+
+## [Day 75](https://www.hackingwithswift.com/100/swiftui/75) - Project 15, Part Two
+
+- Fixing Guess the Flag ([`807f37e`](https://github.com/cdalvaro/hacking-with-swift/commit/807f37e456f64afc167b021766eb2c4cddfbd456))
+- Fixing Word Scramble ([`6c63e3e`](https://github.com/cdalvaro/hacking-with-swift/commit/6c63e3e6cbda07d3228d492f4270d9e40d362202))
+- Fixing Bookworm ([`df88bc6`](https://github.com/cdalvaro/hacking-with-swift/commit/df88bc68d267bd9299caae5523e4ba5046207b3e))
