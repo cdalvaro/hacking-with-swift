@@ -78,6 +78,8 @@
 - [Day 72 - Project 14, Part Five](#day-72---project-14-part-five)
 - [Day 73 - Project 14, Part Six](#day-73---project-14-part-six)
 - [Day 74 - Project 15, Part One](#day-74---project-15-part-one)
+- [Day 75 - Project 15, Part Two](#day-75---project-15-part-two)
+- [Day 76 - Project 15, Part Three](#day-76---project-15-part-three)
 
 </details>
 
@@ -724,3 +726,11 @@ _Challenge_
 - Fixing Guess the Flag ([`807f37e`](https://github.com/cdalvaro/hacking-with-swift/commit/807f37e456f64afc167b021766eb2c4cddfbd456))
 - Fixing Word Scramble ([`6c63e3e`](https://github.com/cdalvaro/hacking-with-swift/commit/6c63e3e6cbda07d3228d492f4270d9e40d362202))
 - Fixing Bookworm ([`df88bc6`](https://github.com/cdalvaro/hacking-with-swift/commit/df88bc68d267bd9299caae5523e4ba5046207b3e))
+
+## [Day 76](https://www.hackingwithswift.com/100/swiftui/76) - Project 15, Part Three
+
+_Challenge_
+
+1. The check out view in Cupcake Corner uses an image and loading spinner that don't add anything to the UI, so find a way to make the screenreader not read them out. ([`a1a35e4`](https://github.com/cdalvaro/hacking-with-swift/commit/a1a35e4527006a3511db73ea3191a04b3ed9e935))
+2. Fix the list rows in iExpense so they read out the name and value in one single VoiceOver label, and their type in a hint. ([`13bf74a`](https://github.com/cdalvaro/hacking-with-swift/commit/13bf74a356de149e26e18f70c8270e6f65c93c62))
+3. Do a full accessibility review of Moonshot - what changes do you need to make so that it's fully accessible? ([`58f8af5`](https://github.com/cdalvaro/hacking-with-swift/commit/58f8af5b05558ee607bb6def94afd5686fa41ed6))
