@@ -13,18 +13,21 @@ struct ExpensesSection: View {
     let deleteItems: (IndexSet) -> Void
 
     var body: some View {
-        Section(self.title) {
-            ForEach(self.expenses) { item in
+        Section(title) {
+            ForEach(expenses) { item in
                 HStack {
                     Text(item.name)
 
                     Spacer()
 
-                    Text(item.amount, format: .localCurrency)
+                    Text(item.amount, format: .currency(code: "USD"))
                         .style(for: item)
                 }
+                .accessibilityElement()
+                .accessibilityLabel("\(item.name) \(item.amount.formatted(.currency(code: "USD")))")
+                .accessibilityHint(item.type.description)
             }
-            .onDelete(perform: self.deleteItems)
+            .onDelete(perform: deleteItems)
         }
     }
 }
@@ -32,12 +35,12 @@ struct ExpensesSection: View {
 extension View {
     func style(for item: Expense) -> some View {
         switch item.amount {
-        case 0..<10:
-            return self.foregroundColor(.green)
-        case 10..<100:
-            return self.foregroundColor(.orange)
+        case 0 ..< 10:
+            return foregroundColor(.green)
+        case 10 ..< 100:
+            return foregroundColor(.orange)
         default:
-            return self.foregroundColor(.red)
+            return foregroundColor(.red)
         }
     }
 }
