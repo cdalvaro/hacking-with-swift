@@ -36,6 +36,10 @@ struct CrewView: View {
                                 Text(crewMember.astronaut.name)
                                     .foregroundColor(.white)
                                     .font(.headline)
+                                    .accessibilityLabel(crewMember.astronaut.name.replacingOccurrences(
+                                        of: ".",
+                                        with: " "
+                                    ))
 
                                 Text(crewMember.role)
                                     .foregroundColor(.secondary)
@@ -49,7 +53,7 @@ struct CrewView: View {
     }
 
     init(mission: Mission, astronauts: [String: Astronaut]) {
-        self.crew = mission.crew.map { member in
+        crew = mission.crew.map { member in
             if let astronaut = astronauts[member.name] {
                 return CrewMember(role: member.role, astronaut: astronaut)
             } else {

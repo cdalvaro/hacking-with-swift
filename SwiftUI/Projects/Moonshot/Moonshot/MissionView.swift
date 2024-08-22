@@ -20,6 +20,7 @@ struct MissionView: View {
                         .scaledToFit()
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
+                        .accessibilityLabel(mission.badge)
 
                     VStack(alignment: .leading) {
                         Text(mission.launchDate?.formatted(date: .complete, time: .omitted) ?? "Unknown launch date")
