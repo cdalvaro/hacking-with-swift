@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8252F6532C7A544A00CFF592 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8252F6522C7A544A00CFF592 /* ActivityView.swift */; };
 		82CBDAAA2A33790F008E759A /* Milestone_Projects7_9App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBDAA92A33790F008E759A /* Milestone_Projects7_9App.swift */; };
 		82CBDAAC2A33790F008E759A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBDAAB2A33790F008E759A /* ContentView.swift */; };
 		82CBDAAE2A337910008E759A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CBDAAD2A337910008E759A /* Assets.xcassets */; };
 		82CBDAB22A337910008E759A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CBDAB12A337910008E759A /* Preview Assets.xcassets */; };
 		82CBDABA2A33B0B5008E759A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBDAB92A33B0B5008E759A /* Activity.swift */; };
-		82D3A2B82A363DBF00E247A5 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3A2B72A363DBF00E247A5 /* ActivityView.swift */; };
+		82D3A2B82A363DBF00E247A5 /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3A2B72A363DBF00E247A5 /* AddActivityView.swift */; };
 		82ECF6082A35C37200FAF4FE /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ECF6072A35C37200FAF4FE /* Activities.swift */; };
-		82ECF60A2A35F52B00FAF4FE /* ActivityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ECF6092A35F52B00FAF4FE /* ActivityCardView.swift */; };
-		82ECF60E2A35F64800FAF4FE /* GridActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ECF60D2A35F64800FAF4FE /* GridActivitiesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8252F6522C7A544A00CFF592 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		82CBDAA62A33790F008E759A /* Milestone-Projects7_9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone-Projects7_9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CBDAA92A33790F008E759A /* Milestone_Projects7_9App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone_Projects7_9App.swift; sourceTree = "<group>"; };
 		82CBDAAB2A33790F008E759A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,10 +26,8 @@
 		82CBDAAF2A337910008E759A /* Milestone_Projects7_9.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Milestone_Projects7_9.entitlements; sourceTree = "<group>"; };
 		82CBDAB12A337910008E759A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82CBDAB92A33B0B5008E759A /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		82D3A2B72A363DBF00E247A5 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		82D3A2B72A363DBF00E247A5 /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
 		82ECF6072A35C37200FAF4FE /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
-		82ECF6092A35F52B00FAF4FE /* ActivityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCardView.swift; sourceTree = "<group>"; };
-		82ECF60D2A35F64800FAF4FE /* GridActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridActivitiesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +91,8 @@
 		82CBDABD2A33C7C8008E759A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				82ECF6092A35F52B00FAF4FE /* ActivityCardView.swift */,
-				82D3A2B72A363DBF00E247A5 /* ActivityView.swift */,
-				82ECF60D2A35F64800FAF4FE /* GridActivitiesView.swift */,
+				82D3A2B72A363DBF00E247A5 /* AddActivityView.swift */,
+				8252F6522C7A544A00CFF592 /* ActivityView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,7 +125,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					82CBDAA52A33790F008E759A = {
 						CreatedOnToolsVersion = 14.2;
@@ -173,10 +170,9 @@
 				82CBDABA2A33B0B5008E759A /* Activity.swift in Sources */,
 				82CBDAAC2A33790F008E759A /* ContentView.swift in Sources */,
 				82CBDAAA2A33790F008E759A /* Milestone_Projects7_9App.swift in Sources */,
-				82ECF60E2A35F64800FAF4FE /* GridActivitiesView.swift in Sources */,
-				82D3A2B82A363DBF00E247A5 /* ActivityView.swift in Sources */,
+				82D3A2B82A363DBF00E247A5 /* AddActivityView.swift in Sources */,
 				82ECF6082A35C37200FAF4FE /* Activities.swift in Sources */,
-				82ECF60A2A35F52B00FAF4FE /* ActivityCardView.swift in Sources */,
+				8252F6532C7A544A00CFF592 /* ActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +183,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -216,9 +213,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -274,9 +274,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -300,6 +302,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Milestone-Projects7_9/Milestone_Projects7_9.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Milestone-Projects7_9/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -313,7 +316,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
@@ -338,6 +341,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Milestone-Projects7_9/Milestone_Projects7_9.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Milestone-Projects7_9/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -351,7 +355,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;

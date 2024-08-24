@@ -2,36 +2,40 @@
 //  ActivityView.swift
 //  Milestone-Projects7_9
 //
-//  Created by Carlos Álvaro on 11/6/23.
+//  Created by Carlos Álvaro on 24/8/24.
 //
 
 import SwiftUI
 
 struct ActivityView: View {
-    @ObservedObject var activities: Activities
-    var activity: Activity?
-
-    @State private var title: String = "Title" {
-        didSet {
-            activity?.name = title
-        }
-    }
+    var data: Activities
+    var activity: Activity
 
     var body: some View {
-        Text("Hello, World!")
-            .navigationTitle($title)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbarRole(.editor)
-    }
+        List {
+            if activity.description.isEmpty == false {
+                Section {
+                    Text(activity.description)
+                }
+            }
 
-    init(activities: Activities, activity: Activity? = nil) {
-        self.activities = activities
-        self.activity = activity
+            Section {
+                Text("Completion count: \(activity.completionCount)")
+
+                Button("Mark completed") {
+                    var newActivity = activity
+                    newActivity.completionCount += 1
+
+                    if let index = data.activities.firstIndex(of: activity) {
+                        data.activities[index] = newActivity
+                    }
+                }
+            }
+        }
+        .navigationTitle(activity.title)
     }
 }
 
-struct ActivityView_Previews: PreviewProvider {
-    static var previews: some View {
-        ActivityView(activities: Activities())
-    }
+#Preview {
+    ActivityView(data: Activities(), activity: .example)
 }

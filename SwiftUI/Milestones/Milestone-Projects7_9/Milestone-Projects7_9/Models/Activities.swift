@@ -7,33 +7,26 @@
 
 import Foundation
 
-class Activities: ObservableObject {
-    private let activitiesKey = "Activities"
+@Observable
+class Activities {
+    private static let activitiesKey = "Activities"
 
-    @Published var activities: [Activity] {
+    var activities: [Activity] {
         didSet {
-            let encoder = JSONEncoder()
-            encoder.keyEncodingStrategy = .convertToSnakeCase
-            if let encodedContent = try? encoder.encode(activities) {
-                UserDefaults.standard.set(encodedContent, forKey: activitiesKey)
+            if let encodedContent = try? JSONEncoder().encode(activities) {
+                UserDefaults.standard.set(encodedContent, forKey: Self.activitiesKey)
             }
         }
     }
 
     init() {
-        if let savedActivities = UserDefaults.standard.data(forKey: activitiesKey) {
-            let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
-            if let decodedActivities = try? decoder.decode([Activity].self, from: savedActivities) {
+        if let savedActivities = UserDefaults.standard.data(forKey: Self.activitiesKey) {
+            if let decodedActivities = try? JSONDecoder().decode([Activity].self, from: savedActivities) {
                 activities = decodedActivities
                 return
             }
         }
 
         activities = []
-    }
-
-    init(activities: [Activity]) {
-        self.activities = activities
     }
 }

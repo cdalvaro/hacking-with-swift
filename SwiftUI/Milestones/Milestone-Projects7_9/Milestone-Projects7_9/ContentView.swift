@@ -8,53 +8,64 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var activities = Activities()
+    @State private var data = Activities()
+    @State private var path = NavigationPath()
 
-    @State private var isShowingDetailView = false
+    enum NavigationViewTag {
+        case AddNewActivity
+    }
 
     var body: some View {
-        NavigationStack {
-            GridActivitiesView(activities: activities)
-                .navigationTitle("Activities")
-                .toolbar {
-                    ToolbarItem(placement: .primaryAction) {
-                        Menu {
-                            NavigationLink(value: "AddActivity") {
-                                Label("Add Activity", systemImage: "plus")
-                            }
-                            Button(action: trackExistingActivity) {
-                                Label("Track Activity", systemImage: "timer")
-                            }
-                            Button(action: selectActivities) {
-                                Label("Select Activities", systemImage: "checkmark.circle")
-                            }
-                        } label: {
-                            Image(systemName: "ellipsis.circle")
-                        }
+        NavigationStack(path: $path) {
+            List(data.activities) { activity in
+                NavigationLink {
+                    ActivityView(data: data, activity: activity)
+                } label: {
+                    HStack {
+                        Text(activity.title)
+
+                        Spacer()
+
+                        Text(String(activity.completionCount))
+                            .font(.caption.weight(.black))
+                            .padding(5)
+                            .frame(minWidth: 50)
+                            .background(color(for: activity))
+                            .foregroundStyle(.white)
+                            .clipShape(.capsule)
                     }
                 }
-                .navigationDestination(for: String.self) {value in
-                    switch value {
-                    case "AddActivity":
-                        ActivityView(activities: activities)
-                    default:
-                        EmptyView()
-                    }
+            }
+            .navigationTitle("Activities")
+            .toolbar {
+                NavigationLink(value: NavigationViewTag.AddNewActivity) {
+                    Label("Add new activity", systemImage: "plus")
                 }
+            }
+            .navigationDestination(for: NavigationViewTag.self) { selection in
+                switch selection {
+                case .AddNewActivity:
+                    AddActivityView(data: data)
+                }
+            }
         }
     }
 
-    func trackExistingActivity() {
-        // TODO: Implement method
-    }
-
-    func selectActivities() {
-        // TODO: Implement method
+    func color(for activity: Activity) -> Color {
+        if activity.completionCount < 3 {
+            .red
+        } else if activity.completionCount < 10 {
+            .orange
+        } else if activity.completionCount < 20 {
+            .green
+        } else if activity.completionCount < 50 {
+            .blue
+        } else {
+            .indigo
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

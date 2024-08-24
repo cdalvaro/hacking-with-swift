@@ -451,9 +451,13 @@ Breaking it down:
 
 ## [Day 47](https://www.hackingwithswift.com/100/swiftui/47) - MILESTONE: Projects 7-9
 
-🚧 Currently under development...
+Build a habit-tracking app, for folks who want to keep track of how much the do certain things. That might be learning a language, practicing an instrument, exercising, or whatever - they get to decide which activities they add, and track it however they want.
 
-You can check my progress the [:octocat: GitHub PR #4 - 100 Days of SwiftUI - Day 47](https://github.com/cdalvaro/hacking-with-swift/pull/4)
+At the very least, this menas there should be a list of all activities they want to track, plus a form to add new activities - a title and description should be enough.
+
+For a bigger challenge, tapping one of the activities should show a detail screen with the description. For a though challenge, make that detail screen contain how many times they have completed it, plus a button incrementing their completion count.
+
+And if you want to make the app really useful, use `Codable` and `UserDefaults` to load and save all your data.
 
 [Code](Milestones/Milestone-Projects7_9/)
 
