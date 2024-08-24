@@ -9,22 +9,22 @@ import SwiftUI
 
 struct ActivityView: View {
     @ObservedObject var activities: Activities
-    var activity: ActivityItem?
-    
+    var activity: Activity?
+
     @State private var title: String = "Title" {
         didSet {
             activity?.name = title
         }
     }
-    
+
     var body: some View {
         Text("Hello, World!")
             .navigationTitle($title)
             .navigationBarTitleDisplayMode(.inline)
             .toolbarRole(.editor)
     }
-    
-    init(activities: Activities, activity: ActivityItem? = nil) {
+
+    init(activities: Activities, activity: Activity? = nil) {
         self.activities = activities
         self.activity = activity
     }

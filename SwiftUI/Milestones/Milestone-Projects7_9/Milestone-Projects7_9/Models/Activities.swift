@@ -10,7 +10,7 @@ import Foundation
 class Activities: ObservableObject {
     private let activitiesKey = "Activities"
 
-    @Published var activities: [ActivityItem] {
+    @Published var activities: [Activity] {
         didSet {
             let encoder = JSONEncoder()
             encoder.keyEncodingStrategy = .convertToSnakeCase
@@ -24,7 +24,7 @@ class Activities: ObservableObject {
         if let savedActivities = UserDefaults.standard.data(forKey: activitiesKey) {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            if let decodedActivities = try? decoder.decode([ActivityItem].self, from: savedActivities) {
+            if let decodedActivities = try? decoder.decode([Activity].self, from: savedActivities) {
                 activities = decodedActivities
                 return
             }
@@ -33,7 +33,7 @@ class Activities: ObservableObject {
         activities = []
     }
 
-    init(activities: [ActivityItem]) {
+    init(activities: [Activity]) {
         self.activities = activities
     }
 }

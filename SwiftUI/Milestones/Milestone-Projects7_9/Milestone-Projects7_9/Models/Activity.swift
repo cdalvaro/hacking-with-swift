@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ActivityItem: Codable, Equatable, Identifiable, ObservableObject {
+class Activity: Codable, Equatable, Identifiable, ObservableObject {
     struct Log: Codable, Identifiable {
         var id = UUID()
 
@@ -47,7 +47,7 @@ class ActivityItem: Codable, Equatable, Identifiable, ObservableObject {
         records = try container.decode([Log].self, forKey: .records)
     }
 
-    static func == (lhs: ActivityItem, rhs: ActivityItem) -> Bool {
+    static func == (lhs: Activity, rhs: Activity) -> Bool {
         lhs.id == rhs.id
     }
 

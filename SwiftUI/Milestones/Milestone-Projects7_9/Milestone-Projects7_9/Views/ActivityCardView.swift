@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ActivityCardView: View {
-    let activity: ActivityItem
+    let activity: Activity
 
     var body: some View {
         VStack {
@@ -24,7 +24,7 @@ struct ActivityCardView: View {
         .frame(maxWidth: .infinity)
     }
 
-    init(activity: ActivityItem) {
+    init(activity: Activity) {
         self.activity = activity
     }
 
@@ -38,10 +38,10 @@ struct ActivityCardView: View {
 }
 
 struct ActivityCardView_Previews: PreviewProvider {
-    static let activity = ActivityItem(name: "Gaming",
-                                       icon: "gamecontroller",
-                                       records: [ActivityItem.Log(date: Date.now,
-                                                                  duration: .seconds(90))])
+    static let activity = Activity(name: "Gaming",
+                                   icon: "gamecontroller",
+                                   records: [Activity.Log(date: Date.now,
+                                                          duration: .seconds(90))])
     static var previews: some View {
         ActivityCardView(activity: activity)
     }
