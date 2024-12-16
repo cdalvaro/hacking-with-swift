@@ -80,6 +80,7 @@
 - [Day 74 - Project 15, Part One](#day-74---project-15-part-one)
 - [Day 75 - Project 15, Part Two](#day-75---project-15-part-two)
 - [Day 76 - Project 15, Part Three](#day-76---project-15-part-three)
+- [Day 77 - MILESTONE: Projects 13-15](#day-77---milestone-projects-13-15)
 
 </details>
 
@@ -738,3 +739,9 @@ _Challenge_
 1. The check out view in Cupcake Corner uses an image and loading spinner that don't add anything to the UI, so find a way to make the screenreader not read them out. ([`a1a35e4`](https://github.com/cdalvaro/hacking-with-swift/commit/a1a35e4527006a3511db73ea3191a04b3ed9e935))
 2. Fix the list rows in iExpense so they read out the name and value in one single VoiceOver label, and their type in a hint. ([`13bf74a`](https://github.com/cdalvaro/hacking-with-swift/commit/13bf74a356de149e26e18f70c8270e6f65c93c62))
 3. Do a full accessibility review of Moonshot - what changes do you need to make so that it's fully accessible? ([`58f8af5`](https://github.com/cdalvaro/hacking-with-swift/commit/58f8af5b05558ee607bb6def94afd5686fa41ed6))
+
+## [Day 77](https://www.hackingwithswift.com/100/swiftui/77) - MILESTONE: Projects 13-15
+
+The goal is to build an app that asks users to import a picture from their photo library, then attach a name to whatever they imported. The full collection of pictures they name should be shown in a `List`, and tapping an item in the list should show a detail screen with a larger version of the picture.
+
+[Code](Milestones/Milestone-Projects13_15/)

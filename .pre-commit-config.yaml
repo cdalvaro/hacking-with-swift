@@ -8,7 +8,7 @@ repos:
     rev: 0.55.1
     hooks:
       - id: swiftlint
-        entry: swiftlint --fix --strict
+        entry: swiftlint --strict
   - repo: https://github.com/nicklockwood/SwiftFormat
     rev: 0.53.10
     hooks:
