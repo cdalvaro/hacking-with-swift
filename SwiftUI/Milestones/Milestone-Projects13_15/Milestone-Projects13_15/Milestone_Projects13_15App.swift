@@ -14,6 +14,6 @@ struct Milestone_Projects13_15App: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Contact.self)
+        .modelContainer(Persistence.shared.modelContainer)
     }
 }

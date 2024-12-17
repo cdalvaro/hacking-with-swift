@@ -81,6 +81,7 @@
 - [Day 75 - Project 15, Part Two](#day-75---project-15-part-two)
 - [Day 76 - Project 15, Part Three](#day-76---project-15-part-three)
 - [Day 77 - MILESTONE: Projects 13-15](#day-77---milestone-projects-13-15)
+- [Day 78 - Time for MapKit](#day-78---time-for-mapkit)
 
 </details>
 
@@ -608,7 +609,7 @@ Here are three ways to extend this app by modifying the `FilteredList` view:
 
 Your job is to use `URLSession` to download some JSON from the internet, use `Codable` to convert it to Swift types, then use `NavigationStack`, `List`, and more to display it to the user.
 
-Your first step should be to examine the JSON. The URL you want to use is this: https://www.hackingwithswift.com/samples/friendface.json – that’s a massive collection of randomly generated data for example users.
+Your first step should be to examine the JSON. The URL you want to use is this: <https://www.hackingwithswift.com/samples/friendface.json> – that’s a massive collection of randomly generated data for example users.
 
 As you can see, there is an array of people, and each person has an _ID_, _name_, _age_, _email address_, and more. They also have an array of _tag_ strings, and an array of _friends_, where each friend has a name and ID. ([`ae83062`](https://github.com/cdalvaro/hacking-with-swift/commit/ae830624e0b691324af11c5091773d09dd0ecff4))
 
@@ -743,5 +744,11 @@ _Challenge_
 ## [Day 77](https://www.hackingwithswift.com/100/swiftui/77) - MILESTONE: Projects 13-15
 
 The goal is to build an app that asks users to import a picture from their photo library, then attach a name to whatever they imported. The full collection of pictures they name should be shown in a `List`, and tapping an item in the list should show a detail screen with a larger version of the picture.
+
+[Code](Milestones/Milestone-Projects13_15/)
+
+## [Day 78](https://www.hackingwithswift.com/100/swiftui/78) - Time for MapKit
+
+Continuing with the app built in _Milestone: Projects 13-15_, now when you’re viewing a picture that was imported, you should show a map with a pin that marks where they were when that picture was added.
 
 [Code](Milestones/Milestone-Projects13_15/)
