@@ -11,6 +11,7 @@ import SwiftData
 @Model
 class Contact {
     var name: String = ""
+    var location: Location?
     @Attribute(.externalStorage) var photo: Data?
 
     init(name: String) {
