@@ -21,11 +21,19 @@ These playgrounds are available inside the [`Playgrounds/`](Playgrounds) folder.
 
 ## 100 Days of Swift
 
+<p align="center">
+ <img alt="100 Days of Swift" src="Assets/SwiftBanner@2x.png" height="300">
+</p>
+
 Learning Swift during the [100 Days of Swift](https://www.hackingwithswift.com/100) challenge.
 
 Challenges are available inside [`Classic/`](Classic) directory. (🚧 Still in progress)
 
 ## 100 Days of SwiftUI
+
+<p align="center">
+ <img alt="100 Days of SwiftUI" src="Assets/SwiftUIBanner@2x.png" height="300">
+</p>
 
 Learning SwiftUI during the [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) challenge.
 
