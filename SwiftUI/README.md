@@ -82,6 +82,7 @@
 - [Day 76 - Project 15, Part Three](#day-76---project-15-part-three)
 - [Day 77 - MILESTONE: Projects 13-15](#day-77---milestone-projects-13-15)
 - [Day 78 - Time for MapKit](#day-78---time-for-mapkit)
+- [Day 79 - Project 16, Part One](#day-79---project-16-part-one)
 
 </details>
 
@@ -752,3 +753,13 @@ The goal is to build an app that asks users to import a picture from their photo
 Continuing with the app built in _Milestone: Projects 13-15_, now when you’re viewing a picture that was imported, you should show a map with a pin that marks where they were when that picture was added.
 
 [Code](Milestones/Milestone-Projects13_15/)
+
+## [Day 79](https://www.hackingwithswift.com/100/swiftui/79) - Project 16, Part One
+
+- Letting users select items in a `List` ([`d1a2463`](https://github.com/cdalvaro/hacking-with-swift/commit/d1a2463add0a2a1388c9aacd85459dbb92977e88))
+- Creating tabs with `TabView` and `tabItem()` ([`fad6f95`](https://github.com/cdalvaro/hacking-with-swift/commit/fad6f9570287796e54e2051a85d4aa2b0a2eb242))
+
+> [!TIP]
+> It’s common to want to use `NavigationStack` and `TabView` at the same time, but you should be careful: `TabView` should be the parent view, with the tabs inside it having a `NavigationStack` as necessary, rather than the other way around.
+
+[Code](Projects/HotProspects)
