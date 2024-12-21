@@ -1,7 +1,5 @@
 # Hacking with Swift
 
-[![Swift version][swift_badge]][swift_release_notes]
-[![Xcode version][xcode_badge]][xcode_website]
 [![Swift Progress][swift_progress]][swift_current_day]
 [![SwiftUI Progress][swiftui_progress]][swiftui_current_day]
 
@@ -19,25 +17,21 @@ Here are covered the first 15 days with the basics of the Swift language.
 
 These playgrounds are available inside the [`Playgrounds/`](Playgrounds) folder.
 
-## 100 Days of Swift
+## 100 Days of Swift <picture><img alt="progress" src="https://progress-bar.xyz/68"></picture>
 
 <p align="center">
- <img alt="100 Days of Swift" src="Assets/SwiftBanner@2x.png" height="300">
+ <a href="https://www.hackingwithswift.com/100"><img alt="100 Days of Swift" src="Assets/SwiftBanner@2x.png" height="300"></a>
 </p>
 
-Learning Swift during the [100 Days of Swift](https://www.hackingwithswift.com/100) challenge.
+Challenges are available inside [`Classic/`](Classic) directory.
 
-Challenges are available inside [`Classic/`](Classic) directory. (🚧 Still in progress)
-
-## 100 Days of SwiftUI
+## 100 Days of SwiftUI <picture><img alt="progress" src="https://progress-bar.xyz/79"></picture>
 
 <p align="center">
- <img alt="100 Days of SwiftUI" src="Assets/SwiftUIBanner@2x.png" height="300">
+ <a href="https://www.hackingwithswift.com/100/swiftui"><img alt="100 Days of SwiftUI" src="Assets/SwiftUIBanner@2x.png" height="300"></a>
 </p>
 
-Learning SwiftUI during the [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) challenge.
-
-Challenges are available inside [`SwiftUI/`](SwiftUI) directory. (🚧 Still in progress)
+Challenges are available inside [`SwiftUI/`](SwiftUI) directory.
 
 ## Extra Projects
 
@@ -45,10 +39,6 @@ These projects are not part of the main 100 Days of Swift/SwiftUI series, but ar
 
 Projects are available inside [`Extra Projects/`](Extra%20Projects) directory.
 
-[swift_release_notes]: https://www.swift.org/blog/swift-5.7-released/
-[swift_badge]: https://img.shields.io/badge/Swift-5.7-F05138?logo=swift
-[xcode_website]: https://developer.apple.com/xcode/
-[xcode_badge]: https://img.shields.io/badge/Xcode-15-1575F9?style=flat&logo=Xcode
 [swift_current_day]: https://www.hackingwithswift.com/100/68
 [swift_progress]: https://img.shields.io/badge/100%20Days%20of%20Swift-68-D64D42
 [swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/79
