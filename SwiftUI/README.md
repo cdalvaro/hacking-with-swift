@@ -83,6 +83,7 @@
 - [Day 77 - MILESTONE: Projects 13-15](#day-77---milestone-projects-13-15)
 - [Day 78 - Time for MapKit](#day-78---time-for-mapkit)
 - [Day 79 - Project 16, Part One](#day-79---project-16-part-one)
+- [Day 80 - Project 16, Part Two](#day-80---project-16-part-two)
 
 </details>
 
@@ -761,5 +762,23 @@ Continuing with the app built in _Milestone: Projects 13-15_, now when you’re 
 
 > [!TIP]
 > It’s common to want to use `NavigationStack` and `TabView` at the same time, but you should be careful: `TabView` should be the parent view, with the tabs inside it having a `NavigationStack` as necessary, rather than the other way around.
+
+[Code](Projects/HotProspects)
+
+## [Day 80](https://www.hackingwithswift.com/100/swiftui/80) - Project 16, Part Two
+
+- Understanding Swift’s [`Result`](https://developer.apple.com/documentation/swift/result) type ([`2427dd8`](https://github.com/cdalvaro/hacking-with-swift/commit/2427dd8b57f78221e8033ad44e788a78bf586d31))
+- Controlling image interpolation in SwiftUI ([`e5368f9`](https://github.com/cdalvaro/hacking-with-swift/commit/e5368f958167bcc47a1d48fa08eb227e8607716c))
+- Creating context menus ([`fbb8c9c`](https://github.com/cdalvaro/hacking-with-swift/commit/fbb8c9c2cadd83d83b185983b01f5502f63e7741))
+
+> [!TIP]
+>
+> Tips for you when working with _context menus_, to help ensure you give your users the best experience
+>
+> 1. If you’re going to use them, use them in lots of places – it can be frustrating to press and hold on something only to find nothing happens.
+> 2. Keep your list of options as short as you can – aim for three or less.
+> 3. Don’t repeat options the user can already see elsewhere in your UI.
+>
+> Remember, context menus are by their nature hidden, so please think twice before hiding important actions in a context menu.
 
 [Code](Projects/HotProspects)
