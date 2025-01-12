@@ -85,6 +85,7 @@
 - [Day 79 - Project 16, Part One](#day-79---project-16-part-one)
 - [Day 80 - Project 16, Part Two](#day-80---project-16-part-two)
 - [Day 81 - Project 16, Part Three](#day-81---project-16-part-three)
+- [Day 82 - Project 16, Part Four](#day-82---project-16-part-four)
 
 </details>
 
@@ -789,5 +790,13 @@ Continuing with the app built in _Milestone: Projects 13-15_, now when you’re 
 - Adding custom row swipe actions to a List ([`d645ddf`](https://github.com/cdalvaro/hacking-with-swift/commit/d645ddff6ed09c7eeb01fb56b940aeca8ea21f91))
 - Scheduling local notifications ([`f25b0a1`](https://github.com/cdalvaro/hacking-with-swift/commit/f25b0a11107f7991aa8fedc8e01fb91b89b707d0))
 - Adding Swift package dependencies in Xcode ([`30349fb`](https://github.com/cdalvaro/hacking-with-swift/commit/30349fb91a44aca478e39beb53fb18360cc73f54))
+
+[Code](Projects/HotProspects)
+
+## [Day 82](https://www.hackingwithswift.com/100/swiftui/82) - Project 16, Part Four
+
+- Building our tab bar ([`1bc92b4`](https://github.com/cdalvaro/hacking-with-swift/commit/1bc92b40846e0508f6a775b80345b9f8b4248303))
+- Storing our data with SwiftData ([`6e931b1`](https://github.com/cdalvaro/hacking-with-swift/commit/6e931b105e965727aa09cd7db5289e1dc517d28a))
+- Dynamically filtering our SwiftData query ([`0dcc017`](https://github.com/cdalvaro/hacking-with-swift/commit/0dcc017f557bfe09f6e1dff0a72009de06449d34))
 
 [Code](Projects/HotProspects)

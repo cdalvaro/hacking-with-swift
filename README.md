@@ -25,7 +25,7 @@ These playgrounds are available inside the [`Playgrounds/`](Playgrounds) folder.
 
 Challenges are available inside [`Classic/`](Classic) directory.
 
-## 100 Days of SwiftUI <picture><img alt="progress" src="https://progress-bar.xyz/81"></picture>
+## 100 Days of SwiftUI <picture><img alt="progress" src="https://progress-bar.xyz/82"></picture>
 
 <p align="center">
  <a href="https://www.hackingwithswift.com/100/swiftui"><img alt="100 Days of SwiftUI" src="Assets/SwiftUIBanner@2x.png" height="300"></a>
@@ -41,5 +41,5 @@ Projects are available inside [`Extra Projects/`](Extra%20Projects) directory.
 
 [swift_current_day]: https://www.hackingwithswift.com/100/68
 [swift_progress]: https://img.shields.io/badge/100%20Days%20of%20Swift-68-D64D42
-[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/81
-[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-81-3463DA
+[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/82
+[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-82-3463DA
