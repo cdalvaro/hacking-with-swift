@@ -87,6 +87,7 @@
 - [Day 81 - Project 16, Part Three](#day-81---project-16-part-three)
 - [Day 82 - Project 16, Part Four](#day-82---project-16-part-four)
 - [Day 83 - Project 16, Part Five](#day-83---project-16-part-five)
+- [Day 84 - Project 16, Part Six](#day-84---project-16-part-six)
 
 </details>
 
@@ -807,5 +808,12 @@ Continuing with the app built in _Milestone: Projects 13-15_, now when you’re 
 - Generating and scaling up a QR code ([`cbafc94`](https://github.com/cdalvaro/hacking-with-swift/commit/cbafc94bd3e473c34c22af6122701ea1a610f19d))
 - Scanning QR codes with SwiftUI ([`acd40d4`](https://github.com/cdalvaro/hacking-with-swift/commit/acd40d478fb8786c3ecb9728413984499e85f414))
 - Adding options with swipe actions ([`0b00f92`](https://github.com/cdalvaro/hacking-with-swift/commit/0b00f92714c9bd27b910fcff3b5a38d33e58ee3e))
+
+[Code](Projects/HotProspects)
+
+## [Day 84](https://www.hackingwithswift.com/100/swiftui/84) - Project 16, Part Six
+
+- Adding a context menu to an image ([`192c36e`](https://github.com/cdalvaro/hacking-with-swift/commit/192c36e1edfe1ce46dd199250caabd630bb3c44f))
+- Posting notifications to the lock screen ([`d72fc8f`](https://github.com/cdalvaro/hacking-with-swift/commit/d72fc8f1d695b10656002af07dcf94704292ce50))
 
 [Code](Projects/HotProspects)
