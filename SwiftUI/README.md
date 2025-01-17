@@ -88,6 +88,7 @@
 - [Day 82 - Project 16, Part Four](#day-82---project-16-part-four)
 - [Day 83 - Project 16, Part Five](#day-83---project-16-part-five)
 - [Day 84 - Project 16, Part Six](#day-84---project-16-part-six)
+- [Day 85 - Project 17, Part One](#day-85---project-16-part-seven)
 
 </details>
 
@@ -815,5 +816,15 @@ Continuing with the app built in _Milestone: Projects 13-15_, now when you’re 
 
 - Adding a context menu to an image ([`192c36e`](https://github.com/cdalvaro/hacking-with-swift/commit/192c36e1edfe1ce46dd199250caabd630bb3c44f))
 - Posting notifications to the lock screen ([`d72fc8f`](https://github.com/cdalvaro/hacking-with-swift/commit/d72fc8f1d695b10656002af07dcf94704292ce50))
+
+[Code](Projects/HotProspects)
+
+## [Day 85](https://www.hackingwithswift.com/100/swiftui/85) - Project 16, Part Seven
+
+_Challenge_
+
+1. Add an icon to the “Everyone” screen showing whether a prospect was contacted or not. ([`0fbf4b8`](https://github.com/cdalvaro/hacking-with-swift/commit/0fbf4b8e2405a6a37ef50dc7f72d768107359dcd))
+2. Add an editing screen, so users can adjust the name and email address of someone they scanned previously. (Tip: Use the simple form of `NavigationLink` rather than `navigationDestination()`, to avoid your list selection code confusing the navigation link.) ([`1cc7400`](https://github.com/cdalvaro/hacking-with-swift/commit/1cc7400220c8af32a5df921e70f6f3343525d17f))
+3. Allow users to customize the way contacts are sorted – by name or by most recent. ([`a56b28e`](https://github.com/cdalvaro/hacking-with-swift/commit/a56b28ed081f7337accf18e7bc39592e71f8732b))
 
 [Code](Projects/HotProspects)
