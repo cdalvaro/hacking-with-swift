@@ -19,6 +19,7 @@ struct ProspectsView: View {
     @Query(sort: \Prospect.name) var prospects: [Prospect]
     @State private var isShowingScanner = false
     @State private var selectedProspects = Set<Prospect>()
+    @State private var sortBy = SortDescriptor(\Prospect.name)
 
     let filter: FilterType
 
@@ -34,83 +35,84 @@ struct ProspectsView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            List(prospects, selection: $selectedProspects) { prospect in
-                NavigationLink {
-                    EditProspectView(prospect: prospect)
-                }
-                label: {
-                    HStack {
-                        if filter == .none {
-                            Image(systemName: prospect
-                                .isContacted ? "person.crop.circle.badge.checkmark" : "person.crop.circle.badge.xmark")
-                        }
+        List(prospects, selection: $selectedProspects) { prospect in
+            NavigationLink {
+                /**
+                 * Important: We can't just use navigationDestination() here,
+                 * because SwiftUI will get confused between list selection and tapping to go to the editing view.
+                 */
+                EditProspectView(prospect: prospect)
+            } label: {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text(prospect.name)
+                            .font(.headline)
 
-                        VStack(alignment: .leading) {
-                            Text(prospect.name)
-                                .font(.headline)
-
-                            Text(prospect.emailAddress)
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                }
-                .onAppear {
-                    selectedProspects.removeAll()
-                }
-                .swipeActions {
-                    Button("Delete", systemImage: "trash", role: .destructive) {
-                        modelContext.delete(prospect)
+                        Text(prospect.emailAddress)
+                            .foregroundStyle(.secondary)
                     }
 
-                    if prospect.isContacted {
-                        Button("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark") {
-                            prospect.isContacted.toggle()
-                        }
-                        .tint(.blue)
-                    } else {
-                        Button("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark") {
-                            prospect.isContacted.toggle()
-                        }
-                        .tint(.green)
-
-                        Button("Remind Me", systemImage: "bell") {
-                            addNotification(for: prospect)
-                        }
-                        .tint(.orange)
-                    }
-                }
-                // To help SwiftUI understand that each row in our List corresponds to a single prospect,
-                // it's important to add the following code after the swipe actions
-                .tag(prospect)
-            }
-            .navigationTitle(title)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Scan", systemImage: "qrcode.viewfinder") {
-                        isShowingScanner = true
-                    }
-                }
-
-                ToolbarItem(placement: .topBarLeading) {
-                    EditButton()
-                }
-
-                if selectedProspects.isEmpty == false {
-                    ToolbarItem(placement: .bottomBar) {
-                        Button("Delete selected", action: delete)
+                    if filter == .none, prospect.isContacted {
+                        Spacer()
+                        Image(systemName: "checkmark.circle")
                     }
                 }
             }
-            .sheet(isPresented: $isShowingScanner) {
-                CodeScannerView(
-                    codeTypes: [.qr], simulatedData: "Carlos Álvaro\ngithub@cdalvaro.io", completion: handleScan
-                )
+            .swipeActions {
+                Button("Delete", systemImage: "trash", role: .destructive) {
+                    modelContext.delete(prospect)
+                }
+
+                if prospect.isContacted {
+                    Button("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark") {
+                        prospect.isContacted.toggle()
+                    }
+                    .tint(.blue)
+                } else {
+                    Button("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark") {
+                        prospect.isContacted.toggle()
+                    }
+                    .tint(.green)
+
+                    Button("Remind Me", systemImage: "bell") {
+                        addNotification(for: prospect)
+                    }
+                    .tint(.orange)
+                }
             }
+            // To help SwiftUI understand that each row in our List corresponds to a single prospect,
+            // it's important to add the following code after the swipe actions
+            .tag(prospect)
+        }
+        .navigationTitle(title)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Scan", systemImage: "qrcode.viewfinder") {
+                    isShowingScanner = true
+                }
+            }
+
+            ToolbarItem(placement: .topBarLeading) {
+                EditButton()
+            }
+
+            if selectedProspects.isEmpty == false {
+                ToolbarItem(placement: .bottomBar) {
+                    Button("Delete selected", action: delete)
+                }
+            }
+        }
+        .sheet(isPresented: $isShowingScanner) {
+            CodeScannerView(
+                codeTypes: [.qr], simulatedData: "Carlos Álvaro\ngithub@cdalvaro.io", completion: handleScan
+            )
+        }
+        .onAppear {
+            selectedProspects.removeAll()
         }
     }
 
-    init(filter: FilterType) {
+    init(filter: FilterType, sortBy: SortDescriptor<Prospect>) {
         self.filter = filter
 
         if filter != .none {
@@ -119,8 +121,10 @@ struct ProspectsView: View {
             _prospects = Query(
                 filter: #Predicate {
                     $0.isContacted == showContactedOnly
-                }, sort: [SortDescriptor(\Prospect.name)]
+                }, sort: [sortBy]
             )
+        } else {
+            _prospects = Query(sort: [sortBy])
         }
     }
 
@@ -184,6 +188,6 @@ struct ProspectsView: View {
 }
 
 #Preview {
-    ProspectsView(filter: .none)
+    ProspectsView(filter: .none, sortBy: SortDescriptor(\Prospect.name))
         .modelContainer(for: Prospect.self)
 }
