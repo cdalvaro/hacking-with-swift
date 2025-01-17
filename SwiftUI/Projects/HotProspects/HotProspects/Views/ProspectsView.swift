@@ -36,19 +36,27 @@ struct ProspectsView: View {
     var body: some View {
         NavigationStack {
             List(prospects, selection: $selectedProspects) { prospect in
-                HStack {
-                    if filter == .none {
-                        Image(systemName: prospect
-                            .isContacted ? "person.crop.circle.badge.checkmark" : "person.crop.circle.badge.xmark")
-                    }
+                NavigationLink {
+                    EditProspectView(prospect: prospect)
+                }
+                label: {
+                    HStack {
+                        if filter == .none {
+                            Image(systemName: prospect
+                                .isContacted ? "person.crop.circle.badge.checkmark" : "person.crop.circle.badge.xmark")
+                        }
 
-                    VStack(alignment: .leading) {
-                        Text(prospect.name)
-                            .font(.headline)
+                        VStack(alignment: .leading) {
+                            Text(prospect.name)
+                                .font(.headline)
 
-                        Text(prospect.emailAddress)
-                            .foregroundStyle(.secondary)
+                            Text(prospect.emailAddress)
+                                .foregroundStyle(.secondary)
+                        }
                     }
+                }
+                .onAppear {
+                    selectedProspects.removeAll()
                 }
                 .swipeActions {
                     Button("Delete", systemImage: "trash", role: .destructive) {
@@ -135,6 +143,7 @@ struct ProspectsView: View {
         for prospect in selectedProspects {
             modelContext.delete(prospect)
         }
+        selectedProspects.removeAll()
     }
 
     func addNotification(for prospect: Prospect) {
