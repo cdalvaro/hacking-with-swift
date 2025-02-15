@@ -88,7 +88,8 @@
 - [Day 82 - Project 16, Part Four](#day-82---project-16-part-four)
 - [Day 83 - Project 16, Part Five](#day-83---project-16-part-five)
 - [Day 84 - Project 16, Part Six](#day-84---project-16-part-six)
-- [Day 85 - Project 17, Part One](#day-85---project-16-part-seven)
+- [Day 85 - Project 16, Part Seven](#day-85---project-16-part-seven)
+- [Day 86 - Project 17, Part One](#day-86---project-17-part-one)
 
 </details>
 
@@ -828,3 +829,10 @@ _Challenge_
 3. Allow users to customize the way contacts are sorted – by name or by most recent. ([`a56b28e`](https://github.com/cdalvaro/hacking-with-swift/commit/a56b28ed081f7337accf18e7bc39592e71f8732b))
 
 [Code](Projects/HotProspects)
+
+## [Day 86](https://www.hackingwithswift.com/100/swiftui/86) - Project 17, Part One
+
+- How to use gestures in SwiftUI. ([`2fa7fcd`](https://github.com/cdalvaro/hacking-with-swift/commit/2fa7fcdf3e99d8086a024ac99c1cddfee3f42fe2))
+- Disabling user interactivity with `allowsHitTesting()`. ([`19f3d78`](https://github.com/cdalvaro/hacking-with-swift/commit/19f3d78dab296345978cf17391587b312196c419))
+
+[Code](Projects/Flashzilla)
