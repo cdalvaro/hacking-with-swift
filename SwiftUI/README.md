@@ -90,6 +90,7 @@
 - [Day 84 - Project 16, Part Six](#day-84---project-16-part-six)
 - [Day 85 - Project 16, Part Seven](#day-85---project-16-part-seven)
 - [Day 86 - Project 17, Part One](#day-86---project-17-part-one)
+- [Day 87 - Project 17, Part Two](#day-87---project-17-part-two)
 
 </details>
 
@@ -834,5 +835,13 @@ _Challenge_
 
 - How to use gestures in SwiftUI. ([`2fa7fcd`](https://github.com/cdalvaro/hacking-with-swift/commit/2fa7fcdf3e99d8086a024ac99c1cddfee3f42fe2))
 - Disabling user interactivity with `allowsHitTesting()`. ([`19f3d78`](https://github.com/cdalvaro/hacking-with-swift/commit/19f3d78dab296345978cf17391587b312196c419))
+
+[Code](Projects/Flashzilla)
+
+## [Day 87](https://www.hackingwithswift.com/100/swiftui/87) - Project 17, Part Two
+
+- Triggering events repeatedly using a timer. ([`0bb00bb`](https://github.com/cdalvaro/hacking-with-swift/commit/0bb00bba864c6f08b773bc83e3b39d55680cddde))
+- How to be notified when your SwiftUI app moves to the background. ([`dd3fb52`](https://github.com/cdalvaro/hacking-with-swift/commit/dd3fb521de64c65f3dd582d67c0d131be3435b3e))
+- Supporting specific accessibility needs with SwiftUI. ([`5a462e1`](https://github.com/cdalvaro/hacking-with-swift/commit/5a462e1b25aa8713c2020dbb801b8d4dfed40120))
 
 [Code](Projects/Flashzilla)
