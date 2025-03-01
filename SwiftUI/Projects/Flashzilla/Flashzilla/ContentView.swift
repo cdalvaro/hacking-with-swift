@@ -8,29 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
-    let timer = Timer.publish(every: 1, tolerance: 0.5, on: .main, in: .common).autoconnect()
-    @State private var counter = 0
+    @Environment(\.scenePhase) var scenePhase
 
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-                .onReceive(timer) { time in
-                    if counter == 5 {
-                        cancelTimer()
-                    } else {
-                        print("The time is now \(time)")
-                    }
-
-                    counter += 1
+        Text("Hello, world!")
+            .onChange(of: scenePhase) { _, newPhase in
+                switch newPhase {
+                case .active:
+                    /**
+                     Active scenes are running right now, which on iOS means they are visible to the user.
+                     On macOS an app's window might be wholly hidden by another app's window,
+                     but that's okay - it's still considered to be active.
+                     */
+                    print("Active")
+                case .inactive:
+                    /**
+                     Inactive scenes are running and might be visible to the user, but the user isn't able to
+                     access them. For example, if you're swipping down to partially reveal the control center
+                     then the app underneath is considered inactive.
+                     */
+                    print("Inactive")
+                case .background:
+                    /**
+                     Background scenes are not visible to the user, which on iOS means they might be
+                     terminated at some point in the future.
+                     */
+                    print("Background")
+                @unknown default:
+                    fatalError("Unknown scene phase: \(newPhase)")
                 }
-        }
-    }
-
-    func cancelTimer() {
-        timer.upstream.connect().cancel()
+            }
     }
 }
 
