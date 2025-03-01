@@ -8,46 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    let timer = Timer.publish(every: 1, tolerance: 0.5, on: .main, in: .common).autoconnect()
+    @State private var counter = 0
+
     var body: some View {
         VStack {
-            ZStack {
-                Rectangle()
-                    .fill(.blue)
-                    .frame(width: 300, height: 300)
-                    .onTapGesture {
-                        print("Rectangle tapped!")
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
+                .onReceive(timer) { time in
+                    if counter == 5 {
+                        cancelTimer()
+                    } else {
+                        print("The time is now \(time)")
                     }
 
-                Circle()
-                    .fill(.red)
-                    .frame(width: 300, height: 300)
-                    // This modifier makes taps to hit a rectangle box
-                    .contentShape(.rect)
-                    .onTapGesture {
-                        print("Circle tapped!")
-                    }
-                    // This modifier makes taps do not hit this shape
-                    // and hits the next shape
-                    .allowsHitTesting(false)
-            }
-
-            Spacer()
-
-            VStack {
-                Text("Hello")
-
-                Spacer()
-                    .frame(height: 100)
-
-                Text("World")
-            }
-            // This makes the whole VStack to react to taps
-            // Otherwise, blank area doesn't react
-            .contentShape(.rect)
-            .onTapGesture {
-                print("VStack tapped!")
-            }
+                    counter += 1
+                }
         }
+    }
+
+    func cancelTimer() {
+        timer.upstream.connect().cancel()
     }
 }
 
