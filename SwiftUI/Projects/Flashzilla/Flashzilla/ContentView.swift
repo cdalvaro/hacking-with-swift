@@ -7,37 +7,45 @@
 
 import SwiftUI
 
+func withOptionalAnimation<Result>(_ animation: Animation? = .default, _ body: () throws -> Result) rethrows -> Result {
+    if UIAccessibility.isReduceMotionEnabled {
+        return try body()
+    }
+
+    return try withAnimation(animation, body)
+}
+
 struct ContentView: View {
-    @Environment(\.scenePhase) var scenePhase
+    @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
+    @Environment(\.accessibilityReduceTransparency) var accessibilityReduceTransparency
+
+    @State private var scale = 1.0
 
     var body: some View {
-        Text("Hello, world!")
-            .onChange(of: scenePhase) { _, newPhase in
-                switch newPhase {
-                case .active:
-                    /**
-                     Active scenes are running right now, which on iOS means they are visible to the user.
-                     On macOS an app's window might be wholly hidden by another app's window,
-                     but that's okay - it's still considered to be active.
-                     */
-                    print("Active")
-                case .inactive:
-                    /**
-                     Inactive scenes are running and might be visible to the user, but the user isn't able to
-                     access them. For example, if you're swipping down to partially reveal the control center
-                     then the app underneath is considered inactive.
-                     */
-                    print("Inactive")
-                case .background:
-                    /**
-                     Background scenes are not visible to the user, which on iOS means they might be
-                     terminated at some point in the future.
-                     */
-                    print("Background")
-                @unknown default:
-                    fatalError("Unknown scene phase: \(newPhase)")
+        VStack {
+            HStack {
+                if accessibilityDifferentiateWithoutColor {
+                    Image(systemName: "checkmark.circle")
+                }
+
+                Text("Success")
+            }
+            .padding()
+            .background(accessibilityDifferentiateWithoutColor ? .black : .green)
+            .foregroundStyle(.white)
+            .clipShape(.capsule)
+
+            Button("Hello, world!") {
+                withOptionalAnimation {
+                    scale *= 1.5
                 }
             }
+            .scaleEffect(scale)
+            .padding()
+            .background(accessibilityReduceTransparency ? .black : .black.opacity(0.5))
+            .foregroundStyle(.white)
+            .clipShape(.capsule)
+        }
     }
 }
 
