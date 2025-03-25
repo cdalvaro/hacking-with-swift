@@ -91,6 +91,7 @@
 - [Day 85 - Project 16, Part Seven](#day-85---project-16-part-seven)
 - [Day 86 - Project 17, Part One](#day-86---project-17-part-one)
 - [Day 87 - Project 17, Part Two](#day-87---project-17-part-two)
+- [Day 88 - Project 17, Part Three](#day-88---project-17-part-three)
 
 </details>
 
@@ -843,5 +844,13 @@ _Challenge_
 - Triggering events repeatedly using a timer. ([`0bb00bb`](https://github.com/cdalvaro/hacking-with-swift/commit/0bb00bba864c6f08b773bc83e3b39d55680cddde))
 - How to be notified when your SwiftUI app moves to the background. ([`dd3fb52`](https://github.com/cdalvaro/hacking-with-swift/commit/dd3fb521de64c65f3dd582d67c0d131be3435b3e))
 - Supporting specific accessibility needs with SwiftUI. ([`5a462e1`](https://github.com/cdalvaro/hacking-with-swift/commit/5a462e1b25aa8713c2020dbb801b8d4dfed40120))
+
+[Code](Projects/Flashzilla)
+
+## [Day 88](https://www.hackingwithswift.com/100/swiftui/88) - Project 17, Part Three
+
+- Designing a single card view. ([`e21b117`](https://github.com/cdalvaro/hacking-with-swift/commit/e21b117c71a40b910a587445ed2d5a275544a3fb))
+- Building a stack of cards. ([`88deb0a`](https://github.com/cdalvaro/hacking-with-swift/commit/88deb0a624dba2b013c7acfb0c4d1a8d325cb6df))
+- Moving views with `DragGesture` and `offset()`. ([`5df4538`](https://github.com/cdalvaro/hacking-with-swift/commit/5df45386aebe764e2959c6266f4b7ac7d58b172c))
 
 [Code](Projects/Flashzilla)
