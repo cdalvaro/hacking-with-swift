@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CardView: View {
+    @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
+
     @State private var isShowingAnswer = false
     @State private var offset = CGSize.zero
 
@@ -17,7 +19,18 @@ struct CardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
-                .fill(.white)
+                .fill(
+                    accessibilityDifferentiateWithoutColor
+                        ? .white
+                        : .white
+                        .opacity(1 - Double(abs(offset.width / 50)))
+                )
+                .background(
+                    accessibilityDifferentiateWithoutColor
+                        ? nil
+                        : RoundedRectangle(cornerRadius: 25)
+                        .fill(offset.width > 0 ? .green : .red)
+                )
                 .shadow(radius: 10)
 
             VStack {
@@ -38,17 +51,19 @@ struct CardView: View {
         .rotationEffect(.degrees(Double(offset.width / 5)))
         .offset(x: offset.width * 5)
         .opacity(2 - Double(abs(offset.width / 50)))
-        .gesture(DragGesture()
-            .onChanged { gesture in
-                offset = gesture.translation
-            }
-            .onEnded { _ in
-                if abs(offset.width) > 100 {
-                    removal?()
-                } else {
-                    offset = .zero
+        .gesture(
+            DragGesture()
+                .onChanged { gesture in
+                    offset = gesture.translation
                 }
-            })
+                .onEnded { _ in
+                    if abs(offset.width) > 100 {
+                        removal?()
+                    } else {
+                        offset = .zero
+                    }
+                }
+        )
         .onTapGesture {
             isShowingAnswer.toggle()
         }
