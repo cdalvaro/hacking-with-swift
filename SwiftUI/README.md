@@ -93,6 +93,7 @@
 - [Day 87 - Project 17, Part Two](#day-87---project-17-part-two)
 - [Day 88 - Project 17, Part Three](#day-88---project-17-part-three)
 - [Day 89 - Project 17, Part Four](#day-89---project-17-part-four)
+- [Day 90 - Project 17, Part Five](#day-90---project-17-part-five)
 
 </details>
 
@@ -861,5 +862,12 @@ _Challenge_
 - Coloring views as we swipe. ([`54c1c99`](https://github.com/cdalvaro/hacking-with-swift/commit/54c1c9967bec1cfb79e64dc22c56128fda7e67ea))
 - Counting down with a `Timer`. ([`213bcaa`](https://github.com/cdalvaro/hacking-with-swift/commit/213bcaa131ce627d1012de28e6e1d89578827340))
 - Ending the app with `allowsHitTesting()`. ([`aee3514`](https://github.com/cdalvaro/hacking-with-swift/commit/aee35144b8baeb671414fda432edd4aa618c1761))
+
+[Code](Projects/Flashzilla)
+
+## [Day 90](https://www.hackingwithswift.com/100/swiftui/90) - Project 17, Part Five
+
+- Fixing the bugs. ([`447be5e`](https://github.com/cdalvaro/hacking-with-swift/commit/447be5e8c9c7fcc421aac30508b84002db60cb1b))
+- Adding and deleting cards. ([`e277705`](https://github.com/cdalvaro/hacking-with-swift/commit/e277705bec74d1978de3a677d3df97ae84c3ab5a))
 
 [Code](Projects/Flashzilla)
