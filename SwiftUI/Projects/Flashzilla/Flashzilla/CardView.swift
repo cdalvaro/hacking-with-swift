@@ -15,7 +15,7 @@ struct CardView: View {
     @State private var offset = CGSize.zero
 
     let card: Card
-    var removal: (() -> Void)?
+    var removal: ((Bool) -> Void)?
 
     var body: some View {
         ZStack {
@@ -66,7 +66,7 @@ struct CardView: View {
                 }
                 .onEnded { _ in
                     if abs(offset.width) > 100 {
-                        removal?()
+                        removal?(offset.width > 0)
                     } else {
                         offset = .zero
                     }
