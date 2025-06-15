@@ -5,6 +5,7 @@
 //  Created by Carlos Álvaro on 17/1/25.
 //
 
+import SwiftData
 import SwiftUI
 
 extension View {
@@ -17,8 +18,9 @@ extension View {
 struct ContentView: View {
     @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
     @Environment(\.accessibilityVoiceOverEnabled) var accessibilityVoiceOverEnabled
+    @Environment(\.modelContext) var modelContext
 
-    @State private var cards = [Card]()
+    @Query private var cards: [Card]
     @State private var showingEditScreen = false
 
     @State private var timeRemaining = 100
@@ -46,7 +48,7 @@ struct ContentView: View {
                     ForEach(Array(cards.enumerated()), id: \.element.id) { index, card in
                         CardView(card: card) { isRight in
                             withAnimation {
-                                removeCard(at: index, isRight: isRight)
+                                removeCard(card, isRight: isRight)
                             }
                         }
                         .stacked(at: index, in: cards.count)
@@ -92,7 +94,7 @@ struct ContentView: View {
                     HStack {
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1, isRight: false)
+                                removeCard(cards.last, isRight: false)
                             }
                         } label: {
                             Image(systemName: "xmark.circle")
@@ -107,7 +109,7 @@ struct ContentView: View {
 
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1, isRight: true)
+                                removeCard(cards.last, isRight: true)
                             }
                         } label: {
                             Image(systemName: "checkmark.circle")
@@ -144,12 +146,12 @@ struct ContentView: View {
         .onAppear(perform: resetCards)
     }
 
-    func removeCard(at index: Int, isRight: Bool) {
-        guard index >= 0 else { return }
+    func removeCard(_ card: Card?, isRight: Bool) {
+        guard let card else { return }
 
-        let card = cards.remove(at: index)
+        modelContext.delete(card)
         if !isRight {
-            cards.insert(Card(card: card), at: 0)
+            modelContext.insert(Card(card: card))
         }
 
         if cards.isEmpty {
@@ -160,15 +162,6 @@ struct ContentView: View {
     func resetCards() {
         timeRemaining = 100
         isActive = true
-        loadData()
-    }
-
-    func loadData() {
-        if let data = UserDefaults.standard.data(forKey: "Cards") {
-            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-                cards = decoded
-            }
-        }
     }
 }
 

@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftData
 
-struct Card: Codable, Identifiable {
+@Model
+class Card: Identifiable {
     var id = UUID()
     var prompt: String
     var answer: String
