@@ -94,6 +94,7 @@
 - [Day 88 - Project 17, Part Three](#day-88---project-17-part-three)
 - [Day 89 - Project 17, Part Four](#day-89---project-17-part-four)
 - [Day 90 - Project 17, Part Five](#day-90---project-17-part-five)
+- [Day 91 - Project 17, Part Six](#day-91---project-17-part-six)
 
 </details>
 
@@ -869,5 +870,19 @@ _Challenge_
 
 - Fixing the bugs. ([`447be5e`](https://github.com/cdalvaro/hacking-with-swift/commit/447be5e8c9c7fcc421aac30508b84002db60cb1b))
 - Adding and deleting cards. ([`e277705`](https://github.com/cdalvaro/hacking-with-swift/commit/e277705bec74d1978de3a677d3df97ae84c3ab5a))
+
+[Code](Projects/Flashzilla)
+
+## [Day 91](https://www.hackingwithswift.com/100/swiftui/91) - Project 17, Part Six
+
+_Challenge_
+
+1. When adding a card, the text fields keep their current text. Fix that so that the textfields clear themselves after a card is added. ([`88c9e6b`](https://github.com/cdalvaro/hacking-with-swift/commit/88c9e6b2452e4cc4bad30b9ced0639d15e22484c))
+2. When the users gets an answer wrong, add that card back into the array so the user can try it again. Doing this successfully means rethinking the `ForEach` loop, because relying on simple integers isn’t enough – your cards need to be uniquely identifiable. ([`7b10a13`](https://github.com/cdalvaro/hacking-with-swift/commit/7b10a13b66368626bcfe0a207bf26c1d415feba2))
+
+Upgrade the loading and saving code in two ways:
+
+1. Make it use an alternative approach to saving data, e.g. documents JSON rather than `UserDefaults`, or `SwiftData` – this is generally a good idea, so you should get practice with this. ([`b9def4a`](https://github.com/cdalvaro/hacking-with-swift/commit/b9def4a5718f5581c30b12eb283dd4a7f83f2a43))
+2. Try to find a way to centralize the loading and saving code for the cards. You might need to experiment a little to find something you like! ([`b9def4a`](https://github.com/cdalvaro/hacking-with-swift/commit/b9def4a5718f5581c30b12eb283dd4a7f83f2a43))
 
 [Code](Projects/Flashzilla)
