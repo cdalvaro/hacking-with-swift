@@ -798,3 +798,12 @@ Upgrade the loading and saving code in two ways:
 - Absolute positioning for SwiftUI views. ([`6315d33`](https://github.com/cdalvaro/hacking-with-swift/commit/6315d3363df1a201c267078588216322456d4d2a))
 
 [Code](Projects/LayoutAndGeometry)
+
+## [Day 93](https://www.hackingwithswift.com/100/swiftui/93) - Project 18, Part Two
+
+- Resizing images to fit the screen using `GeometryReader`. ([`160f409`](https://github.com/cdalvaro/hacking-with-swift/commit/160f409d764d00c879a33e6963a88e1985189049))
+- Understanding frames and coordinates inside `GeometryReader`. ([`9ca19a3`](https://github.com/cdalvaro/hacking-with-swift/commit/9ca19a3ba5211eb704f66eaeabff3db059a1a83a))
+- ScrollView effects using `GeometryReader`. ([`814aab8`](https://github.com/cdalvaro/hacking-with-swift/commit/814aab8e17e23e8a7120fad38a823b73fd064378))
+- ScrollView effects using `visualEffect()` and `scrollTargetBehavior()`. ([`eb9dddb`](https://github.com/cdalvaro/hacking-with-swift/commit/eb9dddbc0fff1ee3ab247d86edb2b491099ddf3d))
+
+[Code](Projects/LayoutAndGeometry)
