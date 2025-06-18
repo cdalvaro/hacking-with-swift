@@ -36,21 +36,25 @@ struct HorizontalView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 0) {
                 ForEach(0 ..< 20) { number in
-                    GeometryReader { geometry in
-                        Text("Number \(number)")
-                            .font(.largeTitle)
-                            .padding()
-                            .background(.red)
-                            .rotation3DEffect(
-                                .degrees(-geometry.frame(in: .global).minX) / 8,
-                                axis: (x: 0, y: 1, z: 0)
-                            )
-                            .frame(width: 200, height: 200)
-                    }
-                    .frame(width: 200, height: 200)
+                    Text("Number \(number)")
+                        .font(.largeTitle)
+                        .padding()
+                        .background(.red)
+                        .frame(width: 200, height: 200)
+                        .visualEffect { content, proxy in
+                            content
+                                .rotation3DEffect(
+                                    .degrees(-proxy.frame(in: .global).minX) / 8,
+                                    axis: (x: 0, y: 1, z: 0)
+                                )
+                        }
                 }
             }
+            // This tells SwiftUI we want to make each view inside this HStack a scroll target
+            .scrollTargetLayout()
         }
+        // This tells SwiftUI it should make this scroll view move smoothly between all scroll targets
+        .scrollTargetBehavior(.viewAligned)
     }
 }
 
