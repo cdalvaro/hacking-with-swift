@@ -9,16 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Text("Hello, world!")
-                .background(.yellow)
-                .position(x: 100, y: 100)
-                .background(.red)
-
-            Text("Bye bye")
-                .background(.yellow)
-                .offset(x: 100, y: 100)
+        HStack {
+            Text("IMPORTANT")
+                .frame(width: 200)
                 .background(.blue)
+
+            GeometryReader { geometry in
+                Image(.example)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: geometry.size.width * 0.8)
+                    .frame(width: geometry.size.width * 0.8, height: geometry.size.height)
+            }
         }
     }
 }
