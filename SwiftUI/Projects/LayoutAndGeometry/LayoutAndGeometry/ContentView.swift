@@ -7,21 +7,59 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct OuterView: View {
+    var body: some View {
+        VStack {
+            Text("Top")
+
+            InnerView()
+                .background(.green)
+
+            Text("Bottom")
+        }
+    }
+}
+
+struct InnerView: View {
     var body: some View {
         HStack {
-            Text("IMPORTANT")
-                .frame(width: 200)
-                .background(.blue)
+            Text("Left")
 
             GeometryReader { geometry in
-                Image(.example)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: geometry.size.width * 0.8)
-                    .frame(width: geometry.size.width * 0.8, height: geometry.size.height)
+                Text("Center")
+                    .background(.blue)
+                    .onTapGesture {
+                        /**
+                         Which coordinate space you want to use depends on what question you want to answer:
+
+                         - Want to know where this view is on the screen? Use the global space.
+                         - Want to know where this view is relative to its parent? Use the local space.
+                         - What to know where this view is relative to some other view? Use a custom space.
+                         */
+                        print(
+                            "Global center: \(geometry.frame(in: .global).midX) " +
+                                "x \(geometry.frame(in: .global).midY)"
+                        )
+                        print("Local center: \(geometry.frame(in: .local).midX) " +
+                            "x \(geometry.frame(in: .local).midY)")
+                        print(
+                            "Custom center: \(geometry.frame(in: .named("Custom")).midX) " +
+                                "x \(geometry.frame(in: .named("Custom")).midY)"
+                        )
+                    }
             }
+            .background(.orange)
+
+            Text("Right")
         }
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        OuterView()
+            .background(.red)
+            .coordinateSpace(name: "Custom")
     }
 }
 
