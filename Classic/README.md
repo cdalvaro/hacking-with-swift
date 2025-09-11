@@ -1,193 +1,117 @@
 # 100 Days of Swift
 
-## Challenges
-
-<details>
-  <summary>Click to see Table of Contents</summary>
-
-- [Day 1 - First Steps in Swift](#day-1---first-steps-in-swift)
-- [Day 2 - Complex Types](#day-2---complex-types)
-- [Day 3 - Operators and Conditions](#day-3---operators-and-conditions)
-- [Day 4 - Looping](#day-4---looping)
-- [Day 5 - Functions](#day-5---functions)
-- [Day 6 - Closures, Part One](#day-6---closures-part-one)
-- [Day 7 - Closures, Part Two](#day-7---closures-part-two)
-- [Day 8 - Structs, Part One](#day-8---structs-part-one)
-- [Day 9 - Structs, Part Two](#day-9---structs-part-two)
-- [Day 10 - Classes](#day-10---clasess)
-- [Day 11 - Protocols And Extensions](#day-11---protocols-and-extensions)
-- [Day 12 - Optionals](#day-12---optionals)
-- [Day 13 - Swift Review, Day One](#day-13---swift-review-day-one)
-- [Day 14 - Swift Review, Day Two](#day-14---swift-review-day-two)
-- [Day 15 - Swift Review, Day Three](#day-15---swift-review-day-three)
-- [Day 16 - Project 1, Part One](#day-16---project-1-part-one)
-- [Day 17 - Project 1, Part Two](#day-17---project-1-part-two)
-- [Day 18 - Project 1, Part Three](#day-18---project-1-part-three)
-- [Day 19 - Project 2, Part One](#day-19---project-2-part-one)
-- [Day 20 - Project 2, Part Two](#day-20---project-2-part-two)
-- [Day 21 - Project 2, Part Three](#day-21---project-2-part-three)
-- [Day 22 - Project 3](#day-22---project-3)
-- [Day 23 - MILESTONE: Projects 1-3](#day-23---milestone-projects-1-3)
-- [Day 24 - Project 4, Part One](#day-24---project-4-part-one)
-- [Day 25 - Project 4, Part Two](#day-25---project-4-part-two)
-- [Day 26 - Project 4, Part Three](#day-26---project-4-part-three)
-- [Day 27 - Project 5, Part One](#day-27---project-5-part-one)
-- [Day 28 - Project 5, Part Two](#day-28---project-5-part-two)
-- [Day 29 - Project 5, Part Three](#day-29---project-5-part-three)
-- [Day 30 - Project 6, Part One](#day-30---project-6-part-one)
-- [Day 31 - Project 6, Part Two](#day-31---project-6-part-two)
-- [Day 32 - MILESTONE: Projects 4-6](#day-32---milestone-projects-4-6)
-- [Day 33 - Project 7, Part One](#day-33---project-7-part-one)
-- [Day 34 - Project 7, Part Two](#day-34---project-7-part-two)
-- [Day 35 - Project 7, Part Three](#day-35---project-7-part-three)
-- [Day 36 - Project 8, Part One](#day-36---project-8-part-one)
-- [Day 37 - Project 8, Part Two](#day-37---project-8-part-two)
-- [Day 38 - Project 8, Part Three](#day-38---project-8-part-three)
-- [Day 39 - Project 9, Part One](#day-39---project-9-part-one)
-- [Day 40 - Project 9, Part Two](#day-40---project-9-part-two)
-- [Day 41 - MILESTONE: Projects 7-9](#day-41---milestone-projects-7-9)
-- [Day 42 - Project 10, Part One](#day-42---project-10-part-one)
-- [Day 43 - Project 10, Part Two](#day-43---project-10-part-two)
-- [Day 44 - Project 10, Part Three](#day-44---project-10-part-three)
-- [Day 45 - Project 11, Part One](#day-45---project-11-part-one)
-- [Day 46 - Project 11, Part Two](#day-46---project-11-part-two)
-- [Day 47 - Project 11, Part Three](#day-47---project-11-part-three)
-- [Day 48 - Project 12, Part One](#day-48---project-12-part-one)
-- [Day 49 - Project 12, Part Two](#day-49---project-12-part-two)
-- [Day 50 - MILESTONE: Projects 10-12](#day-50---milestone-projects-10-12)
-- [Day 51 - Expanding Your Horizons](#day-51---expanding-your-horizons)
-- [Day 52 - Project 13, Part One](#day-52---project-13-part-one)
-- [Day 53 - Project 13, Part Two](#day-53---project-13-part-two)
-- [Day 54 - Project 13, Part Three](#day-54---project-13-part-three)
-- [Day 55 - Project 14, Part One](#day-55---project-14-part-one)
-- [Day 56 - Project 14, Part Two](#day-56---project-14-part-two)
-- [Day 57 - Project 15, Part One](#day-57---project-15-part-one)
-- [Day 58 - Project 15, Part Two](#day-58---project-15-part-two)
-- [Day 59 - MILESTONE: Projects 13-15](#day-59---milestone-projects-13-15)
-- [Day 60 - Project 16, Part One](#day-60---project-16-part-one)
-- [Day 61 - Project 16, Part Two](#day-61---project-16-part-two)
-- [Day 62 - Project 17, Part One](#day-62---project-17-part-one)
-- [Day 63 - Project 17, Part Two](#day-63---project-17-part-two)
-- [Day 64 - Project 18, Part One](#day-64---project-18-part-one)
-- [Day 65 - Project 18, Part Two](#day-65---project-18-part-two)
-- [Day 66 - MILESTONE: Projects 16-18](#day-66---milestone-projects-16-18)
-- [Day 67 - Project 19, Part One](#day-67---project-19-part-one)
-- [Day 68 - Project 19, Part Two](#day-68---project-19-part-two)
-
-</details>
-
 ## [Day 1](https://www.hackingwithswift.com/100/1) - First Steps in Swift
 
-*Variables* and *Constants*, *Strings*, *Integers*, *Doubles* and *Booleans*, *Inference* and *Type Annotations*
+_Variables_ and _Constants_, _Strings_, _Integers_, _Doubles_ and _Booleans_, _Inference_ and _Type Annotations_
 but setting foundations.
 
 [Code](../Playgrounds/Day001.playground/Contents.swift)
 
 ## [Day 2](https://www.hackingwithswift.com/100/2) - Complex Types
 
-*Arrays*, *Sets*, *Tuples*, *Dictionaries* and *Enumerations*.
+_Arrays_, _Sets_, _Tuples_, _Dictionaries_ and _Enumerations_.
 
 [Code](../Playgrounds/Day002.playground/Contents.swift)
 
 ## [Day 3](https://www.hackingwithswift.com/100/3) - Operators and Conditions
 
-*Arithmetic Operators*, *Operators Overloading*, *Compound Assignment Operators*, *Comparison Operators*, *Conditions*,
-*Combining Conditions*, *The Ternary Operator*, *Switch Statements* and *Range Operators*.
+_Arithmetic Operators_, _Operators Overloading_, _Compound Assignment Operators_, _Comparison Operators_, _Conditions_,
+_Combining Conditions_, _The Ternary Operator_, _Switch Statements_ and _Range Operators_.
 
 [Code](../Playgrounds/Day003.playground/Contents.swift)
 
 ## [Day 4](https://www.hackingwithswift.com/100/4) - Looping
 
-*For loops*, *While loops*, *Repeat loops*, *Exiting loops*, *Exiting multiple loops*, *Skipping items* and *Infinite loops*.
+_For loops_, _While loops_, _Repeat loops_, _Exiting loops_, _Exiting multiple loops_, _Skipping items_ and _Infinite loops_.
 
 [Code](../Playgrounds/Day004.playground/Contents.swift)
 
 ## [Day 5](https://www.hackingwithswift.com/100/5) - Functions
 
-*Writing functions*, *Accepting parameters*, *Returning values*, *Parameter labels*, *Omitting parameter labels*, *Default parameters*,
-*Variadic functions*, *Writing throwing functions*, *Running throwing functions* and *inout parameters*.
+_Writing functions_, _Accepting parameters_, _Returning values_, _Parameter labels_, _Omitting parameter labels_, _Default parameters_,
+_Variadic functions_, _Writing throwing functions_, _Running throwing functions_ and _inout parameters_.
 
 [Code](../Playgrounds/Day005.playground/Contents.swift)
 
 ## [Day 6](https://www.hackingwithswift.com/100/6) - Closures, Part One
 
-*Creating basic closures*, *Accepting parameters in a closure*, *Returning values from a closure*, *Closures as parameters* and *Trailing closure syntax*.
+_Creating basic closures_, _Accepting parameters in a closure_, _Returning values from a closure_, _Closures as parameters_ and _Trailing closure syntax_.
 
 [Code](../Playgrounds/Day006.playground/Contents.swift)
 
 ## [Day 7](https://www.hackingwithswift.com/100/7) - Closures, Part Two
 
-*Using closures as parameters when they accept parameters*, *Using closures as parameters when they return values*, *Shorthand parameter names*,
-*Closures with multiple parameters*, *Returning closures from functions* and *Capturing values*.
+_Using closures as parameters when they accept parameters_, _Using closures as parameters when they return values_, _Shorthand parameter names_,
+_Closures with multiple parameters_, _Returning closures from functions_ and _Capturing values_.
 
 [Code](../Playgrounds/Day007.playground/Contents.swift)
 
 ## [Day 8](https://www.hackingwithswift.com/100/8) - Structs, Part One
 
-*Creating your own structs*, *Computed properties*, *Property observers*, *Methods*, *Mutating methods*,
-*Properties and methods of strings* and *Properties and methods of arrays*.
+_Creating your own structs_, _Computed properties_, _Property observers_, _Methods_, _Mutating methods_,
+_Properties and methods of strings_ and _Properties and methods of arrays_.
 
 [Code](../Playgrounds/Day008.playground/Contents.swift)
 
 ## [Day 9](https://www.hackingwithswift.com/100/9) - Structs, Part Two
 
-*Initializers*, *Referring to the current instance*, *Lazy properties*, *Static properties and methods* and *Access control*.
+_Initializers_, _Referring to the current instance_, _Lazy properties_, _Static properties and methods_ and _Access control_.
 
 [Code](../Playgrounds/Day009.playground/Contents.swift)
 
 ## [Day 10](https://www.hackingwithswift.com/100/10) - Classes
 
-*Creating your own classes*, *Class inheritance*, *Overriding methods*, *Final classes*, *Copying objects*, *Deinitializers* and *Mutability*.
+_Creating your own classes_, _Class inheritance_, _Overriding methods_, _Final classes_, _Copying objects_, _Deinitializers_ and _Mutability_.
 
 [Code](../Playgrounds/Day010.playground/Contents.swift)
 
 ## [Day 11](https://www.hackingwithswift.com/100/11) - Protocols And Extensions
 
-*Protocols*, *Protocol inheritance*, *Extensions*, *Protocol extensions* and *Protocol-oriented programming*.
+_Protocols_, _Protocol inheritance_, _Extensions_, _Protocol extensions_ and _Protocol-oriented programming_.
 
 [Code](../Playgrounds/Day011.playground/Contents.swift)
 
 ## [Day 12](https://www.hackingwithswift.com/100/12) - Optionals
 
-*Handling missing data*, *Unwrapping optionals*, *Unwrapping with guard*, *Force unwrapping*, *Implicitly unwrapped optionals*,
-*Nil coalescing*, *Optional chaining*, *Optional try*, *Failable initializers* and *Typecasting*.
+_Handling missing data_, _Unwrapping optionals_, _Unwrapping with guard_, _Force unwrapping_, _Implicitly unwrapped optionals_,
+_Nil coalescing_, _Optional chaining_, _Optional try_, _Failable initializers_ and _Typecasting_.
 
 [Code](../Playgrounds/Day012.playground/Contents.swift)
 
 ## [Day 13](https://www.hackingwithswift.com/100/13) - Swift Review, Day One
 
-*Variables and Constants*, *Types of Data*, *Operators*, *String Interpolation*, *Arrays*, *Dictionaries*,
-*Conditional Statements*, *Loops* and *Switch Case*.
+_Variables and Constants_, _Types of Data_, _Operators_, _String Interpolation_, _Arrays_, _Dictionaries_,
+_Conditional Statements_, _Loops_ and _Switch Case_.
 
 [Code](../Playgrounds/Day013.playground/Contents.swift)
 
 ## [Day 14](https://www.hackingwithswift.com/100/14) - Swift Review, Day Two
 
-*Functions*, *Optionals*, *Optional Chaining*, *Enumerations*, *Structs* and *Classes*.
+_Functions_, _Optionals_, _Optional Chaining_, _Enumerations_, _Structs_ and _Classes_.
 
 [Code](../Playgrounds/Day014.playground/Contents.swift)
 
 ## [Day 15](https://www.hackingwithswift.com/100/15) - Swift Review, Day Three
 
-*Properties*, *Static properties and methods*, *Access control*, *Polymorphism and typecasting* and *Closures*.
+_Properties_, _Static properties and methods_, _Access control_, _Polymorphism and typecasting_ and _Closures_.
 
 [Code](../Playgrounds/Day015.playground/Contents.swift)
 
 ## [Day 16](https://www.hackingwithswift.com/100/16) - Project 1, Part One
 
-*Setting Up*, *Listing Images with `FileManager`* and *Designing Our Interface*.
+_Setting Up_, _Listing Images with `FileManager`_ and _Designing Our Interface_.
 
 [Code](Projects/Project1)
 
 ## [Day 17](https://www.hackingwithswift.com/100/17) - Project 1, Part Two
 
-*Building a detail screen*, *Loading images with `UIImage`* and *Final tweaks: `hidesBarsOnTap`, safe area margins*.
+_Building a detail screen_, _Loading images with `UIImage`_ and _Final tweaks: `hidesBarsOnTap`, safe area margins_.
 
 [Code](Projects/Project1)
 
 ## [Day 18](https://www.hackingwithswift.com/100/18) - Project 1, Part Three
 
-*Challenge*
+_Challenge_
 
 1. Use Interface Builder to select the text label inside your table view cell and adjust its font size to something larger – experiment and see what looks good.
 1. In your main table view, show the image names in sorted order, so “nssl0033.jpg” comes before “nssl0034.jpg”.
@@ -199,19 +123,19 @@ but setting foundations.
 
 ## [Day 19](https://www.hackingwithswift.com/100/19) - Project 2, Part One
 
-*Setting up*, *Designing your layout* and *Making the basic game work: `UIButton` and `CALayer`*.
+_Setting up_, _Designing your layout_ and _Making the basic game work: `UIButton` and `CALayer`_.
 
 [Code](Projects/Project2)
 
 ## [Day 20](https://www.hackingwithswift.com/100/20) - Project 2, Part Two
 
-*Guess which flag: random numbers* and *From outlets to actions: creating an `IBAction`*.
+_Guess which flag: random numbers_ and _From outlets to actions: creating an `IBAction`_.
 
 [Code](Projects/Project2)
 
 ## [Day 21](https://www.hackingwithswift.com/100/21) - Project 2, Part Three
 
-*Challenge*
+_Challenge_
 
 1. Try showing the player’s score in the navigation bar, alongside the flag to guess.
 1. Keep track of how many questions have been asked, and show one final alert controller after they have answered 10. This should show their final score.
@@ -221,9 +145,9 @@ but setting foundations.
 
 ## [Day 22](https://www.hackingwithswift.com/100/22) - Project 3
 
-*About technique projects* and *`UIActivityViewController` explained*.
+_About technique projects_ and _`UIActivityViewController` explained_.
 
-*Challenge*
+_Challenge_
 
 1. Try adding the image name to the list of items that are shared.
    The activityItems parameter is an array, so you can add strings and other things freely.
@@ -235,7 +159,7 @@ but setting foundations.
 
 ## [Day 23](https://www.hackingwithswift.com/100/23) - MILESTONE: Projects 1-3
 
-*Challenge*
+_Challenge_
 
 The challenge is to create an app that lists various world flags in a table view.
 
@@ -247,19 +171,19 @@ add an action button that lets the user share the flag picture and country name 
 
 ## [Day 24](https://www.hackingwithswift.com/100/24) - Project 4, Part One
 
-*Setting up*, *Creating a simple browser with `WKWebView`* and *Choosing a website: `UIAlertController` action sheets*.
+_Setting up_, _Creating a simple browser with `WKWebView`_ and _Choosing a website: `UIAlertController` action sheets_.
 
 [Code](Projects/Project4)
 
 ## [Day 25](https://www.hackingwithswift.com/100/25) - Project 4, Part Two
 
-*Monitoring page loads: `UIToolBar` and `UIProgressView`* and *Refactoring for the win*.
+_Monitoring page loads: `UIToolBar` and `UIProgressView`_ and _Refactoring for the win_.
 
 [Code](Projects/Project4)
 
 ## [Day 26](https://www.hackingwithswift.com/100/26) - Project 4, Part Three
 
-*Challenge*
+_Challenge_
 
 1. If users try to visit a URL that isn’t allowed, show an alert saying it’s blocked.
 2. Try making two new toolbar items with the titles Back and Forward.
@@ -271,43 +195,43 @@ add an action button that lets the user share the flag picture and country name 
 
 ## [Day 27](https://www.hackingwithswift.com/100/27) - Project 5, Part One
 
-*Setting up*, *Reading from disk: `contentsOfFile`* and *Pick a word, any word: `UIAllertController`*.
+_Setting up_, _Reading from disk: `contentsOfFile`_ and _Pick a word, any word: `UIAllertController`_.
 
 [Code](Projects/Project5)
 
 ## [Day 28](https://www.hackingwithswift.com/100/28) - Project 5, Part Two
 
-*Prepare for submission: `lowercased()` and `IndexPath`*, *Checking for valid answers* and *Or else what?*
+_Prepare for submission: `lowercased()` and `IndexPath`_, _Checking for valid answers_ and _Or else what?_
 
 [Code](Projects/Project5)
 
 ## [Day 29](https://www.hackingwithswift.com/100/29) - Project 5, Part Three
 
-*Challenge*
+_Challenge_
 
 1. Disallow answers that are shorter than three letters or are just our start word.
 2. Refactor all the `else` statements we just added so that they call a new method called `showErrorMessage()`.
 3. Add a left bar button item that calls `startGame()`, so users can restart with a new word whenever they want to.
 
-* *Bonus*: Fix a bug that happens when you introduce the same word with and without uppercase letters.
+- _Bonus_: Fix a bug that happens when you introduce the same word with and without uppercase letters.
 
 [Code](Projects/Project5)
 
 ## [Day 30](https://www.hackingwithswift.com/100/30) - Project 6, Part One
 
-*Setting up*, *Advanced Auto Layout* and *Auto Layout in code: `addConstraints()` with Visual Format Language*.
+_Setting up_, _Advanced Auto Layout_ and _Auto Layout in code: `addConstraints()` with Visual Format Language_.
 
 [Code](Projects/Project6a)
 
 ## [Day 31](https://www.hackingwithswift.com/100/31) - Project 6, Part Two
 
-*Auto Layout metrics and priorities: constraints(withVisualFormat:)*, *Auto Layout anchors* and *Wrap up*.
+_Auto Layout metrics and priorities: constraints(withVisualFormat:)_, _Auto Layout anchors_ and _Wrap up_.
 
 [Code](Projects/Project6b)
 
 ## [Day 32](https://www.hackingwithswift.com/100/32) - MILESTONE: Projects 4-6
 
-*Challenge*
+_Challenge_
 
 The challenge is to create an app that lets people create a shopping list by adding items to a table view.
 
@@ -315,19 +239,19 @@ The challenge is to create an app that lets people create a shopping list by add
 
 ## [Day 33](https://www.hackingwithswift.com/100/33) - Project 7, Part One
 
-*Creating the basic UI: `UITabBarController`* and *Parsing JSON using the `Codable` protocol*.
+_Creating the basic UI: `UITabBarController`_ and _Parsing JSON using the `Codable` protocol_.
 
 [Code](Projects/Project7)
 
 ## [Day 34](https://www.hackingwithswift.com/100/34) - Project 7, Part Two
 
-*Rendering a petition: `loadHTMLString`* and *Finishing touches: `didFinishLaunchingWithOptions`*.
+_Rendering a petition: `loadHTMLString`_ and _Finishing touches: `didFinishLaunchingWithOptions`_.
 
 [Code](Projects/Project7)
 
 ## [Day 35](https://www.hackingwithswift.com/100/35) - Project 7, Part Three
 
-*Challenge*
+_Challenge_
 
 1. Add a Credits button to the top-right corner using `UIBarButtonItem`. When this is tapped, show an alert telling users the data comes from the We The People API of the Whitehouse.
 2. Let users filter the petitions they see. This involves creating a second array of filtered items that contains only petitions matching a string the user entered. Use a `UIAlertController` with a text field to let them enter that string. This is a tough one, so I’ve included some hints below if you get stuck.
@@ -336,19 +260,19 @@ The challenge is to create an app that lets people create a shopping list by add
 
 ## [Day 36](https://www.hackingwithswift.com/100/36) - Project 8, Part One
 
-*Setting up* and *Building a UIKit user interface programmatically*.
+_Setting up_ and _Building a UIKit user interface programmatically_.
 
 [Code](Projects/Project8)
 
 ## [Day 37](https://www.hackingwithswift.com/100/37) - Project 8, Part Two
 
-*Loading a level and adding button targets*, *`firstIndex(of:)` and `joined()`* and *Property observers: `didSet`*.
+_Loading a level and adding button targets_, _`firstIndex(of:)` and `joined()`_ and _Property observers: `didSet`_.
 
 [Code](Projects/Project8)
 
 ## [Day 38](https://www.hackingwithswift.com/100/38) - Project 8, Part Three
 
-*Challenge*
+_Challenge_
 
 1. Draw a thin gray line around the buttons view, to make it stand out from the rest of the UI.
 2. If the user enters an incorrect guess, show an alert telling them they are wrong.
@@ -364,7 +288,7 @@ Beginning with Grand Central Dispatch
 
 ## [Day 40](https://www.hackingwithswift.com/100/40) - Project 9, Part Two
 
-*Challenge*
+_Challenge_
 
 1. Modify project 1 so that loading the list of NSSL images from our bundle happens in the background. [Code](Projects/Project1-GCD)
 2. Modify project 8 so that loading and parsing a level takes place in the background. [Code](Projects/Project8-GCD)
@@ -372,7 +296,7 @@ Beginning with Grand Central Dispatch
 
 ## [Day 41](https://www.hackingwithswift.com/100/41) - MILESTONE: Projects 7-9
 
-*Challenge*
+_Challenge_
 
 The challenge is this: make a hangman game using UIKit.
 
@@ -392,7 +316,7 @@ Importing photos with UIImagePickerController.
 
 ## [Day 44](https://www.hackingwithswift.com/100/44) - Project 10, Part Three
 
-*Challenge*
+_Challenge_
 
 1. Add a second `UIAlertController` that gets shown when the user taps a picture, asking them whether they want to rename the person or delete them.
 2. Use `picker.sourceType = .camera` when creating your image picker.
@@ -416,7 +340,7 @@ Spinning slots (`SKAction`), Collision detection (`SKPhysicsContactDelegate`) an
 
 Special effects: `SKEmitterNode`.
 
-*Challenge*
+_Challenge_
 
 1. Try writing code to use a random ball color each time they tap the screen.
 2. Try to force the Y value of new balls so they are near the top of the screen.
@@ -434,7 +358,7 @@ Reading and writing basics: `UserDefaults` and Fixing Project 10: `NSCoding`.
 
 Fixing Project 10: `Codable`.
 
-*Challenge*
+_Challenge_
 
 1. Modify project 1 so that it remembers how many times each storm image was shown. [Code](Projects/Project1-UserDefaults)
 2. Modify project 2 so that it saves the player’s highest score, and shows a special message if their new score beat the previous high score. [Code](Projects/Project2-UserDefaults)
@@ -442,7 +366,7 @@ Fixing Project 10: `Codable`.
 
 ## [Day 50](https://www.hackingwithswift.com/100/50) - MILESTONE: Projects 10-12
 
-*Challenge*
+_Challenge_
 
 The challenge is to put two different projects into one: I’d like you to let users take photos of things that interest them, add captions to them, then show those photos in a table view. Tapping the caption should show the picture in a new view controller, like we did with project 1. So, your finished project needs to use elements from both project 1 and project 12, which should give you ample chance to practice.
 
@@ -469,7 +393,7 @@ Applying filters: `CIContext`, `CIFilter` and saving to the iOS photo library.
 
 ## [Day 54](https://www.hackingwithswift.com/100/54) - Project 13, Part Three
 
-*Challenge*
+_Challenge_
 
 1. Try making the _Save_ button show an error if there was no image in the image view.
 2. Make the _Change Filter_ button change its title to show the name of the currently selected filter.
@@ -487,7 +411,7 @@ Getting up and running: `SKCropNode` and Penguin, show thyself: `SKAction moveBy
 
 Whack to win: `SKAction` sequences
 
-*Challenge*
+_Challenge_
 
 1. Record your own voice saying _"Game over!"_ and have it play when the game ends.
 2. When showing _“Game Over”_ add an `SKLabelNode` showing their final score.
@@ -503,17 +427,17 @@ Switch, case, animate: `animate(withDuration:)` and Transform: `CGAffineTransfor
 
 ## [Day 58](https://www.hackingwithswift.com/100/58) - Project 15, Part Two
 
-*Challenge*
+_Challenge_
 
 1. Go back to project 8 and make the letter group buttons fade out when they are tapped.
-We were using the `isHidden` property, but you'll need to switch to `alpha` because `isHidden` is either `true` or `false`, it has no animatable values between. [Code](Projects/Project8-CGAffineTransform)
+   We were using the `isHidden` property, but you'll need to switch to `alpha` because `isHidden` is either `true` or `false`, it has no animatable values between. [Code](Projects/Project8-CGAffineTransform)
 2. Go back to project 13 and make the image view fade in when a new picture is chosen.
-To make this work, set the `alpha` to 0 first. [Code](Projects/Project13-CGAffineTransform)
+   To make this work, set the `alpha` to 0 first. [Code](Projects/Project13-CGAffineTransform)
 3. Go back to project 2 and make the flags scale down with a little bounce when pressed. [Code](Projects/Project2-CGAffineTransform)
 
 ## [Day 59](https://www.hackingwithswift.com/100/59) - MILESTONE: Projects 13-15
 
-*Challenge*
+_Challenge_
 
 Your challenge is to make an app that contains facts about countries: show a list of country names in a table view, then when one is tapped bring in a new screen that contains its capital city, size, population, currency, and any other facts that interest you. The type of facts you include is down to you – Wikipedia has a huge selection to choose from.
 
@@ -521,87 +445,87 @@ Your challenge is to make an app that contains facts about countries: show a lis
 
 ## [Day 60](https://www.hackingwithswift.com/100/60) - Project 16, Part One
 
-*Setting up*, *Up and running with* `MapKit` and *Annotations and accessory views:* `MKPinAnnotationView`
+_Setting up_, _Up and running with_ `MapKit` and _Annotations and accessory views:_ `MKPinAnnotationView`
 
 [Code](Projects/Project16)
 
 ## [Day 61](https://www.hackingwithswift.com/100/61) - Project 16, Part Two
 
-*Challenge*
+_Challenge_
 
 1. Try typecasting the return value from `dequeueReusableAnnotationView()` so that it's an `MKPinAnnotationView`.
-Once that’s done, change the `pinTintColor` property to your favorite `UIColor`.
+   Once that’s done, change the `pinTintColor` property to your favorite `UIColor`.
 2. Add a `UIAlertController` that lets users specify how they want to view the map.
-There's a `mapType` property that draws the maps in different ways.
-For example, `.satellite` gives a satellite view of the terrain.
+   There's a `mapType` property that draws the maps in different ways.
+   For example, `.satellite` gives a satellite view of the terrain.
 3. Modify the callout button so that pressing it shows a new view controller with a web view,
-taking users to the Wikipedia entry for that city.
+   taking users to the Wikipedia entry for that city.
 
 [Code](Projects/Project16)
 
 ## [Day 62](https://www.hackingwithswift.com/100/62) - Project 17, Part One
 
-*Setting up*, *Space: the final frontier*, *Bring on the enemies:* `linearDamping`, `angularDamping` and *Making contact:* `didBegin()`
+_Setting up_, _Space: the final frontier_, _Bring on the enemies:_ `linearDamping`, `angularDamping` and _Making contact:_ `didBegin()`
 
 [Code](Projects/Project17)
 
 ## [Day 63](https://www.hackingwithswift.com/100/63) - Project 17, Part Two
 
-*Challenge*
+_Challenge_
 
 1. Stop the player from cheating by lifting their finger and tapping elsewhere
-– try implementing `touchesEnded()` to make it work.
+   – try implementing `touchesEnded()` to make it work.
 2. Make the timer start at one second, but then after 20 enemies have been made
-subtract 0.1 seconds from it so it’s triggered every 0.9 seconds. After making 20 more,
-subtract another 0.1, and so on. *Note*: you should call `invalidate()` on `gameTimer`
-before giving it a new value, otherwise you end up with multiple timers.
+   subtract 0.1 seconds from it so it’s triggered every 0.9 seconds. After making 20 more,
+   subtract another 0.1, and so on. _Note_: you should call `invalidate()` on `gameTimer`
+   before giving it a new value, otherwise you end up with multiple timers.
 3. Stop creating space debris after the player has died.
 
 [Code](Projects/Project17)
 
 ## [Day 64](https://www.hackingwithswift.com/100/64) - Project 18, Part One
 
-*Setting up*, *Basic Swift debugging using* `print()`, *Debugging with* `assert()`, *Debugging with breakpoints* and *View debugging*
+_Setting up_, _Basic Swift debugging using_ `print()`, _Debugging with_ `assert()`, _Debugging with breakpoints_ and _View debugging_
 
 [Code](Projects/Project18)
 
 ## [Day 65](https://www.hackingwithswift.com/100/65) - Project 18, Part Two
 
-*Challenge*
+_Challenge_
 
 1. Temporarily try adding an exception breakpoint to project 1,
-then changing the call to `instantiateViewController()` so that it uses
-the storyboard identifier “Bad” – this will fail, but your exception
-breakpoint should catch it. [Code](Projects/Project1-Breakpoint)
+   then changing the call to `instantiateViewController()` so that it uses
+   the storyboard identifier “Bad” – this will fail, but your exception
+   breakpoint should catch it. [Code](Projects/Project1-Breakpoint)
 2. In project 1, add a call to `assert()` in the `viewDidLoad()` method
-of DetailViewController.swift, checking that selectedImage always has
-a value. [Code](Projects/Project1-Breakpoint)
+   of DetailViewController.swift, checking that selectedImage always has
+   a value. [Code](Projects/Project1-Breakpoint)
 3. Go back to project 5, and try adding a conditional breakpoint to the
-start of the `submit()` method that pauses only if the user submits a
-word with six or more letters. [Code](Projects/Project5)
+   start of the `submit()` method that pauses only if the user submits a
+   word with six or more letters. [Code](Projects/Project5)
 
 Review: [Debug like a Pro](https://appdevcon.nl/session/how-to-debug-like-a-pro)
 
 ## [Day 66](https://www.hackingwithswift.com/100/66) - MILESTONE: Projects 16-18
 
-*Challenge*
+_Challenge_
 
 Make a shooting gallery game using SpriteKit: create three rows on the screen, then have targets slide across from one side to the other. If the user taps a target, make it fade out and award them points.
 
 Some key points:
 
-* Make some targets big and slow, and others small and fast. The small targets should be worth more points.
-* Add _“bad”_ targets – things that cost the user points if they get shot accidentally.
-* Make the top and bottom rows move left to right, but the middle row move right to left.
-* Add a timer that ticks down from 60 seconds. When it hits zero, show a Game Over message.
-* Try going to https://openclipart.org/ to see what free artwork you can find.
-* Give the user six bullets per clip. Make them tap a different part of the screen to reload.
+- Make some targets big and slow, and others small and fast. The small targets should be worth more points.
+- Add _“bad”_ targets – things that cost the user points if they get shot accidentally.
+- Make the top and bottom rows move left to right, but the middle row move right to left.
+- Add a timer that ticks down from 60 seconds. When it hits zero, show a Game Over message.
+- Try going to https://openclipart.org/ to see what free artwork you can find.
+- Give the user six bullets per clip. Make them tap a different part of the screen to reload.
 
 [Code](Milestones/Milestone-Projects16_18)
 
 ## [Day 67](https://www.hackingwithswift.com/100/67) - Project 19, Part One
 
-*Setting up*, *Making a shell app*, *Adding an extension:* `NSExtensionItem` and *What do you want to get?*
+_Setting up_, _Making a shell app_, _Adding an extension:_ `NSExtensionItem` and _What do you want to get?_
 
 [Code](Projects/Project19)
 
